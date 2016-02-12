@@ -1,0 +1,3497 @@
+--------------------------------------------------------------------------------
+Codebook for Social Explorer report ID: R11088304
+--------------------------------------------------------------------------------
+
+Contents
+    - Table Summary
+    - Data Dictionary
+    - Citation and Use
+
+
+--------------------------------------------------------------------------------
+Table Summary
+--------------------------------------------------------------------------------
+ 
+Survey:           ACS 2014 (5-Year Estimates)
+Dataset:          Social Explorer Tables:  ACS 2014 (5-Year Estimates)
+Tables:
+
+      1. Total Population
+         Universe:  Total Population
+         Name:      T1
+         Variables:
+            T001_001:   Total Population
+
+
+      2. Population Density (per sq. mile)
+         Universe:  Total Population
+         Name:      T2
+         Variables:
+            T002_001:   Total Population
+            T002_002:   Population Density (per sq. mile)
+            T002_003:   Area (Land)
+
+
+      3. Land Area (sq. miles)
+         Universe:  Area Total
+         Name:      T3
+         Variables:
+            T003_001:   Area Total:
+            T003_002:      Area (Land)
+            T003_003:      Area (Water)
+
+
+      4. Sex
+         Universe:  Total Population
+         Name:      T4
+         Variables:
+            T004_001:   Total Population:
+            T004_002:      Male
+            T004_003:      Female
+
+
+      5. Sex By Age
+         Universe:  Total Population
+         Name:      T5
+         Variables:
+            T005_001:   Total Population:
+            T005_002:      Male:
+            T005_003:         Under 5 Years
+            T005_004:         5 to 9 Years
+            T005_005:         10 to 14 Years
+            T005_006:         15 to 17 Years
+            T005_007:         18 to 24 Years
+            T005_008:         25 to 34 Years
+            T005_009:         35 to 44 Years
+            T005_010:         45 to 54 Years
+            T005_011:         55 to 64 Years
+            T005_012:         65 to 74 Years
+            T005_013:         75 to 84 Years
+            T005_014:         85 Years and over
+            T005_015:      Female:
+            T005_016:         Under 5 Years
+            T005_017:         5 to 9 Years
+            T005_018:         10 to 14 Years
+            T005_019:         15 to 17 Years
+            T005_020:         18 to 24 Years
+            T005_021:         25 to 34 Years
+            T005_022:         35 to 44 Years
+            T005_023:         45 to 54 Years
+            T005_024:         55 to 64 Years
+            T005_025:         65 to 74 Years
+            T005_026:         75 to 84 Years
+            T005_027:         85 Years and over
+
+
+      6. Sex By Age - Cumulative (Less)
+         Universe:  Total Population
+         Name:      T5A
+         Variables:
+            T005A001:   Total Population:
+            T005A002:      Male:
+            T005A003:         Less than 5 Years
+            T005A004:         Less than 10 Years
+            T005A005:         Less than 15 Years
+            T005A006:         Less than 18 Years
+            T005A007:         Less than 25 Years
+            T005A008:         Less than 35 Years
+            T005A009:         Less than 45 Years
+            T005A010:         Less than 55 Years
+            T005A011:         Less than 65 Years
+            T005A012:         Less than 75 Years
+            T005A013:         Less than 85 Years
+            T005A014:      Female:
+            T005A015:         Less than 5 Years
+            T005A016:         Less than 10 Years
+            T005A017:         Less than 15 Years
+            T005A018:         Less than 18 Years
+            T005A019:         Less than 25 Years
+            T005A020:         Less than 35 Years
+            T005A021:         Less than 45 Years
+            T005A022:         Less than 55 Years
+            T005A023:         Less than 65 Years
+            T005A024:         Less than 75 Years
+            T005A025:         Less than 85 Years
+
+
+      7. Sex By Age - Cumulative (More)
+         Universe:  Total Population
+         Name:      T5B
+         Variables:
+            T005B001:   Total Population:
+            T005B002:      Male:
+            T005B003:         More than 5 Years
+            T005B004:         More than 10 Years
+            T005B005:         More than 15 Years
+            T005B006:         More than 18 Years
+            T005B007:         More than 25 Years
+            T005B008:         More than 35 Years
+            T005B009:         More than 45 Years
+            T005B010:         More than 55 Years
+            T005B011:         More than 65 Years
+            T005B012:         More than 75 Years
+            T005B013:         More than 85 Years
+            T005B014:      Female:
+            T005B015:         More than 5 Years
+            T005B016:         More than 10 Years
+            T005B017:         More than 15 Years
+            T005B018:         More than 18 Years
+            T005B019:         More than 25 Years
+            T005B020:         More than 35 Years
+            T005B021:         More than 45 Years
+            T005B022:         More than 55 Years
+            T005B023:         More than 65 Years
+            T005B024:         More than 75 Years
+            T005B025:         More than 85 Years
+
+
+      8. Sex By Age (Collapsed Version)
+         Universe:  Total Population
+         Name:      T6
+         Variables:
+            T006_001:   Total Population:
+            T006_002:      Male:
+            T006_003:         Under 18 Years
+            T006_004:         18 to 34 Years
+            T006_005:         35 to 64 Years
+            T006_006:         65 Years and Over
+            T006_007:      Female:
+            T006_008:         Under 18 Years
+            T006_009:         18 to 34 Years
+            T006_010:         35 to 64 Years
+            T006_011:         65 Years and Over
+
+
+      9. Age
+         Universe:  Total Population
+         Name:      T7
+         Variables:
+            T007_001:   Total Population:
+            T007_002:      Under 5 Years
+            T007_003:      5 to 9 Years
+            T007_004:      10 to 14 Years
+            T007_005:      15 to 17 Years
+            T007_006:      18 to 24 Years
+            T007_007:      25 to 34 Years
+            T007_008:      35 to 44 Years
+            T007_009:      45 to 54 Years
+            T007_010:      55 to 64 Years
+            T007_011:      65 to 74 Years
+            T007_012:      75 to 84 Years
+            T007_013:      85 Years and over
+
+
+      10. Age - Cumulative (Less)
+          Universe:  Total Population
+          Name:      T7A
+          Variables:
+             T007A001:   Total Population:
+             T007A002:      Less than 5 Years
+             T007A003:      Less than 10 Years
+             T007A004:      Less than 15 Years
+             T007A005:      Less than 18 Years
+             T007A006:      Less than 25 Years
+             T007A007:      Less than 35 Years
+             T007A008:      Less than 45 Years
+             T007A009:      Less than 55 Years
+             T007A010:      Less than 65 Years
+             T007A011:      Less than 75 Years
+             T007A012:      Less than 85 Years
+
+
+      11. Age - Cumulative (More)
+          Universe:  Total Population
+          Name:      T7B
+          Variables:
+             T007B001:   Total Population:
+             T007B002:      More than 5 Years
+             T007B003:      More than 10 Years
+             T007B004:      More than 15 Years
+             T007B005:      More than 18 Years
+             T007B006:      More than 25 Years
+             T007B007:      More than 35 Years
+             T007B008:      More than 45 Years
+             T007B009:      More than 55 Years
+             T007B010:      More than 65 Years
+             T007B011:      More than 75 Years
+             T007B012:      More than 85 Years
+
+
+      12. Age (Detailed version)
+          Universe:  Total population
+          Name:      T8
+          Variables:
+             T008_001:   Total:
+             T008_002:      Under 5 years
+             T008_003:      5 to 9 years
+             T008_004:      10 to 14 years
+             T008_005:      15 to 17 years
+             T008_006:      18 and 19 years
+             T008_007:      20 years
+             T008_008:      21 years
+             T008_009:      22 to 24 years
+             T008_010:      25 to 29 years
+             T008_011:      30 to 34 years
+             T008_012:      35 to 39 years
+             T008_013:      40 to 44 years
+             T008_014:      45 to 49 years
+             T008_015:      50 to 54 years
+             T008_016:      55 to 59 years
+             T008_017:      60 and 61 years
+             T008_018:      62 to 64 years
+             T008_019:      65 and 66 years
+             T008_020:      67 to 69 years
+             T008_021:      70 to 74 years
+             T008_022:      75 to 79 years
+             T008_023:      80 to 84 years
+             T008_024:      85 years and over
+
+
+      13. Age (Detailed version) - Cumulative (Less)
+          Universe:  Total population
+          Name:      T8A
+          Variables:
+             T008A001:   Total:
+             T008A002:      Less than 5 Years
+             T008A003:      Less than 10 Years
+             T008A004:      Less than 15 Years
+             T008A005:      Less than 18 Years
+             T008A006:      Less than 20 Years
+             T008A007:      Less than 21 Years
+             T008A008:      Less than 22 Years
+             T008A009:      Less than 25 Years
+             T008A010:      Less than 30 Years
+             T008A011:      Less than 35 Years
+             T008A012:      Less than 40 Years
+             T008A013:      Less than 45 Years
+             T008A014:      Less than 50 Years
+             T008A015:      Less than 55 Years
+             T008A016:      Less than 60 Years
+             T008A017:      Less than 62 Years
+             T008A018:      Less than 65 Years
+             T008A019:      Less than 67 Years
+             T008A020:      Less than 70 Years
+             T008A021:      Less than 75 Years
+             T008A022:      Less than 80 Years
+             T008A023:      Less than 85 Years
+
+
+      14. Age (Detailed version) - Cumulative (More)
+          Universe:  Total population
+          Name:      T8B
+          Variables:
+             T008B001:   Total:
+             T008B002:      More than 5 Years
+             T008B003:      More than 10 Years
+             T008B004:      More than 15 Years
+             T008B005:      More than 18 Years
+             T008B006:      More than 20 Years
+             T008B007:      More than 21 Years
+             T008B008:      More than 22 Years
+             T008B009:      More than 25 Years
+             T008B010:      More than 30 Years
+             T008B011:      More than 35 Years
+             T008B012:      More than 40 Years
+             T008B013:      More than 45 Years
+             T008B014:      More than 50 Years
+             T008B015:      More than 55 Years
+             T008B016:      More than 60 Years
+             T008B017:      More than 62 Years
+             T008B018:      More than 65 Years
+             T008B019:      More than 67 Years
+             T008B020:      More than 70 Years
+             T008B021:      More than 75 Years
+             T008B022:      More than 80 Years
+             T008B023:      More than 85 Years
+
+
+      15. Age (Short Version)
+          Universe:  Total Population
+          Name:      T9
+          Variables:
+             T009_001:   Total Population:
+             T009_002:      Under 18 Years
+             T009_003:      18 to 34 Years
+             T009_004:      35 to 64 Years
+             T009_005:      65 and over
+
+
+      16. Age for Male Population (Short Version)
+          Universe:  Male Population
+          Name:      T10
+          Variables:
+             T010_001:   Male Population:
+             T010_002:      Under 18 Years
+             T010_003:      18 to 34 Years
+             T010_004:      35 to 64 Years
+             T010_005:      65 and over
+
+
+      17. Age for Female Population (Short Version)
+          Universe:  Female Population
+          Name:      T11
+          Variables:
+             T011_001:   Female Population:
+             T011_002:      Under 18 Years
+             T011_003:      18 to 34 Years
+             T011_004:      35 to 64 Years
+             T011_005:      65 and over
+
+
+      18. Median Age By Sex
+          Universe:  Total Population
+          Name:      T12
+          Variables:
+             T012_001:   Median Age:
+             T012_002:      Male Population
+             T012_003:      Female Population
+
+
+      19. Race
+          Universe:  Total Population
+          Name:      T13
+          Variables:
+             T013_001:   Total Population:
+             T013_002:      White Alone
+             T013_003:      Black or African American Alone
+             T013_004:      American Indian and Alaska Native Alone
+             T013_005:      Asian Alone
+             T013_006:      Native Hawaiian and Other Pacific Islander Alone
+             T013_007:      Some Other Race Alone
+             T013_008:      Two or More races
+
+
+      20. Hispanic or Latino By Race
+          Universe:  Total Population
+          Name:      T14
+          Variables:
+             T014_001:   Total Population
+             T014_002:      Not Hispanic or Latino:
+             T014_003:         White Alone
+             T014_004:         Black or African American Alone
+             T014_005:         American Indian and Alaska Native Alone
+             T014_006:         Asian Alone
+             T014_007:         Native Hawaiian and Other Pacific Islander Alone
+             T014_008:         Some Other Race Alone
+             T014_009:         Two or More races
+             T014_010:      Hispanic or Latino:
+             T014_011:         White Alone
+             T014_012:         Black or African American Alone
+             T014_013:         American Indian and Alaska Native Alone
+             T014_014:         Asian Alone
+             T014_015:         Native Hawaiian and Other Pacific Islander Alone
+             T014_016:         Some Other Race Alone
+             T014_017:         Two or More races
+
+
+      21. Hispanic or Latino By Specific Origin
+          Universe:  Total population
+          Name:      T15
+          Variables:
+             T015_001:   Total Population
+             T015_002:      Not Hispanic or Latino
+             T015_003:      Hispanic or Latino:
+             T015_004:         Mexican
+             T015_005:         Puerto Rican
+             T015_006:         Cuban
+             T015_007:         Dominican Republic
+             T015_008:         Central American:
+             T015_009:            Costa Rican
+             T015_010:            Guatemalan
+             T015_011:            Honduran
+             T015_012:            Nicaraguan
+             T015_013:            Panamanian
+             T015_014:            Salvadoran
+             T015_015:            Other Central American
+             T015_016:         South American:
+             T015_017:            Argentinean
+             T015_018:            Bolivian
+             T015_019:            Chilean
+             T015_020:            Colombian
+             T015_021:            Ecuadorian
+             T015_022:            Paraguayan
+             T015_023:            Peruvian
+             T015_024:            Uruguayan
+             T015_025:            Venezuelan
+             T015_026:            Other South American
+             T015_027:         Other Hispanic or Latino:
+             T015_028:            Spaniard
+             T015_029:            Spanish
+             T015_030:            Spanish American
+             T015_031:            All Other Hispanic or Latino
+
+
+      22. Asian By Specific Origin (Asian With One Asian Category for Selected Groups)
+          Universe:  Total Asian categories tallied for people with one Asian category only and people with no specific Asian category reported
+          Name:      T16
+          Variables:
+             T016_001:   Total:
+             T016_002:      Asian Indian
+             T016_003:      Bangladeshi
+             T016_004:      Cambodian
+             T016_005:      Chinese, except Taiwanese
+             T016_006:      Filipino
+             T016_007:      Hmong
+             T016_008:      Indonesian
+             T016_009:      Japanese
+             T016_010:      Korean
+             T016_011:      Laotian
+             T016_012:      Malaysian
+             T016_013:      Pakistani
+             T016_014:      Sri Lankan
+             T016_015:      Taiwanese
+             T016_016:      Thai
+             T016_017:      Vietnamese
+             T016_018:      Other Asian
+             T016_019:      Other Asian, not specified
+
+
+      23. Households By Household Type
+          Universe:  Households
+          Name:      T17
+          Variables:
+             T017_001:   Households:
+             T017_002:      Family Households:
+             T017_003:         Married-couple Family
+             T017_004:         Other Family:
+             T017_005:            Male Householder, no wife present
+             T017_006:            Female Householder, no husband present
+             T017_007:      Nonfamily Households:
+             T017_008:         Male Householder
+             T017_009:         Female Householder
+
+
+      24. Households By Presence of People Under 18 Years By Household Type
+          Universe:  Households
+          Name:      T18
+          Variables:
+             T018_001:   Households:
+             T018_002:      Households with one or More people under 18 Years:
+             T018_003:         Family Households:
+             T018_004:            Married-couple Family
+             T018_005:            Other Family (Single Parent):
+             T018_006:               Male Householder, no wife present
+             T018_007:               Female Householder, no husband present
+             T018_008:         Nonfamily Households:
+             T018_009:            Male Householder
+             T018_010:            Female Householder
+             T018_011:      Households with no people under 18 Years:
+             T018_012:         Family Households:
+             T018_013:            Married-couple Family
+             T018_014:            Other Family:
+             T018_015:               Male Householder, no wife present
+             T018_016:               Female Householder, no husband present
+             T018_017:         Nonfamily Households:
+             T018_018:            Male Householder
+             T018_019:            Female Householder
+
+
+      25. Households By Race of Householder
+          Universe:  Households
+          Name:      T19
+          Variables:
+             T019_001:   Households:
+             T019_002:      with a Householder who is White Alone
+             T019_003:      with a Householder who is Black or African  American Alone
+             T019_004:      with a Householder who is American Indian and  Alaska Native Alone
+             T019_005:      with a Householder who is Asian Alone
+             T019_006:      with a Householder who is Native Hawaiian and  Other Pacific Islander Alone
+             T019_007:      with a Householder who is Some Other Race Alone
+             T019_008:      with a Householder who is two or More races
+             T019_009:      with a Householder who is Hispanic or Latino
+             T019_010:      with a Householder who is White Alone, not  Hispanic or Latino
+
+
+      26. Population In Households By Household Type and Relationship
+          Universe:  Total Population
+          Name:      T20
+          Variables:
+             T020_001:   Total Population
+             T020_002:      In Households:
+             T020_003:         In Family Households:
+             T020_004:            Householder
+             T020_005:            Spouse
+             T020_006:            Child
+             T020_007:            Grandchild
+             T020_008:            Brother or sister
+             T020_009:            Parent
+             T020_017:            Parent-in-law
+             T020_018:            Son-in-law or daughter-in-law
+             T020_010:            Other relatives
+             T020_011:            Nonrelatives
+             T020_012:         In nonfamily Households:
+             T020_013:            Living Alone
+             T020_014:            Not living Alone
+             T020_015:            Nonrelatives
+             T020_016:      In group quarters
+
+
+      27. Average Household Size
+          Universe:  Occupied Households
+          Name:      T21
+          Variables:
+             T021_001:   Average Household Size
+
+
+      28. Marital Status for the Population 15 Years and Over
+          Universe:  Population 15 Years and over
+          Name:      T22
+          Variables:
+             T022_001:   Population 15 Years and over:
+             T022_002:      Never married
+             T022_003:      Now married (Not Including Separated)
+             T022_004:      Separated
+             T022_005:      Widowed
+             T022_006:      Divorced
+
+
+      29. Unmarried-Partner Households By Sex of Partners
+          Universe:  Households
+          Name:      T23
+          Variables:
+             T023_001:   Households
+             T023_002:      Unmarried-partner Households:
+             T023_003:         Same Sex Partners:
+             T023_004:            Male Householder and male partner
+             T023_005:            Female Householder and female partner
+             T023_006:         Opposite Sex Partners:
+             T023_007:            Male Householder and female partner
+             T023_008:            Female Householder and male partner
+             T023_009:      All Other Households
+
+
+      30. Group Quarters Population
+          Universe:  Total Population
+          Name:      T24
+          Variables:
+             T024_001:   Total Population:
+             T024_002:      Population In group quarters
+             T024_003:      Population NOT In group quarters
+
+
+      31. Educational Attainment for Population 25 Years and Over
+          Universe:  Population 25 Years and over
+          Name:      T25
+          Variables:
+             T025_001:   Population 25 Years and over:
+             T025_002:      Less Than High School
+             T025_003:      High School Graduate (includes equivalency)
+             T025_004:      Some college
+             T025_005:      Bachelor's degree
+             T025_006:      Master's degree
+             T025_007:      Professional school degree
+             T025_008:      Doctorate degree
+
+
+      32. Highest Educational Attainment for Population 25 Years and Over
+          Universe:  Population 25 Years and over
+          Name:      T150
+          Variables:
+             T150_001:   Population 25 Years and over:
+             T150_002:      Less Than High School
+             T150_003:      High School Graduate or more (includes equivalency)
+             T150_004:      Some college or more
+             T150_005:      Bachelor's degree or more
+             T150_006:      Master's degree or more
+             T150_007:      Professional school degree or more
+             T150_008:      Doctorate degree
+
+
+      33. Educational Attainment for Male Population 25 Years and Over
+          Universe:  Male Population 25 Years and over
+          Name:      T26
+          Variables:
+             T026_001:   Male Population 25 Years and over:
+             T026_002:      Less Than High School
+             T026_003:      High School Graduate (includes equivalency)
+             T026_004:      Some college
+             T026_005:      Bachelor's degree
+             T026_006:      Master's degree
+             T026_007:      Professional school degree
+             T026_008:      Doctorate degree
+
+
+      34. Highest Educational Attainment for Male Population 25 Years and Over
+          Universe:  Male Population 25 Years and over
+          Name:      T151
+          Variables:
+             T151_001:   Male Population 25 Years and over:
+             T151_002:      Less Than High School
+             T151_003:      High School Graduate or more (includes equivalency)
+             T151_004:      Some college or more
+             T151_005:      Bachelor's degree or more
+             T151_006:      Master's degree or more
+             T151_007:      Professional school degree or more
+             T151_008:      Doctorate degree
+
+
+      35. Educational Attainment for Female Population 25 Years and Over
+          Universe:  Female Population 25 Years and over
+          Name:      T27
+          Variables:
+             T027_001:   Female Population 25 Years and over:
+             T027_002:      Less Than High School
+             T027_003:      High school graduate (includes equivalency)
+             T027_004:      Some college
+             T027_005:      Bachelor's degree
+             T027_006:      Master's degree
+             T027_007:      Professional school degree
+             T027_008:      Doctorate degree
+
+
+      36. Highest Educational Attainment for Female Population 25 Years and Over
+          Universe:  Female Population 25 Years and over
+          Name:      T152
+          Variables:
+             T152_001:   Female Population 25 Years and over:
+             T152_002:      Less Than High School
+             T152_003:      High school graduate or more (includes equivalency)
+             T152_004:      Some college or more
+             T152_005:      Bachelor's degree or more
+             T152_006:      Master's degree or more
+             T152_007:      Professional school degree or more
+             T152_008:      Doctorate degree
+
+
+      37. School Enrollment for the Population 3 Years and Over
+          Universe:  Population 3 Years and over
+          Name:      T28
+          Variables:
+             T028_001:   Population 3 Years and over:
+             T028_002:      Enrolled In School
+             T028_003:      Not Enrolled In School
+
+
+      38. Level of School By Type of School for Enrolled In School Population 3 Years and Over
+          Universe:  Population 3 Years and over Enrolled In School
+          Name:      T29
+          Variables:
+             T029_001:   Population 3 Years and over Enrolled In School
+             T029_002:      Public School:
+             T029_003:         Pre-school
+             T029_004:         K-8
+             T029_005:         9-12
+             T029_006:         College
+             T029_007:      Private School:
+             T029_008:         Pre-school
+             T029_009:         K-8
+             T029_010:         9-12
+             T029_011:         College
+
+
+      39. School Dropout Rate for Population 16 To 19 Years
+          Universe:  Civilian Population 16 to 19 Years
+          Name:      T30
+          Variables:
+             T030_001:   Civilian Population 16 to 19 Years:
+             T030_002:      Not high school graduate, not enrolled (dropped out)
+             T030_003:      High school graduate, or enrolled (in school)
+
+
+      40. School Dropout Rate for Male Population 16 To 19 Years
+          Universe:  Male Civilian Population 16 To 19 Years
+          Name:      T31
+          Variables:
+             T031_001:   Male Civilian Population 16 To 19 Years:
+             T031_002:      Not high school graduate, not enrolled (dropped out)
+             T031_003:      High school graduate, or enrolled (in school)
+
+
+      41. School Dropout Rate for Female Population 16 To 19 Years
+          Universe:  Female Civilian Population 16 To 19 Years
+          Name:      T32
+          Variables:
+             T032_001:   Female Civilian Population 16 To 19 Years:
+             T032_002:      Not high school graduate, not enrolled (dropped out)
+             T032_003:      High school graduate, or enrolled (in school)
+
+
+      42. Employment Status for Total Population 16 Years and Over
+          Universe:  Population 16 Years and over
+          Name:      T33
+          Variables:
+             T033_001:   Population 16 Years and over:
+             T033_002:      In labor force:
+             T033_003:         In Armed Forces
+             T033_004:         Civilian:
+             T033_005:            Employed
+             T033_006:            Unemployed
+             T033_007:      Not In labor force
+
+
+      43. Employment Status for Male Population 16 Years and Over
+          Universe:  Male Population 16 Years and Over
+          Name:      T34
+          Variables:
+             T034_001:   Male Population 16 Years And Over:
+             T034_002:      In labor force:
+             T034_003:         In Armed Forces
+             T034_004:         Civilian:
+             T034_005:            Employed
+             T034_006:            Unemployed
+             T034_007:      Not In labor force
+
+
+      44. Employment Status for Female Population 16 Years and Over
+          Universe:  Female Population 16 Years and Over
+          Name:      T35
+          Variables:
+             T035_001:   Female Population 16 Years And Over:
+             T035_002:      In labor force:
+             T035_003:         In Armed Forces
+             T035_004:         Civilian:
+             T035_005:            Employed
+             T035_006:            Unemployed
+             T035_007:      Not In labor force
+
+
+      45. Labor Force for Population 16 Years and Over
+          Universe:  In Labor Force 16 Years and Over:
+          Name:      T36
+          Variables:
+             T036_001:   In Labor Force 16 Years And Over:
+             T036_002:      In Armed Forces
+             T036_003:      Civilian
+
+
+      46. Unemployment Rate for Civilian Population In Labor Force 16 Years and Over
+          Universe:  Civilian Population In Labor Force 16 Years and Over:
+          Name:      T37
+          Variables:
+             T037_001:   Civilian Population In Labor Force 16 Years And Over:
+             T037_002:      Employed
+             T037_003:      Unemployed
+
+
+      47. Unemployment Rate for Civilian Male Population
+          Universe:  Civilian Male In Labor Force 16 Years and Over:
+          Name:      T38
+          Variables:
+             T038_001:   Civilian Male In Labor Force 16 Years And Over:
+             T038_002:      Employed
+             T038_003:      Unemployed
+
+
+      48. Unemployment Rate for Civilian Female Population
+          Universe:  Civilian Female In Labor Force 16 Years and Over:
+          Name:      T39
+          Variables:
+             T039_001:   Civilian Female In Labor Force 16 Years And Over:
+             T039_002:      Employed
+             T039_003:      Unemployed
+
+
+      49. Unemployment Rate for the Population 16 Years and Over (White Alone)
+          Universe:  White 16 Years Old In Civilian Labor Force
+          Name:      T40
+          Variables:
+             T040_001:   White 16 Years Old In Civilian Labor Force:
+             T040_002:      Employed
+             T040_003:      Unemployed
+
+
+      50. Unemployment Rate for the Population 16 Years and Over (Black or African American Alone)
+          Universe:  Black or African American 16 Years Old In Civilian Labor Force
+          Name:      T41
+          Variables:
+             T041_001:   Black or African American 16 Years Old In  Civilian Labor Force:
+             T041_002:      Employed
+             T041_003:      Unemployed
+
+
+      51. Unemployment Rate for the Population 16 Years and Over (American Indian and Alaska Native Alone)
+          Universe:  American Indian and Alaska Native 16 Years Old In Civilian Labor Force
+          Name:      T42
+          Variables:
+             T042_001:   American Indian and Alaska Native 16 Years Old In  Civilian Labor Force:
+             T042_002:      Employed
+             T042_003:      Unemployed
+
+
+      52. Unemployment Rate for the Population 16 Years and Over (Asian Alone)
+          Universe:  Asian 16 Years Old In Civilian Labor Force
+          Name:      T43
+          Variables:
+             T043_001:   Asian 16 Years Old In Civilian Labor Force:
+             T043_002:      Employed
+             T043_003:      Unemployed
+
+
+      53. Unemployment Rate for the Population 16 Years and Over (Native Hawaiian and Other Pacific Islander Alone)
+          Universe:  Native Hawaiian and Other Pacific Islander 16 Years Old In Civilian Labor Force
+          Name:      T44
+          Variables:
+             T044_001:   Native Hawaiian and Other Pacific Islander 16  Years Old In Civilian Labor Force:
+             T044_002:      Employed
+             T044_003:      Unemployed
+
+
+      54. Unemployment Rate for the Population 16 Years and Over (Some Other Race Alone)
+          Universe:  Some Other Race 16 Years Old In Civilian Labor Force
+          Name:      T45
+          Variables:
+             T045_001:   Some Other Race 16 Years Old In Civilian Labor Force:
+             T045_002:      Employed
+             T045_003:      Unemployed
+
+
+      55. Unemployment Rate for the Population 16 Years and Over (Two or More Races)
+          Universe:  Two or More races 16 Years Old In Civilian Labor Force
+          Name:      T46
+          Variables:
+             T046_001:   Two or More races 16 Years Old In Civilian Labor Force:
+             T046_002:      Employed
+             T046_003:      Unemployed
+
+
+      56. Unemployment Rate for the Population 16 Years and Over (Hispanic or Latino)
+          Universe:  Hispanic or Latino 16 Years Old In Civilian Labor Force
+          Name:      T47
+          Variables:
+             T047_001:   Hispanic or Latino 16 Years Old In Civilian Labor Force:
+             T047_002:      Employed
+             T047_003:      Unemployed
+
+
+      57. Unemployment Rate for the Population 16 Years and Over (White Alone, Not Hispanic or Latino)
+          Universe:  White Alone, Not Hispanic or Latino 16 Years Old In Civilian Labor Force
+          Name:      T48
+          Variables:
+             T048_001:   White Alone, Not Hispanic Or Latino 16 Years Old  In Civilian Labor Force:
+             T048_002:      Employed
+             T048_003:      Unemployed
+
+
+      58. Industry By Occupation for Employed Civilian Population 16 Years and Over
+          Universe:  Civilian employed population 16 years and over
+          Name:      T49
+          Variables:
+             T049_001:   Total Employed Civilian Population 16 Years And Over
+             T049_002:      Agriculture, forestry, fishing and hunting, and mining
+             T049_003:      Construction
+             T049_004:      Manufacturing
+             T049_005:      Wholesale trade
+             T049_006:      Retail trade
+             T049_007:      Transportation and warehousing, and utilities
+             T049_008:      Information
+             T049_009:      Finance and insurance, and real estate and rental  and leasing
+             T049_010:      Professional, scientific, and management, and  administrative and waste management services
+             T049_011:      Educational services, and health care and social  assistance
+             T049_012:      Arts, entertainment, and recreation, and  accommodation and food services
+             T049_013:      Other services, except public administration
+             T049_014:      Public administration
+
+
+      59. Occupation for Employed Civilian Population 16 Years and Over
+          Universe:  Employed civilian Population 16 Years and over
+          Name:      T50
+          Variables:
+             T050_001:   Employed civilian Population 16 Years and over:
+             T050_002:      Management, business, and financial operations  occupations
+             T050_003:      Professional and related occupations
+             T050_004:      Healthcare support occupations
+             T050_005:      Protective service occupations
+             T050_006:      Food preparation and serving related occupations
+             T050_007:      Building and grounds cleaning and maintenance  occupations
+             T050_008:      Personal care and service occupations
+             T050_009:      Sales and related occupations
+             T050_010:      Office and administrative support occupations
+             T050_011:      Farming, fishing, and forestry occupations
+             T050_012:      Construction, extraction, and maintenance  occupations
+             T050_013:      Production occupations
+             T050_014:      Transportation and material moving occupations
+
+
+      60. Occupation for Male Employed Civilian Population 16 Years and Over
+          Universe:  Male Employed civilian Population 16 Years and over
+          Name:      T51
+          Variables:
+             T051_001:   Male Employed civilian Population 16 Years and over:
+             T051_002:      Management, business, and financial operations  occupations
+             T051_003:      Professional and related occupations
+             T051_004:      Healthcare support occupations
+             T051_005:      Protective service occupations
+             T051_006:      Food preparation and serving related occupations
+             T051_007:      Building and grounds cleaning and maintenance  occupations
+             T051_008:      Personal care and service occupations
+             T051_009:      Sales and related occupations
+             T051_010:      Office and administrative support occupations
+             T051_011:      Farming, fishing, and forestry occupations
+             T051_012:      Construction, extraction, and maintenance  occupations
+             T051_013:      Production occupations
+             T051_014:      Transportation and material moving occupations
+
+
+      61. Occupation for Female Employed Civilian Population 16 Years and Over
+          Universe:  Female Employed civilian Population 16 Years and over
+          Name:      T52
+          Variables:
+             T052_001:   Female Employed civilian Population 16 Years and over:
+             T052_002:      Management, business, and financial operations  occupations
+             T052_003:      Professional and related occupations
+             T052_004:      Healthcare support occupations
+             T052_005:      Protective service occupations
+             T052_006:      Food preparation and serving related occupations
+             T052_007:      Building and grounds cleaning and maintenance  occupations
+             T052_008:      Personal care and service occupations
+             T052_009:      Sales and related occupations
+             T052_010:      Office and administrative support occupations
+             T052_011:      Farming, fishing, and forestry occupations
+             T052_012:      Construction, extraction, and maintenance  occupations:
+             T052_013:      Production occupations
+             T052_014:      Transportation and material moving occupations:
+
+
+      62. Employment Sector for Employed Civilian Population 16 Years and Over
+          Universe:  Total Employed Civilian Population 16 Years and Over
+          Name:      T53
+          Variables:
+             T053_001:   Employed Civilian Population 16 Years And Over:
+             T053_002:      Private Sector
+             T053_003:      Public Sector
+             T053_004:      Self-Employed (incorporated and not incorporated)
+             T053_005:      Private Non-Profit
+             T053_006:      Unpaid Family Workers
+
+
+      63. Employment Sector for Male Employed Civilian Population 16 Years and Over
+          Universe:  Male Employed Civilian Population 16 Years and Over
+          Name:      T54
+          Variables:
+             T054_001:   Male Employed Civilian Population 16 Years And Over:
+             T054_002:      Private Sector
+             T054_003:      Public Sector
+             T054_004:      Self-Employed (incorporated and not incorporated)
+             T054_005:      Private Non-Profit
+             T054_006:      Unpaid Family Workers
+
+
+      64. Employment Sector for Female Employed Civilian Population 16 Years and Over
+          Universe:  Female Employed Civilian Population 16 Years and Over
+          Name:      T55
+          Variables:
+             T055_001:   Female Employed Civilian Population 16 Years And Over:
+             T055_002:      Private Sector
+             T055_003:      Public Sector
+             T055_004:      Self-Employed (incorporated and not incorporated)
+             T055_005:      Private Non-Profit
+             T055_006:      Unpaid Family Workers
+
+
+      65. Household Income (In <DollarYear> Inflation Adjusted Dollars)
+          Universe:  Households
+          Name:      T56
+          Variables:
+             T056_001:   Households:
+             T056_002:      Less than $10,000
+             T056_003:      $10,000 to $14,999
+             T056_004:      $15,000 to $19,999
+             T056_005:      $20,000 to $24,999
+             T056_006:      $25,000 to $29,999
+             T056_007:      $30,000 to $34,999
+             T056_008:      $35,000 to $39,999
+             T056_009:      $40,000 to $44,999
+             T056_010:      $45,000 to $49,999
+             T056_011:      $50,000 to $59,999
+             T056_012:      $60,000 to $74,999
+             T056_013:      $75,000 to $99,999
+             T056_014:      $100,000 to $124,999
+             T056_015:      $125,000 to $149,999
+             T056_016:      $150,000 to $199,999
+             T056_017:      $200,000 or More
+
+
+      66. Household Income (In <DollarYear> Inflation Adjusted Dollars) - Cumulative (Less)
+          Universe:  Households
+          Name:      T56A
+          Variables:
+             T056A001:   Households:
+             T056A002:      Less than $10,000
+             T056A003:      Less than $15,000
+             T056A004:      Less than $20,000
+             T056A005:      Less than $25,000
+             T056A006:      Less than $30,000
+             T056A007:      Less than $35,000
+             T056A008:      Less than $40,000
+             T056A009:      Less than $45,000
+             T056A010:      Less than $50,000
+             T056A011:      Less than $60,000
+             T056A012:      Less than $75,000
+             T056A013:      Less than $100,000
+             T056A014:      Less than $125,000
+             T056A015:      Less than $150,000
+             T056A016:      Less than $200,000
+
+
+      67. Household Income (In <DollarYear> Inflation Adjusted Dollars) - Cumulative (More)
+          Universe:  Households
+          Name:      T56B
+          Variables:
+             T056B001:   Households:
+             T056B002:      More than $10,000
+             T056B003:      More than $15,000
+             T056B004:      More than $20,000
+             T056B005:      More than $25,000
+             T056B006:      More than $30,000
+             T056B007:      More than $35,000
+             T056B008:      More than $40,000
+             T056B009:      More than $45,000
+             T056B010:      More than $50,000
+             T056B011:      More than $60,000
+             T056B012:      More than $75,000
+             T056B013:      More than $100,000
+             T056B014:      More than $125,000
+             T056B015:      More than $150,000
+             T056B016:      More than $200,000
+
+
+      68. Median Household Income (In <DollarYear> Inflation Adjusted Dollars)
+          Universe:  Households
+          Name:      T57
+          Variables:
+             T057_001:   Median household income (In 2013 Inflation Adjusted Dollars)
+
+
+      69. Median Household Income By Race (In <DollarYear> Inflation Adjusted Dollars)
+          Universe:  Households
+          Name:      T58
+          Variables:
+             T058_001:   Median household income (In 2013 Inflation Adjusted Dollars):
+             T058_002:      White Alone Householder
+             T058_003:      Black or African American Alone Householder
+             T058_004:      American Indian and Alaska Native Alone  Householder
+             T058_005:      Asian Alone
+             T058_006:      Native Hawaiian and Other Pacific Islander Alone  Householder
+             T058_007:      Some Other Race Alone Householder
+             T058_008:      Two or More Races Householder
+             T058_009:      Hispanic or Latino Householder
+             T058_010:      White Alone Householder, not Hispanic or Latino
+
+
+      70. Average Household Income (In <DollarYear> Inflation Adjusted Dollars)
+          Universe:  Households
+          Name:      T59
+          Variables:
+             T059_001:   Average household income (In 2013 Inflation Adjusted Dollars)
+
+
+      71. Average Household Income By Race (In <DollarYear> Inflation Adjusted Dollars)
+          Universe:  Households By Race
+          Name:      T60
+          Variables:
+             T060_001:   Average household income (In 2013 Inflation Adjusted Dollars):
+             T060_002:      White Alone Householder
+             T060_003:      Black or African American Alone Householder
+             T060_004:      American Indian and Alaska Native Alone  Householder
+             T060_005:      Asian Alone
+             T060_006:      Native Hawaiian and Other Pacific Islander Alone  Householder
+             T060_007:      Some Other Race Alone Householder
+             T060_008:      Two or More Races Householder
+             T060_009:      Hispanic or Latino Householder
+             T060_010:      White Alone Householder, not Hispanic or Latino
+
+
+      72. Median Family Income (In <DollarYear> Inflation Adjusted Dollars)
+          Universe:  Families
+          Name:      T61
+          Variables:
+             T061_001:   Median Family Income (In 2013 Inflation adjusted dollars)
+
+
+      73. Average Family Income (In <DollarYear> Inflation Adjusted Dollars)
+          Universe:  Families
+          Name:      T62
+          Variables:
+             T062_001:   Average Family Income (In 2013 Inflation adjusted dollars)
+
+
+      74. Median Nonfamily Household Income (In <DollarYear> Inflation Adjusted Dollars)
+          Universe:  Nonfamily Households
+          Name:      T63
+          Variables:
+             T063_001:   Median Nonfamily Household Income (In 2013 Inflation Adjusted Dollars)
+
+
+      75. Average Nonfamily Income (In <DollarYear> Inflation Adjusted Dollars)
+          Universe:  Nonfamily Households
+          Name:      T64
+          Variables:
+             T064_001:   Average Nonfamily Income (In 2013 Inflation Adjusted Dollars)
+
+
+      76. Median Income By Sex By Work Experience (In <DollarYear> Inflation Adjusted Dollars) (For Population Age 15+)
+          Universe:  Population 15 years and over with income In the past 12 months
+          Name:      T65
+          Variables:
+             T065_001:   Median Income For Population 15 years and over:
+             T065_002:      Male:
+             T065_003:         Worked full-time, year-round in the past 12 months
+             T065_004:         Other
+             T065_005:      Female:
+             T065_006:         Worked full-time, year-round in the past 12 months
+             T065_007:         Other
+
+
+      77. Median Earnings By Sex By Educational Attainment (In <DollarYear> Inflation Adjusted Dollars) (For Population Age 25+)
+          Universe:  Population 25 years and over with earnings
+          Name:      T66
+          Variables:
+             T066_001:   Median Earnings:
+             T066_002:      Less than high school graduate
+             T066_003:      High school graduate (includes equivalency)
+             T066_004:      Some college or associate's degree
+             T066_005:      Bachelor's degree
+             T066_006:      Graduate or professional degree
+             T066_007:      Male:
+             T066_008:         Less than high school graduate
+             T066_009:         High school graduate (includes equivalency)
+             T066_010:         Some college or associate's degree
+             T066_011:         Bachelor's degree
+             T066_012:         Graduate or professional degree
+             T066_013:      Female:
+             T066_014:         Less than high school graduate
+             T066_015:         High school graduate (includes equivalency)
+             T066_016:         Some college or associate's degree
+             T066_017:         Bachelor's degree
+             T066_018:         Graduate or professional degree
+
+
+      78. Median Household Income By Tenure (In <DollarYear> Inflation Adjusted Dollars)
+          Universe:  Occupied housing units
+          Name:      T67
+          Variables:
+             T067_001:   Median Household Income Occupied housing units:
+             T067_002:      Owner occupied
+             T067_003:      Renter occupied
+
+
+      79. Aggregate Household Income (In <DollarYear> Inflation Adjusted Dollars)
+          Universe:  Households
+          Name:      T68
+          Variables:
+             T068_001:   Aggregate household income (In 2013 Inflation Adjusted Dollars)
+
+
+      80. Aggregate Household Income (In <DollarYear> Inflation Adjusted Dollars) By Race
+          Universe:  Households
+          Name:      T69
+          Variables:
+             T069_001:   Aggregate Household Income (In 2013 Inflation Adjusted Dollars):
+             T069_002:      White Alone Householder
+             T069_003:      Black or African American Alone Householder
+             T069_004:      American Indian and Alaska Native Alone  Householder
+             T069_005:      Asian Alone Householder
+             T069_006:      Native Hawaiian and Other Pacific Islander Alone  Householder
+             T069_007:      Some Other Race Alone Householder
+             T069_008:      Two or More races Householder
+             T069_009:      Hispanic or Latino Householder
+             T069_010:      White Alone, not Hispanic or Latino Householder
+
+
+      81. Aggregate Family Income (In <DollarYear> Inflation Adjusted Dollars)
+          Universe:  Families
+          Name:      T70
+          Variables:
+             T070_001:   Aggregate Family Income (In 2013 Inflation Adjusted Dollars)
+
+
+      82. Aggregate Nonfamily Household Income (In <DollarYear> Inflation Adjusted Dollars)
+          Universe:  Nonfamily Households
+          Name:      T71
+          Variables:
+             T071_001:   Aggregate Nonfamily Household Income (In 2013 Inflation Adjusted Dollars)
+
+
+      83. Aggregate Income (In <DollarYear> Inflation Adjusted Dollars) for Population 15 Years and over
+          Universe:  Population 15 Years and over
+          Name:      T72
+          Variables:
+             T072_001:   Aggregate Income (In 2013 Inflation Adjusted Dollars) For Population 15 Years and over
+
+
+      84. Aggregate Income (In <DollarYear> Inflation Adjusted Dollars) By Race for Population 15 Years and Over
+          Universe:  Population 15 Years and over
+          Name:      T73
+          Variables:
+             T073_001:   Aggregate Income (In 2013 Inflation Adjusted Dollars) For Population 15 Years and over:
+             T073_002:      White Alone
+             T073_003:      Black or African American Alone Population 15  Years and Over
+             T073_004:      American Indian and Alaska Native Alone
+             T073_005:      Asian Alone
+             T073_006:      Native Hawaiian and Other Pacific Islander Alone
+             T073_007:      Some Other Race Alone
+             T073_008:      Two or More Races
+             T073_009:      Hispanic or Latino
+             T073_010:      White Alone, Not Hispanic or Latino
+
+
+      85. Households With Earnings
+          Universe:  Households
+          Name:      T74
+          Variables:
+             T074_001:   Households:
+             T074_002:      With earnings
+             T074_003:      No earnings
+
+
+      86. Households With Wage or Salary Income
+          Universe:  Households
+          Name:      T75
+          Variables:
+             T075_001:   Households:
+             T075_002:      With wage or salary income
+             T075_003:      No wage or salary income
+
+
+      87. Households With Self-Employment Income
+          Universe:  Households
+          Name:      T76
+          Variables:
+             T076_001:   Households:
+             T076_002:      With self-employment income
+             T076_003:      No self-employment income
+
+
+      88. Households With Interest, Dividends, or Net Rental Income
+          Universe:  Households
+          Name:      T77
+          Variables:
+             T077_001:   Households:
+             T077_002:      With interest, dividends, or net rental income
+             T077_003:      No interest, dividends, or net rental income
+
+
+      89. Households With Social Security Income
+          Universe:  Households
+          Name:      T78
+          Variables:
+             T078_001:   Households:
+             T078_002:      With Social Security income
+             T078_003:      No Social Security income
+
+
+      90. Households With Supplemental Security Income (SSI)
+          Universe:  Households
+          Name:      T79
+          Variables:
+             T079_001:   Households:
+             T079_002:      With Supplemental Security Income (SSI)
+             T079_003:      No Supplemental Security Income (SSI)
+
+
+      91. Households With Public Assistance Income
+          Universe:  Households
+          Name:      T80
+          Variables:
+             T080_001:   Households:
+             T080_002:      With public assistance income
+             T080_003:      No public assistance income
+
+
+      92. Households With Retirement Income
+          Universe:  Households
+          Name:      T81
+          Variables:
+             T081_001:   Households:
+             T081_002:      With retirement income
+             T081_003:      No retirement income
+
+
+      93. Households With Other Types of Income
+          Universe:  Households
+          Name:      T82
+          Variables:
+             T082_001:   Households:
+             T082_002:      With Other types of income
+             T082_003:      No Other types of income
+
+
+      94. Per Capita Income (In <DollarYear> Inflation Adjusted Dollars)
+          Universe:  Total Population
+          Name:      T83
+          Variables:
+             T083_001:   Per capita income (In 2013 Inflation adjusted dollars)
+
+
+      95. Per Capita Income (In <DollarYear> Inflation Adjusted Dollars) (White Alone)
+          Universe:  White Alone Population
+          Name:      T84
+          Variables:
+             T084_001:   Per capita income (In 2013 Inflation adjusted dollars)
+
+
+      96. Per Capita Income (In <DollarYear> Inflation Adjusted Dollars) (Black or African American Alone)
+          Universe:  Black or African American Alone Population
+          Name:      T85
+          Variables:
+             T085_001:   Per capita income (In 2013 Inflation adjusted dollars)
+
+
+      97. Per Capita Income (In <DollarYear> Inflation Adjusted Dollars) (American Indian and Alaska Native Alone)
+          Universe:  American Indian and Alaska Native Alone Population
+          Name:      T86
+          Variables:
+             T086_001:   Per capita income (In 2013 Inflation adjusted dollars)
+
+
+      98. Per Capita Income (In <DollarYear> Inflation Adjusted Dollars) (Asian Alone)
+          Universe:  Asian Alone Population
+          Name:      T87
+          Variables:
+             T087_001:   Per capita income (In 2013 Inflation adjusted dollars)
+
+
+      99. Per Capita Income (In <DollarYear> Inflation Adjusted Dollars) (Native Hawaiian and Other Pacific Islander Alone)
+          Universe:  Native Hawaiian and Other Pacific Islander Alone Population
+          Name:      T88
+          Variables:
+             T088_001:   Per capita income (In 2013 Inflation adjusted dollars)
+
+
+      100. Per Capita Income (In <DollarYear> Inflation Adjusted Dollars) (Some Other Race Alone)
+           Universe:  Some Other Race Alone Population
+           Name:      T89
+           Variables:
+              T089_001:   Per capita income (In 2013 Inflation adjusted dollars)
+
+
+      101. Per Capita Income (In <DollarYear> Inflation Adjusted Dollars) (Two or More Races)
+           Universe:  Two or More Races Population
+           Name:      T90
+           Variables:
+              T090_001:   Per capita income (In 2013 Inflation adjusted dollars)
+
+
+      102. Per Capita Income (In <DollarYear> Inflation Adjusted Dollars) (Hispanic or Latino)
+           Universe:  Hispanic or Latino Population
+           Name:      T91
+           Variables:
+              T091_001:   Per capita income (In 2013 Inflation adjusted dollars)
+
+
+      103. Per Capita Income (In <DollarYear> Inflation Adjusted Dollars) (White Alone, Not Hispanic or Latino)
+           Universe:  White Alone, not Hispanic or Latino Population
+           Name:      T92
+           Variables:
+              T092_001:   Per capita income (In 2013 Inflation adjusted dollars)
+
+
+      104. Household Income Quintile Upper Limits
+           Universe:  Households
+           Name:      T154
+           Variables:
+              T154_001:   Lowest Quintile
+              T154_002:   Second Quintile
+              T154_003:   Third Quintile
+              T154_004:   Fourth Quintile
+              T154_005:   Lower Limit of Top 5 Percent
+
+
+      105. Mean Household Income of Quintiles
+           Universe:  Households
+           Name:      T155
+           Variables:
+              T155_001:   Lowest Quintile
+              T155_002:   Second Quintile
+              T155_003:   Third Quintile
+              T155_004:   Fourth Quintile
+              T155_005:   Highest Quintile
+              T155_006:   Top 5 Percent
+
+
+      106. Shares of Aggregate Household Income By Quintile
+           Universe:  Households
+           Name:      T156
+           Variables:
+              T156_001:   Lowest Quintile
+              T156_002:   Second Quintile
+              T156_003:   Third Quintile
+              T156_004:   Fourth Quintile
+              T156_005:   Highest Quintile
+              T156_006:   Top 5 Percent
+
+
+      107. Gini Index of Income Inequality
+           Universe:  Households
+           Name:      T157
+           Variables:
+              T157_001:   Gini Index
+
+
+      108. Housing Units
+           Universe:  Housing units
+           Name:      T93
+           Variables:
+              T093_001:   Housing units
+
+
+      109. Tenure
+           Universe:  Occupied Housing Units
+           Name:      T94
+           Variables:
+              T094_001:   Occupied Housing Units:
+              T094_002:      Owner Occupied
+              T094_003:      Renter Occupied
+
+
+      110. Occupancy Status
+           Universe:  Housing units
+           Name:      T95
+           Variables:
+              T095_001:   Housing units:
+              T095_002:      Occupied
+              T095_003:      Vacant
+
+
+      111. Vacancy Status By Type of Vacancy
+           Universe:  Vacant housing units
+           Name:      T96
+           Variables:
+              T096_001:   Vacant Housing Units:
+              T096_002:      For rent
+              T096_003:      For sale only
+              T096_004:      Other vacant
+
+
+      112. Housing Units In Structure
+           Universe:  Housing Units
+           Name:      T97
+           Variables:
+              T097_001:   Housing Units:
+              T097_002:      1 Unit:
+              T097_003:         1, detached
+              T097_004:         1, attached
+              T097_005:      2
+              T097_006:      3 or 4
+              T097_007:      5 to 9
+              T097_008:      10 to 19
+              T097_009:      20 to 49
+              T097_010:      50 or More
+              T097_011:      Mobile home
+              T097_012:      Boat, RV, van, etc.
+
+
+      113. Median Year Structure Built
+           Universe:  Housing units
+           Name:      T98
+           Variables:
+              T098_001:   Median year structure built
+
+
+      114. House Heating Fuel
+           Universe:  Occupied Housing Units
+           Name:      T99
+           Variables:
+              T099_001:   Occupied Housing Units:
+              T099_002:      Gas (Utility, Bottled, tank, or LP gas)
+              T099_003:      Electricity
+              T099_004:      Fuel oil, kerosene, etc.
+              T099_005:      Coal, coke or Wood
+              T099_006:      Solar energy
+              T099_007:      Other fuel
+              T099_008:      No fuel used
+
+
+      115. House Value for All Owner-Occupied Housing Units
+           Universe:  Owner-occupied housing units
+           Name:      T100
+           Variables:
+              T100_001:   Owner-occupied housing units:
+              T100_002:      Less than $20,000
+              T100_003:      $20,000 to $49,999
+              T100_004:      $50,000 to $99,999
+              T100_005:      $100,000 to $149,999
+              T100_006:      $150,000 to $299,999
+              T100_007:      $300,000 to $499,999
+              T100_008:      $500,000 to $749,999
+              T100_009:      $750,000 to $999,999
+              T100_010:      $1,000,000 or More
+
+
+      116. House Value for All Owner-Occupied Housing Units - Cumulative (Less)
+           Universe:  Owner-occupied housing units
+           Name:      T100A
+           Variables:
+              T100A001:   Owner-occupied housing units:
+              T100A002:      Less than $20,000
+              T100A003:      Less than $50,000
+              T100A004:      Less than $100,000
+              T100A005:      Less than $150,000
+              T100A006:      Less than $300,000
+              T100A007:      Less than $500,000
+              T100A008:      Less than $750,000
+              T100A009:      Less than $1,000,000
+
+
+      117. House Value for All Owner-Occupied Housing Units - Cumulative (More)
+           Universe:  Owner-occupied housing units
+           Name:      T100B
+           Variables:
+              T100B001:   Owner-occupied housing units:
+              T100B002:      More than $20,000
+              T100B003:      More than $50,000
+              T100B004:      More than $100,000
+              T100B005:      More than $150,000
+              T100B006:      More than $300,000
+              T100B007:      More than $500,000
+              T100B008:      More than $750,000
+              T100B009:      More than $1,000,000
+
+
+      118. Median House Value for All Owner-Occupied Housing Units
+           Universe:  Owner-occupied housing units
+           Name:      T101
+           Variables:
+              T101_001:   Median value
+
+
+      119. Gross Rent (Housing Units With Cash Rent)
+           Universe:  Renter-occupied housing units with cash rent
+           Name:      T102
+           Variables:
+              T102_001:   Renter-occupied housing units with cash rent:
+              T102_002:      Less than $300
+              T102_003:      $300 to $599
+              T102_004:      $600 to $799
+              T102_005:      $800 to $999
+              T102_006:      $1,000 to $1,249
+              T102_007:      $1,250 to $1,499
+              T102_008:      $1,500 to $1,999
+              T102_009:      $2,000 or More
+
+
+      120. Gross Rent (Housing Units With Cash Rent) - Cumulative (Less)
+           Universe:  Renter-occupied housing units with cash rent
+           Name:      T102A
+           Variables:
+              T102A001:   Renter-occupied housing units with cash rent:
+              T102A002:      Less than $300
+              T102A003:      Less than $600
+              T102A004:      Less than $800
+              T102A005:      Less than $1,000
+              T102A006:      Less than $1,250
+              T102A007:      Less than $1,500
+              T102A008:      Less than $2,000
+
+
+      121. Gross Rent (Housing Units With Cash Rent) - Cumulative (More)
+           Universe:  Renter-occupied housing units with cash rent
+           Name:      T102B
+           Variables:
+              T102B001:   Renter-occupied housing units with cash rent:
+              T102B002:      More than $300
+              T102B003:      More than $600
+              T102B004:      More than $800
+              T102B005:      More than $1,000
+              T102B006:      More than $1,250
+              T102B007:      More than $1,500
+              T102B008:      More than $2,000
+
+
+      122. Gross Rent As A Percentage of Household Income In 2014
+           Universe:  Renter-occupied housing units
+           Name:      T103
+           Variables:
+              T103_001:   Renter-occupied housing units:
+              T103_002:      Less than 10 percent
+              T103_003:      10 to 29 percent
+              T103_004:      30 to 49 percent
+              T103_005:      50 percent or More
+              T103_006:      Not computed
+
+
+      123. Median Gross Rent
+           Universe:  Renter-occupied housing units paying cash rent
+           Name:      T104
+           Variables:
+              T104_001:   Median Gross Rent
+
+
+      124. Median Gross Rent As A Percentage of Household Income In 2014
+           Universe:  Renter-occupied housing units paying cash rent
+           Name:      T105
+           Variables:
+              T105_001:   Median Gross Rent as a Percentage of Household  Income In 2013
+
+
+      125. Average Gross Rent
+           Universe:  Renter-occupied housing units
+           Name:      T106
+           Variables:
+              T106_001:   Average gross rent for Renter-occupied housing units
+
+
+      126. Aggregate Gross Rent
+           Universe:  Renter-occupied housing units
+           Name:      T107
+           Variables:
+              T107_001:   Aggregate gross rent for Specified  Renter-Occupied Housing Units
+
+
+      127. Mortgage Status
+           Universe:  Owner-occupied housing units
+           Name:      T108
+           Variables:
+              T108_001:   Owner-occupied housing units:
+              T108_002:      Housing units with a mortgage, home equity loan,  or similar debts:
+              T108_003:         With either a second mortgage or home equity  loan, but not both:
+              T108_004:            Second mortgage only
+              T108_005:            Home equity loan only
+              T108_006:         Both second mortgage and home equity loan
+              T108_007:         No second mortgage and no home equity loan
+              T108_008:      Housing units without a mortgage
+
+
+      128. Mortgage Status By Selected Monthly Owner Costs As A Percentage of Household Income In 2014
+           Universe:  Owner-occupied housing units
+           Name:      T109
+           Variables:
+              T109_001:   Owner-occupied housing units:
+              T109_002:      Housing units with a mortgage:
+              T109_003:         Less than 30 percent
+              T109_004:         30 percent or More
+              T109_005:         50 percent or More
+              T109_006:         Not computed
+              T109_007:      Housing units without a mortgage:
+              T109_008:         Less than 30 percent
+              T109_009:         30 percent or More
+              T109_010:         50 percent or More
+              T109_011:         Not computed
+
+
+      129. Selected Monthly Owner Costs As A Percentage of Household Income In 2014 for Housing units with a mortgage
+           Universe:  Housing units with a mortgage
+           Name:      T110
+           Variables:
+              T110_001:   Housing units with a mortgage:
+              T110_002:      Less than 30 percent
+              T110_003:      30 percent or More
+              T110_004:      50 percent or More
+              T110_005:      Not computed
+
+
+      130. Selected Monthly Owner Costs As A Percentage of Household Income In 2014 for Housing Units without a mortgage
+           Universe:  Housing units without a mortgage
+           Name:      T111
+           Variables:
+              T111_001:   Housing units without a mortgage:
+              T111_002:      Less than 30 percent
+              T111_003:      30 percent or More
+              T111_004:      50 percent or More
+              T111_005:      Not computed
+
+
+      131. Median Selected Monthly Owner Costs As A Percentage of Household Income In 2014 and Mortgage Status
+           Universe:  Owner-occupied housing units
+           Name:      T112
+           Variables:
+              T112_001:   Median selected monthly owner costs as a  percentage of household income:
+              T112_002:      Housing units with a mortgage
+              T112_003:      Housing units without a mortgage
+
+
+      132. Poverty Status In 2014 of Families By Family Type By Presence of Children Under 18 Years
+           Universe:  Families
+           Name:      T113
+           Variables:
+              T113_001:   Families:
+              T113_002:      Income in 2013 below poverty level:
+              T113_003:         Married Couple Family: With Related Child Living  Bellow Poverty Level
+              T113_004:         Married Couple Family: No related children under 18 Years
+              T113_005:         Male Householder, no wife present:
+              T113_006:            With related children under 18 Years
+              T113_007:            No related children under 18 Years
+              T113_008:         Female Householder, no husband present:
+              T113_009:            With related children under 18 Years
+              T113_010:            No related children under 18 Years
+              T113_011:      Income in 2013 at or above poverty level
+
+
+      133. Poverty Status In 2014 for Children Under 18
+           Universe:  Population Under 18 Years of Age for whom poverty status is determined
+           Name:      T114
+           Variables:
+              T114_001:   Population Under 18 Years of Age for whom poverty status is determined:
+              T114_002:      Living in Poverty
+              T114_003:      At or Above Poverty Level
+
+
+      134. Poverty Status In 2014 for Population Age 18 to 64
+           Universe:  Population Age 18 to 64 for whom poverty status is determined
+           Name:      T115
+           Variables:
+              T115_001:   Population Age 18 to 64 for whom poverty status  is determined:
+              T115_002:      Living in Poverty
+              T115_003:      At or Above Poverty Level
+
+
+      135. Poverty Status In 2014 for Population Age 65 and Over
+           Universe:  Population Age 65 and Over for whom poverty status is determined
+           Name:      T116
+           Variables:
+              T116_001:   Population Age 65 and Over for whom poverty  status is determined:
+              T116_002:      Living In Poverty
+              T116_003:      At or Above Poverty Level
+
+
+      136. Ratio of Income In 2014 To Poverty Level
+           Universe:  Population for whom poverty status is determined
+           Name:      T117
+           Variables:
+              T117_001:   Population for whom poverty status is determined:
+              T117_002:      Under .50
+              T117_003:      .50 to .74
+              T117_004:      .75 to .99
+              T117_005:      1.00 to 1.49
+              T117_006:      1.50 to 1.99
+              T117_007:      2.00 and over
+
+
+      137. Ratio of Income In 2014 To Poverty Level (Summarized)
+           Universe:  Population for whom poverty status is determined
+           Name:      T118
+           Variables:
+              T118_001:   Population for whom poverty status is determined:
+              T118_002:      Under 1.00 (Doing Poorly)
+              T118_003:      1.00 to 1.99 (Struggling)
+              T118_004:      Under 2.00 (Poor or struggling)
+              T118_005:      2.00 and over (Doing ok)
+
+
+      138. Poverty Status In 2014 (White Alone)
+           Universe:  White Alone Population for whom poverty status is determined
+           Name:      T119
+           Variables:
+              T119_001:   White Alone Population for whom poverty status is  determined:
+              T119_002:      Income in 2013 below poverty level
+              T119_003:      Income in 2013 at or above poverty level
+
+
+      139. Poverty Status In 2014 (Black or African American Alone)
+           Universe:  Black or African American Alone Population for whom poverty status is determined
+           Name:      T120
+           Variables:
+              T120_001:   Black or African American Alone Population for  whom poverty status is determined:
+              T120_002:      Income in 2013 below poverty level
+              T120_003:      Income in 2013 at or above poverty level
+
+
+      140. Poverty Status In 2014 (American Indian and Alaska Native Alone)
+           Universe:  American Indian and Alaska Native Alone Population for whom poverty status is determined
+           Name:      T121
+           Variables:
+              T121_001:   American Indian and Alaska Native Alone  Population for whom poverty status is determined:
+              T121_002:      Income in 2013 below poverty level
+              T121_003:      Income in 2013 at or above poverty level
+
+
+      141. Poverty Status In 2014 (Asian Alone)
+           Universe:  Asian Alone Population for whom poverty status is determined
+           Name:      T122
+           Variables:
+              T122_001:   Asian Alone Population for whom poverty status is  determined:
+              T122_002:      Income in 2013 below poverty level
+              T122_003:      Income in 2013 at or above poverty level
+
+
+      142. Poverty Status In 2014 (Native Hawaiian and Other Pacific Islander Alone)
+           Universe:  Native Hawaiian and Other Pacific Islander Alone Population for whom poverty status is determined
+           Name:      T123
+           Variables:
+              T123_001:   Native Hawaiian and Other Pacific Islander Alone  Population for whom poverty status is determined:
+              T123_002:      Income in 2013 below poverty level
+              T123_003:      Income in 2013 at or above poverty level
+
+
+      143. Poverty Status In 2014 (Some Other Race Alone)
+           Universe:  Some Other Race Alone Population for whom poverty status is determined
+           Name:      T124
+           Variables:
+              T124_001:   Some Other Race Alone Population for whom poverty  status is determined:
+              T124_002:      Income in 2013 below poverty level
+              T124_003:      Income in 2013 at or above poverty level
+
+
+      144. Poverty Status In 2014 (Two or More Races)
+           Universe:  Two or More races Population for whom poverty status is determined
+           Name:      T125
+           Variables:
+              T125_001:   Two or More races Population for whom poverty  status is determined:
+              T125_002:      Income in 2013 below poverty level
+              T125_003:      Income in 2013 at or above poverty level
+
+
+      145. Poverty Status In 2014 (Hispanic or Latino)
+           Universe:  Hispanic or Latino Population for whom poverty status is determined
+           Name:      T126
+           Variables:
+              T126_001:   Hispanic or Latino Population for whom poverty  status is determined:
+              T126_002:      Income in 2013 below poverty level
+              T126_003:      Income in 2013 at or above poverty level
+
+
+      146. Poverty Status In 2014 (White Alone, Not Hispanic or Latino)
+           Universe:  White Alone, not Hispanic or Latino Population for whom poverty status is determined
+           Name:      T127
+           Variables:
+              T127_001:   White Alone, not Hispanic or Latino Population  for whom poverty status is determined:
+              T127_002:      Income in 2013 below poverty level
+              T127_003:      Income in 2013 at or above poverty level
+
+
+      147. Means of Transportation To Work for Workers 16 Years and Over
+           Universe:  Workers 16 Years and over
+           Name:      T128
+           Variables:
+              T128_001:   Workers 16 Years and over:
+              T128_002:      Car, truck, or van
+              T128_009:         Drove Alone
+              T128_010:         Carpooled
+              T128_003:      Public transportation (Includes Taxicab)
+              T128_004:      Motorcycle
+              T128_005:      Bicycle
+              T128_006:      Walked
+              T128_007:      Other means
+              T128_008:      Worked at home
+
+
+      148. Travel Time To Work for Workers 16 Years and Over
+           Universe:  Workers 16 Years and over
+           Name:      T129
+           Variables:
+              T129_001:   Workers 16 Years and over:
+              T129_002:      Did not work at home:
+              T129_003:         Less than 10 minutes
+              T129_004:         10 to 19 minutes
+              T129_005:         20 to 29 minutes
+              T129_006:         30 to 39 minutes
+              T129_007:         40 to 59 minutes
+              T129_008:         60 to 89 minutes
+              T129_009:         90 or More minutes
+              T129_010:      Worked at home
+
+
+      149. Travel Time To Work for Workers 16 Years and Over (Who Did Not Work At Home)
+           Universe:  Workers 16 Years and Over Who Did Not Work At Home
+           Name:      T148
+           Variables:
+              T148_001:   Workers 16 Years And Over Who Did Not Work At Home:
+              T148_002:      Less than 10 minutes
+              T148_003:      10 to 19 minutes
+              T148_004:      20 to 29 minutes
+              T148_005:      30 to 39 minutes
+              T148_006:      40 to 59 minutes
+              T148_007:      60 to 89 minutes
+              T148_008:      90 or More minutes
+
+
+      150. Travel Time To Work for Workers 16 Years and Over (in 15 min intervals) 
+           Universe:  Workers 16 Years and Over Who Did Not Work At Home
+           Name:      T158
+           Variables:
+              T158_001:   Workers 16 Years And Over Who Did Not Work At Home:
+              T158_002:      Less than 5 minutes
+              T158_003:      5 to 14 minutes
+              T158_004:      15 to 29 minutes
+              T158_005:      30 to 44 minutes
+              T158_006:      45 to 59 minutes
+              T158_007:      60 to 89 minutes
+              T158_008:      90 or More minutes
+
+
+      151. Travel Time To Work for Workers 16 Years and Over (in 15 min intervals) - Cumulative (Less)
+           Universe:  Workers 16 Years and Over Who Did Not Work At Home
+           Name:      T158A
+           Variables:
+              T158A001:   Workers 16 Years And Over Who Did Not Work At Home:
+              T158A002:      Less than 5 minutes
+              T158A003:      Less than 15 minutes
+              T158A004:      Less than 30 minutes
+              T158A005:      Less than 45 minutes
+              T158A006:      Less than 60 minutes
+              T158A007:      Less than 90 minutes
+
+
+      152. Travel Time To Work for Workers 16 Years and Over (in 15 min intervals) - Cumulative (More)
+           Universe:  Workers 16 Years and Over Who Did Not Work At Home
+           Name:      T158B
+           Variables:
+              T158B001:   Workers 16 Years And Over Who Did Not Work At Home:
+              T158B002:      More than 5 minutes
+              T158B003:      More than 15 minutes
+              T158B004:      More than 30 minutes
+              T158B005:      More than 45 minutes
+              T158B006:      More than 60 minutes
+              T158B007:      More than 90 minutes
+
+
+      153. Average Commute to Work (in min)
+           Universe:  Average Commute to Work (in min)
+           Name:      T147
+           Variables:
+              T147_001:   Average Commute to Work (in min)
+
+
+      154. Residence 1 Year Ago In the United States
+           Universe:  Population 1 year and over In the United States
+           Name:      T130
+           Variables:
+              T130_001:   Total:
+              T130_002:      Same house 1 year ago
+              T130_003:      Moved within same county
+              T130_004:      Moved from different county within same state
+              T130_005:      Moved from different state
+              T130_006:      Moved from abroad
+
+
+      155. Veteran Status for the Civilian Population
+           Universe:  Civilian Population 18 Years and over
+           Name:      T131
+           Variables:
+              T131_001:   Civilian Population 18 Years and over:
+              T131_002:      Veteran:
+              T131_003:         18 to 64 Years
+              T131_004:         65 Years and over
+              T131_005:      Nonveteran:
+              T131_006:         18 to 64 Years
+              T131_007:         65 Years and over
+
+
+      156. Period of Military Service for Civilian Veterans 18 Years and Over
+           Universe:  Civilian veterans 18 Years and over
+           Name:      T132
+           Variables:
+              T132_001:   Civilian veterans 18 Years and over:
+              T132_002:      Gulf War 2001 or Later Only
+              T132_003:      Gulf War 1990 to 2001 Only
+              T132_004:      Vietnam Era Only
+              T132_005:      Korean War Only
+              T132_006:      World War II Only
+              T132_007:      Served In Multiple Wars
+              T132_008:      Other Service
+
+
+      157. Nativity By Citizenship Status
+           Universe:  Total Population
+           Name:      T133
+           Variables:
+              T133_001:   Total Population:
+              T133_002:      Native Born
+              T133_003:      Foreign Born:
+              T133_004:         Naturalized Citizen
+              T133_005:         Not a Citizen
+
+
+      158. Year of Entry for the Foreign-Born Population
+           Universe:  Foreign-born Population
+           Name:      T134
+           Variables:
+              T134_001:   Foreign-born Population:
+              T134_002:      2010 or Later
+              T134_003:      2000 to 2009
+              T134_004:      1990 to 1999
+              T134_005:      Before 1990
+
+
+      159. Ancestry
+           Universe:  Total population
+           Name:      T135
+           Variables:
+              T135_001:   Total:
+              T135_002:      Ancestry specified:
+              T135_003:         Single ancestry
+              T135_004:         Multiple ancestry
+              T135_005:      Ancestry not specified:
+              T135_006:         Ancestry unclassified
+              T135_007:         Ancestry not reported
+
+
+      160. Place of Birth for the Foreign-Born Population
+           Universe:  Foreign-born population
+           Name:      T139
+           Variables:
+              T139_001:   Foreign-born population:
+              T139_002:      Europe:
+              T139_003:         Northern Europe:
+              T139_004:            United Kingdom:
+              T139_005:               United Kingdom, Excluding England and Scotland
+              T139_006:               England
+              T139_007:               Scotland
+              T139_008:            Ireland
+              T139_009:            Other Northern Europe
+              T139_010:         Western Europe:
+              T139_011:            Austria
+              T139_012:            France
+              T139_013:            Germany
+              T139_014:            Netherlands
+              T139_015:            Other Western Europe
+              T139_016:         Southern Europe:
+              T139_017:            Greece
+              T139_018:            Italy
+              T139_019:            Portugal
+              T139_020:            Spain
+              T139_021:            Other Southern Europe
+              T139_022:         Eastern Europe:
+              T139_023:            Croatia
+              T139_024:            Czechoslovakia (includes Czech Republic and Slovakia)
+              T139_025:            Hungary
+              T139_026:            Poland
+              T139_027:            Romania
+              T139_028:            Russia
+              T139_029:            Ukraine
+              T139_030:            Bosnia and Herzegovina
+              T139_031:            Serbia
+              T139_032:            Other Eastern Europe
+              T139_033:         Europe, n.e.c.
+              T139_034:      Asia:
+              T139_035:         Eastern Asia:
+              T139_036:            China:
+              T139_037:               China, excluding Hong Kong and Taiwan
+              T139_038:               Hong Kong
+              T139_039:               Taiwan
+              T139_040:            Japan
+              T139_041:            Korea
+              T139_042:            Other Eastern Asia
+              T139_043:         South Central Asia:
+              T139_044:            Afghanistan
+              T139_045:            Bangladesh
+              T139_046:            India
+              T139_047:            Iran
+              T139_048:            Pakistan
+              T139_049:            Other South Central Asia
+              T139_050:         South Eastern Asia:
+              T139_051:            Cambodia
+              T139_052:            Indonesia
+              T139_053:            Laos
+              T139_054:            Philippines
+              T139_055:            Thailand
+              T139_056:            Vietnam
+              T139_057:            Other South Eastern Asia
+              T139_058:         Western Asia:
+              T139_059:            Iraq
+              T139_060:            Israel
+              T139_061:            Lebanon
+              T139_062:            Syria
+              T139_063:            Turkey
+              T139_064:            Armenia
+              T139_065:            Other Western Asia
+              T139_066:         Asia, n.e.c.
+              T139_067:      Africa:
+              T139_068:         Eastern Africa:
+              T139_069:            Ethiopia
+              T139_070:            Kenya
+              T139_071:            Other Eastern Africa
+              T139_072:         Middle Africa
+              T139_073:         Northern Africa:
+              T139_074:            Egypt
+              T139_075:            Other Northern Africa
+              T139_076:         Southern Africa:
+              T139_077:            South Africa
+              T139_078:            Other Southern Africa
+              T139_079:         Western Africa:
+              T139_080:            Ghana
+              T139_081:            Liberia
+              T139_082:            Nigeria
+              T139_083:            Other Western Africa
+              T139_084:         Africa, n.e.c.
+              T139_085:      Oceania:
+              T139_086:         Australia and New Zealand Subregion:
+              T139_087:            Australia
+              T139_088:            Other Australian and New Zealand Subregion
+              T139_089:         Oceania, n.e.c.
+              T139_090:      Americas:
+              T139_091:         Latin America:
+              T139_092:            Caribbean:
+              T139_093:               Barbados
+              T139_094:               Cuba
+              T139_095:               Dominican Republic
+              T139_096:               Haiti
+              T139_097:               Jamaica
+              T139_098:               Trinidad and Tobago
+              T139_099:               Other Caribbean
+              T139_100:            Central America:
+              T139_101:               Mexico
+              T139_102:               Costa Rica
+              T139_103:               El Salvador
+              T139_104:               Guatemala
+              T139_105:               Honduras
+              T139_106:               Nicaragua
+              T139_107:               Panama
+              T139_108:               Other Central America
+              T139_109:            South America:
+              T139_110:               Argentina
+              T139_111:               Bolivia
+              T139_112:               Brazil
+              T139_113:               Chile
+              T139_114:               Colombia
+              T139_115:               Ecuador
+              T139_116:               Guyana
+              T139_117:               Peru
+              T139_118:               Uruguay
+              T139_119:               Venezuela
+              T139_120:               Other South America
+              T139_121:         Northern America:
+              T139_122:            Canada
+              T139_123:            Other Northern America
+
+
+      161. Nonfamily Households
+           Universe:  Nonfamily Households
+           Name:      T141
+           Variables:
+              T141_001:   Nonfamily Households
+
+
+      162. Owner-occupied Housing Units
+           Universe:  Owner-occupied housing units
+           Name:      T142
+           Variables:
+              T142_001:   Owner-occupied housing units
+
+
+      163. Occupation for Employed Civilian Population 16 Years and Over
+           Universe:  Employed Civilian Population 16 Years and Over
+           Name:      T140
+           Variables:
+              T140_001:   Employed Civilian Population 16 Years And Over:
+              T140_002:      Management, professional, and related occupations
+              T140_003:      Service occupations
+              T140_004:      Sales and office occupations:
+              T140_005:      Farming, fishing, and forestry occupations
+              T140_006:      Construction, extraction, and maintenance  occupations
+              T140_007:      Production, transportation, and material moving  occupations:
+              T140_008:         Production occupations
+              T140_009:         Transportation and material moving occupations:
+
+
+      164. Health Insurance
+           Universe:  Civilian Noninstitutionalized Population
+           Name:      T145
+           Variables:
+              T145_001:   Total:
+              T145_002:      No Health Insurance Coverage
+              T145_003:      With Health Insurance Coverage:
+              T145_004:         Public Health Coverage
+              T145_005:         Private Health Insurance
+
+
+      165. Health Insurance by Age
+           Universe:  Civilian Noninstitutionalized Population
+           Name:      T146
+           Variables:
+              T146_002:   Population Under 17:
+              T146_003:      No Health Insurance Coverage
+              T146_004:      With Health Insurance Coverage:
+              T146_005:         Public Health Coverage
+              T146_006:         Private Health Insurance
+              T146_007:   Population 18 to 24:
+              T146_008:      No Health Insurance Coverage
+              T146_009:      With Health Insurance Coverage:
+              T146_010:         Public Health Coverage
+              T146_011:         Private Health Insurance
+              T146_012:   Population 25 to 34:
+              T146_013:      No Health Insurance Coverage
+              T146_014:      With Health Insurance Coverage:
+              T146_015:         Public Health Coverage
+              T146_016:         Private Health Insurance
+              T146_017:   Population 35 to 64:
+              T146_018:      No Health Insurance Coverage
+              T146_019:      With Health Insurance Coverage:
+              T146_020:         Public Health Coverage
+              T146_021:         Private Health Insurance
+              T146_022:   Population 65 or older:
+              T146_023:      No Health Insurance Coverage
+              T146_024:      With Health Insurance Coverage:
+              T146_025:         Public Health Coverage
+              T146_026:         Private Health Insurance
+
+
+
+
+
+ 
+ 
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Variables 
+      FIPS:           FIPS
+      GEOID:          Geographic Identifier
+      NAME:           Name of Area
+      QName:          Qualifying Name
+      STUSAB:         State/U.S.-Abbreviation (USPS)
+      SUMLEV:         Summary Level
+      GEOCOMP:        Geographic Component
+      FILEID:         File Identification
+      LOGRECNO:       Logical Record Number
+      US:             US
+      REGION:         Region
+      DIVISION:       Division
+      STATECE:        State (Census Code)
+      STATE:          State (FIPS)
+      COUNTY:         County
+      COUSUB:         County Subdivision (FIPS)
+      PLACE:          Place (FIPS Code)
+      PLACESE:        Place (State FIPS + Place FIPS)
+      TRACT:          Census Tract
+      BLKGRP:         Block Group
+      CONCIT:         Consolidated City
+      AIANHH:         American Indian Area/Alaska Native Area/Hawaiian Home Land (Census)
+      AIANHHFP:       American Indian Area/Alaska Native Area/Hawaiian Home Land (FIPS)
+      AIHHTLI:        American Indian Trust Land/Hawaiian Home Land Indicator
+      AITSCE:         American Indian Tribal Subdivision (Census)
+      AITS:           American Indian Tribal Subdivision (FIPS)
+      ANRC:           Alaska Native Regional Corporation (FIPS)
+      CBSA:           Metropolitan and Micropolitan Statistical Area
+      CSA:            Combined Statistical Area
+      METDIV:         Metropolitan Division
+      MACC:           Metropolitan Area Central City
+      MEMI:           Metropolitan/Micropolitan Indicator Flag
+      NECTA:          New England City and Town Combined Statistical Area
+      CNECTA:         New England City and Town Area
+      NECTADIV:       New England City and Town Area Division
+      UA:             Urban Area
+      UACP:           Urban Area Central Place
+      CDCURR:         Current Congressional District ***
+      SLDU:           State Legislative District Upper
+      SLDL:           State Legislative District Lower
+      VTD:            Voting District
+      ZCTA3:          ZIP Code Tabulation Area (3-digit)
+      ZCTA5:          ZIP Code Tabulation Area (5-digit)
+      SUBMCD:         Subbarrio (FIPS)
+      SDELM:          School District (Elementary)
+      SDSEC:          School District (Secondary)
+      SDUNI:          School District (Unified)
+      UR:             Urban/Rural
+      PCI:            Principal City Indicator
+      TAZ:            Traffic Analysis Zone
+      UGA:            Urban Growth Area
+      BTTR:           Tribal Tract
+      BTBG:           Tribal Block Group
+      PUMA5:          Public Use Microdata Area - 5% File
+      PUMA1:          Public Use Microdata Area - 1% File
+      T001_001:       Total Population
+      T002_001:       Total Population
+      T002_002:       Population Density (per sq. mile)
+      T002_003:       Area (Land)
+      T003_001:       Area Total:
+      T003_002:       Area Total: Area (Land)
+      T003_003:       Area Total: Area (Water)
+      T004_001:       Total Population:
+      T004_002:       Total Population: Male
+      T004_003:       Total Population: Female
+      T005_001:       Total Population:
+      T005_002:       Total Population: Male
+      T005_003:       Total Population: Male: Under 5 Years
+      T005_004:       Total Population: Male: 5 to 9 Years
+      T005_005:       Total Population: Male: 10 to 14 Years
+      T005_006:       Total Population: Male: 15 to 17 Years
+      T005_007:       Total Population: Male: 18 to 24 Years
+      T005_008:       Total Population: Male: 25 to 34 Years
+      T005_009:       Total Population: Male: 35 to 44 Years
+      T005_010:       Total Population: Male: 45 to 54 Years
+      T005_011:       Total Population: Male: 55 to 64 Years
+      T005_012:       Total Population: Male: 65 to 74 Years
+      T005_013:       Total Population: Male: 75 to 84 Years
+      T005_014:       Total Population: Male: 85 Years and over
+      T005_015:       Total Population: Female
+      T005_016:       Total Population: Female: Under 5 Years
+      T005_017:       Total Population: Female: 5 to 9 Years
+      T005_018:       Total Population: Female: 10 to 14 Years
+      T005_019:       Total Population: Female: 15 to 17 Years
+      T005_020:       Total Population: Female: 18 to 24 Years
+      T005_021:       Total Population: Female: 25 to 34 Years
+      T005_022:       Total Population: Female: 35 to 44 Years
+      T005_023:       Total Population: Female: 45 to 54 Years
+      T005_024:       Total Population: Female: 55 to 64 Years
+      T005_025:       Total Population: Female: 65 to 74 Years
+      T005_026:       Total Population: Female: 75 to 84 Years
+      T005_027:       Total Population: Female: 85 Years and over
+      T005A001:       Total Population:
+      T005A002:       Total Population: Male
+      T005A003:       Total Population: Male: Less than 5 Years
+      T005A004:       Total Population: Male: Less than 10 Years
+      T005A005:       Total Population: Male: Less than 15 Years
+      T005A006:       Total Population: Male: Less than 18 Years
+      T005A007:       Total Population: Male: Less than 25 Years
+      T005A008:       Total Population: Male: Less than 35 Years
+      T005A009:       Total Population: Male: Less than 45 Years
+      T005A010:       Total Population: Male: Less than 55 Years
+      T005A011:       Total Population: Male: Less than 65 Years
+      T005A012:       Total Population: Male: Less than 75 Years
+      T005A013:       Total Population: Male: Less than 85 Years
+      T005A014:       Total Population: Female
+      T005A015:       Total Population: Female: Less than 5 Years
+      T005A016:       Total Population: Female: Less than 10 Years
+      T005A017:       Total Population: Female: Less than 15 Years
+      T005A018:       Total Population: Female: Less than 18 Years
+      T005A019:       Total Population: Female: Less than 25 Years
+      T005A020:       Total Population: Female: Less than 35 Years
+      T005A021:       Total Population: Female: Less than 45 Years
+      T005A022:       Total Population: Female: Less than 55 Years
+      T005A023:       Total Population: Female: Less than 65 Years
+      T005A024:       Total Population: Female: Less than 75 Years
+      T005A025:       Total Population: Female: Less than 85 Years
+      T005B001:       Total Population:
+      T005B002:       Total Population: Male
+      T005B003:       Total Population: Male: More than 5 Years
+      T005B004:       Total Population: Male: More than 10 Years
+      T005B005:       Total Population: Male: More than 15 Years
+      T005B006:       Total Population: Male: More than 18 Years
+      T005B007:       Total Population: Male: More than 25 Years
+      T005B008:       Total Population: Male: More than 35 Years
+      T005B009:       Total Population: Male: More than 45 Years
+      T005B010:       Total Population: Male: More than 55 Years
+      T005B011:       Total Population: Male: More than 65 Years
+      T005B012:       Total Population: Male: More than 75 Years
+      T005B013:       Total Population: Male: More than 85 Years
+      T005B014:       Total Population: Female
+      T005B015:       Total Population: Female: More than 5 Years
+      T005B016:       Total Population: Female: More than 10 Years
+      T005B017:       Total Population: Female: More than 15 Years
+      T005B018:       Total Population: Female: More than 18 Years
+      T005B019:       Total Population: Female: More than 25 Years
+      T005B020:       Total Population: Female: More than 35 Years
+      T005B021:       Total Population: Female: More than 45 Years
+      T005B022:       Total Population: Female: More than 55 Years
+      T005B023:       Total Population: Female: More than 65 Years
+      T005B024:       Total Population: Female: More than 75 Years
+      T005B025:       Total Population: Female: More than 85 Years
+      T006_001:       Total Population:
+      T006_002:       Total Population: Male
+      T006_003:       Total Population: Male: Under 18 Years
+      T006_004:       Total Population: Male: 18 to 34 Years
+      T006_005:       Total Population: Male: 35 to 64 Years
+      T006_006:       Total Population: Male: 65 Years and Over
+      T006_007:       Total Population: Female
+      T006_008:       Total Population: Female: Under 18 Years
+      T006_009:       Total Population: Female: 18 to 34 Years
+      T006_010:       Total Population: Female: 35 to 64 Years
+      T006_011:       Total Population: Female: 65 Years and Over
+      T007_001:       Total Population:
+      T007_002:       Total Population: Under 5 Years
+      T007_003:       Total Population: 5 to 9 Years
+      T007_004:       Total Population: 10 to 14 Years
+      T007_005:       Total Population: 15 to 17 Years
+      T007_006:       Total Population: 18 to 24 Years
+      T007_007:       Total Population: 25 to 34 Years
+      T007_008:       Total Population: 35 to 44 Years
+      T007_009:       Total Population: 45 to 54 Years
+      T007_010:       Total Population: 55 to 64 Years
+      T007_011:       Total Population: 65 to 74 Years
+      T007_012:       Total Population: 75 to 84 Years
+      T007_013:       Total Population: 85 Years and over
+      T007A001:       Total Population:
+      T007A002:       Total Population: Less than 5 Years
+      T007A003:       Total Population: Less than 10 Years
+      T007A004:       Total Population: Less than 15 Years
+      T007A005:       Total Population: Less than 18 Years
+      T007A006:       Total Population: Less than 25 Years
+      T007A007:       Total Population: Less than 35 Years
+      T007A008:       Total Population: Less than 45 Years
+      T007A009:       Total Population: Less than 55 Years
+      T007A010:       Total Population: Less than 65 Years
+      T007A011:       Total Population: Less than 75 Years
+      T007A012:       Total Population: Less than 85 Years
+      T007B001:       Total Population:
+      T007B002:       Total Population: More than 5 Years
+      T007B003:       Total Population: More than 10 Years
+      T007B004:       Total Population: More than 15 Years
+      T007B005:       Total Population: More than 18 Years
+      T007B006:       Total Population: More than 25 Years
+      T007B007:       Total Population: More than 35 Years
+      T007B008:       Total Population: More than 45 Years
+      T007B009:       Total Population: More than 55 Years
+      T007B010:       Total Population: More than 65 Years
+      T007B011:       Total Population: More than 75 Years
+      T007B012:       Total Population: More than 85 Years
+      T008_001:       Total:
+      T008_002:       Total: Under 5 years
+      T008_003:       Total: 5 to 9 years
+      T008_004:       Total: 10 to 14 years
+      T008_005:       Total: 15 to 17 years
+      T008_006:       Total: 18 and 19 years
+      T008_007:       Total: 20 years
+      T008_008:       Total: 21 years
+      T008_009:       Total: 22 to 24 years
+      T008_010:       Total: 25 to 29 years
+      T008_011:       Total: 30 to 34 years
+      T008_012:       Total: 35 to 39 years
+      T008_013:       Total: 40 to 44 years
+      T008_014:       Total: 45 to 49 years
+      T008_015:       Total: 50 to 54 years
+      T008_016:       Total: 55 to 59 years
+      T008_017:       Total: 60 and 61 years
+      T008_018:       Total: 62 to 64 years
+      T008_019:       Total: 65 and 66 years
+      T008_020:       Total: 67 to 69 years
+      T008_021:       Total: 70 to 74 years
+      T008_022:       Total: 75 to 79 years
+      T008_023:       Total: 80 to 84 years
+      T008_024:       Total: 85 years and over
+      T008A001:       Total:
+      T008A002:       Total: Less than 5 Years
+      T008A003:       Total: Less than 10 Years
+      T008A004:       Total: Less than 15 Years
+      T008A005:       Total: Less than 18 Years
+      T008A006:       Total: Less than 20 Years
+      T008A007:       Total: Less than 21 Years
+      T008A008:       Total: Less than 22 Years
+      T008A009:       Total: Less than 25 Years
+      T008A010:       Total: Less than 30 Years
+      T008A011:       Total: Less than 35 Years
+      T008A012:       Total: Less than 40 Years
+      T008A013:       Total: Less than 45 Years
+      T008A014:       Total: Less than 50 Years
+      T008A015:       Total: Less than 55 Years
+      T008A016:       Total: Less than 60 Years
+      T008A017:       Total: Less than 62 Years
+      T008A018:       Total: Less than 65 Years
+      T008A019:       Total: Less than 67 Years
+      T008A020:       Total: Less than 70 Years
+      T008A021:       Total: Less than 75 Years
+      T008A022:       Total: Less than 80 Years
+      T008A023:       Total: Less than 85 Years
+      T008B001:       Total:
+      T008B002:       Total: More than 5 Years
+      T008B003:       Total: More than 10 Years
+      T008B004:       Total: More than 15 Years
+      T008B005:       Total: More than 18 Years
+      T008B006:       Total: More than 20 Years
+      T008B007:       Total: More than 21 Years
+      T008B008:       Total: More than 22 Years
+      T008B009:       Total: More than 25 Years
+      T008B010:       Total: More than 30 Years
+      T008B011:       Total: More than 35 Years
+      T008B012:       Total: More than 40 Years
+      T008B013:       Total: More than 45 Years
+      T008B014:       Total: More than 50 Years
+      T008B015:       Total: More than 55 Years
+      T008B016:       Total: More than 60 Years
+      T008B017:       Total: More than 62 Years
+      T008B018:       Total: More than 65 Years
+      T008B019:       Total: More than 67 Years
+      T008B020:       Total: More than 70 Years
+      T008B021:       Total: More than 75 Years
+      T008B022:       Total: More than 80 Years
+      T008B023:       Total: More than 85 Years
+      T009_001:       Total Population:
+      T009_002:       Total Population: Under 18 Years
+      T009_003:       Total Population: 18 to 34 Years
+      T009_004:       Total Population: 35 to 64 Years
+      T009_005:       Total Population: 65 and over
+      T010_001:       Male Population:
+      T010_002:       Male Population: Under 18 Years
+      T010_003:       Male Population: 18 to 34 Years
+      T010_004:       Male Population: 35 to 64 Years
+      T010_005:       Male Population: 65 and over
+      T011_001:       Female Population:
+      T011_002:       Female Population: Under 18 Years
+      T011_003:       Female Population: 18 to 34 Years
+      T011_004:       Female Population: 35 to 64 Years
+      T011_005:       Female Population: 65 and over
+      T012_001:       Median Age:
+      T012_002:       Median Age: Male Population
+      T012_003:       Median Age: Female Population
+      T013_001:       Total Population:
+      T013_002:       Total Population: White Alone
+      T013_003:       Total Population: Black or African American Alone
+      T013_004:       Total Population: American Indian and Alaska Native Alone
+      T013_005:       Total Population: Asian Alone
+      T013_006:       Total Population: Native Hawaiian and Other Pacific Islander Alone
+      T013_007:       Total Population: Some Other Race Alone
+      T013_008:       Total Population: Two or More races
+      T014_001:       Total Population
+      T014_002:       Total Population: Not Hispanic or Latino
+      T014_003:       Total Population: Not Hispanic or Latino: White Alone
+      T014_004:       Total Population: Not Hispanic or Latino: Black or African American Alone
+      T014_005:       Total Population: Not Hispanic or Latino: American Indian and Alaska Native Alone
+      T014_006:       Total Population: Not Hispanic or Latino: Asian Alone
+      T014_007:       Total Population: Not Hispanic or Latino: Native Hawaiian and Other Pacific Islander Alone
+      T014_008:       Total Population: Not Hispanic or Latino: Some Other Race Alone
+      T014_009:       Total Population: Not Hispanic or Latino: Two or More races
+      T014_010:       Total Population: Hispanic or Latino
+      T014_011:       Total Population: Hispanic or Latino: White Alone
+      T014_012:       Total Population: Hispanic or Latino: Black or African American Alone
+      T014_013:       Total Population: Hispanic or Latino: American Indian and Alaska Native Alone
+      T014_014:       Total Population: Hispanic or Latino: Asian Alone
+      T014_015:       Total Population: Hispanic or Latino: Native Hawaiian and Other Pacific Islander Alone
+      T014_016:       Total Population: Hispanic or Latino: Some Other Race Alone
+      T014_017:       Total Population: Hispanic or Latino: Two or More races
+      T015_001:       Total Population
+      T015_002:       Total Population: Not Hispanic or Latino
+      T015_003:       Total Population: Hispanic or Latino
+      T015_004:       Total Population: Hispanic or Latino: Mexican
+      T015_005:       Total Population: Hispanic or Latino: Puerto Rican
+      T015_006:       Total Population: Hispanic or Latino: Cuban
+      T015_007:       Total Population: Hispanic or Latino: Dominican Republic
+      T015_008:       Total Population: Hispanic or Latino: Central American
+      T015_009:       Total Population: Hispanic or Latino: Central American: Costa Rican
+      T015_010:       Total Population: Hispanic or Latino: Central American: Guatemalan
+      T015_011:       Total Population: Hispanic or Latino: Central American: Honduran
+      T015_012:       Total Population: Hispanic or Latino: Central American: Nicaraguan
+      T015_013:       Total Population: Hispanic or Latino: Central American: Panamanian
+      T015_014:       Total Population: Hispanic or Latino: Central American: Salvadoran
+      T015_015:       Total Population: Hispanic or Latino: Central American: Other Central American
+      T015_016:       Total Population: Hispanic or Latino: South American
+      T015_017:       Total Population: Hispanic or Latino: South American: Argentinean
+      T015_018:       Total Population: Hispanic or Latino: South American: Bolivian
+      T015_019:       Total Population: Hispanic or Latino: South American: Chilean
+      T015_020:       Total Population: Hispanic or Latino: South American: Colombian
+      T015_021:       Total Population: Hispanic or Latino: South American: Ecuadorian
+      T015_022:       Total Population: Hispanic or Latino: South American: Paraguayan
+      T015_023:       Total Population: Hispanic or Latino: South American: Peruvian
+      T015_024:       Total Population: Hispanic or Latino: South American: Uruguayan
+      T015_025:       Total Population: Hispanic or Latino: South American: Venezuelan
+      T015_026:       Total Population: Hispanic or Latino: South American: Other South American
+      T015_027:       Total Population: Hispanic or Latino: Other Hispanic or Latino
+      T015_028:       Total Population: Hispanic or Latino: Other Hispanic or Latino: Spaniard
+      T015_029:       Total Population: Hispanic or Latino: Other Hispanic or Latino: Spanish
+      T015_030:       Total Population: Hispanic or Latino: Other Hispanic or Latino: Spanish American
+      T015_031:       Total Population: Hispanic or Latino: Other Hispanic or Latino: All Other Hispanic or Latino
+      T016_001:       Total:
+      T016_002:       Total: Asian Indian
+      T016_003:       Total: Bangladeshi
+      T016_004:       Total: Cambodian
+      T016_005:       Total: Chinese, except Taiwanese
+      T016_006:       Total: Filipino
+      T016_007:       Total: Hmong
+      T016_008:       Total: Indonesian
+      T016_009:       Total: Japanese
+      T016_010:       Total: Korean
+      T016_011:       Total: Laotian
+      T016_012:       Total: Malaysian
+      T016_013:       Total: Pakistani
+      T016_014:       Total: Sri Lankan
+      T016_015:       Total: Taiwanese
+      T016_016:       Total: Thai
+      T016_017:       Total: Vietnamese
+      T016_018:       Total: Other Asian
+      T016_019:       Total: Other Asian, not specified
+      T017_001:       Households:
+      T017_002:       Households: Family Households
+      T017_003:       Households: Family Households: Married-couple Family
+      T017_004:       Households: Family Households: Other Family
+      T017_005:       Households: Family Households: Other Family: Male Householder, no wife present
+      T017_006:       Households: Family Households: Other Family: Female Householder, no husband present
+      T017_007:       Households: Nonfamily Households
+      T017_008:       Households: Nonfamily Households: Male Householder
+      T017_009:       Households: Nonfamily Households: Female Householder
+      T018_001:       Households:
+      T018_002:       Households: Households with one or More people under 18 Years
+      T018_003:       Households: Households with one or More people under 18 Years: Family Households
+      T018_004:       Households: Households with one or More people under 18 Years: Family Households: Married-couple Family
+      T018_005:       Households: Households with one or More people under 18 Years: Family Households: Other Family (Single Parent)
+      T018_006:       Households: Households with one or More people under 18 Years: Family Households: Other Family (Single Parent): Male Householder, no wife present
+      T018_007:       Households: Households with one or More people under 18 Years: Family Households: Other Family (Single Parent): Female Householder, no husband present
+      T018_008:       Households: Households with one or More people under 18 Years: Nonfamily Households
+      T018_009:       Households: Households with one or More people under 18 Years: Nonfamily Households: Male Householder
+      T018_010:       Households: Households with one or More people under 18 Years: Nonfamily Households: Female Householder
+      T018_011:       Households: Households with no people under 18 Years
+      T018_012:       Households: Households with no people under 18 Years: Family Households
+      T018_013:       Households: Households with no people under 18 Years: Family Households: Married-couple Family
+      T018_014:       Households: Households with no people under 18 Years: Family Households: Other Family
+      T018_015:       Households: Households with no people under 18 Years: Family Households: Other Family: Male Householder, no wife present
+      T018_016:       Households: Households with no people under 18 Years: Family Households: Other Family: Female Householder, no husband present
+      T018_017:       Households: Households with no people under 18 Years: Nonfamily Households
+      T018_018:       Households: Households with no people under 18 Years: Nonfamily Households: Male Householder
+      T018_019:       Households: Households with no people under 18 Years: Nonfamily Households: Female Householder
+      T019_001:       Households:
+      T019_002:       Households: with a Householder who is White Alone
+      T019_003:       Households: with a Householder who is Black or African  American Alone
+      T019_004:       Households: with a Householder who is American Indian and  Alaska Native Alone
+      T019_005:       Households: with a Householder who is Asian Alone
+      T019_006:       Households: with a Householder who is Native Hawaiian and  Other Pacific Islander Alone
+      T019_007:       Households: with a Householder who is Some Other Race Alone
+      T019_008:       Households: with a Householder who is two or More races
+      T019_009:       Households: with a Householder who is Hispanic or Latino
+      T019_010:       Households: with a Householder who is White Alone, not  Hispanic or Latino
+      T020_001:       Total Population
+      T020_002:       Total Population: In Households
+      T020_003:       Total Population: In Households: In Family Households
+      T020_004:       Total Population: In Households: In Family Households: Householder
+      T020_005:       Total Population: In Households: In Family Households: Spouse
+      T020_006:       Total Population: In Households: In Family Households: Child
+      T020_007:       Total Population: In Households: In Family Households: Grandchild
+      T020_008:       Total Population: In Households: In Family Households: Brother or sister
+      T020_009:       Total Population: In Households: In Family Households: Parent
+      T020_017:       Total Population: In Households: In Family Households: Parent-in-law
+      T020_018:       Total Population: In Households: In Family Households: Son-in-law or daughter-in-law
+      T020_010:       Total Population: In Households: In Family Households: Other relatives
+      T020_011:       Total Population: In Households: In Family Households: Nonrelatives
+      T020_012:       Total Population: In Households: In nonfamily Households
+      T020_013:       Total Population: In Households: In nonfamily Households: Living Alone
+      T020_014:       Total Population: In Households: In nonfamily Households: Not living Alone
+      T020_015:       Total Population: In Households: In nonfamily Households: Nonrelatives
+      T020_016:       Total Population: In group quarters
+      T021_001:       Average Household Size
+      T022_001:       Population 15 Years and over:
+      T022_002:       Population 15 Years and over: Never married
+      T022_003:       Population 15 Years and over: Now married (Not Including Separated)
+      T022_004:       Population 15 Years and over: Separated
+      T022_005:       Population 15 Years and over: Widowed
+      T022_006:       Population 15 Years and over: Divorced
+      T023_001:       Households
+      T023_002:       Households: Unmarried-partner Households
+      T023_003:       Households: Unmarried-partner Households: Same Sex Partners
+      T023_004:       Households: Unmarried-partner Households: Same Sex Partners: Male Householder and male partner
+      T023_005:       Households: Unmarried-partner Households: Same Sex Partners: Female Householder and female partner
+      T023_006:       Households: Unmarried-partner Households: Opposite Sex Partners
+      T023_007:       Households: Unmarried-partner Households: Opposite Sex Partners: Male Householder and female partner
+      T023_008:       Households: Unmarried-partner Households: Opposite Sex Partners: Female Householder and male partner
+      T023_009:       Households: All Other Households
+      T024_001:       Total Population:
+      T024_002:       Total Population: Population In group quarters
+      T024_003:       Total Population: Population NOT In group quarters
+      T025_001:       Population 25 Years and over:
+      T025_002:       Population 25 Years and over: Less Than High School
+      T025_003:       Population 25 Years and over: High School Graduate (includes equivalency)
+      T025_004:       Population 25 Years and over: Some college
+      T025_005:       Population 25 Years and over: Bachelor's degree
+      T025_006:       Population 25 Years and over: Master's degree
+      T025_007:       Population 25 Years and over: Professional school degree
+      T025_008:       Population 25 Years and over: Doctorate degree
+      T150_001:       Population 25 Years and over:
+      T150_002:       Population 25 Years and over: Less Than High School
+      T150_003:       Population 25 Years and over: High School Graduate or more (includes equivalency)
+      T150_004:       Population 25 Years and over: Some college or more
+      T150_005:       Population 25 Years and over: Bachelor's degree or more
+      T150_006:       Population 25 Years and over: Master's degree or more
+      T150_007:       Population 25 Years and over: Professional school degree or more
+      T150_008:       Population 25 Years and over: Doctorate degree
+      T026_001:       Male Population 25 Years and over:
+      T026_002:       Male Population 25 Years and over: Less Than High School
+      T026_003:       Male Population 25 Years and over: High School Graduate (includes equivalency)
+      T026_004:       Male Population 25 Years and over: Some college
+      T026_005:       Male Population 25 Years and over: Bachelor's degree
+      T026_006:       Male Population 25 Years and over: Master's degree
+      T026_007:       Male Population 25 Years and over: Professional school degree
+      T026_008:       Male Population 25 Years and over: Doctorate degree
+      T151_001:       Male Population 25 Years and over:
+      T151_002:       Male Population 25 Years and over: Less Than High School
+      T151_003:       Male Population 25 Years and over: High School Graduate or more (includes equivalency)
+      T151_004:       Male Population 25 Years and over: Some college or more
+      T151_005:       Male Population 25 Years and over: Bachelor's degree or more
+      T151_006:       Male Population 25 Years and over: Master's degree or more
+      T151_007:       Male Population 25 Years and over: Professional school degree or more
+      T151_008:       Male Population 25 Years and over: Doctorate degree
+      T027_001:       Female Population 25 Years and over:
+      T027_002:       Female Population 25 Years and over: Less Than High School
+      T027_003:       Female Population 25 Years and over: High school graduate (includes equivalency)
+      T027_004:       Female Population 25 Years and over: Some college
+      T027_005:       Female Population 25 Years and over: Bachelor's degree
+      T027_006:       Female Population 25 Years and over: Master's degree
+      T027_007:       Female Population 25 Years and over: Professional school degree
+      T027_008:       Female Population 25 Years and over: Doctorate degree
+      T152_001:       Female Population 25 Years and over:
+      T152_002:       Female Population 25 Years and over: Less Than High School
+      T152_003:       Female Population 25 Years and over: High school graduate or more (includes equivalency)
+      T152_004:       Female Population 25 Years and over: Some college or more
+      T152_005:       Female Population 25 Years and over: Bachelor's degree or more
+      T152_006:       Female Population 25 Years and over: Master's degree or more
+      T152_007:       Female Population 25 Years and over: Professional school degree or more
+      T152_008:       Female Population 25 Years and over: Doctorate degree
+      T028_001:       Population 3 Years and over:
+      T028_002:       Population 3 Years and over: Enrolled In School
+      T028_003:       Population 3 Years and over: Not Enrolled In School
+      T029_001:       Population 3 Years and over Enrolled In School
+      T029_002:       Population 3 Years and over Enrolled In School: Public School
+      T029_003:       Population 3 Years and over Enrolled In School: Public School: Pre-school
+      T029_004:       Population 3 Years and over Enrolled In School: Public School: K-8
+      T029_005:       Population 3 Years and over Enrolled In School: Public School: 9-12
+      T029_006:       Population 3 Years and over Enrolled In School: Public School: College
+      T029_007:       Population 3 Years and over Enrolled In School: Private School
+      T029_008:       Population 3 Years and over Enrolled In School: Private School: Pre-school
+      T029_009:       Population 3 Years and over Enrolled In School: Private School: K-8
+      T029_010:       Population 3 Years and over Enrolled In School: Private School: 9-12
+      T029_011:       Population 3 Years and over Enrolled In School: Private School: College
+      T030_001:       Civilian Population 16 to 19 Years:
+      T030_002:       Civilian Population 16 to 19 Years: Not high school graduate, not enrolled (dropped out)
+      T030_003:       Civilian Population 16 to 19 Years: High school graduate, or enrolled (in school)
+      T031_001:       Male Civilian Population 16 To 19 Years:
+      T031_002:       Male Civilian Population 16 To 19 Years: Not high school graduate, not enrolled (dropped out)
+      T031_003:       Male Civilian Population 16 To 19 Years: High school graduate, or enrolled (in school)
+      T032_001:       Female Civilian Population 16 To 19 Years:
+      T032_002:       Female Civilian Population 16 To 19 Years: Not high school graduate, not enrolled (dropped out)
+      T032_003:       Female Civilian Population 16 To 19 Years: High school graduate, or enrolled (in school)
+      T033_001:       Population 16 Years and over:
+      T033_002:       Population 16 Years and over: In labor force
+      T033_003:       Population 16 Years and over: In labor force: In Armed Forces
+      T033_004:       Population 16 Years and over: In labor force: Civilian
+      T033_005:       Population 16 Years and over: In labor force: Civilian: Employed
+      T033_006:       Population 16 Years and over: In labor force: Civilian: Unemployed
+      T033_007:       Population 16 Years and over: Not In labor force
+      T034_001:       Male Population 16 Years And Over:
+      T034_002:       Male Population 16 Years And Over: In labor force
+      T034_003:       Male Population 16 Years And Over: In labor force: In Armed Forces
+      T034_004:       Male Population 16 Years And Over: In labor force: Civilian
+      T034_005:       Male Population 16 Years And Over: In labor force: Civilian: Employed
+      T034_006:       Male Population 16 Years And Over: In labor force: Civilian: Unemployed
+      T034_007:       Male Population 16 Years And Over: Not In labor force
+      T035_001:       Female Population 16 Years And Over:
+      T035_002:       Female Population 16 Years And Over: In labor force
+      T035_003:       Female Population 16 Years And Over: In labor force: In Armed Forces
+      T035_004:       Female Population 16 Years And Over: In labor force: Civilian
+      T035_005:       Female Population 16 Years And Over: In labor force: Civilian: Employed
+      T035_006:       Female Population 16 Years And Over: In labor force: Civilian: Unemployed
+      T035_007:       Female Population 16 Years And Over: Not In labor force
+      T036_001:       In Labor Force 16 Years And Over:
+      T036_002:       In Labor Force 16 Years And Over: In Armed Forces
+      T036_003:       In Labor Force 16 Years And Over: Civilian
+      T037_001:       Civilian Population In Labor Force 16 Years And Over:
+      T037_002:       Civilian Population In Labor Force 16 Years And Over: Employed
+      T037_003:       Civilian Population In Labor Force 16 Years And Over: Unemployed
+      T038_001:       Civilian Male In Labor Force 16 Years And Over:
+      T038_002:       Civilian Male In Labor Force 16 Years And Over: Employed
+      T038_003:       Civilian Male In Labor Force 16 Years And Over: Unemployed
+      T039_001:       Civilian Female In Labor Force 16 Years And Over:
+      T039_002:       Civilian Female In Labor Force 16 Years And Over: Employed
+      T039_003:       Civilian Female In Labor Force 16 Years And Over: Unemployed
+      T040_001:       White 16 Years Old In Civilian Labor Force:
+      T040_002:       White 16 Years Old In Civilian Labor Force: Employed
+      T040_003:       White 16 Years Old In Civilian Labor Force: Unemployed
+      T041_001:       Black or African American 16 Years Old In  Civilian Labor Force:
+      T041_002:       Black or African American 16 Years Old In  Civilian Labor Force: Employed
+      T041_003:       Black or African American 16 Years Old In  Civilian Labor Force: Unemployed
+      T042_001:       American Indian and Alaska Native 16 Years Old In  Civilian Labor Force:
+      T042_002:       American Indian and Alaska Native 16 Years Old In  Civilian Labor Force: Employed
+      T042_003:       American Indian and Alaska Native 16 Years Old In  Civilian Labor Force: Unemployed
+      T043_001:       Asian 16 Years Old In Civilian Labor Force:
+      T043_002:       Asian 16 Years Old In Civilian Labor Force: Employed
+      T043_003:       Asian 16 Years Old In Civilian Labor Force: Unemployed
+      T044_001:       Native Hawaiian and Other Pacific Islander 16  Years Old In&nbsp; Civilian Labor Force:
+      T044_002:       Native Hawaiian and Other Pacific Islander 16  Years Old In<br /> Civilian Labor Force: Employed
+      T044_003:       Native Hawaiian and Other Pacific Islander 16  Years Old In<br /> Civilian Labor Force: Unemployed
+      T045_001:       Some Other Race 16 Years Old In Civilian Labor Force:
+      T045_002:       Some Other Race 16 Years Old In Civilian Labor Force: Employed
+      T045_003:       Some Other Race 16 Years Old In Civilian Labor Force: Unemployed
+      T046_001:       Two or More races 16 Years Old In Civilian Labor Force:
+      T046_002:       Two or More races 16 Years Old In Civilian Labor Force: Employed
+      T046_003:       Two or More races 16 Years Old In Civilian Labor Force: Unemployed
+      T047_001:       Hispanic or Latino 16 Years Old In Civilian Labor Force:
+      T047_002:       Hispanic or Latino 16 Years Old In Civilian Labor Force: Employed
+      T047_003:       Hispanic or Latino 16 Years Old In Civilian Labor Force: Unemployed
+      T048_001:       White Alone, Not Hispanic Or Latino 16 Years Old  In&nbsp; Civilian Labor Force:
+      T048_002:       White Alone, Not Hispanic Or Latino 16 Years Old  In<br /> Civilian Labor Force: Employed
+      T048_003:       White Alone, Not Hispanic Or Latino 16 Years Old  In<br /> Civilian Labor Force: Unemployed
+      T049_001:       Total Employed Civilian Population 16 Years And Over
+      T049_002:       Total Employed Civilian Population 16 Years And Over: Agriculture, forestry, fishing and hunting, and mining
+      T049_003:       Total Employed Civilian Population 16 Years And Over: Construction
+      T049_004:       Total Employed Civilian Population 16 Years And Over: Manufacturing
+      T049_005:       Total Employed Civilian Population 16 Years And Over: Wholesale trade
+      T049_006:       Total Employed Civilian Population 16 Years And Over: Retail trade
+      T049_007:       Total Employed Civilian Population 16 Years And Over: Transportation and warehousing, and utilities
+      T049_008:       Total Employed Civilian Population 16 Years And Over: Information
+      T049_009:       Total Employed Civilian Population 16 Years And Over: Finance and insurance, and real estate and rental  and leasing
+      T049_010:       Total Employed Civilian Population 16 Years And Over: Professional, scientific, and management, and  administrative and waste management services
+      T049_011:       Total Employed Civilian Population 16 Years And Over: Educational services, and health care and social  assistance
+      T049_012:       Total Employed Civilian Population 16 Years And Over: Arts, entertainment, and recreation, and  accommodation and food services
+      T049_013:       Total Employed Civilian Population 16 Years And Over: Other services, except public administration
+      T049_014:       Total Employed Civilian Population 16 Years And Over: Public administration
+      T050_001:       Employed civilian Population 16 Years and over:
+      T050_002:       Employed civilian Population 16 Years and over: Management, business, and financial operations  occupations
+      T050_003:       Employed civilian Population 16 Years and over: Professional and related occupations
+      T050_004:       Employed civilian Population 16 Years and over: Healthcare support occupations
+      T050_005:       Employed civilian Population 16 Years and over: Protective service occupations
+      T050_006:       Employed civilian Population 16 Years and over: Food preparation and serving related occupations
+      T050_007:       Employed civilian Population 16 Years and over: Building and grounds cleaning and maintenance  occupations
+      T050_008:       Employed civilian Population 16 Years and over: Personal care and service occupations
+      T050_009:       Employed civilian Population 16 Years and over: Sales and related occupations
+      T050_010:       Employed civilian Population 16 Years and over: Office and administrative support occupations
+      T050_011:       Employed civilian Population 16 Years and over: Farming, fishing, and forestry occupations
+      T050_012:       Employed civilian Population 16 Years and over: Construction, extraction, and maintenance  occupations
+      T050_013:       Employed civilian Population 16 Years and over: Production occupations
+      T050_014:       Employed civilian Population 16 Years and over: Transportation and material moving occupations
+      T051_001:       Male Employed civilian Population 16 Years and over:
+      T051_002:       Male Employed civilian Population 16 Years and over: Management, business, and financial operations  occupations
+      T051_003:       Male Employed civilian Population 16 Years and over: Professional and related occupations
+      T051_004:       Male Employed civilian Population 16 Years and over: Healthcare support occupations
+      T051_005:       Male Employed civilian Population 16 Years and over: Protective service occupations
+      T051_006:       Male Employed civilian Population 16 Years and over: Food preparation and serving related occupations
+      T051_007:       Male Employed civilian Population 16 Years and over: Building and grounds cleaning and maintenance  occupations
+      T051_008:       Male Employed civilian Population 16 Years and over: Personal care and service occupations
+      T051_009:       Male Employed civilian Population 16 Years and over: Sales and related occupations
+      T051_010:       Male Employed civilian Population 16 Years and over: Office and administrative support occupations
+      T051_011:       Male Employed civilian Population 16 Years and over: Farming, fishing, and forestry occupations
+      T051_012:       Male Employed civilian Population 16 Years and over: Construction, extraction, and maintenance  occupations
+      T051_013:       Male Employed civilian Population 16 Years and over: Production occupations
+      T051_014:       Male Employed civilian Population 16 Years and over: Transportation and material moving occupations
+      T052_001:       Female Employed civilian Population 16 Years and over:
+      T052_002:       Female Employed civilian Population 16 Years and over: Management, business, and financial operations  occupations
+      T052_003:       Female Employed civilian Population 16 Years and over: Professional and related occupations
+      T052_004:       Female Employed civilian Population 16 Years and over: Healthcare support occupations
+      T052_005:       Female Employed civilian Population 16 Years and over: Protective service occupations
+      T052_006:       Female Employed civilian Population 16 Years and over: Food preparation and serving related occupations
+      T052_007:       Female Employed civilian Population 16 Years and over: Building and grounds cleaning and maintenance  occupations
+      T052_008:       Female Employed civilian Population 16 Years and over: Personal care and service occupations
+      T052_009:       Female Employed civilian Population 16 Years and over: Sales and related occupations
+      T052_010:       Female Employed civilian Population 16 Years and over: Office and administrative support occupations
+      T052_011:       Female Employed civilian Population 16 Years and over: Farming, fishing, and forestry occupations
+      T052_012:       Female Employed civilian Population 16 Years and over: Construction, extraction, and maintenance  occupations
+      T052_013:       Female Employed civilian Population 16 Years and over: Production occupations
+      T052_014:       Female Employed civilian Population 16 Years and over: Transportation and material moving occupations
+      T053_001:       Employed Civilian Population 16 Years And Over:
+      T053_002:       Employed Civilian Population 16 Years And Over: Private Sector
+      T053_003:       Employed Civilian Population 16 Years And Over: Public Sector
+      T053_004:       Employed Civilian Population 16 Years And Over: Self-Employed (incorporated and not incorporated)
+      T053_005:       Employed Civilian Population 16 Years And Over: Private Non-Profit
+      T053_006:       Employed Civilian Population 16 Years And Over: Unpaid Family Workers
+      T054_001:       Male Employed Civilian Population 16 Years And Over:
+      T054_002:       Male Employed Civilian Population 16 Years And Over: Private Sector
+      T054_003:       Male Employed Civilian Population 16 Years And Over: Public Sector
+      T054_004:       Male Employed Civilian Population 16 Years And Over: Self-Employed (incorporated and not incorporated)
+      T054_005:       Male Employed Civilian Population 16 Years And Over: Private Non-Profit
+      T054_006:       Male Employed Civilian Population 16 Years And Over: Unpaid Family Workers
+      T055_001:       Female Employed Civilian Population 16 Years And Over:
+      T055_002:       Female Employed Civilian Population 16 Years And Over: Private Sector
+      T055_003:       Female Employed Civilian Population 16 Years And Over: Public Sector
+      T055_004:       Female Employed Civilian Population 16 Years And Over: Self-Employed (incorporated and not incorporated)
+      T055_005:       Female Employed Civilian Population 16 Years And Over: Private Non-Profit
+      T055_006:       Female Employed Civilian Population 16 Years And Over: Unpaid Family Workers
+      T056_001:       Households:
+      T056_002:       Households: Less than $10,000
+      T056_003:       Households: $10,000 to $14,999
+      T056_004:       Households: $15,000 to $19,999
+      T056_005:       Households: $20,000 to $24,999
+      T056_006:       Households: $25,000 to $29,999
+      T056_007:       Households: $30,000 to $34,999
+      T056_008:       Households: $35,000 to $39,999
+      T056_009:       Households: $40,000 to $44,999
+      T056_010:       Households: $45,000 to $49,999
+      T056_011:       Households: $50,000 to $59,999
+      T056_012:       Households: $60,000 to $74,999
+      T056_013:       Households: $75,000 to $99,999
+      T056_014:       Households: $100,000 to $124,999
+      T056_015:       Households: $125,000 to $149,999
+      T056_016:       Households: $150,000 to $199,999
+      T056_017:       Households: $200,000 or More
+      T056A001:       Households:
+      T056A002:       Households: Less than $10,000
+      T056A003:       Households: Less than $15,000
+      T056A004:       Households: Less than $20,000
+      T056A005:       Households: Less than $25,000
+      T056A006:       Households: Less than $30,000
+      T056A007:       Households: Less than $35,000
+      T056A008:       Households: Less than $40,000
+      T056A009:       Households: Less than $45,000
+      T056A010:       Households: Less than $50,000
+      T056A011:       Households: Less than $60,000
+      T056A012:       Households: Less than $75,000
+      T056A013:       Households: Less than $100,000
+      T056A014:       Households: Less than $125,000
+      T056A015:       Households: Less than $150,000
+      T056A016:       Households: Less than $200,000
+      T056B001:       Households:
+      T056B002:       Households: More than $10,000
+      T056B003:       Households: More than $15,000
+      T056B004:       Households: More than $20,000
+      T056B005:       Households: More than $25,000
+      T056B006:       Households: More than $30,000
+      T056B007:       Households: More than $35,000
+      T056B008:       Households: More than $40,000
+      T056B009:       Households: More than $45,000
+      T056B010:       Households: More than $50,000
+      T056B011:       Households: More than $60,000
+      T056B012:       Households: More than $75,000
+      T056B013:       Households: More than $100,000
+      T056B014:       Households: More than $125,000
+      T056B015:       Households: More than $150,000
+      T056B016:       Households: More than $200,000
+      T057_001:       Median household income (In 2013 Inflation Adjusted Dollars)
+      T058_001:       Median household income (In 2013 Inflation Adjusted Dollars):
+      T058_002:       Median household income (In 2013 Inflation Adjusted Dollars): White Alone Householder
+      T058_003:       Median household income (In 2013 Inflation Adjusted Dollars): Black or African American Alone Householder
+      T058_004:       Median household income (In 2013 Inflation Adjusted Dollars): American Indian and Alaska Native Alone  Householder
+      T058_005:       Median household income (In 2013 Inflation Adjusted Dollars): Asian Alone
+      T058_006:       Median household income (In 2013 Inflation Adjusted Dollars): Native Hawaiian and Other Pacific Islander Alone  Householder
+      T058_007:       Median household income (In 2013 Inflation Adjusted Dollars): Some Other Race Alone Householder
+      T058_008:       Median household income (In 2013 Inflation Adjusted Dollars): Two or More Races Householder
+      T058_009:       Median household income (In 2013 Inflation Adjusted Dollars): Hispanic or Latino Householder
+      T058_010:       Median household income (In 2013 Inflation Adjusted Dollars): White Alone Householder, not Hispanic or Latino
+      T059_001:       Average household income (In 2013 Inflation Adjusted Dollars)
+      T060_001:       Average household income (In 2013 Inflation Adjusted Dollars):
+      T060_002:       Average household income (In 2013 Inflation Adjusted Dollars): White Alone Householder
+      T060_003:       Average household income (In 2013 Inflation Adjusted Dollars): Black or African American Alone Householder
+      T060_004:       Average household income (In 2013 Inflation Adjusted Dollars): American Indian and Alaska Native Alone  Householder
+      T060_005:       Average household income (In 2013 Inflation Adjusted Dollars): Asian Alone
+      T060_006:       Average household income (In 2013 Inflation Adjusted Dollars): Native Hawaiian and Other Pacific Islander Alone  Householder
+      T060_007:       Average household income (In 2013 Inflation Adjusted Dollars): Some Other Race Alone Householder
+      T060_008:       Average household income (In 2013 Inflation Adjusted Dollars): Two or More Races Householder
+      T060_009:       Average household income (In 2013 Inflation Adjusted Dollars): Hispanic or Latino Householder
+      T060_010:       Average household income (In 2013 Inflation Adjusted Dollars): White Alone Householder, not Hispanic or Latino
+      T061_001:       Median Family Income (In 2013 Inflation adjusted dollars)
+      T062_001:       Average Family Income (In 2013 Inflation adjusted dollars)
+      T063_001:       Median Nonfamily Household Income (In 2013 Inflation&nbsp; Adjusted Dollars)
+      T064_001:       Average Nonfamily Income (In 2013 Inflation Adjusted Dollars)
+      T065_001:       Median Income For Population 15 years and over:
+      T065_002:       Median Income For Population 15 years and over: Male
+      T065_003:       Median Income For Population 15 years and over: Male: Worked full-time, year-round in the past 12 months
+      T065_004:       Median Income For Population 15 years and over: Male: Other
+      T065_005:       Median Income For Population 15 years and over: Female
+      T065_006:       Median Income For Population 15 years and over: Female: Worked full-time, year-round in the past 12 months
+      T065_007:       Median Income For Population 15 years and over: Female: Other
+      T066_001:       Median Earnings:
+      T066_002:       Median Earnings: Less than high school graduate
+      T066_003:       Median Earnings: High school graduate (includes equivalency)
+      T066_004:       Median Earnings: Some college or associate's degree
+      T066_005:       Median Earnings: Bachelor's degree
+      T066_006:       Median Earnings: Graduate or professional degree
+      T066_007:       Median Earnings: Male
+      T066_008:       Median Earnings: Male: Less than high school graduate
+      T066_009:       Median Earnings: Male: High school graduate (includes equivalency)
+      T066_010:       Median Earnings: Male: Some college or associate's degree
+      T066_011:       Median Earnings: Male: Bachelor's degree
+      T066_012:       Median Earnings: Male: Graduate or professional degree
+      T066_013:       Median Earnings: Female
+      T066_014:       Median Earnings: Female: Less than high school graduate
+      T066_015:       Median Earnings: Female: High school graduate (includes equivalency)
+      T066_016:       Median Earnings: Female: Some college or associate's degree
+      T066_017:       Median Earnings: Female: Bachelor's degree
+      T066_018:       Median Earnings: Female: Graduate or professional degree
+      T067_001:       Median Household Income Occupied housing units:
+      T067_002:       Median Household Income Occupied housing units: Owner occupied
+      T067_003:       Median Household Income Occupied housing units: Renter occupied
+      T068_001:       Aggregate household income (In 2013 Inflation Adjusted Dollars)
+      T069_001:       Aggregate Household Income (In 2013 Inflation Adjusted Dollars):
+      T069_002:       Aggregate Household Income (In 2013 Inflation Adjusted Dollars): White Alone Householder
+      T069_003:       Aggregate Household Income (In 2013 Inflation Adjusted Dollars): Black or African American Alone Householder
+      T069_004:       Aggregate Household Income (In 2013 Inflation Adjusted Dollars): American Indian and Alaska Native Alone  Householder
+      T069_005:       Aggregate Household Income (In 2013 Inflation Adjusted Dollars): Asian Alone Householder
+      T069_006:       Aggregate Household Income (In 2013 Inflation Adjusted Dollars): Native Hawaiian and Other Pacific Islander Alone  Householder
+      T069_007:       Aggregate Household Income (In 2013 Inflation Adjusted Dollars): Some Other Race Alone Householder
+      T069_008:       Aggregate Household Income (In 2013 Inflation Adjusted Dollars): Two or More races Householder
+      T069_009:       Aggregate Household Income (In 2013 Inflation Adjusted Dollars): Hispanic or Latino Householder
+      T069_010:       Aggregate Household Income (In 2013 Inflation Adjusted Dollars): White Alone, not Hispanic or Latino Householder
+      T070_001:       Aggregate Family Income (In 2013 Inflation Adjusted Dollars)
+      T071_001:       Aggregate Nonfamily Household Income (In 2013 Inflation&nbsp; Adjusted Dollars)
+      T072_001:       Aggregate Income (In 2013 Inflation Adjusted Dollars) For&nbsp; Population 15 Years and over
+      T073_001:       Aggregate Income (In 2013 Inflation Adjusted Dollars) For&nbsp; Population 15 Years and over:
+      T073_002:       Aggregate Income (In 2013 Inflation Adjusted Dollars) For Population 15 Years and over: White Alone
+      T073_003:       Aggregate Income (In 2013 Inflation Adjusted Dollars) For Population 15 Years and over: Black or African American Alone Population 15  Years and Over
+      T073_004:       Aggregate Income (In 2013 Inflation Adjusted Dollars) For Population 15 Years and over: American Indian and Alaska Native Alone
+      T073_005:       Aggregate Income (In 2013 Inflation Adjusted Dollars) For Population 15 Years and over: Asian Alone
+      T073_006:       Aggregate Income (In 2013 Inflation Adjusted Dollars) For Population 15 Years and over: Native Hawaiian and Other Pacific Islander Alone
+      T073_007:       Aggregate Income (In 2013 Inflation Adjusted Dollars) For Population 15 Years and over: Some Other Race Alone
+      T073_008:       Aggregate Income (In 2013 Inflation Adjusted Dollars) For Population 15 Years and over: Two or More Races
+      T073_009:       Aggregate Income (In 2013 Inflation Adjusted Dollars) For Population 15 Years and over: Hispanic or Latino
+      T073_010:       Aggregate Income (In 2013 Inflation Adjusted Dollars) For Population 15 Years and over: White Alone, Not Hispanic or Latino
+      T074_001:       Households:
+      T074_002:       Households: With earnings
+      T074_003:       Households: No earnings
+      T075_001:       Households:
+      T075_002:       Households: With wage or salary income
+      T075_003:       Households: No wage or salary income
+      T076_001:       Households:
+      T076_002:       Households: With self-employment income
+      T076_003:       Households: No self-employment income
+      T077_001:       Households:
+      T077_002:       Households: With interest, dividends, or net rental income
+      T077_003:       Households: No interest, dividends, or net rental income
+      T078_001:       Households:
+      T078_002:       Households: With Social Security income
+      T078_003:       Households: No Social Security income
+      T079_001:       Households:
+      T079_002:       Households: With Supplemental Security Income (SSI)
+      T079_003:       Households: No Supplemental Security Income (SSI)
+      T080_001:       Households:
+      T080_002:       Households: With public assistance income
+      T080_003:       Households: No public assistance income
+      T081_001:       Households:
+      T081_002:       Households: With retirement income
+      T081_003:       Households: No retirement income
+      T082_001:       Households:
+      T082_002:       Households: With Other types of income
+      T082_003:       Households: No Other types of income
+      T083_001:       Per capita income (In 2013 Inflation adjusted dollars)
+      T084_001:       Per capita income (In 2013 Inflation adjusted dollars)
+      T085_001:       Per capita income (In 2013 Inflation adjusted dollars)
+      T086_001:       Per capita income (In 2013 Inflation adjusted dollars)
+      T087_001:       Per capita income (In 2013 Inflation adjusted dollars)
+      T088_001:       Per capita income (In 2013 Inflation adjusted dollars)
+      T089_001:       Per capita income (In 2013 Inflation adjusted dollars)
+      T090_001:       Per capita income (In 2013 Inflation adjusted dollars)
+      T091_001:       Per capita income (In 2013 Inflation adjusted dollars)
+      T092_001:       Per capita income (In 2013 Inflation adjusted dollars)
+      T154_001:       Lowest Quintile
+      T154_002:       Second Quintile
+      T154_003:       Third Quintile
+      T154_004:       Fourth Quintile
+      T154_005:       Lower Limit of Top 5 Percent
+      T155_001:       Lowest Quintile
+      T155_002:       Second Quintile
+      T155_003:       Third Quintile
+      T155_004:       Fourth Quintile
+      T155_005:       Highest Quintile
+      T155_006:       Top 5 Percent
+      T156_001:       Lowest Quintile
+      T156_002:       Second Quintile
+      T156_003:       Third Quintile
+      T156_004:       Fourth Quintile
+      T156_005:       Highest Quintile
+      T156_006:       Top 5 Percent
+      T157_001:       Gini Index
+      T093_001:       Housing units
+      T094_001:       Occupied Housing Units:
+      T094_002:       Occupied Housing Units: Owner Occupied
+      T094_003:       Occupied Housing Units: Renter Occupied
+      T095_001:       Housing units:
+      T095_002:       Housing units: Occupied
+      T095_003:       Housing units: Vacant
+      T096_001:       Vacant Housing Units:
+      T096_002:       Vacant Housing Units: for rent
+      T096_003:       Vacant Housing Units: for sale only
+      T096_004:       Vacant Housing Units: Other vacant
+      T097_001:       Housing Units:
+      T097_002:       Housing Units: 1 Unit
+      T097_003:       Housing Units: 1 Unit: 1, detached
+      T097_004:       Housing Units: 1 Unit: 1, attached
+      T097_005:       Housing Units: 2
+      T097_006:       Housing Units: 3 or 4
+      T097_007:       Housing Units: 5 to 9
+      T097_008:       Housing Units: 10 to 19
+      T097_009:       Housing Units: 20 to 49
+      T097_010:       Housing Units: 50 or More
+      T097_011:       Housing Units: Mobile home
+      T097_012:       Housing Units: Boat, RV, van, etc.
+      T098_001:       Median year structure built
+      T099_001:       Occupied Housing Units:
+      T099_002:       Occupied Housing Units: Gas (Utility, Bottled, tank, or LP gas)
+      T099_003:       Occupied Housing Units: Electricity
+      T099_004:       Occupied Housing Units: Fuel oil, kerosene, etc.
+      T099_005:       Occupied Housing Units: Coal, coke or Wood
+      T099_006:       Occupied Housing Units: Solar energy
+      T099_007:       Occupied Housing Units: Other fuel
+      T099_008:       Occupied Housing Units: No fuel used
+      T100_001:       Owner-occupied housing units:
+      T100_002:       Owner-occupied housing units: Less than $20,000
+      T100_003:       Owner-occupied housing units: $20,000 to $49,999
+      T100_004:       Owner-occupied housing units: $50,000 to $99,999
+      T100_005:       Owner-occupied housing units: $100,000 to $149,999
+      T100_006:       Owner-occupied housing units: $150,000 to $299,999
+      T100_007:       Owner-occupied housing units: $300,000 to $499,999
+      T100_008:       Owner-occupied housing units: $500,000 to $749,999
+      T100_009:       Owner-occupied housing units: $750,000 to $999,999
+      T100_010:       Owner-occupied housing units: $1,000,000 or More
+      T100A001:       Owner-occupied housing units:
+      T100A002:       Owner-occupied housing units: Less than $20,000
+      T100A003:       Owner-occupied housing units: Less than $50,000
+      T100A004:       Owner-occupied housing units: Less than $100,000
+      T100A005:       Owner-occupied housing units: Less than $150,000
+      T100A006:       Owner-occupied housing units: Less than $300,000
+      T100A007:       Owner-occupied housing units: Less than $500,000
+      T100A008:       Owner-occupied housing units: Less than $750,000
+      T100A009:       Owner-occupied housing units: Less than $1,000,000
+      T100B001:       Owner-occupied housing units:
+      T100B002:       Owner-occupied housing units: More than $20,000
+      T100B003:       Owner-occupied housing units: More than $50,000
+      T100B004:       Owner-occupied housing units: More than $100,000
+      T100B005:       Owner-occupied housing units: More than $150,000
+      T100B006:       Owner-occupied housing units: More than $300,000
+      T100B007:       Owner-occupied housing units: More than $500,000
+      T100B008:       Owner-occupied housing units: More than $750,000
+      T100B009:       Owner-occupied housing units: More than $1,000,000
+      T101_001:       Median value
+      T102_001:       Renter-occupied housing units with cash rent:
+      T102_002:       Renter-occupied housing units with cash rent: Less than $300
+      T102_003:       Renter-occupied housing units with cash rent: $300 to $599
+      T102_004:       Renter-occupied housing units with cash rent: $600 to $799
+      T102_005:       Renter-occupied housing units with cash rent: $800 to $999
+      T102_006:       Renter-occupied housing units with cash rent: $1,000 to $1,249
+      T102_007:       Renter-occupied housing units with cash rent: $1,250 to $1,499
+      T102_008:       Renter-occupied housing units with cash rent: $1,500 to $1,999
+      T102_009:       Renter-occupied housing units with cash rent: $2,000 or More
+      T102A001:       Renter-occupied housing units with cash rent:
+      T102A002:       Renter-occupied housing units with cash rent: Less than $300
+      T102A003:       Renter-occupied housing units with cash rent: Less than $600
+      T102A004:       Renter-occupied housing units with cash rent: Less than $800
+      T102A005:       Renter-occupied housing units with cash rent: Less than $1,000
+      T102A006:       Renter-occupied housing units with cash rent: Less than $1,250
+      T102A007:       Renter-occupied housing units with cash rent: Less than $1,500
+      T102A008:       Renter-occupied housing units with cash rent: Less than $2,000
+      T102B001:       Renter-occupied housing units with cash rent:
+      T102B002:       Renter-occupied housing units with cash rent: More than $300
+      T102B003:       Renter-occupied housing units with cash rent: More than $600
+      T102B004:       Renter-occupied housing units with cash rent: More than $800
+      T102B005:       Renter-occupied housing units with cash rent: More than $1,000
+      T102B006:       Renter-occupied housing units with cash rent: More than $1,250
+      T102B007:       Renter-occupied housing units with cash rent: More than $1,500
+      T102B008:       Renter-occupied housing units with cash rent: More than $2,000
+      T103_001:       Renter-occupied housing units:
+      T103_002:       Renter-occupied housing units: Less than 10 percent
+      T103_003:       Renter-occupied housing units: 10 to 29 percent
+      T103_004:       Renter-occupied housing units: 30 to 49 percent
+      T103_005:       Renter-occupied housing units: 50 percent or More
+      T103_006:       Renter-occupied housing units: Not computed
+      T104_001:       Median Gross Rent
+      T105_001:       Median Gross Rent as a Percentage of Household  Income In 2013
+      T106_001:       Average gross rent for Renter-occupied housing units
+      T107_001:       Aggregate gross rent for Specified  Renter-Occupied Housing Units
+      T108_001:       Owner-occupied housing units:
+      T108_002:       Owner-occupied housing units: Housing units with a mortgage, home equity loan,  or similar debts
+      T108_003:       Owner-occupied housing units: Housing units with a mortgage, home equity loan,  or similar debts: With either a second mortgage or home equity  loan, but not both
+      T108_004:       Owner-occupied housing units: Housing units with a mortgage, home equity loan,  or similar debts: With either a second mortgage or home equity  loan, but not both: Second mortgage only
+      T108_005:       Owner-occupied housing units: Housing units with a mortgage, home equity loan,  or similar debts: With either a second mortgage or home equity  loan, but not both: Home equity loan only
+      T108_006:       Owner-occupied housing units: Housing units with a mortgage, home equity loan,  or similar debts: Both second mortgage and home equity loan
+      T108_007:       Owner-occupied housing units: Housing units with a mortgage, home equity loan,  or similar debts: No second mortgage and no home equity loan
+      T108_008:       Owner-occupied housing units: Housing units without a mortgage
+      T109_001:       Owner-occupied housing units:
+      T109_002:       Owner-occupied housing units: Housing units with a mortgage
+      T109_003:       Owner-occupied housing units: Housing units with a mortgage: Less than 30 percent
+      T109_004:       Owner-occupied housing units: Housing units with a mortgage: 30 percent or More
+      T109_005:       Owner-occupied housing units: Housing units with a mortgage: 50 percent or More
+      T109_006:       Owner-occupied housing units: Housing units with a mortgage: Not computed
+      T109_007:       Owner-occupied housing units: Housing units without a mortgage
+      T109_008:       Owner-occupied housing units: Housing units without a mortgage: Less than 30 percent
+      T109_009:       Owner-occupied housing units: Housing units without a mortgage: 30 percent or More
+      T109_010:       Owner-occupied housing units: Housing units without a mortgage: 50 percent or More
+      T109_011:       Owner-occupied housing units: Housing units without a mortgage: Not computed
+      T110_001:       Housing units with a mortgage:
+      T110_002:       Housing units with a mortgage: Less than 30 percent
+      T110_003:       Housing units with a mortgage: 30 percent or More
+      T110_004:       Housing units with a mortgage: 50 percent or More
+      T110_005:       Housing units with a mortgage: Not computed
+      T111_001:       Housing units without a mortgage:
+      T111_002:       Housing units without a mortgage: Less than 30 percent
+      T111_003:       Housing units without a mortgage: 30 percent or More
+      T111_004:       Housing units without a mortgage: 50 percent or More
+      T111_005:       Housing units without a mortgage: Not computed
+      T112_001:       Median selected monthly owner costs as a  percentage of&nbsp; household income:
+      T112_002:       Median selected monthly owner costs as a  percentage of<br /> household income: Housing units with a mortgage
+      T112_003:       Median selected monthly owner costs as a  percentage of<br /> household income: Housing units without a mortgage
+      T113_001:       Families:
+      T113_002:       Families: Income in 2013 below poverty level
+      T113_003:       Families: Income in 2013 below poverty level: Married Couple Family: With Related Child Living  Bellow Poverty Level
+      T113_004:       Families: Income in 2013 below poverty level: Married Couple Family: No related children under 18 Years
+      T113_005:       Families: Income in 2013 below poverty level: Male Householder, no wife present
+      T113_006:       Families: Income in 2013 below poverty level: Male Householder, no wife present: With related children under 18 Years
+      T113_007:       Families: Income in 2013 below poverty level: Male Householder, no wife present: No related children under 18 Years
+      T113_008:       Families: Income in 2013 below poverty level: Female Householder, no husband present
+      T113_009:       Families: Income in 2013 below poverty level: Female Householder, no husband present: With related children under 18 Years
+      T113_010:       Families: Income in 2013 below poverty level: Female Householder, no husband present: No related children under 18 Years
+      T113_011:       Families: Income in 2013 at or above poverty level
+      T114_001:       Population Under 18 Years of Age for whom poverty status is determined:
+      T114_002:       Population Under 18 Years of Age for whom poverty status is determined: Living in Poverty
+      T114_003:       Population Under 18 Years of Age for whom poverty status is determined: At or Above Poverty Level
+      T115_001:       Population Age 18 to 64 for whom poverty status  is determined:
+      T115_002:       Population Age 18 to 64 for whom poverty status  is determined: Living in Poverty
+      T115_003:       Population Age 18 to 64 for whom poverty status  is determined: At or Above Poverty Level
+      T116_001:       Population Age 65 and Over for whom poverty  status is determined:
+      T116_002:       Population Age 65 and Over for whom poverty  status is determined: Living In Poverty
+      T116_003:       Population Age 65 and Over for whom poverty  status is determined: At or Above Poverty Level
+      T117_001:       Population for whom poverty status is determined:
+      T117_002:       Population for whom poverty status is determined: Under .50
+      T117_003:       Population for whom poverty status is determined: .50 to .74
+      T117_004:       Population for whom poverty status is determined: .75 to .99
+      T117_005:       Population for whom poverty status is determined: 1.00 to 1.49
+      T117_006:       Population for whom poverty status is determined: 1.50 to 1.99
+      T117_007:       Population for whom poverty status is determined: 2.00 and over
+      T118_001:       Population for whom poverty status is determined:
+      T118_002:       Population for whom poverty status is determined: Under 1.00 (Doing Poorly)
+      T118_003:       Population for whom poverty status is determined: 1.00 to 1.99 (Struggling)
+      T118_004:       Population for whom poverty status is determined: Under 2.00 (Poor or struggling)
+      T118_005:       Population for whom poverty status is determined: 2.00 and over (Doing ok)
+      T119_001:       White Alone Population for whom poverty status is  determined:
+      T119_002:       White Alone Population for whom poverty status is  determined: Income in 2013 below poverty level
+      T119_003:       White Alone Population for whom poverty status is  determined: Income in 2013 at or above poverty level
+      T120_001:       Black or African American Alone Population for  whom&nbsp; poverty status is determined:
+      T120_002:       Black or African American Alone Population for  whom<br /> poverty status is determined: Income in 2013 below poverty level
+      T120_003:       Black or African American Alone Population for  whom<br /> poverty status is determined: Income in 2013 at or above poverty level
+      T121_001:       American Indian and Alaska Native Alone  Population for&nbsp; whom poverty status is determined:
+      T121_002:       American Indian and Alaska Native Alone  Population for<br /> whom poverty status is determined: Income in 2013 below poverty level
+      T121_003:       American Indian and Alaska Native Alone  Population for<br /> whom poverty status is determined: Income in 2013 at or above poverty level
+      T122_001:       Asian Alone Population for whom poverty status is  determined:
+      T122_002:       Asian Alone Population for whom poverty status is  determined: Income in 2013 below poverty level
+      T122_003:       Asian Alone Population for whom poverty status is  determined: Income in 2013 at or above poverty level
+      T123_001:       Native Hawaiian and Other Pacific Islander Alone &nbsp; Population for whom poverty status is determined:
+      T123_002:       Native Hawaiian and Other Pacific Islander Alone <br /> Population for whom poverty status is determined: Income in 2013 below poverty level
+      T123_003:       Native Hawaiian and Other Pacific Islander Alone <br /> Population for whom poverty status is determined: Income in 2013 at or above poverty level
+      T124_001:       Some Other Race Alone Population for whom poverty  status is determined:
+      T124_002:       Some Other Race Alone Population for whom poverty  status is determined: Income in 2013 below poverty level
+      T124_003:       Some Other Race Alone Population for whom poverty  status is determined: Income in 2013 at or above poverty level
+      T125_001:       Two or More races Population for whom poverty  status is determined:
+      T125_002:       Two or More races Population for whom poverty  status is determined: Income in 2013 below poverty level
+      T125_003:       Two or More races Population for whom poverty  status is determined: Income in 2013 at or above poverty level
+      T126_001:       Hispanic or Latino Population for whom poverty  status is determined:
+      T126_002:       Hispanic or Latino Population for whom poverty  status is determined: Income in 2013 below poverty level
+      T126_003:       Hispanic or Latino Population for whom poverty  status is determined: Income in 2013 at or above poverty level
+      T127_001:       White Alone, not Hispanic or Latino Population  for whom&nbsp; poverty status is determined:
+      T127_002:       White Alone, not Hispanic or Latino Population  for whom<br /> poverty status is determined: Income in 2013 below poverty level
+      T127_003:       White Alone, not Hispanic or Latino Population  for whom<br /> poverty status is determined: Income in 2013 at or above poverty level
+      T128_001:       Workers 16 Years and over:
+      T128_002:       Workers 16 Years and over: Car, truck, or van
+      T128_009:       Workers 16 Years and over: Drove Alone
+      T128_010:       Workers 16 Years and over: Carpooled
+      T128_003:       Workers 16 Years and over: Public transportation (Includes Taxicab)
+      T128_004:       Workers 16 Years and over: Motorcycle
+      T128_005:       Workers 16 Years and over: Bicycle
+      T128_006:       Workers 16 Years and over: Walked
+      T128_007:       Workers 16 Years and over: Other means
+      T128_008:       Workers 16 Years and over: Worked at home
+      T129_001:       Workers 16 Years and over:
+      T129_002:       Workers 16 Years and over: Did not work at home
+      T129_003:       Workers 16 Years and over: Did not work at home: Less than 10 minutes
+      T129_004:       Workers 16 Years and over: Did not work at home: 10 to 19 minutes
+      T129_005:       Workers 16 Years and over: Did not work at home: 20 to 29 minutes
+      T129_006:       Workers 16 Years and over: Did not work at home: 30 to 39 minutes
+      T129_007:       Workers 16 Years and over: Did not work at home: 40 to 59 minutes
+      T129_008:       Workers 16 Years and over: Did not work at home: 60 to 89 minutes
+      T129_009:       Workers 16 Years and over: Did not work at home: 90 or More minutes
+      T129_010:       Workers 16 Years and over: Worked at home
+      T148_001:       Workers 16 Years And Over Who Did Not Work At Home:
+      T148_002:       Workers 16 Years And Over Who Did Not Work At Home: Less than 10 minutes
+      T148_003:       Workers 16 Years And Over Who Did Not Work At Home: 10 to 19 minutes
+      T148_004:       Workers 16 Years And Over Who Did Not Work At Home: 20 to 29 minutes
+      T148_005:       Workers 16 Years And Over Who Did Not Work At Home: 30 to 39 minutes
+      T148_006:       Workers 16 Years And Over Who Did Not Work At Home: 40 to 59 minutes
+      T148_007:       Workers 16 Years And Over Who Did Not Work At Home: 60 to 89 minutes
+      T148_008:       Workers 16 Years And Over Who Did Not Work At Home: 90 or More minutes
+      T158_001:       Workers 16 Years And Over Who Did Not Work At Home:
+      T158_002:       Workers 16 Years And Over Who Did Not Work At Home: Less than 5 minutes
+      T158_003:       Workers 16 Years And Over Who Did Not Work At Home: 5 to 14 minutes
+      T158_004:       Workers 16 Years And Over Who Did Not Work At Home: 15 to 29 minutes
+      T158_005:       Workers 16 Years And Over Who Did Not Work At Home: 30 to 44 minutes
+      T158_006:       Workers 16 Years And Over Who Did Not Work At Home: 45 to 59 minutes
+      T158_007:       Workers 16 Years And Over Who Did Not Work At Home: 60 to 89 minutes
+      T158_008:       Workers 16 Years And Over Who Did Not Work At Home: 90 or More minutes
+      T158A001:       Workers 16 Years And Over Who Did Not Work At Home:
+      T158A002:       Workers 16 Years And Over Who Did Not Work At Home: Less than 5 minutes
+      T158A003:       Workers 16 Years And Over Who Did Not Work At Home: Less than 15 minutes
+      T158A004:       Workers 16 Years And Over Who Did Not Work At Home: Less than 30 minutes
+      T158A005:       Workers 16 Years And Over Who Did Not Work At Home: Less than 45 minutes
+      T158A006:       Workers 16 Years And Over Who Did Not Work At Home: Less than 60 minutes
+      T158A007:       Workers 16 Years And Over Who Did Not Work At Home: Less than 90 minutes
+      T158B001:       Workers 16 Years And Over Who Did Not Work At Home:
+      T158B002:       Workers 16 Years And Over Who Did Not Work At Home: More than 5 minutes
+      T158B003:       Workers 16 Years And Over Who Did Not Work At Home: More than 15 minutes
+      T158B004:       Workers 16 Years And Over Who Did Not Work At Home: More than 30 minutes
+      T158B005:       Workers 16 Years And Over Who Did Not Work At Home: More than 45 minutes
+      T158B006:       Workers 16 Years And Over Who Did Not Work At Home: More than 60 minutes
+      T158B007:       Workers 16 Years And Over Who Did Not Work At Home: More than 90 minutes
+      T147_001:       Average Commute to Work (in min)
+      T130_001:       Total:
+      T130_002:       Total: Same house 1 year ago
+      T130_003:       Total: Moved within same county
+      T130_004:       Total: Moved from different county within same state
+      T130_005:       Total: Moved from different state
+      T130_006:       Total: Moved from abroad
+      T131_001:       Civilian Population 18 Years and over:
+      T131_002:       Civilian Population 18 Years and over: Veteran
+      T131_003:       Civilian Population 18 Years and over: Veteran: 18 to 64 Years
+      T131_004:       Civilian Population 18 Years and over: Veteran: 65 Years and over
+      T131_005:       Civilian Population 18 Years and over: Nonveteran
+      T131_006:       Civilian Population 18 Years and over: Nonveteran: 18 to 64 Years
+      T131_007:       Civilian Population 18 Years and over: Nonveteran: 65 Years and over
+      T132_001:       Civilian veterans 18 Years and over:
+      T132_002:       Civilian veterans 18 Years and over: Gulf War 2001 or Later Only
+      T132_003:       Civilian veterans 18 Years and over: Gulf War 1990 to 2001 Only
+      T132_004:       Civilian veterans 18 Years and over: Vietnam Era Only
+      T132_005:       Civilian veterans 18 Years and over: Korean War Only
+      T132_006:       Civilian veterans 18 Years and over: World War II Only
+      T132_007:       Civilian veterans 18 Years and over: Served In Multiple Wars
+      T132_008:       Civilian veterans 18 Years and over: Other Service
+      T133_001:       Total Population:
+      T133_002:       Total Population: Native Born
+      T133_003:       Total Population: Foreign Born
+      T133_004:       Total Population: Foreign Born: Naturalized Citizen
+      T133_005:       Total Population: Foreign Born: Not a Citizen
+      T134_001:       Foreign-born Population:
+      T134_002:       Foreign-born Population: 2010 or Later
+      T134_003:       Foreign-born Population: 2000 to 2009
+      T134_004:       Foreign-born Population: 1990 to 1999
+      T134_005:       Foreign-born Population: Before 1990
+      T135_001:       Total:
+      T135_002:       Total: Ancestry specified
+      T135_003:       Total: Ancestry specified: Single ancestry
+      T135_004:       Total: Ancestry specified: Multiple ancestry
+      T135_005:       Total: Ancestry not specified
+      T135_006:       Total: Ancestry not specified: Ancestry unclassified
+      T135_007:       Total: Ancestry not specified: Ancestry not reported
+      T139_001:       Foreign-born population:
+      T139_002:       Foreign-born population: Europe
+      T139_003:       Foreign-born population: Europe: Northern Europe
+      T139_004:       Foreign-born population: Europe: Northern Europe: United Kingdom
+      T139_005:       Foreign-born population: Europe: Northern Europe: United Kingdom: United Kingdom, Excluding England and Scotland
+      T139_006:       Foreign-born population: Europe: Northern Europe: United Kingdom: England
+      T139_007:       Foreign-born population: Europe: Northern Europe: United Kingdom: Scotland
+      T139_008:       Foreign-born population: Europe: Northern Europe: Ireland
+      T139_009:       Foreign-born population: Europe: Northern Europe: Other Northern Europe
+      T139_010:       Foreign-born population: Europe: Western Europe
+      T139_011:       Foreign-born population: Europe: Western Europe: Austria
+      T139_012:       Foreign-born population: Europe: Western Europe: France
+      T139_013:       Foreign-born population: Europe: Western Europe: Germany
+      T139_014:       Foreign-born population: Europe: Western Europe: Netherlands
+      T139_015:       Foreign-born population: Europe: Western Europe: Other Western Europe
+      T139_016:       Foreign-born population: Europe: Southern Europe
+      T139_017:       Foreign-born population: Europe: Southern Europe: Greece
+      T139_018:       Foreign-born population: Europe: Southern Europe: Italy
+      T139_019:       Foreign-born population: Europe: Southern Europe: Portugal
+      T139_020:       Foreign-born population: Europe: Southern Europe: Spain
+      T139_021:       Foreign-born population: Europe: Southern Europe: Other Southern Europe
+      T139_022:       Foreign-born population: Europe: Eastern Europe
+      T139_023:       Foreign-born population: Europe: Eastern Europe: Croatia
+      T139_024:       Foreign-born population: Europe: Eastern Europe: Czechoslovakia (includes Czech Republic and Slovakia)
+      T139_025:       Foreign-born population: Europe: Eastern Europe: Hungary
+      T139_026:       Foreign-born population: Europe: Eastern Europe: Poland
+      T139_027:       Foreign-born population: Europe: Eastern Europe: Romania
+      T139_028:       Foreign-born population: Europe: Eastern Europe: Russia
+      T139_029:       Foreign-born population: Europe: Eastern Europe: Ukraine
+      T139_030:       Foreign-born population: Europe: Eastern Europe: Bosnia and Herzegovina
+      T139_031:       Foreign-born population: Europe: Eastern Europe: Serbia
+      T139_032:       Foreign-born population: Europe: Eastern Europe: Other Eastern Europe
+      T139_033:       Foreign-born population: Europe: Europe, n.e.c.
+      T139_034:       Foreign-born population: Asia
+      T139_035:       Foreign-born population: Asia: Eastern Asia
+      T139_036:       Foreign-born population: Asia: Eastern Asia: China
+      T139_037:       Foreign-born population: Asia: Eastern Asia: China: China, excluding Hong Kong and Taiwan
+      T139_038:       Foreign-born population: Asia: Eastern Asia: China: Hong Kong
+      T139_039:       Foreign-born population: Asia: Eastern Asia: China: Taiwan
+      T139_040:       Foreign-born population: Asia: Eastern Asia: Japan
+      T139_041:       Foreign-born population: Asia: Eastern Asia: Korea
+      T139_042:       Foreign-born population: Asia: Eastern Asia: Other Eastern Asia
+      T139_043:       Foreign-born population: Asia: South Central Asia
+      T139_044:       Foreign-born population: Asia: South Central Asia: Afghanistan
+      T139_045:       Foreign-born population: Asia: South Central Asia: Bangladesh
+      T139_046:       Foreign-born population: Asia: South Central Asia: India
+      T139_047:       Foreign-born population: Asia: South Central Asia: Iran
+      T139_048:       Foreign-born population: Asia: South Central Asia: Pakistan
+      T139_049:       Foreign-born population: Asia: South Central Asia: Other South Central Asia
+      T139_050:       Foreign-born population: Asia: South Eastern Asia
+      T139_051:       Foreign-born population: Asia: South Eastern Asia: Cambodia
+      T139_052:       Foreign-born population: Asia: South Eastern Asia: Indonesia
+      T139_053:       Foreign-born population: Asia: South Eastern Asia: Laos
+      T139_054:       Foreign-born population: Asia: South Eastern Asia: Philippines
+      T139_055:       Foreign-born population: Asia: South Eastern Asia: Thailand
+      T139_056:       Foreign-born population: Asia: South Eastern Asia: Vietnam
+      T139_057:       Foreign-born population: Asia: South Eastern Asia: Other South Eastern Asia
+      T139_058:       Foreign-born population: Asia: Western Asia
+      T139_059:       Foreign-born population: Asia: Western Asia: Iraq
+      T139_060:       Foreign-born population: Asia: Western Asia: Israel
+      T139_061:       Foreign-born population: Asia: Western Asia: Lebanon
+      T139_062:       Foreign-born population: Asia: Western Asia: Syria
+      T139_063:       Foreign-born population: Asia: Western Asia: Turkey
+      T139_064:       Foreign-born population: Asia: Western Asia: Armenia
+      T139_065:       Foreign-born population: Asia: Western Asia: Other Western Asia
+      T139_066:       Foreign-born population: Asia: Asia, n.e.c.
+      T139_067:       Foreign-born population: Africa
+      T139_068:       Foreign-born population: Africa: Eastern Africa
+      T139_069:       Foreign-born population: Africa: Eastern Africa: Ethiopia
+      T139_070:       Foreign-born population: Africa: Eastern Africa: Kenya
+      T139_071:       Foreign-born population: Africa: Eastern Africa: Other Eastern Africa
+      T139_072:       Foreign-born population: Africa: Middle Africa
+      T139_073:       Foreign-born population: Africa: Northern Africa
+      T139_074:       Foreign-born population: Africa: Northern Africa: Egypt
+      T139_075:       Foreign-born population: Africa: Northern Africa: Other Northern Africa
+      T139_076:       Foreign-born population: Africa: Southern Africa
+      T139_077:       Foreign-born population: Africa: Southern Africa: South Africa
+      T139_078:       Foreign-born population: Africa: Southern Africa: Other Southern Africa
+      T139_079:       Foreign-born population: Africa: Western Africa
+      T139_080:       Foreign-born population: Africa: Western Africa: Ghana
+      T139_081:       Foreign-born population: Africa: Western Africa: Liberia
+      T139_082:       Foreign-born population: Africa: Western Africa: Nigeria
+      T139_083:       Foreign-born population: Africa: Western Africa: Other Western Africa
+      T139_084:       Foreign-born population: Africa: Africa, n.e.c.
+      T139_085:       Foreign-born population: Oceania
+      T139_086:       Foreign-born population: Oceania: Australia and New Zealand Subregion
+      T139_087:       Foreign-born population: Oceania: Australia and New Zealand Subregion: Australia
+      T139_088:       Foreign-born population: Oceania: Australia and New Zealand Subregion: Other Australian and New Zealand Subregion
+      T139_089:       Foreign-born population: Oceania: Oceania, n.e.c.
+      T139_090:       Foreign-born population: Americas
+      T139_091:       Foreign-born population: Americas: Latin America
+      T139_092:       Foreign-born population: Americas: Latin America: Caribbean
+      T139_093:       Foreign-born population: Americas: Latin America: Caribbean: Barbados
+      T139_094:       Foreign-born population: Americas: Latin America: Caribbean: Cuba
+      T139_095:       Foreign-born population: Americas: Latin America: Caribbean: Dominican Republic
+      T139_096:       Foreign-born population: Americas: Latin America: Caribbean: Haiti
+      T139_097:       Foreign-born population: Americas: Latin America: Caribbean: Jamaica
+      T139_098:       Foreign-born population: Americas: Latin America: Caribbean: Trinidad and Tobago
+      T139_099:       Foreign-born population: Americas: Latin America: Caribbean: Other Caribbean
+      T139_100:       Foreign-born population: Americas: Latin America: Central America
+      T139_101:       Foreign-born population: Americas: Latin America: Central America: Mexico
+      T139_102:       Foreign-born population: Americas: Latin America: Central America: Costa Rica
+      T139_103:       Foreign-born population: Americas: Latin America: Central America: El Salvador
+      T139_104:       Foreign-born population: Americas: Latin America: Central America: Guatemala
+      T139_105:       Foreign-born population: Americas: Latin America: Central America: Honduras
+      T139_106:       Foreign-born population: Americas: Latin America: Central America: Nicaragua
+      T139_107:       Foreign-born population: Americas: Latin America: Central America: Panama
+      T139_108:       Foreign-born population: Americas: Latin America: Central America: Other Central America
+      T139_109:       Foreign-born population: Americas: Latin America: South America
+      T139_110:       Foreign-born population: Americas: Latin America: South America: Argentina
+      T139_111:       Foreign-born population: Americas: Latin America: South America: Bolivia
+      T139_112:       Foreign-born population: Americas: Latin America: South America: Brazil
+      T139_113:       Foreign-born population: Americas: Latin America: South America: Chile
+      T139_114:       Foreign-born population: Americas: Latin America: South America: Colombia
+      T139_115:       Foreign-born population: Americas: Latin America: South America: Ecuador
+      T139_116:       Foreign-born population: Americas: Latin America: South America: Guyana
+      T139_117:       Foreign-born population: Americas: Latin America: South America: Peru
+      T139_118:       Foreign-born population: Americas: Latin America: South America: Uruguay
+      T139_119:       Foreign-born population: Americas: Latin America: South America: Venezuela
+      T139_120:       Foreign-born population: Americas: Latin America: South America: Other South America
+      T139_121:       Foreign-born population: Americas: Northern America
+      T139_122:       Foreign-born population: Americas: Northern America: Canada
+      T139_123:       Foreign-born population: Americas: Northern America: Other Northern America
+      T141_001:       Nonfamily Households
+      T142_001:       Owner-occupied housing units
+      T140_001:       Employed Civilian Population 16 Years And Over:
+      T140_002:       Employed Civilian Population 16 Years And Over: Management, professional, and related occupations
+      T140_003:       Employed Civilian Population 16 Years And Over: Service occupations
+      T140_004:       Employed Civilian Population 16 Years And Over: Sales and office occupations
+      T140_005:       Employed Civilian Population 16 Years And Over: Farming, fishing, and forestry occupations
+      T140_006:       Employed Civilian Population 16 Years And Over: Construction, extraction, and maintenance  occupations
+      T140_007:       Employed Civilian Population 16 Years And Over: Production, transportation, and material moving  occupations
+      T140_008:       Employed Civilian Population 16 Years And Over: Production, transportation, and material moving  occupations: Production occupations
+      T140_009:       Employed Civilian Population 16 Years And Over: Production, transportation, and material moving  occupations: Transportation and material moving occupations
+      T145_001:       Total:
+      T145_002:       Total: No Health Insurance Coverage
+      T145_003:       Total: With Health Insurance Coverage
+      T145_004:       Total: With Health Insurance Coverage: Public Health Coverage
+      T145_005:       Total: With Health Insurance Coverage: Private Health Insurance
+      T146_002:       Population Under 17:
+      T146_003:       Population Under 17: No Health Insurance Coverage
+      T146_004:       Population Under 17: With Health Insurance Coverage
+      T146_005:       Population Under 17: With Health Insurance Coverage: Public Health Coverage
+      T146_006:       Population Under 17: With Health Insurance Coverage: Private Health Insurance
+      T146_007:       Population 18 to 24:
+      T146_008:       Population 18 to 24: No Health Insurance Coverage
+      T146_009:       Population 18 to 24: With Health Insurance Coverage
+      T146_010:       Population 18 to 24: With Health Insurance Coverage: Public Health Coverage
+      T146_011:       Population 18 to 24: With Health Insurance Coverage: Private Health Insurance
+      T146_012:       Population 25 to 34:
+      T146_013:       Population 25 to 34: No Health Insurance Coverage
+      T146_014:       Population 25 to 34: With Health Insurance Coverage
+      T146_015:       Population 25 to 34: With Health Insurance Coverage: Public Health Coverage
+      T146_016:       Population 25 to 34: With Health Insurance Coverage: Private Health Insurance
+      T146_017:       Population 35 to 64:
+      T146_018:       Population 35 to 64: No Health Insurance Coverage
+      T146_019:       Population 35 to 64: With Health Insurance Coverage
+      T146_020:       Population 35 to 64: With Health Insurance Coverage: Public Health Coverage
+      T146_021:       Population 35 to 64: With Health Insurance Coverage: Private Health Insurance
+      T146_022:       Population 65 or older:
+      T146_023:       Population 65 or older: No Health Insurance Coverage
+      T146_024:       Population 65 or older: With Health Insurance Coverage
+      T146_025:       Population 65 or older: With Health Insurance Coverage: Public Health Coverage
+      T146_026:       Population 65 or older: With Health Insurance Coverage: Private Health Insurance
+
+
+
+
+--------------------------------------------------------------------------------
+Citation and Use of Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing the data
+  must cite it appropriately. The citation should include the following:
+
+	  www.socialexplorer.com
+	  New York City, NY: Social Explorer 2015
+
+
+* Citations should also include the URL for this report:
+
+    http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R11088304
+
+If you have any questions contact info@socialexplorer.com

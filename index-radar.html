@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>SFBA OAC</title>
+	<link rel="stylesheet" href="layout/leaflet-0.7.3/leaflet.css" />
+	<link rel="stylesheet" href="layout/css/main.css" />
+	<link rel="stylesheet" href="layout/css/sankey.css" />
+	<script src="layout/d3-master/d3.min.js"></script>
+	<script src="layout/leaflet-0.7.3/leaflet.js"></script>
+	<script src="layout/queue.js"></script>
+	<script src="layout/topojson.js"></script>
+	<script src="layout/sankey.js"></script>
+	<script src="layout/radarPlot.js"></script>
+	<!-- <script src="http://maps.stamen.com/js/tile.stamen.js"></script> -->
+</head>
+<body>
+			<div class="radarChart"></div>
+		<script>
+			////////////////////////////////////////////////////////////// 
+			//////////////////////// Set-Up ////////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			var margin = {top: 100, right: 100, bottom: 100, left: 100},
+				width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
+				height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
+			var clusters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+					
+			////////////////////////////////////////////////////////////// 
+			////////////////////////// Data ////////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			
+			////////////////////////////////////////////////////////////// 
+			//////////////////// Draw the Chart ////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			var color = d3.scale.ordinal()
+				.range(["#ffd37a","#CC333F","#00A0B0"]);
+				
+			var radarChartOptions = {
+			  w: width,
+			  h: height,
+			  margin: margin,
+			  maxValue: 1,
+			  levels: 5,
+			  roundStrokes: false,
+			  color: color
+			};
+			//Call function to draw the Radar chart
+			d3.json("data/radar/radar.json", function(data){
+				RadarChart(".radarChart", data, radarChartOptions);
+			})
+
+			//d3.select("body").append("svg")
+			gSelect = d3.select("body").append("svg").append("g").attr("class", "select");
+			gSelect.selectAll("text")
+				.data(clusters)
+				.enter()
+				.append("text")
+				.attr("x", function(d,i){return i*12;})
+				.attr("y", 80)
+				.text(function(d){return d;})
+					.on("click", function(d){
+						d3.json("data/radar/radar-cl"+d+".json", function(data){
+							RadarChart(".radarChart", data, radarChartOptions);
+						})
+					});
+			
+		</script>
+</body>
+</html>

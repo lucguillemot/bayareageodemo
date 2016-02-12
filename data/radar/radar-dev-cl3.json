@@ -1,0 +1,90 @@
+[[
+  {
+    "axis": "density",
+    "value": 0.0159
+  },
+  {
+    "axis": "PConeUnit",
+    "value": -0.1423
+  },
+  {
+    "axis": "PCcommutingNotCar",
+    "value": 0.167
+  },
+  {
+    "axis": "PClessHighSchool",
+    "value": 0.0654
+  },
+  {
+    "axis": "PCsomeCollegeOrMore",
+    "value": -0.0411
+  },
+  {
+    "axis": "PCdoctorate",
+    "value": -0.0626
+  },
+  {
+    "axis": "PCmarriedCouple",
+    "value": -0.1702
+  },
+  {
+    "axis": "PCwithKids",
+    "value": -0.0221
+  },
+  {
+    "axis": "PCunmarriedSSCouple",
+    "value": 0.0585
+  },
+  {
+    "axis": "PCsexMale",
+    "value": -0.0385
+  },
+  {
+    "axis": "medianAge",
+    "value": -0.0852
+  },
+  {
+    "axis": "PCraceWhiteAlone",
+    "value": -0.1803
+  },
+  {
+    "axis": "PCraceBlackAlone",
+    "value": 0.4788
+  },
+  {
+    "axis": "PCraceAsianAlone",
+    "value": -0.1171
+  },
+  {
+    "axis": "PCraceHispanic",
+    "value": -0.0147
+  },
+  {
+    "axis": "PCforeignBorn",
+    "value": -0.11
+  },
+  {
+    "axis": "PCownerOccUnits",
+    "value": -0.2138
+  },
+  {
+    "axis": "PCwithInterests",
+    "value": -0.1663
+  },
+  {
+    "axis": "perCapitaIncome",
+    "value": -0.1427
+  },
+  {
+    "axis": "PCunemployed",
+    "value": 0.1536
+  },
+  {
+    "axis": "PCpoorStruggling",
+    "value": 0.2068
+  },
+  {
+    "axis": "PCveryWealthyHHolds",
+    "value": -0.1851
+  }
+]]

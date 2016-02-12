@@ -1,0 +1,2616 @@
+--------------------------------------------------------------------------------
+Codebook for Social Explorer report ID: R11097587
+--------------------------------------------------------------------------------
+
+Contents
+    - Table Summary
+    - Data Dictionary
+    - Citation and Use
+
+
+--------------------------------------------------------------------------------
+Table Summary
+--------------------------------------------------------------------------------
+ 
+Survey:           Census 2010
+Dataset:          Social Explorer Tables
+Tables:
+
+      1. Total Population
+         Universe:  Total population
+         Name:      T1
+         Variables:
+            T001_001:   Total Population
+
+
+      2. Population Density (per sq. mile)
+         Universe:  Total population
+         Name:      T2
+         Variables:
+            T002_001:   Total Population
+            T002_002:   Population Density (per sq. mile)
+            T002_006:   Area (Land)
+
+
+      3. Land Area (sq. miles)
+         Universe:  Area Total
+         Name:      T2A
+         Variables:
+            T02A_001:   Area Total:
+            T02A_002:      Area (Land)
+            T02A_003:      Area (Water)
+
+
+      4. Sex
+         Universe:  Total population
+         Name:      T3
+         Variables:
+            T003_001:   Total Population:
+            T003_002:      Male
+            T003_003:      Female
+
+
+      5. Sex By Age
+         Universe:  Total population
+         Name:      T4
+         Variables:
+            T004_001:   Total Population:
+            T004_002:      Male:
+            T004_003:         Under 5 years
+            T004_004:         5 to 9 years
+            T004_005:         10 to 14 years
+            T004_006:         15 to 17 years
+            T004_007:         18 to 24 years
+            T004_008:         25 to 34 years
+            T004_009:         35 to 44 years
+            T004_010:         45 to 54 years
+            T004_011:         55 to 64 years
+            T004_012:         65 and 74 years
+            T004_013:         75 to 84 years
+            T004_014:         85 years and over
+            T004_015:      Female:
+            T004_016:         Under 5 years
+            T004_017:         5 to 9 years
+            T004_018:         10 to 14 years
+            T004_019:         15 to 17 years
+            T004_020:         18 and 24 years
+            T004_021:         25 to 34 years
+            T004_022:         35 to 44 years
+            T004_023:         45 to 54 years
+            T004_024:         55 to 64 years
+            T004_025:         65 and 74 years
+            T004_026:         75 to 84 years
+            T004_027:         85 years and over
+
+
+      6. Sex By Age - Cumulative (Less)
+         Universe:  Total population
+         Name:      T4A
+         Variables:
+            T004A001:   Total Population:
+            T004A002:      Male:
+            T004A003:         Less than 5 Years
+            T004A004:         Less than 10 Years
+            T004A005:         Less than 15 Years
+            T004A006:         Less than 18 Years
+            T004A007:         Less than 25 Years
+            T004A008:         Less than 35 Years
+            T004A009:         Less than 45 Years
+            T004A010:         Less than 55 Years
+            T004A011:         Less than 65 Years
+            T004A012:         Less than 75 Years
+            T004A013:         Less than 85 Years
+            T004A014:      Female:
+            T004A015:         Less than 5 Years
+            T004A016:         Less than 10 Years
+            T004A017:         Less than 15 Years
+            T004A018:         Less than 18 Years
+            T004A019:         Less than 25 Years
+            T004A020:         Less than 35 Years
+            T004A021:         Less than 45 Years
+            T004A022:         Less than 55 Years
+            T004A023:         Less than 65 Years
+            T004A024:         Less than 75 Years
+            T004A025:         Less than 85 Years
+
+
+      7. Sex By Age - Cumulative (More)
+         Universe:  Total population
+         Name:      T4B
+         Variables:
+            T004B001:   Total Population:
+            T004B002:      Male:
+            T004B003:         More than 5 Years
+            T004B004:         More than 10 Years
+            T004B005:         More than 15 Years
+            T004B006:         More than 18 Years
+            T004B007:         More than 25 Years
+            T004B008:         More than 35 Years
+            T004B009:         More than 45 Years
+            T004B010:         More than 55 Years
+            T004B011:         More than 65 Years
+            T004B012:         More than 75 Years
+            T004B013:         More than 85 Years
+            T004B014:      Female:
+            T004B015:         More than 5 Years
+            T004B016:         More than 10 Years
+            T004B017:         More than 15 Years
+            T004B018:         More than 18 Years
+            T004B019:         More than 25 Years
+            T004B020:         More than 35 Years
+            T004B021:         More than 45 Years
+            T004B022:         More than 55 Years
+            T004B023:         More than 65 Years
+            T004B024:         More than 75 Years
+            T004B025:         More than 85 Years
+
+
+      8. Sex By Age (Short Version)
+         Universe:  Total population
+         Name:      T7
+         Variables:
+            T007_001:   Total Population:
+            T007_002:      Male:
+            T007_003:         Under 18 years
+            T007_004:         18 to 34 years
+            T007_005:         35 to 64 years
+            T007_006:         65 and over
+            T007_007:      Female:
+            T007_008:         Under 18 years
+            T007_009:         18 and 34 years
+            T007_010:         35 to 64 years
+            T007_011:         65 and over
+
+
+      9. Age
+         Universe:  Total population
+         Name:      T8
+         Variables:
+            T008_001:   Total Population:
+            T008_002:      Under 5 years
+            T008_003:      5 to 9 years
+            T008_004:      10 to 14 years
+            T008_005:      15 to 17 years
+            T008_006:      18 to 24 years
+            T008_007:      25 to 34 years
+            T008_008:      35 to 44 years
+            T008_009:      45 to 54 years
+            T008_010:      55 to 64 years
+            T008_011:      65 and 74 years
+            T008_012:      75 to 84 years
+            T008_013:      85 years and over
+
+
+      10. Age - Cumulative (Less)
+          Universe:  Total population
+          Name:      T8A
+          Variables:
+             T008A001:   Total Population:
+             T008A002:      Less than 5 Years
+             T008A003:      Less than 10 Years
+             T008A004:      Less than 15 Years
+             T008A005:      Less than 18 Years
+             T008A006:      Less than 25 Years
+             T008A007:      Less than 35 Years
+             T008A008:      Less than 45 Years
+             T008A009:      Less than 55 Years
+             T008A010:      Less than 65 Years
+             T008A011:      Less than 75 Years
+             T008A012:      Less than 85 Years
+
+
+      11. Age - Cumulative (More)
+          Universe:  Total population
+          Name:      T8B
+          Variables:
+             T008B001:   Total Population:
+             T008B002:      More than 5 Years
+             T008B003:      More than 10 Years
+             T008B004:      More than 15 Years
+             T008B005:      More than 18 Years
+             T008B006:      More than 25 Years
+             T008B007:      More than 35 Years
+             T008B008:      More than 45 Years
+             T008B009:      More than 55 Years
+             T008B010:      More than 65 Years
+             T008B011:      More than 75 Years
+             T008B012:      More than 85 Years
+
+
+      12. Age (Short Version)
+          Universe:  Total population
+          Name:      T11
+          Variables:
+             T011_001:   Total Population:
+             T011_002:      Under 18 years
+             T011_003:      18 to 34 years
+             T011_004:      35 to 64 years
+             T011_005:      65 and over
+
+
+      13. Age (Detailed version)
+          Universe:  Total population
+          Name:      T12
+          Variables:
+             T012_001:   Total population:
+             T012_002:         Under 5 years
+             T012_003:         5 to 9 years
+             T012_004:         10 to 14 years
+             T012_005:         15 to 17 years
+             T012_006:         18 and 19 years
+             T012_007:         20 years
+             T012_008:         21 years
+             T012_009:         22 to 24 years
+             T012_010:         25 to 29 years
+             T012_011:         30 to 34 years
+             T012_012:         35 to 39 years
+             T012_013:         40 to 44 years
+             T012_014:         45 to 49 years
+             T012_015:         50 to 54 years
+             T012_016:         55 to 59 years
+             T012_017:         60 and 61 years
+             T012_018:         62 to 64 years
+             T012_019:         65 and 66 years
+             T012_020:         67 to 69 years
+             T012_021:         70 to 74 years
+             T012_022:         75 to 79 years
+             T012_023:         80 to 84 years
+             T012_024:         85 years and over
+
+
+      14. Age (Detailed version) - Cumulative (Less)
+          Universe:  Total population
+          Name:      T12A
+          Variables:
+             T012A001:   Total population:
+             T012A002:         Less than 5 Years
+             T012A003:         Less than 10 Years
+             T012A004:         Less than 15 Years
+             T012A005:         Less than 18 Years
+             T012A006:         Less than 20 Years
+             T012A007:         Less than 21 Years
+             T012A008:         Less than 22 Years
+             T012A009:         Less than 25 Years
+             T012A010:         Less than 30 Years
+             T012A011:         Less than 35 Years
+             T012A012:         Less than 40 Years
+             T012A013:         Less than 45 Years
+             T012A014:         Less than 50 Years
+             T012A015:         Less than 55 Years
+             T012A016:         Less than 60 Years
+             T012A017:         Less than 62 Years
+             T012A018:         Less than 65 Years
+             T012A019:         Less than 67 Years
+             T012A020:         Less than 70 Years
+             T012A021:         Less than 75 Years
+             T012A022:         Less than 80 Years
+             T012A023:         Less than 85 Years
+
+
+      15. Age (Detailed version) - Cumulative (More)
+          Universe:  Total population
+          Name:      T12B
+          Variables:
+             T012B001:   Total population:
+             T012B002:         More than 5 Years
+             T012B003:         More than 10 Years
+             T012B004:         More than 15 Years
+             T012B005:         More than 18 Years
+             T012B006:         More than 20 Years
+             T012B007:         More than 21 Years
+             T012B008:         More than 22 Years
+             T012B009:         More than 25 Years
+             T012B010:         More than 30 Years
+             T012B011:         More than 35 Years
+             T012B012:         More than 40 Years
+             T012B013:         More than 45 Years
+             T012B014:         More than 50 Years
+             T012B015:         More than 55 Years
+             T012B016:         More than 60 Years
+             T012B017:         More than 62 Years
+             T012B018:         More than 65 Years
+             T012B019:         More than 67 Years
+             T012B020:         More than 70 Years
+             T012B021:         More than 75 Years
+             T012B022:         More than 80 Years
+             T012B023:         More than 85 Years
+
+
+      16. Age For Male Population (Short Version)
+          Universe:  Male population
+          Name:      T15
+          Variables:
+             T015_001:   Male Population:
+             T015_002:      Under 18 years
+             T015_003:      18 to 34 years
+             T015_004:      35 to 64 years
+             T015_005:      65 and over
+
+
+      17. Age For Female Population (Short Version)
+          Universe:  Female population
+          Name:      T16
+          Variables:
+             T016_001:   Female Population:
+             T016_002:      Under 18 years
+             T016_003:      18 and 34 years
+             T016_004:      35 to 64 years
+             T016_005:      65 and over
+
+
+      18. Age (White Alone)
+          Universe:  People who are White alone
+          Name:      T17
+          Variables:
+             T017_001:   White alone:
+             T017_002:      Under 5 years
+             T017_003:      5 to 9 years
+             T017_004:      10 to 14 years
+             T017_005:      15 to 17 years
+             T017_006:      18 and 19 years
+             T017_007:      20 years
+             T017_008:      21 years
+             T017_009:      22 to 24 years
+             T017_010:      25 to 29 years
+             T017_011:      30 to 34 years
+             T017_012:      35 to 39 years
+             T017_013:      40 to 44 years
+             T017_014:      45 to 49 years
+             T017_015:      50 to 54 years
+             T017_016:      55 to 59 years
+             T017_017:      60 and 61 years
+             T017_018:      62 to 64 years
+             T017_019:      65 and 66 years
+             T017_020:      67 to 69 years
+             T017_021:      70 to 74 years
+             T017_022:      75 to 79 years
+             T017_023:      80 to 84 years
+             T017_024:      85 years and over
+
+
+      19. Age (White Alone) - Cumulative (Less)
+          Universe:  People who are White alone
+          Name:      T17A
+          Variables:
+             T017A001:   White alone:
+             T017A002:      Less than 5 Years
+             T017A003:      Less than 10 Years
+             T017A004:      Less than 15 Years
+             T017A005:      Less than 18 Years
+             T017A006:      Less than 20 Years
+             T017A007:      Less than 21 Years
+             T017A008:      Less than 22 Years
+             T017A009:      Less than 25 Years
+             T017A010:      Less than 30 Years
+             T017A011:      Less than 35 Years
+             T017A012:      Less than 40 Years
+             T017A013:      Less than 45 Years
+             T017A014:      Less than 50 Years
+             T017A015:      Less than 55 Years
+             T017A016:      Less than 60 Years
+             T017A017:      Less than 62 Years
+             T017A018:      Less than 65 Years
+             T017A019:      Less than 67 Years
+             T017A020:      Less than 70 Years
+             T017A021:      Less than 75 Years
+             T017A022:      Less than 80 Years
+             T017A023:      Less than 85 Years
+
+
+      20. Age (White Alone) - Cumulative (More)
+          Universe:  People who are White alone
+          Name:      T17B
+          Variables:
+             T017B001:   White alone:
+             T017B002:      More than 5 Years
+             T017B003:      More than 10 Years
+             T017B004:      More than 15 Years
+             T017B005:      More than 18 Years
+             T017B006:      More than 20 Years
+             T017B007:      More than 21 Years
+             T017B008:      More than 22 Years
+             T017B009:      More than 25 Years
+             T017B010:      More than 30 Years
+             T017B011:      More than 35 Years
+             T017B012:      More than 40 Years
+             T017B013:      More than 45 Years
+             T017B014:      More than 50 Years
+             T017B015:      More than 55 Years
+             T017B016:      More than 60 Years
+             T017B017:      More than 62 Years
+             T017B018:      More than 65 Years
+             T017B019:      More than 67 Years
+             T017B020:      More than 70 Years
+             T017B021:      More than 75 Years
+             T017B022:      More than 80 Years
+             T017B023:      More than 85 Years
+
+
+      21. Age (Black Or African American Alone)
+          Universe:  People who are Black or African American alone
+          Name:      T20
+          Variables:
+             T020_001:   Black or African American alone:
+             T020_002:      Under 5 years
+             T020_003:      5 to 9 years
+             T020_004:      10 to 14 years
+             T020_005:      15 to 17 years
+             T020_006:      18 and 19 years
+             T020_007:      20 years
+             T020_008:      21 years
+             T020_009:      22 to 24 years
+             T020_010:      25 to 29 years
+             T020_011:      30 to 34 years
+             T020_012:      35 to 39 years
+             T020_013:      40 to 44 years
+             T020_014:      45 to 49 years
+             T020_015:      50 to 54 years
+             T020_016:      55 to 59 years
+             T020_017:      60 and 61 years
+             T020_018:      62 to 64 years
+             T020_019:      65 and 66 years
+             T020_020:      67 to 69 years
+             T020_021:      70 to 74 years
+             T020_022:      75 to 79 years
+             T020_023:      80 to 84 years
+             T020_024:      85 years and over
+
+
+      22. Age (Black Or African American Alone) - Cumulative (Less)
+          Universe:  People who are Black or African American alone
+          Name:      T20A
+          Variables:
+             T020A001:   Black or African American alone:
+             T020A002:      Less than 5 Years
+             T020A003:      Less than 10 Years
+             T020A004:      Less than 15 Years
+             T020A005:      Less than 18 Years
+             T020A006:      Less than 20 Years
+             T020A007:      Less than 21 Years
+             T020A008:      Less than 22 Years
+             T020A009:      Less than 25 Years
+             T020A010:      Less than 30 Years
+             T020A011:      Less than 35 Years
+             T020A012:      Less than 40 Years
+             T020A013:      Less than 45 Years
+             T020A014:      Less than 50 Years
+             T020A015:      Less than 55 Years
+             T020A016:      Less than 60 Years
+             T020A017:      Less than 62 Years
+             T020A018:      Less than 65 Years
+             T020A019:      Less than 67 Years
+             T020A020:      Less than 70 Years
+             T020A021:      Less than 75 Years
+             T020A022:      Less than 80 Years
+             T020A023:      Less than 85 Years
+
+
+      23. Age (Black Or African American Alone) - Cumulative (More)
+          Universe:  People who are Black or African American alone
+          Name:      T20B
+          Variables:
+             T020B001:   Black or African American alone:
+             T020B002:      More than 5 Years
+             T020B003:      More than 10 Years
+             T020B004:      More than 15 Years
+             T020B005:      More than 18 Years
+             T020B006:      More than 20 Years
+             T020B007:      More than 21 Years
+             T020B008:      More than 22 Years
+             T020B009:      More than 25 Years
+             T020B010:      More than 30 Years
+             T020B011:      More than 35 Years
+             T020B012:      More than 40 Years
+             T020B013:      More than 45 Years
+             T020B014:      More than 50 Years
+             T020B015:      More than 55 Years
+             T020B016:      More than 60 Years
+             T020B017:      More than 62 Years
+             T020B018:      More than 65 Years
+             T020B019:      More than 67 Years
+             T020B020:      More than 70 Years
+             T020B021:      More than 75 Years
+             T020B022:      More than 80 Years
+             T020B023:      More than 85 Years
+
+
+      24. Age (American Indian And Alaska Native Alone)
+          Universe:  People who are American Indian and Alaska Native alone
+          Name:      T23
+          Variables:
+             T023_001:   American Indian and Alaska Native alone:
+             T023_002:      Under 5 years
+             T023_003:      5 to 9 years
+             T023_004:      10 to 14 years
+             T023_005:      15 to 17 years
+             T023_006:      18 and 19 years
+             T023_007:      20 years
+             T023_008:      21 years
+             T023_009:      22 to 24 years
+             T023_010:      25 to 29 years
+             T023_011:      30 to 34 years
+             T023_012:      35 to 39 years
+             T023_013:      40 to 44 years
+             T023_014:      45 to 49 years
+             T023_015:      50 to 54 years
+             T023_016:      55 to 59 years
+             T023_017:      60 and 61 years
+             T023_018:      62 to 64 years
+             T023_019:      65 and 66 years
+             T023_020:      67 to 69 years
+             T023_021:      70 to 74 years
+             T023_022:      75 to 79 years
+             T023_023:      80 to 84 years
+             T023_024:      85 years and over
+
+
+      25. Age (American Indian And Alaska Native Alone) - Cumulative (Less)
+          Universe:  People who are American Indian and Alaska Native alone
+          Name:      T23A
+          Variables:
+             T023A001:   American Indian and Alaska Native alone:
+             T023A002:      Less than 5 Years
+             T023A003:      Less than 10 Years
+             T023A004:      Less than 15 Years
+             T023A005:      Less than 18 Years
+             T023A006:      Less than 20 Years
+             T023A007:      Less than 21 Years
+             T023A008:      Less than 22 Years
+             T023A009:      Less than 25 Years
+             T023A010:      Less than 30 Years
+             T023A011:      Less than 35 Years
+             T023A012:      Less than 40 Years
+             T023A013:      Less than 45 Years
+             T023A014:      Less than 50 Years
+             T023A015:      Less than 55 Years
+             T023A016:      Less than 60 Years
+             T023A017:      Less than 62 Years
+             T023A018:      Less than 65 Years
+             T023A019:      Less than 67 Years
+             T023A020:      Less than 70 Years
+             T023A021:      Less than 75 Years
+             T023A022:      Less than 80 Years
+             T023A023:      Less than 85 Years
+
+
+      26. Age (American Indian And Alaska Native Alone) - Cumulative (More)
+          Universe:  People who are American Indian and Alaska Native alone
+          Name:      T23B
+          Variables:
+             T023B001:   American Indian and Alaska Native alone:
+             T023B002:      More than 5 Years
+             T023B003:      More than 10 Years
+             T023B004:      More than 15 Years
+             T023B005:      More than 18 Years
+             T023B006:      More than 20 Years
+             T023B007:      More than 21 Years
+             T023B008:      More than 22 Years
+             T023B009:      More than 25 Years
+             T023B010:      More than 30 Years
+             T023B011:      More than 35 Years
+             T023B012:      More than 40 Years
+             T023B013:      More than 45 Years
+             T023B014:      More than 50 Years
+             T023B015:      More than 55 Years
+             T023B016:      More than 60 Years
+             T023B017:      More than 62 Years
+             T023B018:      More than 65 Years
+             T023B019:      More than 67 Years
+             T023B020:      More than 70 Years
+             T023B021:      More than 75 Years
+             T023B022:      More than 80 Years
+             T023B023:      More than 85 Years
+
+
+      27. Age (Asian Alone)
+          Universe:  People who are Asian alone
+          Name:      T26
+          Variables:
+             T026_001:   Asian alone:
+             T026_002:      Under 5 years
+             T026_003:      5 to 9 years
+             T026_004:      10 to 14 years
+             T026_005:      15 to 17 years
+             T026_006:      18 and 19 years
+             T026_007:      20 years
+             T026_008:      21 years
+             T026_009:      22 to 24 years
+             T026_010:      25 to 29 years
+             T026_011:      30 to 34 years
+             T026_012:      35 to 39 years
+             T026_013:      40 to 44 years
+             T026_014:      45 to 49 years
+             T026_015:      50 to 54 years
+             T026_016:      55 to 59 years
+             T026_017:      60 and 61 years
+             T026_018:      62 to 64 years
+             T026_019:      65 and 66 years
+             T026_020:      67 to 69 years
+             T026_021:      70 to 74 years
+             T026_022:      75 to 79 years
+             T026_023:      80 to 84 years
+             T026_024:      85 years and over
+
+
+      28. Age (Asian Alone) - Cumulative (Less)
+          Universe:  People who are Asian alone
+          Name:      T26A
+          Variables:
+             T026A001:   Asian alone:
+             T026A002:      Less than 5 Years
+             T026A003:      Less than 10 Years
+             T026A004:      Less than 15 Years
+             T026A005:      Less than 18 Years
+             T026A006:      Less than 20 Years
+             T026A007:      Less than 21 Years
+             T026A008:      Less than 22 Years
+             T026A009:      Less than 25 Years
+             T026A010:      Less than 30 Years
+             T026A011:      Less than 35 Years
+             T026A012:      Less than 40 Years
+             T026A013:      Less than 45 Years
+             T026A014:      Less than 50 Years
+             T026A015:      Less than 55 Years
+             T026A016:      Less than 60 Years
+             T026A017:      Less than 62 Years
+             T026A018:      Less than 65 Years
+             T026A019:      Less than 67 Years
+             T026A020:      Less than 70 Years
+             T026A021:      Less than 75 Years
+             T026A022:      Less than 80 Years
+             T026A023:      Less than 85 Years
+
+
+      29. Age (Asian Alone) - Cumulative (More)
+          Universe:  People who are Asian alone
+          Name:      T26B
+          Variables:
+             T026B001:   Asian alone:
+             T026B002:      More than 5 Years
+             T026B003:      More than 10 Years
+             T026B004:      More than 15 Years
+             T026B005:      More than 18 Years
+             T026B006:      More than 20 Years
+             T026B007:      More than 21 Years
+             T026B008:      More than 22 Years
+             T026B009:      More than 25 Years
+             T026B010:      More than 30 Years
+             T026B011:      More than 35 Years
+             T026B012:      More than 40 Years
+             T026B013:      More than 45 Years
+             T026B014:      More than 50 Years
+             T026B015:      More than 55 Years
+             T026B016:      More than 60 Years
+             T026B017:      More than 62 Years
+             T026B018:      More than 65 Years
+             T026B019:      More than 67 Years
+             T026B020:      More than 70 Years
+             T026B021:      More than 75 Years
+             T026B022:      More than 80 Years
+             T026B023:      More than 85 Years
+
+
+      30. Age (Native Hawaiian And Other Pacific Islander Alone)
+          Universe:  People who are Native Hawaiian and Other Pacific Islander alone
+          Name:      T29
+          Variables:
+             T029_001:   Native Hawaiian and Other Pacific Islander alone:
+             T029_002:      Under 5 years
+             T029_003:      5 to 9 years
+             T029_004:      10 to 14 years
+             T029_005:      15 to 17 years
+             T029_006:      18 and 19 years
+             T029_007:      20 years
+             T029_008:      21 years
+             T029_009:      22 to 24 years
+             T029_010:      25 to 29 years
+             T029_011:      30 to 34 years
+             T029_012:      35 to 39 years
+             T029_013:      40 to 44 years
+             T029_014:      45 to 49 years
+             T029_015:      50 to 54 years
+             T029_016:      55 to 59 years
+             T029_017:      60 and 61 years
+             T029_018:      62 to 64 years
+             T029_019:      65 and 66 years
+             T029_020:      67 to 69 years
+             T029_021:      70 to 74 years
+             T029_022:      75 to 79 years
+             T029_023:      80 to 84 years
+             T029_024:      85 years and over
+
+
+      31. Age (Native Hawaiian And Other Pacific Islander Alone) - Cumulative (Less)
+          Universe:  People who are Native Hawaiian and Other Pacific Islander alone
+          Name:      T29A
+          Variables:
+             T029A001:   Native Hawaiian and Other Pacific Islander alone:
+             T029A002:      Less than 5 Years
+             T029A003:      Less than 10 Years
+             T029A004:      Less than 15 Years
+             T029A005:      Less than 18 Years
+             T029A006:      Less than 20 Years
+             T029A007:      Less than 21 Years
+             T029A008:      Less than 22 Years
+             T029A009:      Less than 25 Years
+             T029A010:      Less than 30 Years
+             T029A011:      Less than 35 Years
+             T029A012:      Less than 40 Years
+             T029A013:      Less than 45 Years
+             T029A014:      Less than 50 Years
+             T029A015:      Less than 55 Years
+             T029A016:      Less than 60 Years
+             T029A017:      Less than 62 Years
+             T029A018:      Less than 65 Years
+             T029A019:      Less than 67 Years
+             T029A020:      Less than 70 Years
+             T029A021:      Less than 75 Years
+             T029A022:      Less than 80 Years
+             T029A023:      Less than 85 Years
+
+
+      32. Age (Native Hawaiian And Other Pacific Islander Alone) - Cumulative (More)
+          Universe:  People who are Native Hawaiian and Other Pacific Islander alone
+          Name:      T29B
+          Variables:
+             T029B001:   Native Hawaiian and Other Pacific Islander alone:
+             T029B002:      More than 5 Years
+             T029B003:      More than 10 Years
+             T029B004:      More than 15 Years
+             T029B005:      More than 18 Years
+             T029B006:      More than 20 Years
+             T029B007:      More than 21 Years
+             T029B008:      More than 22 Years
+             T029B009:      More than 25 Years
+             T029B010:      More than 30 Years
+             T029B011:      More than 35 Years
+             T029B012:      More than 40 Years
+             T029B013:      More than 45 Years
+             T029B014:      More than 50 Years
+             T029B015:      More than 55 Years
+             T029B016:      More than 60 Years
+             T029B017:      More than 62 Years
+             T029B018:      More than 65 Years
+             T029B019:      More than 67 Years
+             T029B020:      More than 70 Years
+             T029B021:      More than 75 Years
+             T029B022:      More than 80 Years
+             T029B023:      More than 85 Years
+
+
+      33. Age (Some Other Race Alone)
+          Universe:  People who are Some Other Race alone
+          Name:      T32
+          Variables:
+             T032_001:   Some Other Race alone:
+             T032_002:      Under 5 years
+             T032_003:      5 to 9 years
+             T032_004:      10 to 14 years
+             T032_005:      15 to 17 years
+             T032_006:      18 and 19 years
+             T032_007:      20 years
+             T032_008:      21 years
+             T032_009:      22 to 24 years
+             T032_010:      25 to 29 years
+             T032_011:      30 to 34 years
+             T032_012:      35 to 39 years
+             T032_013:      40 to 44 years
+             T032_014:      45 to 49 years
+             T032_015:      50 to 54 years
+             T032_016:      55 to 59 years
+             T032_017:      60 and 61 years
+             T032_018:      62 to 64 years
+             T032_019:      65 and 66 years
+             T032_020:      67 to 69 years
+             T032_021:      70 to 74 years
+             T032_022:      75 to 79 years
+             T032_023:      80 to 84 years
+             T032_024:      85 years and over
+
+
+      34. Age (Some Other Race Alone) - Cumulative (Less)
+          Universe:  People who are Some Other Race alone
+          Name:      T32A
+          Variables:
+             T032A001:   Some Other Race alone:
+             T032A002:      Less than 5 Years
+             T032A003:      Less than 10 Years
+             T032A004:      Less than 15 Years
+             T032A005:      Less than 18 Years
+             T032A006:      Less than 20 Years
+             T032A007:      Less than 21 Years
+             T032A008:      Less than 22 Years
+             T032A009:      Less than 25 Years
+             T032A010:      Less than 30 Years
+             T032A011:      Less than 35 Years
+             T032A012:      Less than 40 Years
+             T032A013:      Less than 45 Years
+             T032A014:      Less than 50 Years
+             T032A015:      Less than 55 Years
+             T032A016:      Less than 60 Years
+             T032A017:      Less than 62 Years
+             T032A018:      Less than 65 Years
+             T032A019:      Less than 67 Years
+             T032A020:      Less than 70 Years
+             T032A021:      Less than 75 Years
+             T032A022:      Less than 80 Years
+             T032A023:      Less than 85 Years
+
+
+      35. Age (Some Other Race Alone) - Cumulative (More)
+          Universe:  People who are Some Other Race alone
+          Name:      T32B
+          Variables:
+             T032B001:   Some Other Race alone:
+             T032B002:      More than 5 Years
+             T032B003:      More than 10 Years
+             T032B004:      More than 15 Years
+             T032B005:      More than 18 Years
+             T032B006:      More than 20 Years
+             T032B007:      More than 21 Years
+             T032B008:      More than 22 Years
+             T032B009:      More than 25 Years
+             T032B010:      More than 30 Years
+             T032B011:      More than 35 Years
+             T032B012:      More than 40 Years
+             T032B013:      More than 45 Years
+             T032B014:      More than 50 Years
+             T032B015:      More than 55 Years
+             T032B016:      More than 60 Years
+             T032B017:      More than 62 Years
+             T032B018:      More than 65 Years
+             T032B019:      More than 67 Years
+             T032B020:      More than 70 Years
+             T032B021:      More than 75 Years
+             T032B022:      More than 80 Years
+             T032B023:      More than 85 Years
+
+
+      36. Age (Two Or More Races)
+          Universe:  People who are Two or More Races
+          Name:      T35
+          Variables:
+             T035_001:   Two or More Races:
+             T035_002:      Under 5 years
+             T035_003:      5 to 9 years
+             T035_004:      10 to 14 years
+             T035_005:      15 to 17 years
+             T035_006:      18 and 19 years
+             T035_007:      20 years
+             T035_008:      21 years
+             T035_009:      22 to 24 years
+             T035_010:      25 to 29 years
+             T035_011:      30 to 34 years
+             T035_012:      35 to 39 years
+             T035_013:      40 to 44 years
+             T035_014:      45 to 49 years
+             T035_015:      50 to 54 years
+             T035_016:      55 to 59 years
+             T035_017:      60 and 61 years
+             T035_018:      62 to 64 years
+             T035_019:      65 and 66 years
+             T035_020:      67 to 69 years
+             T035_021:      70 to 74 years
+             T035_022:      75 to 79 years
+             T035_023:      80 to 84 years
+             T035_024:      85 years and over
+
+
+      37. Age (Two Or More Races) - Cumulative (Less)
+          Universe:  People who are Two or More Races
+          Name:      T35A
+          Variables:
+             T035A001:   Two or More Races:
+             T035A002:      Less than 5 Years
+             T035A003:      Less than 10 Years
+             T035A004:      Less than 15 Years
+             T035A005:      Less than 18 Years
+             T035A006:      Less than 20 Years
+             T035A007:      Less than 21 Years
+             T035A008:      Less than 22 Years
+             T035A009:      Less than 25 Years
+             T035A010:      Less than 30 Years
+             T035A011:      Less than 35 Years
+             T035A012:      Less than 40 Years
+             T035A013:      Less than 45 Years
+             T035A014:      Less than 50 Years
+             T035A015:      Less than 55 Years
+             T035A016:      Less than 60 Years
+             T035A017:      Less than 62 Years
+             T035A018:      Less than 65 Years
+             T035A019:      Less than 67 Years
+             T035A020:      Less than 70 Years
+             T035A021:      Less than 75 Years
+             T035A022:      Less than 80 Years
+             T035A023:      Less than 85 Years
+
+
+      38. Age (Two Or More Races) - Cumulative (More)
+          Universe:  People who are Two or More Races
+          Name:      T35B
+          Variables:
+             T035B001:   Two or More Races:
+             T035B002:      More than 5 Years
+             T035B003:      More than 10 Years
+             T035B004:      More than 15 Years
+             T035B005:      More than 18 Years
+             T035B006:      More than 20 Years
+             T035B007:      More than 21 Years
+             T035B008:      More than 22 Years
+             T035B009:      More than 25 Years
+             T035B010:      More than 30 Years
+             T035B011:      More than 35 Years
+             T035B012:      More than 40 Years
+             T035B013:      More than 45 Years
+             T035B014:      More than 50 Years
+             T035B015:      More than 55 Years
+             T035B016:      More than 60 Years
+             T035B017:      More than 62 Years
+             T035B018:      More than 65 Years
+             T035B019:      More than 67 Years
+             T035B020:      More than 70 Years
+             T035B021:      More than 75 Years
+             T035B022:      More than 80 Years
+             T035B023:      More than 85 Years
+
+
+      39. Age (Hispanic Or Latino)
+          Universe:  People who are Hispanic or Latino
+          Name:      T38
+          Variables:
+             T038_001:   Hispanic or Latino:
+             T038_002:      Under 5 years
+             T038_003:      5 to 9 years
+             T038_004:      10 to 14 years
+             T038_005:      15 to 17 years
+             T038_006:      18 and 19 years
+             T038_007:      20 years
+             T038_008:      21 years
+             T038_009:      22 to 24 years
+             T038_010:      25 to 29 years
+             T038_011:      30 to 34 years
+             T038_012:      35 to 39 years
+             T038_013:      40 to 44 years
+             T038_014:      45 to 49 years
+             T038_015:      50 to 54 years
+             T038_016:      55 to 59 years
+             T038_017:      60 and 61 years
+             T038_018:      62 to 64 years
+             T038_019:      65 and 66 years
+             T038_020:      67 to 69 years
+             T038_021:      70 to 74 years
+             T038_022:      75 to 79 years
+             T038_023:      80 to 84 years
+             T038_024:      85 years and over
+
+
+      40. Age (Hispanic Or Latino) - Cumulative (Less)
+          Universe:  People who are Hispanic or Latino
+          Name:      T38A
+          Variables:
+             T038A001:   Hispanic or Latino:
+             T038A002:      Less than 5 Years
+             T038A003:      Less than 10 Years
+             T038A004:      Less than 15 Years
+             T038A005:      Less than 18 Years
+             T038A006:      Less than 20 Years
+             T038A007:      Less than 21 Years
+             T038A008:      Less than 22 Years
+             T038A009:      Less than 25 Years
+             T038A010:      Less than 30 Years
+             T038A011:      Less than 35 Years
+             T038A012:      Less than 40 Years
+             T038A013:      Less than 45 Years
+             T038A014:      Less than 50 Years
+             T038A015:      Less than 55 Years
+             T038A016:      Less than 60 Years
+             T038A017:      Less than 62 Years
+             T038A018:      Less than 65 Years
+             T038A019:      Less than 67 Years
+             T038A020:      Less than 70 Years
+             T038A021:      Less than 75 Years
+             T038A022:      Less than 80 Years
+             T038A023:      Less than 85 Years
+
+
+      41. Age (Hispanic Or Latino) - Cumulative (More)
+          Universe:  People who are Hispanic or Latino
+          Name:      T38B
+          Variables:
+             T038B001:   Hispanic or Latino:
+             T038B002:      More than 5 Years
+             T038B003:      More than 10 Years
+             T038B004:      More than 15 Years
+             T038B005:      More than 18 Years
+             T038B006:      More than 20 Years
+             T038B007:      More than 21 Years
+             T038B008:      More than 22 Years
+             T038B009:      More than 25 Years
+             T038B010:      More than 30 Years
+             T038B011:      More than 35 Years
+             T038B012:      More than 40 Years
+             T038B013:      More than 45 Years
+             T038B014:      More than 50 Years
+             T038B015:      More than 55 Years
+             T038B016:      More than 60 Years
+             T038B017:      More than 62 Years
+             T038B018:      More than 65 Years
+             T038B019:      More than 67 Years
+             T038B020:      More than 70 Years
+             T038B021:      More than 75 Years
+             T038B022:      More than 80 Years
+             T038B023:      More than 85 Years
+
+
+      42. Age (White Alone, Not Hispanic Or Latino)
+          Universe:  People who are White alone, not Hispanic or Latino
+          Name:      T41
+          Variables:
+             T041_001:   White alone, not Hispanic or Latino:
+             T041_002:      Under 5 years
+             T041_003:      5 to 9 years
+             T041_004:      10 to 14 years
+             T041_005:      15 to17 years
+             T041_006:      18 and 19 years
+             T041_007:      20 years
+             T041_008:      21 years
+             T041_009:      22 to 24 years
+             T041_010:      25 to 29 years
+             T041_011:      30 to 34 years
+             T041_012:      35 to 39 years
+             T041_013:      40 to 44 years
+             T041_014:      45 to 49 years
+             T041_015:      50 to 54 years
+             T041_016:      55 to 59 years
+             T041_017:      60 and 61 years
+             T041_018:      62 to 64 years
+             T041_019:      65 and 66 years
+             T041_020:      67 to 69 years
+             T041_021:      70 to 74 years
+             T041_022:      75 to 79 years
+             T041_023:      80 to 84 years
+             T041_024:      85 years and over
+
+
+      43. Age (White Alone, Not Hispanic Or Latino) - Cumulative (Less)
+          Universe:  People who are White alone, not Hispanic or Latino
+          Name:      T41A
+          Variables:
+             T041A001:   White alone, not Hispanic or Latino:
+             T041A002:      Less than 5 Years
+             T041A003:      Less than 10 Years
+             T041A004:      Less than 15 Years
+             T041A005:      Less than 18 Years
+             T041A006:      Less than 20 Years
+             T041A007:      Less than 21 Years
+             T041A008:      Less than 22 Years
+             T041A009:      Less than 25 Years
+             T041A010:      Less than 30 Years
+             T041A011:      Less than 35 Years
+             T041A012:      Less than 40 Years
+             T041A013:      Less than 45 Years
+             T041A014:      Less than 50 Years
+             T041A015:      Less than 55 Years
+             T041A016:      Less than 60 Years
+             T041A017:      Less than 62 Years
+             T041A018:      Less than 65 Years
+             T041A019:      Less than 67 Years
+             T041A020:      Less than 70 Years
+             T041A021:      Less than 75 Years
+             T041A022:      Less than 80 Years
+             T041A023:      Less than 85 Years
+
+
+      44. Age (White Alone, Not Hispanic Or Latino) - Cumulative (More)
+          Universe:  People who are White alone, not Hispanic or Latino
+          Name:      T41B
+          Variables:
+             T041B001:   White alone, not Hispanic or Latino:
+             T041B002:      More than 5 Years
+             T041B003:      More than 10 Years
+             T041B004:      More than 15 Years
+             T041B005:      More than 18 Years
+             T041B006:      More than 20 Years
+             T041B007:      More than 21 Years
+             T041B008:      More than 22 Years
+             T041B009:      More than 25 Years
+             T041B010:      More than 30 Years
+             T041B011:      More than 35 Years
+             T041B012:      More than 40 Years
+             T041B013:      More than 45 Years
+             T041B014:      More than 50 Years
+             T041B015:      More than 55 Years
+             T041B016:      More than 60 Years
+             T041B017:      More than 62 Years
+             T041B018:      More than 65 Years
+             T041B019:      More than 67 Years
+             T041B020:      More than 70 Years
+             T041B021:      More than 75 Years
+             T041B022:      More than 80 Years
+             T041B023:      More than 85 Years
+
+
+      45. Median Age By Sex
+          Universe:  Total population
+          Name:      T44
+          Variables:
+             T044_001:   Median age:
+             T044_002:      Male
+             T044_003:      Female
+
+
+      46. Median Age By Sex (White Alone)
+          Universe:  People who are White alone
+          Name:      T45
+          Variables:
+             T045_001:   Median age:
+             T045_002:      Male
+             T045_003:      Female
+
+
+      47. Median Age By Sex (Black Or African American Alone)
+          Universe:  People who are Black or African American alone
+          Name:      T46
+          Variables:
+             T046_001:   Median age:
+             T046_002:      Male
+             T046_003:      Female
+
+
+      48. Median Age By Sex (American Indian And Alaska Native Alone)
+          Universe:  People who are American Indian and Alaska Native alone
+          Name:      T47
+          Variables:
+             T047_001:   Median age:
+             T047_002:      Male
+             T047_003:      Female
+
+
+      49. Median Age By Sex (Asian Alone)
+          Universe:  People who are Asian alone
+          Name:      T48
+          Variables:
+             T048_001:   Median age:
+             T048_002:      Male
+             T048_003:      Female
+
+
+      50. Median Age By Sex (Native Hawaiian And Other Pacific Islander Alone)
+          Universe:  People who are Native Hawaiian and Other Pacific Islander alone
+          Name:      T49
+          Variables:
+             T049_001:   Median age:
+             T049_002:      Male
+             T049_003:      Female
+
+
+      51. Median Age By Sex (Some Other Race Alone)
+          Universe:  People who are Some Other Race alone
+          Name:      T50
+          Variables:
+             T050_001:   Median age:
+             T050_002:      Male
+             T050_003:      Female
+
+
+      52. Median Age By Sex (Two Or More Races)
+          Universe:  People who are Two or More Races
+          Name:      T51
+          Variables:
+             T051_001:   Median age:
+             T051_002:      Male
+             T051_003:      Female
+
+
+      53. Median Age By Sex (Hispanic Or Latino)
+          Universe:  People who are Hispanic or Latino
+          Name:      T52
+          Variables:
+             T052_001:   Median age:
+             T052_002:      Male
+             T052_003:      Female
+
+
+      54. Median Age By Sex (White Alone, Not Hispanic Or Latino)
+          Universe:  People who are White alone, not Hispanic or Latino
+          Name:      T53
+          Variables:
+             T053_001:   Median age:
+             T053_002:      Male
+             T053_003:      Female
+
+
+      55. Race
+          Universe:  Total population
+          Name:      T54
+          Variables:
+             T054_001:   Total population:
+             T054_002:      White alone
+             T054_003:      Black or African American alone
+             T054_004:      American Indian and Alaska Native alone
+             T054_005:      Asian alone
+             T054_006:      Native Hawaiian and Other Pacific Islander alone
+             T054_007:      Some Other Race alone
+             T054_008:      Two or More Races
+
+
+      56. Hispanic Or Latino Origin By Race
+          Universe:  Total population
+          Name:      T55
+          Variables:
+             T055_001:   Total population:
+             T055_002:      Not Hispanic or Latino:
+             T055_003:         White alone
+             T055_004:         Black or African American alone
+             T055_005:         American Indian and Alaska Native alone
+             T055_006:         Asian alone
+             T055_007:         Native Hawaiian and Other Pacific Islander alone
+             T055_008:         Some Other Race alone
+             T055_009:         Two or More Races
+             T055_010:      Hispanic or Latino:
+             T055_011:         White alone
+             T055_012:         Black or African American alone
+             T055_013:         American Indian and Alaska Native alone
+             T055_014:         Asian alone
+             T055_015:         Native Hawaiian and Other Pacific Islander alone
+             T055_016:         Some Other Race alone
+             T055_017:         Two or More Races
+
+
+      57. Hispanic Or Latino By Specific Origin
+          Universe:  Total population
+          Name:      T56
+          Variables:
+             T056_001:   Total population:
+             T056_002:      Not Hispanic or Latino:
+             T056_003:      Hispanic or Latino:
+             T056_004:         Mexican
+             T056_005:         Puerto Rican
+             T056_006:         Cuban
+             T056_007:         Dominican
+             T056_008:         Central American (excluding Mexican):
+             T056_009:            Costa Rican
+             T056_010:            Guatemalan
+             T056_011:            Honduran
+             T056_012:            Nicaraguan
+             T056_013:            Panamanian
+             T056_014:            Salvadoran
+             T056_015:            Other Central American
+             T056_016:         South American:
+             T056_017:            Argentinean
+             T056_018:            Bolivian
+             T056_019:            Chilean
+             T056_020:            Colombian
+             T056_021:            Ecuadorian
+             T056_022:            Paraguayan
+             T056_023:            Peruvian
+             T056_024:            Uruguayan
+             T056_025:            Venezuelan
+             T056_026:            Other South American
+             T056_027:         Other Hispanic or Latino:
+             T056_028:            Spaniard
+             T056_029:            Spanish
+             T056_030:            Spanish American
+             T056_031:            All other Hispanic or Latino
+
+
+      58. Asian Alone With One Asian Category For Selected Groups
+          Universe:  Total Asian categories tallied for people with one Asian category only and people with no specific Asian category reported
+          Name:      T57
+          Variables:
+             T057_001:   Total Asian with one Asian category only:
+             T057_002:      Asian Indian
+             T057_003:      Bangladeshi
+             T057_004:      Bhutanese
+             T057_005:      Burmese
+             T057_006:      Cambodian
+             T057_007:      Chinese (except Taiwanese)
+             T057_008:      Filipino
+             T057_009:      Hmong
+             T057_010:      Indonesian
+             T057_011:      Japanese
+             T057_012:      Korean
+             T057_013:      Laotian
+             T057_014:      Malaysian
+             T057_015:      Nepalese
+             T057_016:      Pakistani
+             T057_017:      Sri Lankan
+             T057_018:      Taiwanese
+             T057_019:      Thai
+             T057_020:      Vietnamese
+             T057_021:      Other Asian, specified
+             T057_022:      Other Asian, not specified
+
+
+      59. Households By Household Type
+          Universe:  Households
+          Name:      T58
+          Variables:
+             T058_001:   Households:
+             T058_002:      Family households:
+             T058_003:         Married-couple family
+             T058_004:         Other family:
+             T058_005:            Male householder, no wife present
+             T058_006:            Female householder, no husband present
+             T058_007:      Nonfamily households:
+             T058_008:         Householder living alone
+             T058_009:         Householder not living alone
+
+
+      60. Households By Presence Of People Under 18 Years By Household Type
+          Universe:  Households
+          Name:      T59
+          Variables:
+             T059_001:   Households:
+             T059_002:      Households with one or more people under 18 years:
+             T059_003:         Family households:
+             T059_004:            Married-couple family
+             T059_005:            Other family:
+             T059_006:               Male householder, no wife present
+             T059_007:               Female householder, no husband present
+             T059_008:         Nonfamily households:
+             T059_009:            Male householder
+             T059_010:            Female householder
+             T059_011:      Households with no people under 18 years:
+             T059_012:         Family households:
+             T059_013:            Married-couple family
+             T059_014:            Other family:
+             T059_015:               Male householder, no wife present
+             T059_016:               Female householder, no husband present
+             T059_017:         Nonfamily households:
+             T059_018:            Male householder
+             T059_019:            Female householder
+
+
+      61. Households By Race of Householder
+          Universe:  Households
+          Name:      T60
+          Variables:
+             T060_001:   Households:
+             T060_002:      with a householder who is White Alone
+             T060_003:      with a householder who is Black or African American Alone
+             T060_004:      with a householder who is American Indian and Alaska Native Alone
+             T060_005:      with a householder who is Asian Alone
+             T060_006:      with a householder who is Native Hawaiian and Other Pacific Islander Alone
+             T060_007:      with a householder who is Some other race Alone
+             T060_008:      with a householder who is two or more races
+
+
+      62. Households By Hispanic or Latino Status of Householder
+          Universe:  Households
+          Name:      T61
+          Variables:
+             T061_001:   Households:
+             T061_002:      with a householder who is Hispanic or Latino
+             T061_003:      with a householder who is Not Hispanic or Latino
+
+
+      63. Households With a Householder Who is White Alone, Non Hispanic or Latino
+          Universe:  Households
+          Name:      T62
+          Variables:
+             T062_001:   Households:
+             T062_002:      with a householder who is White Alone, not Hispanic or Latino
+             T062_003:      with a householder who is not White Alone, or is Hispanic or Latino
+
+
+      64. Population in Households By Household Type and Relationship
+          Universe:  Total population
+          Name:      T63
+          Variables:
+             T063_001:   Total population:
+             T063_002:      In households:
+             T063_003:         In family households:
+             T063_004:            Householder
+             T063_005:            Spouse
+             T063_006:            Child
+             T063_007:            Grandchild
+             T063_008:            Brother or sister
+             T063_009:            Parent
+             T063_010:            Other relatives
+             T063_011:            Nonrelatives
+             T063_012:         In nonfamily households:
+             T063_013:            Living alone
+             T063_014:            Not living alone
+             T063_015:            Nonrelatives
+             T063_016:      In group quarters:
+             T063_017:         Institutionalized population
+             T063_018:         Noninstitutionalized population
+
+
+      65. Average Household Size By Age
+          Universe:  Households
+          Name:      T64
+          Variables:
+             T064_001:   Average household size
+
+
+      66. Unmarried-Partner Households By Sex Of Partners
+          Universe:  Households
+          Name:      T65
+          Variables:
+             T065_001:   Households:
+             T065_002:      Unmarried-partner households:
+             T065_003:         Same Sex Partners:
+             T065_004:            Male householder and male partner
+             T065_005:            Female householder and female partner
+             T065_006:         Opposite Sex Partners:
+             T065_007:            Male householder and female partner
+             T065_008:            Female householder and male partner
+             T065_009:      All other households
+
+
+      67. Group Quarters Population
+          Universe:  Total population
+          Name:      T66
+          Variables:
+             T066_001:   Total population:
+             T066_002:      Population in group quarters
+             T066_003:      Population NOT in group quarters
+
+
+      68. Group Quarters Population By Group Quarters Type
+          Universe:  Total population
+          Name:      T67
+          Variables:
+             T067_001:   Total population:
+             T067_002:      Population in group quarters:
+             T067_003:         Institutionalized population:
+             T067_004:            Correctional institutions
+             T067_005:            Nursing homes
+             T067_006:            Other institutions
+             T067_007:         Noninstitutionalized population:
+             T067_008:            College/University student housing
+             T067_009:            Military quarters
+             T067_010:            Other noninstitutional facilities
+             T067_011:      Population NOT in group Quarters
+
+
+      69. Housing Units
+          Universe:  Housing units
+          Name:      T68
+          Variables:
+             T068_001:   Housing units
+
+
+      70. Tenure
+          Universe:  Occupied housing units
+          Name:      T69
+          Variables:
+             T069_001:   Occupied housing units:
+             T069_002:      Owner Occupied
+             T069_003:      Renter occupied
+
+
+      71. Occupancy Status
+          Universe:  Housing units
+          Name:      T70
+          Variables:
+             T070_001:   Housing units:
+             T070_002:      Occupied
+             T070_003:      Vacant
+
+
+      72. Vacancy Status
+          Universe:  Vacant housing units
+          Name:      T71
+          Variables:
+             T071_001:   Vacant housing units:
+             T071_002:      For rent
+             T071_003:      For sale only
+             T071_004:      Other vacant
+
+
+      73. Nonfamily Households
+          Universe:  Nonfamily Households
+          Name:      T72
+          Variables:
+             T072_001:   Nonfamily households
+
+
+      74. Owner-occupied Housing Units
+          Universe:  Owner-occupied Housing Units
+          Name:      T73
+          Variables:
+             T073_001:   Owner-occupied Housing Units
+
+
+
+
+
+ 
+ 
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Variables 
+      NAME:           Area Name-Legal/Statistical Area Description
+      QName:          Qualifying Name
+      FIPS:           FIPS
+      SUMLEV:         Summary Level
+      GEOCOMP:        Geographic Component
+      STATE:          State (FIPS)
+      COUNTY:         County
+      COUNTYSC:       County Size Code
+      COUSUB:         County Subdivision (FIPS)
+      TRACT:          Census Tract
+      T001_001:       Total Population
+      T002_001:       Total Population
+      T002_002:       Population Density (per sq. mile)
+      T002_006:       Area (Land)
+      T02A_001:       Area Total
+      T02A_002:       Area Total: Area (Land)
+      T02A_003:       Area Total: Area (Water)
+      T003_001:       Total Population
+      T003_002:       Total Population: Male
+      T003_003:       Total Population: Female
+      T004_001:       Total Population
+      T004_002:       Total Population: Male
+      T004_003:       Total Population: Male: Under 5 years
+      T004_004:       Total Population: Male: 5 to 9 years
+      T004_005:       Total Population: Male: 10 to 14 years
+      T004_006:       Total Population: Male: 15 to 17 years
+      T004_007:       Total Population: Male: 18 to 24 years
+      T004_008:       Total Population: Male: 25 to 34 years
+      T004_009:       Total Population: Male: 35 to 44 years
+      T004_010:       Total Population: Male: 45 to 54 years
+      T004_011:       Total Population: Male: 55 to 64 years
+      T004_012:       Total Population: Male: 65 and 74 years
+      T004_013:       Total Population: Male: 75 to 84 years
+      T004_014:       Total Population: Male: 85 years and over
+      T004_015:       Total Population: Female
+      T004_016:       Total Population: Female: Under 5 years
+      T004_017:       Total Population: Female: 5 to 9 years
+      T004_018:       Total Population: Female: 10 to 14 years
+      T004_019:       Total Population: Female: 15 to 17 years
+      T004_020:       Total Population: Female: 18 and 24 years
+      T004_021:       Total Population: Female: 25 to 34 years
+      T004_022:       Total Population: Female: 35 to 44 years
+      T004_023:       Total Population: Female: 45 to 54 years
+      T004_024:       Total Population: Female: 55 to 64 years
+      T004_025:       Total Population: Female: 65 and 74 years
+      T004_026:       Total Population: Female: 75 to 84 years
+      T004_027:       Total Population: Female: 85 years and over
+      T004A001:       Total Population
+      T004A002:       Total Population: Male
+      T004A003:       Total Population: Male: Less than 5 Years
+      T004A004:       Total Population: Male: Less than 10 Years
+      T004A005:       Total Population: Male: Less than 15 Years
+      T004A006:       Total Population: Male: Less than 18 Years
+      T004A007:       Total Population: Male: Less than 25 Years
+      T004A008:       Total Population: Male: Less than 35 Years
+      T004A009:       Total Population: Male: Less than 45 Years
+      T004A010:       Total Population: Male: Less than 55 Years
+      T004A011:       Total Population: Male: Less than 65 Years
+      T004A012:       Total Population: Male: Less than 75 Years
+      T004A013:       Total Population: Male: Less than 85 Years
+      T004A014:       Total Population: Female
+      T004A015:       Total Population: Female: Less than 5 Years
+      T004A016:       Total Population: Female: Less than 10 Years
+      T004A017:       Total Population: Female: Less than 15 Years
+      T004A018:       Total Population: Female: Less than 18 Years
+      T004A019:       Total Population: Female: Less than 25 Years
+      T004A020:       Total Population: Female: Less than 35 Years
+      T004A021:       Total Population: Female: Less than 45 Years
+      T004A022:       Total Population: Female: Less than 55 Years
+      T004A023:       Total Population: Female: Less than 65 Years
+      T004A024:       Total Population: Female: Less than 75 Years
+      T004A025:       Total Population: Female: Less than 85 Years
+      T004B001:       Total Population
+      T004B002:       Total Population: Male
+      T004B003:       Total Population: Male: More than 5 Years
+      T004B004:       Total Population: Male: More than 10 Years
+      T004B005:       Total Population: Male: More than 15 Years
+      T004B006:       Total Population: Male: More than 18 Years
+      T004B007:       Total Population: Male: More than 25 Years
+      T004B008:       Total Population: Male: More than 35 Years
+      T004B009:       Total Population: Male: More than 45 Years
+      T004B010:       Total Population: Male: More than 55 Years
+      T004B011:       Total Population: Male: More than 65 Years
+      T004B012:       Total Population: Male: More than 75 Years
+      T004B013:       Total Population: Male: More than 85 Years
+      T004B014:       Total Population: Female
+      T004B015:       Total Population: Female: More than 5 Years
+      T004B016:       Total Population: Female: More than 10 Years
+      T004B017:       Total Population: Female: More than 15 Years
+      T004B018:       Total Population: Female: More than 18 Years
+      T004B019:       Total Population: Female: More than 25 Years
+      T004B020:       Total Population: Female: More than 35 Years
+      T004B021:       Total Population: Female: More than 45 Years
+      T004B022:       Total Population: Female: More than 55 Years
+      T004B023:       Total Population: Female: More than 65 Years
+      T004B024:       Total Population: Female: More than 75 Years
+      T004B025:       Total Population: Female: More than 85 Years
+      T007_001:       Total Population
+      T007_002:       Total Population: Male
+      T007_003:       Total Population: Male: Under 18 years
+      T007_004:       Total Population: Male: 18 to 34 years
+      T007_005:       Total Population: Male: 35 to 64 years
+      T007_006:       Total Population: Male: 65 and over
+      T007_007:       Total Population: Female
+      T007_008:       Total Population: Female: Under 18 years
+      T007_009:       Total Population: Female: 18 and 34 years
+      T007_010:       Total Population: Female: 35 to 64 years
+      T007_011:       Total Population: Female: 65 and over
+      T008_001:       Total Population
+      T008_002:       Total Population: Under 5 years
+      T008_003:       Total Population: 5 to 9 years
+      T008_004:       Total Population: 10 to 14 years
+      T008_005:       Total Population: 15 to 17 years
+      T008_006:       Total Population: 18 to 24 years
+      T008_007:       Total Population: 25 to 34 years
+      T008_008:       Total Population: 35 to 44 years
+      T008_009:       Total Population: 45 to 54 years
+      T008_010:       Total Population: 55 to 64 years
+      T008_011:       Total Population: 65 and 74 years
+      T008_012:       Total Population: 75 to 84 years
+      T008_013:       Total Population: 85 years and over
+      T008A001:       Total Population
+      T008A002:       Total Population: Less than 5 Years
+      T008A003:       Total Population: Less than 10 Years
+      T008A004:       Total Population: Less than 15 Years
+      T008A005:       Total Population: Less than 18 Years
+      T008A006:       Total Population: Less than 25 Years
+      T008A007:       Total Population: Less than 35 Years
+      T008A008:       Total Population: Less than 45 Years
+      T008A009:       Total Population: Less than 55 Years
+      T008A010:       Total Population: Less than 65 Years
+      T008A011:       Total Population: Less than 75 Years
+      T008A012:       Total Population: Less than 85 Years
+      T008B001:       Total Population
+      T008B002:       Total Population: More than 5 Years
+      T008B003:       Total Population: More than 10 Years
+      T008B004:       Total Population: More than 15 Years
+      T008B005:       Total Population: More than 18 Years
+      T008B006:       Total Population: More than 25 Years
+      T008B007:       Total Population: More than 35 Years
+      T008B008:       Total Population: More than 45 Years
+      T008B009:       Total Population: More than 55 Years
+      T008B010:       Total Population: More than 65 Years
+      T008B011:       Total Population: More than 75 Years
+      T008B012:       Total Population: More than 85 Years
+      T011_001:       Total Population
+      T011_002:       Total Population: Under 18 years
+      T011_003:       Total Population: 18 to 34 years
+      T011_004:       Total Population: 35 to 64 years
+      T011_005:       Total Population: 65 and over
+      T012_001:       Total population:
+      T012_002:       Total population: Under 5 years
+      T012_003:       Total population: 5 to 9 years
+      T012_004:       Total population: 10 to 14 years
+      T012_005:       Total population: 15 to 17 years
+      T012_006:       Total population: 18 and 19 years
+      T012_007:       Total population: 20 years
+      T012_008:       Total population: 21 years
+      T012_009:       Total population: 22 to 24 years
+      T012_010:       Total population: 25 to 29 years
+      T012_011:       Total population: 30 to 34 years
+      T012_012:       Total population: 35 to 39 years
+      T012_013:       Total population: 40 to 44 years
+      T012_014:       Total population: 45 to 49 years
+      T012_015:       Total population: 50 to 54 years
+      T012_016:       Total population: 55 to 59 years
+      T012_017:       Total population: 60 and 61 years
+      T012_018:       Total population: 62 to 64 years
+      T012_019:       Total population: 65 and 66 years
+      T012_020:       Total population: 67 to 69 years
+      T012_021:       Total population: 70 to 74 years
+      T012_022:       Total population: 75 to 79 years
+      T012_023:       Total population: 80 to 84 years
+      T012_024:       Total population: 85 years and over
+      T012A001:       Total population:
+      T012A002:       Total population: Less than 5 Years
+      T012A003:       Total population: Less than 10 Years
+      T012A004:       Total population: Less than 15 Years
+      T012A005:       Total population: Less than 18 Years
+      T012A006:       Total population: Less than 20 Years
+      T012A007:       Total population: Less than 21 Years
+      T012A008:       Total population: Less than 22 Years
+      T012A009:       Total population: Less than 25 Years
+      T012A010:       Total population: Less than 30 Years
+      T012A011:       Total population: Less than 35 Years
+      T012A012:       Total population: Less than 40 Years
+      T012A013:       Total population: Less than 45 Years
+      T012A014:       Total population: Less than 50 Years
+      T012A015:       Total population: Less than 55 Years
+      T012A016:       Total population: Less than 60 Years
+      T012A017:       Total population: Less than 62 Years
+      T012A018:       Total population: Less than 65 Years
+      T012A019:       Total population: Less than 67 Years
+      T012A020:       Total population: Less than 70 Years
+      T012A021:       Total population: Less than 75 Years
+      T012A022:       Total population: Less than 80 Years
+      T012A023:       Total population: Less than 85 Years
+      T012B001:       Total population:
+      T012B002:       Total population: More than 5 Years
+      T012B003:       Total population: More than 10 Years
+      T012B004:       Total population: More than 15 Years
+      T012B005:       Total population: More than 18 Years
+      T012B006:       Total population: More than 20 Years
+      T012B007:       Total population: More than 21 Years
+      T012B008:       Total population: More than 22 Years
+      T012B009:       Total population: More than 25 Years
+      T012B010:       Total population: More than 30 Years
+      T012B011:       Total population: More than 35 Years
+      T012B012:       Total population: More than 40 Years
+      T012B013:       Total population: More than 45 Years
+      T012B014:       Total population: More than 50 Years
+      T012B015:       Total population: More than 55 Years
+      T012B016:       Total population: More than 60 Years
+      T012B017:       Total population: More than 62 Years
+      T012B018:       Total population: More than 65 Years
+      T012B019:       Total population: More than 67 Years
+      T012B020:       Total population: More than 70 Years
+      T012B021:       Total population: More than 75 Years
+      T012B022:       Total population: More than 80 Years
+      T012B023:       Total population: More than 85 Years
+      T015_001:       Male Population
+      T015_002:       Male Population: Under 18 years
+      T015_003:       Male Population: 18 to 34 years
+      T015_004:       Male Population: 35 to 64 years
+      T015_005:       Male Population: 65 and over
+      T016_001:       Female Population
+      T016_002:       Female Population: Under 18 years
+      T016_003:       Female Population: 18 and 34 years
+      T016_004:       Female Population: 35 to 64 years
+      T016_005:       Female Population: 65 and over
+      T017_001:       White alone
+      T017_002:       White alone: Under 5 years
+      T017_003:       White alone: 5 to 9 years
+      T017_004:       White alone: 10 to 14 years
+      T017_005:       White alone: 15 to 17 years
+      T017_006:       White alone: 18 and 19 years
+      T017_007:       White alone: 20 years
+      T017_008:       White alone: 21 years
+      T017_009:       White alone: 22 to 24 years
+      T017_010:       White alone: 25 to 29 years
+      T017_011:       White alone: 30 to 34 years
+      T017_012:       White alone: 35 to 39 years
+      T017_013:       White alone: 40 to 44 years
+      T017_014:       White alone: 45 to 49 years
+      T017_015:       White alone: 50 to 54 years
+      T017_016:       White alone: 55 to 59 years
+      T017_017:       White alone: 60 and 61 years
+      T017_018:       White alone: 62 to 64 years
+      T017_019:       White alone: 65 and 66 years
+      T017_020:       White alone: 67 to 69 years
+      T017_021:       White alone: 70 to 74 years
+      T017_022:       White alone: 75 to 79 years
+      T017_023:       White alone: 80 to 84 years
+      T017_024:       White alone: 85 years and over
+      T017A001:       White alone
+      T017A002:       White alone: Less than 5 Years
+      T017A003:       White alone: Less than 10 Years
+      T017A004:       White alone: Less than 15 Years
+      T017A005:       White alone: Less than 18 Years
+      T017A006:       White alone: Less than 20 Years
+      T017A007:       White alone: Less than 21 Years
+      T017A008:       White alone: Less than 22 Years
+      T017A009:       White alone: Less than 25 Years
+      T017A010:       White alone: Less than 30 Years
+      T017A011:       White alone: Less than 35 Years
+      T017A012:       White alone: Less than 40 Years
+      T017A013:       White alone: Less than 45 Years
+      T017A014:       White alone: Less than 50 Years
+      T017A015:       White alone: Less than 55 Years
+      T017A016:       White alone: Less than 60 Years
+      T017A017:       White alone: Less than 62 Years
+      T017A018:       White alone: Less than 65 Years
+      T017A019:       White alone: Less than 67 Years
+      T017A020:       White alone: Less than 70 Years
+      T017A021:       White alone: Less than 75 Years
+      T017A022:       White alone: Less than 80 Years
+      T017A023:       White alone: Less than 85 Years
+      T017B001:       White alone
+      T017B002:       White alone: More than 5 Years
+      T017B003:       White alone: More than 10 Years
+      T017B004:       White alone: More than 15 Years
+      T017B005:       White alone: More than 18 Years
+      T017B006:       White alone: More than 20 Years
+      T017B007:       White alone: More than 21 Years
+      T017B008:       White alone: More than 22 Years
+      T017B009:       White alone: More than 25 Years
+      T017B010:       White alone: More than 30 Years
+      T017B011:       White alone: More than 35 Years
+      T017B012:       White alone: More than 40 Years
+      T017B013:       White alone: More than 45 Years
+      T017B014:       White alone: More than 50 Years
+      T017B015:       White alone: More than 55 Years
+      T017B016:       White alone: More than 60 Years
+      T017B017:       White alone: More than 62 Years
+      T017B018:       White alone: More than 65 Years
+      T017B019:       White alone: More than 67 Years
+      T017B020:       White alone: More than 70 Years
+      T017B021:       White alone: More than 75 Years
+      T017B022:       White alone: More than 80 Years
+      T017B023:       White alone: More than 85 Years
+      T020_001:       Black or African American alone
+      T020_002:       Black or African American alone: Under 5 years
+      T020_003:       Black or African American alone: 5 to 9 years
+      T020_004:       Black or African American alone: 10 to 14 years
+      T020_005:       Black or African American alone: 15 to 17 years
+      T020_006:       Black or African American alone: 18 and 19 years
+      T020_007:       Black or African American alone: 20 years
+      T020_008:       Black or African American alone: 21 years
+      T020_009:       Black or African American alone: 22 to 24 years
+      T020_010:       Black or African American alone: 25 to 29 years
+      T020_011:       Black or African American alone: 30 to 34 years
+      T020_012:       Black or African American alone: 35 to 39 years
+      T020_013:       Black or African American alone: 40 to 44 years
+      T020_014:       Black or African American alone: 45 to 49 years
+      T020_015:       Black or African American alone: 50 to 54 years
+      T020_016:       Black or African American alone: 55 to 59 years
+      T020_017:       Black or African American alone: 60 and 61 years
+      T020_018:       Black or African American alone: 62 to 64 years
+      T020_019:       Black or African American alone: 65 and 66 years
+      T020_020:       Black or African American alone: 67 to 69 years
+      T020_021:       Black or African American alone: 70 to 74 years
+      T020_022:       Black or African American alone: 75 to 79 years
+      T020_023:       Black or African American alone: 80 to 84 years
+      T020_024:       Black or African American alone: 85 years and over
+      T020A001:       Black or African American alone
+      T020A002:       Black or African American alone: Less than 5 Years
+      T020A003:       Black or African American alone: Less than 10 Years
+      T020A004:       Black or African American alone: Less than 15 Years
+      T020A005:       Black or African American alone: Less than 18 Years
+      T020A006:       Black or African American alone: Less than 20 Years
+      T020A007:       Black or African American alone: Less than 21 Years
+      T020A008:       Black or African American alone: Less than 22 Years
+      T020A009:       Black or African American alone: Less than 25 Years
+      T020A010:       Black or African American alone: Less than 30 Years
+      T020A011:       Black or African American alone: Less than 35 Years
+      T020A012:       Black or African American alone: Less than 40 Years
+      T020A013:       Black or African American alone: Less than 45 Years
+      T020A014:       Black or African American alone: Less than 50 Years
+      T020A015:       Black or African American alone: Less than 55 Years
+      T020A016:       Black or African American alone: Less than 60 Years
+      T020A017:       Black or African American alone: Less than 62 Years
+      T020A018:       Black or African American alone: Less than 65 Years
+      T020A019:       Black or African American alone: Less than 67 Years
+      T020A020:       Black or African American alone: Less than 70 Years
+      T020A021:       Black or African American alone: Less than 75 Years
+      T020A022:       Black or African American alone: Less than 80 Years
+      T020A023:       Black or African American alone: Less than 85 Years
+      T020B001:       Black or African American alone
+      T020B002:       Black or African American alone: More than 5 Years
+      T020B003:       Black or African American alone: More than 10 Years
+      T020B004:       Black or African American alone: More than 15 Years
+      T020B005:       Black or African American alone: More than 18 Years
+      T020B006:       Black or African American alone: More than 20 Years
+      T020B007:       Black or African American alone: More than 21 Years
+      T020B008:       Black or African American alone: More than 22 Years
+      T020B009:       Black or African American alone: More than 25 Years
+      T020B010:       Black or African American alone: More than 30 Years
+      T020B011:       Black or African American alone: More than 35 Years
+      T020B012:       Black or African American alone: More than 40 Years
+      T020B013:       Black or African American alone: More than 45 Years
+      T020B014:       Black or African American alone: More than 50 Years
+      T020B015:       Black or African American alone: More than 55 Years
+      T020B016:       Black or African American alone: More than 60 Years
+      T020B017:       Black or African American alone: More than 62 Years
+      T020B018:       Black or African American alone: More than 65 Years
+      T020B019:       Black or African American alone: More than 67 Years
+      T020B020:       Black or African American alone: More than 70 Years
+      T020B021:       Black or African American alone: More than 75 Years
+      T020B022:       Black or African American alone: More than 80 Years
+      T020B023:       Black or African American alone: More than 85 Years
+      T023_001:       American Indian and Alaska Native alone
+      T023_002:       American Indian and Alaska Native alone: Under 5 years
+      T023_003:       American Indian and Alaska Native alone: 5 to 9 years
+      T023_004:       American Indian and Alaska Native alone: 10 to 14 years
+      T023_005:       American Indian and Alaska Native alone: 15 to 17 years
+      T023_006:       American Indian and Alaska Native alone: 18 and 19 years
+      T023_007:       American Indian and Alaska Native alone: 20 years
+      T023_008:       American Indian and Alaska Native alone: 21 years
+      T023_009:       American Indian and Alaska Native alone: 22 to 24 years
+      T023_010:       American Indian and Alaska Native alone: 25 to 29 years
+      T023_011:       American Indian and Alaska Native alone: 30 to 34 years
+      T023_012:       American Indian and Alaska Native alone: 35 to 39 years
+      T023_013:       American Indian and Alaska Native alone: 40 to 44 years
+      T023_014:       American Indian and Alaska Native alone: 45 to 49 years
+      T023_015:       American Indian and Alaska Native alone: 50 to 54 years
+      T023_016:       American Indian and Alaska Native alone: 55 to 59 years
+      T023_017:       American Indian and Alaska Native alone: 60 and 61 years
+      T023_018:       American Indian and Alaska Native alone: 62 to 64 years
+      T023_019:       American Indian and Alaska Native alone: 65 and 66 years
+      T023_020:       American Indian and Alaska Native alone: 67 to 69 years
+      T023_021:       American Indian and Alaska Native alone: 70 to 74 years
+      T023_022:       American Indian and Alaska Native alone: 75 to 79 years
+      T023_023:       American Indian and Alaska Native alone: 80 to 84 years
+      T023_024:       American Indian and Alaska Native alone: 85 years and over
+      T023A001:       American Indian and Alaska Native alone
+      T023A002:       American Indian and Alaska Native alone: Less than 5 Years
+      T023A003:       American Indian and Alaska Native alone: Less than 10 Years
+      T023A004:       American Indian and Alaska Native alone: Less than 15 Years
+      T023A005:       American Indian and Alaska Native alone: Less than 18 Years
+      T023A006:       American Indian and Alaska Native alone: Less than 20 Years
+      T023A007:       American Indian and Alaska Native alone: Less than 21 Years
+      T023A008:       American Indian and Alaska Native alone: Less than 22 Years
+      T023A009:       American Indian and Alaska Native alone: Less than 25 Years
+      T023A010:       American Indian and Alaska Native alone: Less than 30 Years
+      T023A011:       American Indian and Alaska Native alone: Less than 35 Years
+      T023A012:       American Indian and Alaska Native alone: Less than 40 Years
+      T023A013:       American Indian and Alaska Native alone: Less than 45 Years
+      T023A014:       American Indian and Alaska Native alone: Less than 50 Years
+      T023A015:       American Indian and Alaska Native alone: Less than 55 Years
+      T023A016:       American Indian and Alaska Native alone: Less than 60 Years
+      T023A017:       American Indian and Alaska Native alone: Less than 62 Years
+      T023A018:       American Indian and Alaska Native alone: Less than 65 Years
+      T023A019:       American Indian and Alaska Native alone: Less than 67 Years
+      T023A020:       American Indian and Alaska Native alone: Less than 70 Years
+      T023A021:       American Indian and Alaska Native alone: Less than 75 Years
+      T023A022:       American Indian and Alaska Native alone: Less than 80 Years
+      T023A023:       American Indian and Alaska Native alone: Less than 85 Years
+      T023B001:       American Indian and Alaska Native alone
+      T023B002:       American Indian and Alaska Native alone: More than 5 Years
+      T023B003:       American Indian and Alaska Native alone: More than 10 Years
+      T023B004:       American Indian and Alaska Native alone: More than 15 Years
+      T023B005:       American Indian and Alaska Native alone: More than 18 Years
+      T023B006:       American Indian and Alaska Native alone: More than 20 Years
+      T023B007:       American Indian and Alaska Native alone: More than 21 Years
+      T023B008:       American Indian and Alaska Native alone: More than 22 Years
+      T023B009:       American Indian and Alaska Native alone: More than 25 Years
+      T023B010:       American Indian and Alaska Native alone: More than 30 Years
+      T023B011:       American Indian and Alaska Native alone: More than 35 Years
+      T023B012:       American Indian and Alaska Native alone: More than 40 Years
+      T023B013:       American Indian and Alaska Native alone: More than 45 Years
+      T023B014:       American Indian and Alaska Native alone: More than 50 Years
+      T023B015:       American Indian and Alaska Native alone: More than 55 Years
+      T023B016:       American Indian and Alaska Native alone: More than 60 Years
+      T023B017:       American Indian and Alaska Native alone: More than 62 Years
+      T023B018:       American Indian and Alaska Native alone: More than 65 Years
+      T023B019:       American Indian and Alaska Native alone: More than 67 Years
+      T023B020:       American Indian and Alaska Native alone: More than 70 Years
+      T023B021:       American Indian and Alaska Native alone: More than 75 Years
+      T023B022:       American Indian and Alaska Native alone: More than 80 Years
+      T023B023:       American Indian and Alaska Native alone: More than 85 Years
+      T026_001:       Asian alone
+      T026_002:       Asian alone: Under 5 years
+      T026_003:       Asian alone: 5 to 9 years
+      T026_004:       Asian alone: 10 to 14 years
+      T026_005:       Asian alone: 15 to 17 years
+      T026_006:       Asian alone: 18 and 19 years
+      T026_007:       Asian alone: 20 years
+      T026_008:       Asian alone: 21 years
+      T026_009:       Asian alone: 22 to 24 years
+      T026_010:       Asian alone: 25 to 29 years
+      T026_011:       Asian alone: 30 to 34 years
+      T026_012:       Asian alone: 35 to 39 years
+      T026_013:       Asian alone: 40 to 44 years
+      T026_014:       Asian alone: 45 to 49 years
+      T026_015:       Asian alone: 50 to 54 years
+      T026_016:       Asian alone: 55 to 59 years
+      T026_017:       Asian alone: 60 and 61 years
+      T026_018:       Asian alone: 62 to 64 years
+      T026_019:       Asian alone: 65 and 66 years
+      T026_020:       Asian alone: 67 to 69 years
+      T026_021:       Asian alone: 70 to 74 years
+      T026_022:       Asian alone: 75 to 79 years
+      T026_023:       Asian alone: 80 to 84 years
+      T026_024:       Asian alone: 85 years and over
+      T026A001:       Asian alone
+      T026A002:       Asian alone: Less than 5 Years
+      T026A003:       Asian alone: Less than 10 Years
+      T026A004:       Asian alone: Less than 15 Years
+      T026A005:       Asian alone: Less than 18 Years
+      T026A006:       Asian alone: Less than 20 Years
+      T026A007:       Asian alone: Less than 21 Years
+      T026A008:       Asian alone: Less than 22 Years
+      T026A009:       Asian alone: Less than 25 Years
+      T026A010:       Asian alone: Less than 30 Years
+      T026A011:       Asian alone: Less than 35 Years
+      T026A012:       Asian alone: Less than 40 Years
+      T026A013:       Asian alone: Less than 45 Years
+      T026A014:       Asian alone: Less than 50 Years
+      T026A015:       Asian alone: Less than 55 Years
+      T026A016:       Asian alone: Less than 60 Years
+      T026A017:       Asian alone: Less than 62 Years
+      T026A018:       Asian alone: Less than 65 Years
+      T026A019:       Asian alone: Less than 67 Years
+      T026A020:       Asian alone: Less than 70 Years
+      T026A021:       Asian alone: Less than 75 Years
+      T026A022:       Asian alone: Less than 80 Years
+      T026A023:       Asian alone: Less than 85 Years
+      T026B001:       Asian alone
+      T026B002:       Asian alone: More than 5 Years
+      T026B003:       Asian alone: More than 10 Years
+      T026B004:       Asian alone: More than 15 Years
+      T026B005:       Asian alone: More than 18 Years
+      T026B006:       Asian alone: More than 20 Years
+      T026B007:       Asian alone: More than 21 Years
+      T026B008:       Asian alone: More than 22 Years
+      T026B009:       Asian alone: More than 25 Years
+      T026B010:       Asian alone: More than 30 Years
+      T026B011:       Asian alone: More than 35 Years
+      T026B012:       Asian alone: More than 40 Years
+      T026B013:       Asian alone: More than 45 Years
+      T026B014:       Asian alone: More than 50 Years
+      T026B015:       Asian alone: More than 55 Years
+      T026B016:       Asian alone: More than 60 Years
+      T026B017:       Asian alone: More than 62 Years
+      T026B018:       Asian alone: More than 65 Years
+      T026B019:       Asian alone: More than 67 Years
+      T026B020:       Asian alone: More than 70 Years
+      T026B021:       Asian alone: More than 75 Years
+      T026B022:       Asian alone: More than 80 Years
+      T026B023:       Asian alone: More than 85 Years
+      T029_001:       Native Hawaiian and Other Pacific Islander alone
+      T029_002:       Native Hawaiian and Other Pacific Islander alone: Under 5 years
+      T029_003:       Native Hawaiian and Other Pacific Islander alone: 5 to 9 years
+      T029_004:       Native Hawaiian and Other Pacific Islander alone: 10 to 14 years
+      T029_005:       Native Hawaiian and Other Pacific Islander alone: 15 to 17 years
+      T029_006:       Native Hawaiian and Other Pacific Islander alone: 18 and 19 years
+      T029_007:       Native Hawaiian and Other Pacific Islander alone: 20 years
+      T029_008:       Native Hawaiian and Other Pacific Islander alone: 21 years
+      T029_009:       Native Hawaiian and Other Pacific Islander alone: 22 to 24 years
+      T029_010:       Native Hawaiian and Other Pacific Islander alone: 25 to 29 years
+      T029_011:       Native Hawaiian and Other Pacific Islander alone: 30 to 34 years
+      T029_012:       Native Hawaiian and Other Pacific Islander alone: 35 to 39 years
+      T029_013:       Native Hawaiian and Other Pacific Islander alone: 40 to 44 years
+      T029_014:       Native Hawaiian and Other Pacific Islander alone: 45 to 49 years
+      T029_015:       Native Hawaiian and Other Pacific Islander alone: 50 to 54 years
+      T029_016:       Native Hawaiian and Other Pacific Islander alone: 55 to 59 years
+      T029_017:       Native Hawaiian and Other Pacific Islander alone: 60 and 61 years
+      T029_018:       Native Hawaiian and Other Pacific Islander alone: 62 to 64 years
+      T029_019:       Native Hawaiian and Other Pacific Islander alone: 65 and 66 years
+      T029_020:       Native Hawaiian and Other Pacific Islander alone: 67 to 69 years
+      T029_021:       Native Hawaiian and Other Pacific Islander alone: 70 to 74 years
+      T029_022:       Native Hawaiian and Other Pacific Islander alone: 75 to 79 years
+      T029_023:       Native Hawaiian and Other Pacific Islander alone: 80 to 84 years
+      T029_024:       Native Hawaiian and Other Pacific Islander alone: 85 years and over
+      T029A001:       Native Hawaiian and Other Pacific Islander alone
+      T029A002:       Native Hawaiian and Other Pacific Islander alone: Less than 5 Years
+      T029A003:       Native Hawaiian and Other Pacific Islander alone: Less than 10 Years
+      T029A004:       Native Hawaiian and Other Pacific Islander alone: Less than 15 Years
+      T029A005:       Native Hawaiian and Other Pacific Islander alone: Less than 18 Years
+      T029A006:       Native Hawaiian and Other Pacific Islander alone: Less than 20 Years
+      T029A007:       Native Hawaiian and Other Pacific Islander alone: Less than 21 Years
+      T029A008:       Native Hawaiian and Other Pacific Islander alone: Less than 22 Years
+      T029A009:       Native Hawaiian and Other Pacific Islander alone: Less than 25 Years
+      T029A010:       Native Hawaiian and Other Pacific Islander alone: Less than 30 Years
+      T029A011:       Native Hawaiian and Other Pacific Islander alone: Less than 35 Years
+      T029A012:       Native Hawaiian and Other Pacific Islander alone: Less than 40 Years
+      T029A013:       Native Hawaiian and Other Pacific Islander alone: Less than 45 Years
+      T029A014:       Native Hawaiian and Other Pacific Islander alone: Less than 50 Years
+      T029A015:       Native Hawaiian and Other Pacific Islander alone: Less than 55 Years
+      T029A016:       Native Hawaiian and Other Pacific Islander alone: Less than 60 Years
+      T029A017:       Native Hawaiian and Other Pacific Islander alone: Less than 62 Years
+      T029A018:       Native Hawaiian and Other Pacific Islander alone: Less than 65 Years
+      T029A019:       Native Hawaiian and Other Pacific Islander alone: Less than 67 Years
+      T029A020:       Native Hawaiian and Other Pacific Islander alone: Less than 70 Years
+      T029A021:       Native Hawaiian and Other Pacific Islander alone: Less than 75 Years
+      T029A022:       Native Hawaiian and Other Pacific Islander alone: Less than 80 Years
+      T029A023:       Native Hawaiian and Other Pacific Islander alone: Less than 85 Years
+      T029B001:       Native Hawaiian and Other Pacific Islander alone
+      T029B002:       Native Hawaiian and Other Pacific Islander alone: More than 5 Years
+      T029B003:       Native Hawaiian and Other Pacific Islander alone: More than 10 Years
+      T029B004:       Native Hawaiian and Other Pacific Islander alone: More than 15 Years
+      T029B005:       Native Hawaiian and Other Pacific Islander alone: More than 18 Years
+      T029B006:       Native Hawaiian and Other Pacific Islander alone: More than 20 Years
+      T029B007:       Native Hawaiian and Other Pacific Islander alone: More than 21 Years
+      T029B008:       Native Hawaiian and Other Pacific Islander alone: More than 22 Years
+      T029B009:       Native Hawaiian and Other Pacific Islander alone: More than 25 Years
+      T029B010:       Native Hawaiian and Other Pacific Islander alone: More than 30 Years
+      T029B011:       Native Hawaiian and Other Pacific Islander alone: More than 35 Years
+      T029B012:       Native Hawaiian and Other Pacific Islander alone: More than 40 Years
+      T029B013:       Native Hawaiian and Other Pacific Islander alone: More than 45 Years
+      T029B014:       Native Hawaiian and Other Pacific Islander alone: More than 50 Years
+      T029B015:       Native Hawaiian and Other Pacific Islander alone: More than 55 Years
+      T029B016:       Native Hawaiian and Other Pacific Islander alone: More than 60 Years
+      T029B017:       Native Hawaiian and Other Pacific Islander alone: More than 62 Years
+      T029B018:       Native Hawaiian and Other Pacific Islander alone: More than 65 Years
+      T029B019:       Native Hawaiian and Other Pacific Islander alone: More than 67 Years
+      T029B020:       Native Hawaiian and Other Pacific Islander alone: More than 70 Years
+      T029B021:       Native Hawaiian and Other Pacific Islander alone: More than 75 Years
+      T029B022:       Native Hawaiian and Other Pacific Islander alone: More than 80 Years
+      T029B023:       Native Hawaiian and Other Pacific Islander alone: More than 85 Years
+      T032_001:       Some Other Race alone
+      T032_002:       Some Other Race alone: Under 5 years
+      T032_003:       Some Other Race alone: 5 to 9 years
+      T032_004:       Some Other Race alone: 10 to 14 years
+      T032_005:       Some Other Race alone: 15 to 17 years
+      T032_006:       Some Other Race alone: 18 and 19 years
+      T032_007:       Some Other Race alone: 20 years
+      T032_008:       Some Other Race alone: 21 years
+      T032_009:       Some Other Race alone: 22 to 24 years
+      T032_010:       Some Other Race alone: 25 to 29 years
+      T032_011:       Some Other Race alone: 30 to 34 years
+      T032_012:       Some Other Race alone: 35 to 39 years
+      T032_013:       Some Other Race alone: 40 to 44 years
+      T032_014:       Some Other Race alone: 45 to 49 years
+      T032_015:       Some Other Race alone: 50 to 54 years
+      T032_016:       Some Other Race alone: 55 to 59 years
+      T032_017:       Some Other Race alone: 60 and 61 years
+      T032_018:       Some Other Race alone: 62 to 64 years
+      T032_019:       Some Other Race alone: 65 and 66 years
+      T032_020:       Some Other Race alone: 67 to 69 years
+      T032_021:       Some Other Race alone: 70 to 74 years
+      T032_022:       Some Other Race alone: 75 to 79 years
+      T032_023:       Some Other Race alone: 80 to 84 years
+      T032_024:       Some Other Race alone: 85 years and over
+      T032A001:       Some Other Race alone
+      T032A002:       Some Other Race alone: Less than 5 Years
+      T032A003:       Some Other Race alone: Less than 10 Years
+      T032A004:       Some Other Race alone: Less than 15 Years
+      T032A005:       Some Other Race alone: Less than 18 Years
+      T032A006:       Some Other Race alone: Less than 20 Years
+      T032A007:       Some Other Race alone: Less than 21 Years
+      T032A008:       Some Other Race alone: Less than 22 Years
+      T032A009:       Some Other Race alone: Less than 25 Years
+      T032A010:       Some Other Race alone: Less than 30 Years
+      T032A011:       Some Other Race alone: Less than 35 Years
+      T032A012:       Some Other Race alone: Less than 40 Years
+      T032A013:       Some Other Race alone: Less than 45 Years
+      T032A014:       Some Other Race alone: Less than 50 Years
+      T032A015:       Some Other Race alone: Less than 55 Years
+      T032A016:       Some Other Race alone: Less than 60 Years
+      T032A017:       Some Other Race alone: Less than 62 Years
+      T032A018:       Some Other Race alone: Less than 65 Years
+      T032A019:       Some Other Race alone: Less than 67 Years
+      T032A020:       Some Other Race alone: Less than 70 Years
+      T032A021:       Some Other Race alone: Less than 75 Years
+      T032A022:       Some Other Race alone: Less than 80 Years
+      T032A023:       Some Other Race alone: Less than 85 Years
+      T032B001:       Some Other Race alone
+      T032B002:       Some Other Race alone: More than 5 Years
+      T032B003:       Some Other Race alone: More than 10 Years
+      T032B004:       Some Other Race alone: More than 15 Years
+      T032B005:       Some Other Race alone: More than 18 Years
+      T032B006:       Some Other Race alone: More than 20 Years
+      T032B007:       Some Other Race alone: More than 21 Years
+      T032B008:       Some Other Race alone: More than 22 Years
+      T032B009:       Some Other Race alone: More than 25 Years
+      T032B010:       Some Other Race alone: More than 30 Years
+      T032B011:       Some Other Race alone: More than 35 Years
+      T032B012:       Some Other Race alone: More than 40 Years
+      T032B013:       Some Other Race alone: More than 45 Years
+      T032B014:       Some Other Race alone: More than 50 Years
+      T032B015:       Some Other Race alone: More than 55 Years
+      T032B016:       Some Other Race alone: More than 60 Years
+      T032B017:       Some Other Race alone: More than 62 Years
+      T032B018:       Some Other Race alone: More than 65 Years
+      T032B019:       Some Other Race alone: More than 67 Years
+      T032B020:       Some Other Race alone: More than 70 Years
+      T032B021:       Some Other Race alone: More than 75 Years
+      T032B022:       Some Other Race alone: More than 80 Years
+      T032B023:       Some Other Race alone: More than 85 Years
+      T035_001:       Two or More Races
+      T035_002:       Two or More Races: Under 5 years
+      T035_003:       Two or More Races: 5 to 9 years
+      T035_004:       Two or More Races: 10 to 14 years
+      T035_005:       Two or More Races: 15 to 17 years
+      T035_006:       Two or More Races: 18 and 19 years
+      T035_007:       Two or More Races: 20 years
+      T035_008:       Two or More Races: 21 years
+      T035_009:       Two or More Races: 22 to 24 years
+      T035_010:       Two or More Races: 25 to 29 years
+      T035_011:       Two or More Races: 30 to 34 years
+      T035_012:       Two or More Races: 35 to 39 years
+      T035_013:       Two or More Races: 40 to 44 years
+      T035_014:       Two or More Races: 45 to 49 years
+      T035_015:       Two or More Races: 50 to 54 years
+      T035_016:       Two or More Races: 55 to 59 years
+      T035_017:       Two or More Races: 60 and 61 years
+      T035_018:       Two or More Races: 62 to 64 years
+      T035_019:       Two or More Races: 65 and 66 years
+      T035_020:       Two or More Races: 67 to 69 years
+      T035_021:       Two or More Races: 70 to 74 years
+      T035_022:       Two or More Races: 75 to 79 years
+      T035_023:       Two or More Races: 80 to 84 years
+      T035_024:       Two or More Races: 85 years and over
+      T035A001:       Two or More Races
+      T035A002:       Two or More Races: Less than 5 Years
+      T035A003:       Two or More Races: Less than 10 Years
+      T035A004:       Two or More Races: Less than 15 Years
+      T035A005:       Two or More Races: Less than 18 Years
+      T035A006:       Two or More Races: Less than 20 Years
+      T035A007:       Two or More Races: Less than 21 Years
+      T035A008:       Two or More Races: Less than 22 Years
+      T035A009:       Two or More Races: Less than 25 Years
+      T035A010:       Two or More Races: Less than 30 Years
+      T035A011:       Two or More Races: Less than 35 Years
+      T035A012:       Two or More Races: Less than 40 Years
+      T035A013:       Two or More Races: Less than 45 Years
+      T035A014:       Two or More Races: Less than 50 Years
+      T035A015:       Two or More Races: Less than 55 Years
+      T035A016:       Two or More Races: Less than 60 Years
+      T035A017:       Two or More Races: Less than 62 Years
+      T035A018:       Two or More Races: Less than 65 Years
+      T035A019:       Two or More Races: Less than 67 Years
+      T035A020:       Two or More Races: Less than 70 Years
+      T035A021:       Two or More Races: Less than 75 Years
+      T035A022:       Two or More Races: Less than 80 Years
+      T035A023:       Two or More Races: Less than 85 Years
+      T035B001:       Two or More Races
+      T035B002:       Two or More Races: More than 5 Years
+      T035B003:       Two or More Races: More than 10 Years
+      T035B004:       Two or More Races: More than 15 Years
+      T035B005:       Two or More Races: More than 18 Years
+      T035B006:       Two or More Races: More than 20 Years
+      T035B007:       Two or More Races: More than 21 Years
+      T035B008:       Two or More Races: More than 22 Years
+      T035B009:       Two or More Races: More than 25 Years
+      T035B010:       Two or More Races: More than 30 Years
+      T035B011:       Two or More Races: More than 35 Years
+      T035B012:       Two or More Races: More than 40 Years
+      T035B013:       Two or More Races: More than 45 Years
+      T035B014:       Two or More Races: More than 50 Years
+      T035B015:       Two or More Races: More than 55 Years
+      T035B016:       Two or More Races: More than 60 Years
+      T035B017:       Two or More Races: More than 62 Years
+      T035B018:       Two or More Races: More than 65 Years
+      T035B019:       Two or More Races: More than 67 Years
+      T035B020:       Two or More Races: More than 70 Years
+      T035B021:       Two or More Races: More than 75 Years
+      T035B022:       Two or More Races: More than 80 Years
+      T035B023:       Two or More Races: More than 85 Years
+      T038_001:       Hispanic or Latino
+      T038_002:       Hispanic or Latino: Under 5 years
+      T038_003:       Hispanic or Latino: 5 to 9 years
+      T038_004:       Hispanic or Latino: 10 to 14 years
+      T038_005:       Hispanic or Latino: 15 to 17 years
+      T038_006:       Hispanic or Latino: 18 and 19 years
+      T038_007:       Hispanic or Latino: 20 years
+      T038_008:       Hispanic or Latino: 21 years
+      T038_009:       Hispanic or Latino: 22 to 24 years
+      T038_010:       Hispanic or Latino: 25 to 29 years
+      T038_011:       Hispanic or Latino: 30 to 34 years
+      T038_012:       Hispanic or Latino: 35 to 39 years
+      T038_013:       Hispanic or Latino: 40 to 44 years
+      T038_014:       Hispanic or Latino: 45 to 49 years
+      T038_015:       Hispanic or Latino: 50 to 54 years
+      T038_016:       Hispanic or Latino: 55 to 59 years
+      T038_017:       Hispanic or Latino: 60 and 61 years
+      T038_018:       Hispanic or Latino: 62 to 64 years
+      T038_019:       Hispanic or Latino: 65 and 66 years
+      T038_020:       Hispanic or Latino: 67 to 69 years
+      T038_021:       Hispanic or Latino: 70 to 74 years
+      T038_022:       Hispanic or Latino: 75 to 79 years
+      T038_023:       Hispanic or Latino: 80 to 84 years
+      T038_024:       Hispanic or Latino: 85 years and over
+      T038A001:       Hispanic or Latino
+      T038A002:       Hispanic or Latino: Less than 5 Years
+      T038A003:       Hispanic or Latino: Less than 10 Years
+      T038A004:       Hispanic or Latino: Less than 15 Years
+      T038A005:       Hispanic or Latino: Less than 18 Years
+      T038A006:       Hispanic or Latino: Less than 20 Years
+      T038A007:       Hispanic or Latino: Less than 21 Years
+      T038A008:       Hispanic or Latino: Less than 22 Years
+      T038A009:       Hispanic or Latino: Less than 25 Years
+      T038A010:       Hispanic or Latino: Less than 30 Years
+      T038A011:       Hispanic or Latino: Less than 35 Years
+      T038A012:       Hispanic or Latino: Less than 40 Years
+      T038A013:       Hispanic or Latino: Less than 45 Years
+      T038A014:       Hispanic or Latino: Less than 50 Years
+      T038A015:       Hispanic or Latino: Less than 55 Years
+      T038A016:       Hispanic or Latino: Less than 60 Years
+      T038A017:       Hispanic or Latino: Less than 62 Years
+      T038A018:       Hispanic or Latino: Less than 65 Years
+      T038A019:       Hispanic or Latino: Less than 67 Years
+      T038A020:       Hispanic or Latino: Less than 70 Years
+      T038A021:       Hispanic or Latino: Less than 75 Years
+      T038A022:       Hispanic or Latino: Less than 80 Years
+      T038A023:       Hispanic or Latino: Less than 85 Years
+      T038B001:       Hispanic or Latino
+      T038B002:       Hispanic or Latino: More than 5 Years
+      T038B003:       Hispanic or Latino: More than 10 Years
+      T038B004:       Hispanic or Latino: More than 15 Years
+      T038B005:       Hispanic or Latino: More than 18 Years
+      T038B006:       Hispanic or Latino: More than 20 Years
+      T038B007:       Hispanic or Latino: More than 21 Years
+      T038B008:       Hispanic or Latino: More than 22 Years
+      T038B009:       Hispanic or Latino: More than 25 Years
+      T038B010:       Hispanic or Latino: More than 30 Years
+      T038B011:       Hispanic or Latino: More than 35 Years
+      T038B012:       Hispanic or Latino: More than 40 Years
+      T038B013:       Hispanic or Latino: More than 45 Years
+      T038B014:       Hispanic or Latino: More than 50 Years
+      T038B015:       Hispanic or Latino: More than 55 Years
+      T038B016:       Hispanic or Latino: More than 60 Years
+      T038B017:       Hispanic or Latino: More than 62 Years
+      T038B018:       Hispanic or Latino: More than 65 Years
+      T038B019:       Hispanic or Latino: More than 67 Years
+      T038B020:       Hispanic or Latino: More than 70 Years
+      T038B021:       Hispanic or Latino: More than 75 Years
+      T038B022:       Hispanic or Latino: More than 80 Years
+      T038B023:       Hispanic or Latino: More than 85 Years
+      T041_001:       White alone, not Hispanic or Latino
+      T041_002:       White alone, not Hispanic or Latino: Under 5 years
+      T041_003:       White alone, not Hispanic or Latino: 5 to 9 years
+      T041_004:       White alone, not Hispanic or Latino: 10 to 14 years
+      T041_005:       White alone, not Hispanic or Latino: 15 to17 years
+      T041_006:       White alone, not Hispanic or Latino: 18 and 19 years
+      T041_007:       White alone, not Hispanic or Latino: 20 years
+      T041_008:       White alone, not Hispanic or Latino: 21 years
+      T041_009:       White alone, not Hispanic or Latino: 22 to 24 years
+      T041_010:       White alone, not Hispanic or Latino: 25 to 29 years
+      T041_011:       White alone, not Hispanic or Latino: 30 to 34 years
+      T041_012:       White alone, not Hispanic or Latino: 35 to 39 years
+      T041_013:       White alone, not Hispanic or Latino: 40 to 44 years
+      T041_014:       White alone, not Hispanic or Latino: 45 to 49 years
+      T041_015:       White alone, not Hispanic or Latino: 50 to 54 years
+      T041_016:       White alone, not Hispanic or Latino: 55 to 59 years
+      T041_017:       White alone, not Hispanic or Latino: 60 and 61 years
+      T041_018:       White alone, not Hispanic or Latino: 62 to 64 years
+      T041_019:       White alone, not Hispanic or Latino: 65 and 66 years
+      T041_020:       White alone, not Hispanic or Latino: 67 to 69 years
+      T041_021:       White alone, not Hispanic or Latino: 70 to 74 years
+      T041_022:       White alone, not Hispanic or Latino: 75 to 79 years
+      T041_023:       White alone, not Hispanic or Latino: 80 to 84 years
+      T041_024:       White alone, not Hispanic or Latino: 85 years and over
+      T041A001:       White alone, not Hispanic or Latino
+      T041A002:       White alone, not Hispanic or Latino: Less than 5 Years
+      T041A003:       White alone, not Hispanic or Latino: Less than 10 Years
+      T041A004:       White alone, not Hispanic or Latino: Less than 15 Years
+      T041A005:       White alone, not Hispanic or Latino: Less than 18 Years
+      T041A006:       White alone, not Hispanic or Latino: Less than 20 Years
+      T041A007:       White alone, not Hispanic or Latino: Less than 21 Years
+      T041A008:       White alone, not Hispanic or Latino: Less than 22 Years
+      T041A009:       White alone, not Hispanic or Latino: Less than 25 Years
+      T041A010:       White alone, not Hispanic or Latino: Less than 30 Years
+      T041A011:       White alone, not Hispanic or Latino: Less than 35 Years
+      T041A012:       White alone, not Hispanic or Latino: Less than 40 Years
+      T041A013:       White alone, not Hispanic or Latino: Less than 45 Years
+      T041A014:       White alone, not Hispanic or Latino: Less than 50 Years
+      T041A015:       White alone, not Hispanic or Latino: Less than 55 Years
+      T041A016:       White alone, not Hispanic or Latino: Less than 60 Years
+      T041A017:       White alone, not Hispanic or Latino: Less than 62 Years
+      T041A018:       White alone, not Hispanic or Latino: Less than 65 Years
+      T041A019:       White alone, not Hispanic or Latino: Less than 67 Years
+      T041A020:       White alone, not Hispanic or Latino: Less than 70 Years
+      T041A021:       White alone, not Hispanic or Latino: Less than 75 Years
+      T041A022:       White alone, not Hispanic or Latino: Less than 80 Years
+      T041A023:       White alone, not Hispanic or Latino: Less than 85 Years
+      T041B001:       White alone, not Hispanic or Latino
+      T041B002:       White alone, not Hispanic or Latino: More than 5 Years
+      T041B003:       White alone, not Hispanic or Latino: More than 10 Years
+      T041B004:       White alone, not Hispanic or Latino: More than 15 Years
+      T041B005:       White alone, not Hispanic or Latino: More than 18 Years
+      T041B006:       White alone, not Hispanic or Latino: More than 20 Years
+      T041B007:       White alone, not Hispanic or Latino: More than 21 Years
+      T041B008:       White alone, not Hispanic or Latino: More than 22 Years
+      T041B009:       White alone, not Hispanic or Latino: More than 25 Years
+      T041B010:       White alone, not Hispanic or Latino: More than 30 Years
+      T041B011:       White alone, not Hispanic or Latino: More than 35 Years
+      T041B012:       White alone, not Hispanic or Latino: More than 40 Years
+      T041B013:       White alone, not Hispanic or Latino: More than 45 Years
+      T041B014:       White alone, not Hispanic or Latino: More than 50 Years
+      T041B015:       White alone, not Hispanic or Latino: More than 55 Years
+      T041B016:       White alone, not Hispanic or Latino: More than 60 Years
+      T041B017:       White alone, not Hispanic or Latino: More than 62 Years
+      T041B018:       White alone, not Hispanic or Latino: More than 65 Years
+      T041B019:       White alone, not Hispanic or Latino: More than 67 Years
+      T041B020:       White alone, not Hispanic or Latino: More than 70 Years
+      T041B021:       White alone, not Hispanic or Latino: More than 75 Years
+      T041B022:       White alone, not Hispanic or Latino: More than 80 Years
+      T041B023:       White alone, not Hispanic or Latino: More than 85 Years
+      T044_001:       Median age
+      T044_002:       Median age: Male
+      T044_003:       Median age: Female
+      T045_001:       Median age of White Alone:
+      T045_002:       Median age of White Alone: Male
+      T045_003:       Median age of White Alone: Female
+      T046_001:       Median age of Black Or African American Alone:
+      T046_002:       Median age of Black Or African American Alone: Male
+      T046_003:       Median age of Black Or African American Alone: Female
+      T047_001:       Median age of American Indian And Alaska Native Alone:
+      T047_002:       Median age of American Indian And Alaska Native Alone: Male
+      T047_003:       Median age of American Indian And Alaska Native Alone: Female
+      T048_001:       Median age of Asian Alone
+      T048_002:       Median age of Asian Alone: Male
+      T048_003:       Median age of Asian Alone: Female
+      T049_001:       Median age of Native Hawaiian And Other Pacific Islander Alone:
+      T049_002:       Median age of Native Hawaiian And Other Pacific Islander Alone: Male
+      T049_003:       Median age of Native Hawaiian And Other Pacific Islander Alone: Female
+      T050_001:       Median age of Some Other Race Alone:
+      T050_002:       Median age of Some Other Race Alone: Male
+      T050_003:       Median age of Some Other Race Alone: Female
+      T051_001:       Median age of Two Or More Races:
+      T051_002:       Median age of Two Or More Races: Male
+      T051_003:       Median age of Two Or More Races: Female
+      T052_001:       Median age of Hispanic Or Latino:
+      T052_002:       Median age of Hispanic Or Latino: Male
+      T052_003:       Median age of Hispanic Or Latino: Female
+      T053_001:       Median age of White Alone, Not Hispanic Or Latino:
+      T053_002:       Median age of White Alone, Not Hispanic Or Latino: Male
+      T053_003:       Median age of White Alone, Not Hispanic Or Latino: Female
+      T054_001:       Total population
+      T054_002:       Total population: White alone
+      T054_003:       Total population: Black or African American alone
+      T054_004:       Total population: American Indian and Alaska Native alone
+      T054_005:       Total population: Asian alone
+      T054_006:       Total population: Native Hawaiian and Other Pacific Islander alone
+      T054_007:       Total population: Some Other Race alone
+      T054_008:       Total population: Two or More Races
+      T055_001:       Total population
+      T055_002:       Total population: Not Hispanic or Latino
+      T055_003:       Total population: Not Hispanic or Latino: White alone
+      T055_004:       Total population: Not Hispanic or Latino: Black or African American alone
+      T055_005:       Total population: Not Hispanic or Latino: American Indian and Alaska Native alone
+      T055_006:       Total population: Not Hispanic or Latino: Asian alone
+      T055_007:       Total population: Not Hispanic or Latino: Native Hawaiian and Other Pacific Islander alone
+      T055_008:       Total population: Not Hispanic or Latino: Some Other Race alone
+      T055_009:       Total population: Not Hispanic or Latino: Two or More Races
+      T055_010:       Total population: Hispanic or Latino
+      T055_011:       Total population: Hispanic or Latino: White alone
+      T055_012:       Total population: Hispanic or Latino: Black or African American alone
+      T055_013:       Total population: Hispanic or Latino: American Indian and Alaska Native alone
+      T055_014:       Total population: Hispanic or Latino: Asian alone
+      T055_015:       Total population: Hispanic or Latino: Native Hawaiian and Other Pacific Islander alone
+      T055_016:       Total population: Hispanic or Latino: Some Other Race alone
+      T055_017:       Total population: Hispanic or Latino: Two or More Races
+      T056_001:       Total population
+      T056_002:       Total population: Not Hispanic or Latino
+      T056_003:       Total population: Hispanic or Latino
+      T056_004:       Total population: Hispanic or Latino: Mexican
+      T056_005:       Total population: Hispanic or Latino: Puerto Rican
+      T056_006:       Total population: Hispanic or Latino: Cuban
+      T056_007:       Total population: Hispanic or Latino: Dominican
+      T056_008:       Total population: Hispanic or Latino: Central American (excluding Mexican)
+      T056_009:       Total population: Hispanic or Latino: Central American (excluding Mexican): Costa Rican
+      T056_010:       Total population: Hispanic or Latino: Central American (excluding Mexican): Guatemalan
+      T056_011:       Total population: Hispanic or Latino: Central American (excluding Mexican): Honduran
+      T056_012:       Total population: Hispanic or Latino: Central American (excluding Mexican): Nicaraguan
+      T056_013:       Total population: Hispanic or Latino: Central American (excluding Mexican): Panamanian
+      T056_014:       Total population: Hispanic or Latino: Central American (excluding Mexican): Salvadoran
+      T056_015:       Total population: Hispanic or Latino: Central American (excluding Mexican): Other Central American
+      T056_016:       Total population: Hispanic or Latino: South American
+      T056_017:       Total population: Hispanic or Latino: South American: Argentinean
+      T056_018:       Total population: Hispanic or Latino: South American: Bolivian
+      T056_019:       Total population: Hispanic or Latino: South American: Chilean
+      T056_020:       Total population: Hispanic or Latino: South American: Colombian
+      T056_021:       Total population: Hispanic or Latino: South American: Ecuadorian
+      T056_022:       Total population: Hispanic or Latino: South American: Paraguayan
+      T056_023:       Total population: Hispanic or Latino: South American: Peruvian
+      T056_024:       Total population: Hispanic or Latino: South American: Uruguayan
+      T056_025:       Total population: Hispanic or Latino: South American: Venezuelan
+      T056_026:       Total population: Hispanic or Latino: South American: Other South American
+      T056_027:       Total population: Hispanic or Latino: Other Hispanic or Latino
+      T056_028:       Total population: Hispanic or Latino: Other Hispanic or Latino: Spaniard
+      T056_029:       Total population: Hispanic or Latino: Other Hispanic or Latino: Spanish
+      T056_030:       Total population: Hispanic or Latino: Other Hispanic or Latino: Spanish American
+      T056_031:       Total population: Hispanic or Latino: Other Hispanic or Latino: All other Hispanic or Latino
+      T057_001:       Total Asian with one Asian category only
+      T057_002:       Total Asian with one Asian category only: Asian Indian
+      T057_003:       Total Asian with one Asian category only: Bangladeshi
+      T057_004:       Total Asian with one Asian category only: Bhutanese
+      T057_005:       Total Asian with one Asian category only: Burmese
+      T057_006:       Total Asian with one Asian category only: Cambodian
+      T057_007:       Total Asian with one Asian category only: Chinese (except Taiwanese)
+      T057_008:       Total Asian with one Asian category only: Filipino
+      T057_009:       Total Asian with one Asian category only: Hmong
+      T057_010:       Total Asian with one Asian category only: Indonesian
+      T057_011:       Total Asian with one Asian category only: Japanese
+      T057_012:       Total Asian with one Asian category only: Korean
+      T057_013:       Total Asian with one Asian category only: Laotian
+      T057_014:       Total Asian with one Asian category only: Malaysian
+      T057_015:       Total Asian with one Asian category only: Nepalese
+      T057_016:       Total Asian with one Asian category only: Pakistani
+      T057_017:       Total Asian with one Asian category only: Sri Lankan
+      T057_018:       Total Asian with one Asian category only: Taiwanese
+      T057_019:       Total Asian with one Asian category only: Thai
+      T057_020:       Total Asian with one Asian category only: Vietnamese
+      T057_021:       Total Asian with one Asian category only: Other Asian, specified
+      T057_022:       Total Asian with one Asian category only: Other Asian, not specified
+      T058_001:       Households
+      T058_002:       Households: Family households
+      T058_003:       Households: Family households: Married-couple family
+      T058_004:       Households: Family households: Other family
+      T058_005:       Households: Family households: Other family: Male householder, no wife present
+      T058_006:       Households: Family households: Other family: Female householder, no husband present
+      T058_007:       Households: Nonfamily households
+      T058_008:       Households: Nonfamily households: Householder living alone
+      T058_009:       Households: Nonfamily households: Householder not living alone
+      T059_001:       Households
+      T059_002:       Households: Households with one or more people under 18 years
+      T059_003:       Households: Households with one or more people under 18 years: Family households
+      T059_004:       Households: Households with one or more people under 18 years: Family households: Married-couple family
+      T059_005:       Households: Households with one or more people under 18 years: Family households: Other family
+      T059_006:       Households: Households with one or more people under 18 years: Family households: Other family: Male householder, no wife present
+      T059_007:       Households: Households with one or more people under 18 years: Family households: Other family: Female householder, no husband present
+      T059_008:       Households: Households with one or more people under 18 years: Nonfamily households
+      T059_009:       Households: Households with one or more people under 18 years: Nonfamily households: Male householder
+      T059_010:       Households: Households with one or more people under 18 years: Nonfamily households: Female householder
+      T059_011:       Households: Households with no people under 18 years
+      T059_012:       Households: Households with no people under 18 years: Family households
+      T059_013:       Households: Households with no people under 18 years: Family households: Married-couple family
+      T059_014:       Households: Households with no people under 18 years: Family households: Other family
+      T059_015:       Households: Households with no people under 18 years: Family households: Other family: Male householder, no wife present
+      T059_016:       Households: Households with no people under 18 years: Family households: Other family: Female householder, no husband present
+      T059_017:       Households: Households with no people under 18 years: Nonfamily households
+      T059_018:       Households: Households with no people under 18 years: Nonfamily households: Male householder
+      T059_019:       Households: Households with no people under 18 years: Nonfamily households: Female householder
+      T060_001:       Households
+      T060_002:       Households: with a householder who is White Alone
+      T060_003:       Households: with a householder who is Black or African American Alone
+      T060_004:       Households: with a householder who is American Indian and Alaska Native Alone
+      T060_005:       Households: with a householder who is Asian Alone
+      T060_006:       Households: with a householder who is Native Hawaiian and Other Pacific Islander Alone
+      T060_007:       Households: with a householder who is Some other race Alone
+      T060_008:       Households: with a householder who is two or more races
+      T061_001:       Households
+      T061_002:       Households: with a householder who is Hispanic or Latino
+      T061_003:       Households: with a householder who is Not Hispanic or Latino
+      T062_001:       Households
+      T062_002:       Households: with a householder who is White Alone, not Hispanic or Latino
+      T062_003:       Households: with a householder who is not White Alone, or is Hispanic or Latino
+      T063_001:       Total population
+      T063_002:       Total population: In households
+      T063_003:       Total population: In households: In family households
+      T063_004:       Total population: In households: In family households: Householder
+      T063_005:       Total population: In households: In family households: Spouse
+      T063_006:       Total population: In households: In family households: Child
+      T063_007:       Total population: In households: In family households: Grandchild
+      T063_008:       Total population: In households: In family households: Brother or sister
+      T063_009:       Total population: In households: In family households: Parent
+      T063_010:       Total population: In households: In family households: Other relatives
+      T063_011:       Total population: In households: In family households: Nonrelatives
+      T063_012:       Total population: In households: In nonfamily households
+      T063_013:       Total population: In households: In nonfamily households: Living alone
+      T063_014:       Total population: In households: In nonfamily households: Not living alone
+      T063_015:       Total population: In households: In nonfamily households: Nonrelatives
+      T063_016:       Total population: In group quarters
+      T063_017:       Total population: In group quarters: Institutionalized population
+      T063_018:       Total population: In group quarters: Noninstitutionalized population
+      T064_001:       Average household size
+      T065_001:       Households
+      T065_002:       Households: Unmarried-partner households
+      T065_003:       Households: Unmarried-partner households: Same Sex Partners
+      T065_004:       Households: Unmarried-partner households: Same Sex Partners: Male householder and male partner
+      T065_005:       Households: Unmarried-partner households: Same Sex Partners: Female householder and female partner
+      T065_006:       Households: Unmarried-partner households: Opposite Sex Partners
+      T065_007:       Households: Unmarried-partner households: Opposite Sex Partners: Male householder and female partner
+      T065_008:       Households: Unmarried-partner households: Opposite Sex Partners: Female householder and male partner
+      T065_009:       Households: All other households
+      T066_001:       Total population
+      T066_002:       Total population: Population in group quarters
+      T066_003:       Total population: Population NOT in group quarters
+      T067_001:       Total population
+      T067_002:       Total population: Population in group quarters
+      T067_003:       Total population: Population in group quarters: Institutionalized population
+      T067_004:       Total population: Population in group quarters: Institutionalized population: Correctional institutions
+      T067_005:       Total population: Population in group quarters: Institutionalized population: Nursing homes
+      T067_006:       Total population: Population in group quarters: Institutionalized population: Other institutions
+      T067_007:       Total population: Population in group quarters: Noninstitutionalized population
+      T067_008:       Total population: Population in group quarters: Noninstitutionalized population: College/University student housing
+      T067_009:       Total population: Population in group quarters: Noninstitutionalized population: Military quarters
+      T067_010:       Total population: Population in group quarters: Noninstitutionalized population: Other noninstitutional facilities
+      T067_011:       Total population: Population NOT in group Quarters
+      T068_001:       Housing units
+      T069_001:       Occupied housing units
+      T069_002:       Occupied housing units: Owner Occupied
+      T069_003:       Occupied housing units: Renter occupied
+      T070_001:       Housing units
+      T070_002:       Housing units: Occupied
+      T070_003:       Housing units: Vacant
+      T071_001:       Vacant housing units
+      T071_002:       Vacant housing units: For rent
+      T071_003:       Vacant housing units: For sale only
+      T071_004:       Vacant housing units: Other vacant
+      T072_001:       Nonfamily households
+      T073_001:       Owner-occupied Housing Units
+
+
+
+
+--------------------------------------------------------------------------------
+Citation and Use of Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing the data
+  must cite it appropriately. The citation should include the following:
+
+	  www.socialexplorer.com
+	  New York City, NY: Social Explorer 2016
+
+
+* Citations should also include the URL for this report:
+
+    http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R11097587
+
+If you have any questions contact info@socialexplorer.com

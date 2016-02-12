@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'cmu_typewriter_textregular';
+    src: url('font/cmuntt-webfont.eot');
+    src: url('font/cmuntt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/cmuntt-webfont.woff2') format('woff2'),
+         url('font/cmuntt-webfont.woff') format('woff'),
+         url('font/cmuntt-webfont.ttf') format('truetype'),
+         url('font/cmuntt-webfont.svg#cmu_typewriter_textregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family:'cmu_typewriter_textregular';
+	font-size: 12px;
+	//background-color: rgba(0, 30, 64, .1);
+	color:rgba(255,255,255,1);
+}
+
+ul {
+  list-style-type: none;
+}
+
+#map {
+  width: 99%;
+  height: 98%;
+  cursor: crosshair;
+  position: fixed;
+}
+
+path {
+  fill:#cfcfcf;
+  fill-opacity: .6;
+  stroke:#fff;
+  stroke-width: .2px;
+  border-radius: 25px;
+}
+/*
+.CL1  {fill: #17ABA1;}
+.CL2  {fill: #EC501C;}
+.CL3  {fill: #7F1B4F;}
+.CL4  {fill: #25318C;}
+.CL5  {fill: #1A86C3;}
+.CL6  {fill: #E71584;}
+.CL7  {fill: #4F3089;}
+.CL8  {fill: #FEF30C;}
+.CL9  {fill: #E6211C;}
+.CL10 {fill: #18154C;}
+*/
+
+.tracts:hover {
+    fill-opacity: 0.2;
+    stroke:#fff;
+    stroke-width: 1.5px;
+}
+
+.div-legend {
+	padding: 10px;
+	height:150px;
+	width: 25%;
+	text-align: left;
+	position: fixed;
+  //left: 70%;
+  right: 20px;
+  top: 20px;
+  background-color: rgba(0, 0,0, .8);
+  font-family: 'cmu_typewriter_textregular';
+  fill: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.legend {
+	font-family: 'cmu_typewriter_textregular';
+  fill: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.rect {
+}
