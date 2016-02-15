@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>SFBA OAC</title>
+	<link rel="stylesheet" href="layout/leaflet-0.7.3/leaflet.css" />
+	<link rel="stylesheet" href="layout/css/main.css" />
+	<link rel="stylesheet" href="layout/css/sankey.css" />
+	<script src="layout/d3-master/d3.min.js"></script>
+	<script src="layout/leaflet-0.7.3/leaflet.js"></script>
+	<script src="layout/queue.js"></script>
+	<script src="layout/topojson.js"></script>
+	<script src="layout/sankey.js"></script>
+	<!-- <script src="http://maps.stamen.com/js/tile.stamen.js"></script> -->
+</head>
+<body>
+	<div id="map"></div>
+	<!-- <div id="chart"></div> -->
+	<div class="div-legend"></div>
+	<script>
+	// Initial layer to be displayed
+	var currentYear = "2014";
+	var clusterById = {};
+	var currentCluster = 0;
+	var opacity = "off";
+	var years = ["2009","2010","2011","2012","2013","2014"];
+	var colors = ["#18154C","#EC501C","#7F1B4F","#005C37","#1A86C3","#E71584","#4F3089","#FEF30C","#E6211C","#17ABA1"];
+
+	// Bay Area parameters
+	//var map = new L.Map('map').setView([37.8082, -122.2668], 10 ); 
+
+	// San Francisco parameters
+	var map = new L.Map('map').setView([37.7724, -122.3617], 12 ); 
+
+	// CartoDB Positron map style
+	var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png', {
+	    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+	});
+
+	//var layer = new L.StamenTileLayer("toner");
+	// Toner style, slightly modified to darken the background
+	//var layer = new L.tileLayer("http://{s}.sm.mapstack.stamen.com/(toner-lite,$fff[difference],$666[@23],$fff[hsl-saturation@20])/{z}/{x}/{y}.png");
+	
+	map.addLayer(layer);
+	map.scrollWheelZoom.disable();
+
+	var svg = d3.select(map.getPanes().overlayPane).append("svg"),
+	    g = svg.append("g").attr("class", "leaflet-zoom-hide"),
+	    legend = d3.select(".div-legend");
+
+	queue()
+      .defer(d3.json, "geo/sfbact.json")
+      //.defer(d3.json, "../geo/SFhoods.json")
+      .defer(d3.csv, "data/hclust/sfbact-clusters-2014.csv")
+      .await(ready);
+
+    function ready(error, tracts, clusters) {
+		clusters.forEach(function(d) {
+	        clusterById[d.Geo_FIPS] = +d.cluster;
+    	});
+
+		var transform = d3.geo.transform({point: projectPoint}),
+	      	path = d3.geo.path().projection(transform).pointRadius(4);
+
+		var feature = g.selectAll("path")
+		    .data(tracts.features)
+		  		.enter().append("path")
+		  	.attr("cluster", function(d){
+	  			return "cl"+clusterById[+d.properties.GEOID];
+	  		})
+	  		.attr("class", "tracts")
+		  	.style("fill", function(d){
+			  	switch(clusterById[+d.properties.GEOID]) {
+		            case 1: return colors[0]; break;
+		            case 2: return colors[1]; break;
+		            case 3: return colors[2]; break;
+		            case 4: return colors[3]; break;
+		            case 5: return colors[4]; break;
+		            case 6: return colors[5]; break;
+		            case 7: return colors[6]; break;
+		            case 8: return colors[7]; break;
+		            case 9: return colors[8]; break;
+		            case 10: return colors[9]; break;
+	          	}
+			})
+			.on("mouseover", function(d){
+				d3.select(".legend.cluster").text(clusterById[+d.properties.GEOID]); // display the cluster number in the legend block
+			});
+
+		map.on("viewreset", reset);
+		reset();
+
+		// Reposition the SVG to cover the features.
+		function reset() {
+	    	var bounds = path.bounds(tracts),
+	        	topLeft = bounds[0],
+	        	bottomRight = bounds[1];
+
+	    	svg.attr("width", bottomRight[0] - topLeft[0])
+		        .attr("height", bottomRight[1] - topLeft[1])
+		        .style("left", topLeft[0] + "px")
+		        .style("top", topLeft[1] + "px");
+
+	    	g.attr("transform", "translate(" + -topLeft[0] + "," + -topLeft[1] + ")");
+
+	    	feature.attr("d", path);
+		}
+
+		// Use Leaflet to implement a D3 geometric transformation.
+		function projectPoint(x, y) {
+	    	var point = map.latLngToLayerPoint(new L.LatLng(y, x));
+	    	this.stream.point(point.x, point.y);
+	  	}
+    }
+
+	function update_map(error, tracts, clusters) {
+		clusters.forEach(function(d) {
+	        clusterById[d.Geo_FIPS] = +d.cluster;
+    	});
+	   	g.selectAll("path")
+		    .data(tracts.features)
+		.transition()
+		.duration(0)
+		.attr("cluster", function(d){
+	  			return "cl"+clusterById[+d.properties.GEOID];
+	  	})
+		.style("fill", function(d){
+		  	switch(clusterById[+d.properties.GEOID]) {
+	            case 1: return colors[0]; break;
+	            case 2: return colors[1]; break;
+	            case 3: return colors[2]; break;
+	            case 4: return colors[3]; break;
+	            case 5: return colors[4]; break;
+	            case 6: return colors[5]; break;
+	            case 7: return colors[6]; break;
+	            case 8: return colors[7]; break;
+	            case 9: return colors[8]; break;
+	            case 10: return colors[9]; break;
+          	}
+		})
+		.each("end", update_cluster_map)
+		;
+	}
+
+	function update_cluster_map(){
+		if (opacity=="on") {
+			//console.log("update_cluster_map going on");
+			d3.selectAll("path").style("fill-opacity", 0.2);
+			d3.selectAll("[cluster=cl"+(currentCluster)+"]").style("fill-opacity", 0.7);
+			//console.log(currentCluster);
+		}
+	}
+
+	// SANKEY DIAGRAM ////////////////////////////////
+	var margin = {top: 1, right: 1, bottom: 6, left: 1},
+	    width = 960 - margin.left - margin.right,
+	    height = 200 - margin.top - margin.bottom;
+
+	var ssvg = d3.select("#chart").append("svg")
+	    // .attr("width", width + margin.left + margin.right)
+	    // .attr("height", height + margin.top + margin.bottom)
+	  .append("g")
+	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	var sankey = d3.sankey()
+	    .nodeWidth(15)
+	    .nodePadding(10)
+	    .size([400, 150]);
+
+	var spath = sankey.link();
+
+	d3.json("data/sankey/sankey.json", function(clusters) {
+
+	  sankey
+	      .nodes(clusters.nodes)
+	      .links(clusters.links)
+	      .layout(32);
+
+	  var link = ssvg.append("g").selectAll(".link")
+	      .data(clusters.links)
+	    .enter().append("path")
+	      .attr("class", "link")
+	      .attr("d", spath)
+	      .style("stroke-width", function(d) { return Math.max(1, d.dy); })
+	      .sort(function(a, b) { return b.dy - a.dy; });
+
+	  link.append("title")
+	      .text(function(d) { return d.source.name + " → " + d.target.name; });
+
+	  var node = ssvg.append("g").selectAll(".node")
+	      .data(clusters.nodes)
+	    .enter().append("g")
+	      .attr("class", "node")
+	      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+	    .call(d3.behavior.drag()
+	      .origin(function(d) { return d; })
+	      .on("dragstart", function() { this.parentNode.appendChild(this); })
+	      .on("drag", dragmove));
+
+	  node.append("rect")
+	  	  .attr("class", function(d){
+	      	return d.name;
+	      })
+	      .attr("height", function(d) { return d.dy; })
+	      .attr("width", sankey.nodeWidth())
+	      //.style("fill", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
+	      .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
+	    .append("title")
+	      .text(function(d) { return d.name; });
+
+	  node.append("text")
+	      .attr("x", -6)
+	      .attr("y", function(d) { return d.dy / 2; })
+	      .attr("dy", ".35em")
+	      .attr("text-anchor", "end")
+	      .attr("transform", null)
+	      .text(function(d) { return d.name; })
+	    .filter(function(d) { return d.x < width / 2; })
+	      .attr("x", 6 + sankey.nodeWidth())
+	      .attr("text-anchor", "start");
+
+	  function dragmove(d) {
+	    d3.select(this).attr("transform", "translate(" + d.x + "," + (d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))) + ")");
+	    sankey.relayout();
+	    link.attr("d", spath);
+	  }
+	});
+
+	// LEGEND ////////////////////////////////////////
+
+	var svg_legend = d3.select(".div-legend").append("svg").attr("height","100%");
+	var g_legendcolors = svg_legend.append("g").attr("class", "legendcolors");
+	var g_legendyears = svg_legend.append("g").attr("class", "legendyears");
+	var g_legendhood = svg_legend.append("g").attr("class", "legendhood");
+	var g_legendcluster = svg_legend.append("g").attr("class", "legendcluster");
+	var g_legendreset = svg_legend.append("g").attr("class", "legendreset");
+
+	g_legendyears.selectAll("text")
+		.data(years)
+		.enter()
+		.append("text")
+		.attr("class", "years")
+		.attr("x", function(d,i){return i*51;})
+		.attr("y", 80)
+		.text(function(d){return d;})
+			.on("click", function(d){
+				currentYear = d;
+				d3.selectAll(".years").style("fill", "#fff");
+				d3.select(this).style("fill", "#777");
+				queue()
+					.defer(d3.json, "geo/sfbact.json")
+					.defer(d3.csv, "data/hclust/sfbact-clusters-"+d+".csv")
+					.await(update_map);
+			})
+	
+	var colorsrect = g_legendcolors.selectAll("rect");
+	colorsrect.data(colors)
+	      .enter()
+	      .append("svg:rect")
+	      .attr("class", "rect")
+	      .attr("x", function(d,i){return i*30;})
+	      .attr("y", 30)
+	      .attr("width", 30)
+	      .attr("height", 16)
+	      .style("fill", function(d){return d;})
+	      .on("click", function(d,i){
+	      	opacity = "on";
+	      	currentCluster = i+1;
+	      	update_cluster_map();
+	      });	
+	
+	colorsrect.data(colors)
+		.enter()
+		.append("text")
+		.attr("x", function(d,i){return (i*30)+2;})
+	    .attr("y", 45)
+	    .text(function(d,i){return i+1;});
+
+	g_legendhood.append("text").attr("class", "legend hood").attr("x",0).attr("y", 125).text("Cluster :");
+	g_legendcluster.append("text").attr("class", "legend cluster").attr("x",0).attr("y", 145).text("cluster");
+	g_legendreset.append("text").attr("x",0).attr("y", 13).text("reset opacity").on("click", function(){
+		d3.selectAll("path").style("fill-opacity", 0.7)
+		// .on("mouseover", function(){
+		// 	d3.selectAll("path").style("fill-opacity", 0.7); 
+		// 	d3.select(this).style("fill-opacity", 0.2);
+		// })
+		;
+		opacity = "off";
+	});
+
+	</script>
+</body>
+</html>

@@ -1,90 +1,90 @@
 [[
   {
-    "axis": "density",
-    "value": 0.0883
+    "axis": "Density",
+    "value": 0.5883
   },
   {
-    "axis": "PConeUnit",
-    "value": -0.2479
+    "axis": "One Unit",
+    "value": 0.2521
   },
   {
-    "axis": "PCcommutingNotCar",
-    "value": 0.2027
+    "axis": "Public Transit",
+    "value": 0.7027
   },
   {
-    "axis": "PClessHighSchool",
-    "value": -0.1197
+    "axis": "Less than High School",
+    "value": 0.3803
   },
   {
-    "axis": "PCsomeCollegeOrMore",
-    "value": 0.1409
+    "axis": "Some college",
+    "value": 0.6409
   },
   {
-    "axis": "PCdoctorate",
-    "value": 0.1215
+    "axis": "PhD holder",
+    "value": 0.6215
   },
   {
-    "axis": "PCmarriedCouple",
-    "value": -0.1217
+    "axis": "Married couple",
+    "value": 0.3783
   },
   {
-    "axis": "PCwithKids",
-    "value": -0.1378
+    "axis": "With kids",
+    "value": 0.3622
   },
   {
-    "axis": "PCunmarriedSSCouple",
-    "value": 0.1167
+    "axis": "Same-sex couples",
+    "value": 0.6167
   },
   {
-    "axis": "PCsexMale",
-    "value": 0.0269
+    "axis": "Males",
+    "value": 0.5269
   },
   {
-    "axis": "medianAge",
-    "value": -0.0265
+    "axis": "Median age",
+    "value": 0.4735
   },
   {
-    "axis": "PCraceWhiteAlone",
-    "value": 0.0814
+    "axis": "Whites",
+    "value": 0.5814
   },
   {
-    "axis": "PCraceBlackAlone",
-    "value": -0.0062
+    "axis": "Blacks",
+    "value": 0.4938
   },
   {
-    "axis": "PCraceAsianAlone",
-    "value": -0.0031
+    "axis": "Asian",
+    "value": 0.4969
   },
   {
-    "axis": "PCraceHispanic",
-    "value": -0.0819
+    "axis": "Hispanic",
+    "value": 0.4181
   },
   {
-    "axis": "PCforeignBorn",
-    "value": -0.0329
+    "axis": "Foreign-born",
+    "value": 0.4671
   },
   {
-    "axis": "PCownerOccUnits",
-    "value": -0.1402
+    "axis": "Owner-occupied",
+    "value": 0.3598
   },
   {
-    "axis": "PCwithInterests",
-    "value": 0.041
+    "axis": "With interests",
+    "value": 0.541
   },
   {
-    "axis": "perCapitaIncome",
-    "value": 0.1185
+    "axis": "Per capita income",
+    "value": 0.6185
   },
   {
-    "axis": "PCunemployed",
-    "value": -0.0604
+    "axis": "Unemployment",
+    "value": 0.4396
   },
   {
-    "axis": "PCpoorStruggling",
-    "value": -0.0326
+    "axis": "Poor and Struggling",
+    "value": 0.4674
   },
   {
-    "axis": "PCveryWealthyHHolds",
-    "value": 0.054
+    "axis": "Very wealthy",
+    "value": 0.554
   }
 ]]

@@ -1,90 +1,90 @@
 [[
   {
-    "axis": "density",
+    "axis": "Density",
     "value": 0.0505
   },
   {
-    "axis": "PConeUnit",
+    "axis": "One Unit",
     "value": 0.2917
   },
   {
-    "axis": "PCcommutingNotCar",
+    "axis": "Public Transit",
     "value": 0.7115
   },
   {
-    "axis": "PClessHighSchool",
+    "axis": "Less than High School",
     "value": 0.7368
   },
   {
-    "axis": "PCsomeCollegeOrMore",
+    "axis": "Some college",
     "value": 0.2781
   },
   {
-    "axis": "PCdoctorate",
+    "axis": "PhD holder",
     "value": 0
   },
   {
-    "axis": "PCmarriedCouple",
+    "axis": "Married couple",
     "value": 0
   },
   {
-    "axis": "PCwithKids",
+    "axis": "With kids",
     "value": 0
   },
   {
-    "axis": "PCunmarriedSSCouple",
+    "axis": "Same-sex couples",
     "value": 0
   },
   {
-    "axis": "PCsexMale",
+    "axis": "Males",
     "value": 1
   },
   {
-    "axis": "medianAge",
+    "axis": "Median age",
     "value": 0.653
   },
   {
-    "axis": "PCraceWhiteAlone",
+    "axis": "Whites",
     "value": 0.7833
   },
   {
-    "axis": "PCraceBlackAlone",
+    "axis": "Blacks",
     "value": 0.5293
   },
   {
-    "axis": "PCraceAsianAlone",
+    "axis": "Asian",
     "value": 0.2831
   },
   {
-    "axis": "PCraceHispanic",
+    "axis": "Hispanic",
     "value": 0.3787
   },
   {
-    "axis": "PCforeignBorn",
+    "axis": "Foreign-born",
     "value": 0.2276
   },
   {
-    "axis": "PCownerOccUnits",
+    "axis": "Owner-occupied",
     "value": 0
   },
   {
-    "axis": "PCwithInterests",
+    "axis": "With interests",
     "value": 0.5649
   },
   {
-    "axis": "perCapitaIncome",
+    "axis": "Per capita income",
     "value": 0
   },
   {
-    "axis": "PCunemployed",
+    "axis": "Unemployment",
     "value": 0.7396
   },
   {
-    "axis": "PCpoorStruggling",
+    "axis": "Poor and Struggling",
     "value": 1
   },
   {
-    "axis": "PCveryWealthyHHolds",
+    "axis": "Very wealthy",
     "value": 0.4838
   }
 ]]

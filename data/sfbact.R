@@ -13,7 +13,7 @@ clusteringByYear <- function(df) {
   # calculate the distance matrix,
   # and perform the clustering
   sfbact.hc.complete <- df %>%
-    dist(method="euclidean") %>% hclust(method="complete") 
+    dist(method="euclidean") %>% hclust(method="average") 
   
   # Display and export the dendrogram
   ## The colors don't correspond to those on the map...
@@ -127,6 +127,18 @@ source("data/radialPlot.R")
 ################################################################################
 # Export data for the radar plot in D3
 cl2014.means.var <- cl2014.means[,-1]
+Namen <- c("Density", "One Unit", 
+           "Public Transit", "Less than High School", 
+           "Some college", "PhD holder", 
+           "Married couple", "With kids", 
+           "Same-sex couples", "Males", 
+           "Median age", "Whites", 
+           "Blacks", "Asian", 
+           "Hispanic", "Foreign-born", 
+           "Owner-occupied", "With interests", 
+           "Per capita income", "Unemployment", 
+           "Poor and Struggling", "Very wealthy")
+names(cl2014.means.var) <- Namen
 json.list <- list()
 for (i in 1:nclass) { # 10 classes
   cl2014.means.i <- cl2014.means.var[i,]
@@ -144,9 +156,22 @@ for (i in 1:nclass) {
 #######
 # Same with distance to mean values data
 cl2014.means.dev.var <- cl2014.means.dev[,-1]
+Namen <- c("Density", "One Unit", 
+           "Public Transit", "Less than High School", 
+           "Some college", "PhD holder", 
+           "Married couple", "With kids", 
+           "Same-sex couples", "Males", 
+           "Median age", "Whites", 
+           "Blacks", "Asian", 
+           "Hispanic", "Foreign-born", 
+           "Owner-occupied", "With interests", 
+           "Per capita income", "Unemployment", 
+           "Poor and Struggling", "Very wealthy")
+names(cl2014.means.dev.var) <- Namen
 json.list <- list()
 for (i in 1:nclass) { # 10 classes
-  cl2014.means.dev.i <- cl2014.means.dev.var[i,]
+  # Artificially add .5 to facilitate the creation of the radar plot in D3
+  cl2014.means.dev.i <- cl2014.means.dev.var[i,]+0.5
   cl2014.means.dev.i.melted <- melt(cl2014.means.dev.i)
   names(cl2014.means.dev.i.melted) <- c("axis", "value")
   json.list[[i]] <- cl2014.means.dev.i.melted
