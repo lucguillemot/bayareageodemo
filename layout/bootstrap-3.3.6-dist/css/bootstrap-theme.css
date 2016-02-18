@@ -87,11 +87,13 @@ fieldset[disabled] .btn-danger {
 .btn-default:focus {
   background-color: #e0e0e0;
   background-position: 0 -15px;
+  outline: none;
 }
 .btn-default:active,
 .btn-default.active {
   background-color: #e0e0e0;
   border-color: #dbdbdb;
+  outline: none;
 }
 .btn-default.disabled,
 .btn-default[disabled],
@@ -128,11 +130,13 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:focus {
   background-color: #265a88;
   background-position: 0 -15px;
+  outline: none;
 }
 .btn-primary:active,
 .btn-primary.active {
   background-color: #265a88;
   border-color: #245580;
+  outline: none;
 }
 .btn-primary.disabled,
 .btn-primary[disabled],

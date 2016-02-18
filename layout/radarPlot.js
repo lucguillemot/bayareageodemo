@@ -7,11 +7,11 @@
 	
 function RadarChart(id, data, options) {
 	var cfg = {
-	 w: 600,				//Width of the circle
-	 h: 600,				//Height of the circle
+	 w: 350,				//Width of the circle
+	 h: 250,				//Height of the circle
 	 margin: {top: 40, right: 20, bottom: 40, left: 20}, //The margins of the SVG
-	 levels: 3,				//How many levels or inner circles should there be drawn
-	 maxValue: 0, 			//What is the value that the biggest circle will represent
+	 levels: 4,				//How many levels or inner circles should there be drawn
+	 maxValue: 1, 			//What is the value that the biggest circle will represent
 	 labelFactor: 1.25, 	//How much farther than the radius of the outer circle should the labels be placed
 	 wrapWidth: 60, 		//The number of pixels after which a label needs to be given a new line
 	 opacityArea: 0.05, 	//The opacity of the area of the blob
@@ -20,7 +20,7 @@ function RadarChart(id, data, options) {
 	 strokeWidth: 1.5, 		//The width of the stroke around each blob
 	 roundStrokes: false,	//If true the area and stroke will follow a round path (cardinal-closed)
 	 //color: ["#18154C","#EC501C","#7F1B4F","#005C37","#1A86C3","#E71584","#4F3089","#FEF30C","#E6211C","#17ABA1"]
-	 color: "#ffd37a"	//Color function
+	 color: "#18154C"	//Color function
 	};
 	
 	//Put all of the options into a variable called cfg
@@ -110,7 +110,7 @@ function RadarChart(id, data, options) {
 		.attr("class", "mean-level")
 		.attr("r", function(d, i){return radius/2;})
 		.style("fill", "none")
-		.style("stroke", "#f00")
+		.style("stroke", "#000")
 		.style("fill-opacity", 1);
 
 	//Text indicating at what value each level is
@@ -154,7 +154,7 @@ function RadarChart(id, data, options) {
 		.on('mouseover', function (d,i){
 			//Dim all blobs
 			d3.selectAll(".radarArea")
-				.transition().duration(200)
+				.transition().duration(400)
 				.style("fill-opacity", 0.1); 
 			//Bring back the hovered over blob
 			d3.select(this)
@@ -164,7 +164,7 @@ function RadarChart(id, data, options) {
 		.on('mouseout', function(){
 			//Bring back all blobs
 			d3.selectAll(".radarArea")
-				.transition().duration(200)
+				.transition().duration(400)
 				.style("fill-opacity", cfg.opacityArea);
 		});
 		
@@ -184,7 +184,7 @@ function RadarChart(id, data, options) {
 		.attr("r", cfg.dotRadius)
 		.attr("cx", function(d,i){ return rScale(d.value) * Math.cos(angleSlice*i - Math.PI/2); })
 		.attr("cy", function(d,i){ return rScale(d.value) * Math.sin(angleSlice*i - Math.PI/2); })
-		.style("stroke", "red")
+		.style("stroke", function(){return cfg.color;})
 		.style("fill", function(){return cfg.color;})
 		.style("fill-opacity", 1);
 
@@ -261,14 +261,19 @@ function RadarChart(id, data, options) {
 	
 }//RadarChart
 
+// CUSTOM FUNCTION TO UPDATE THE PLOT
 function updateRadarChart(id, data, options) {
-	d3.selectAll(".radarCircle")
+	// var blobWrapper = g.selectAll(".radarWrapper")
+	// 	.data(data)
+	// 	.enter();
+
+	blobWrapper.selectAll(".radarCircle")
 		.data(function(d,i) { return d; })
 		.transition()
 		.duration()
-		.attr("cx", function(d,i){ return rScale(d.value) * Math.cos(angleSlice*i - Math.PI/2); })
-		.attr("cy", function(d,i){ return rScale(d.value) * Math.sin(angleSlice*i - Math.PI/2); })
+		//.attr("cx", function(d,i){ return rScale(d.value) * Math.cos(angleSlice*i - Math.PI/2); })
+		//.attr("cy", function(d,i){ return rScale(d.value) * Math.sin(angleSlice*i - Math.PI/2); })
 		//.style("stroke", "red")
 		//.style("fill", function(d,i,j) { return cfg.color(j); })
-		.style("fill-opacity", 1);
+		.style("fill-opacity", .2);
 }

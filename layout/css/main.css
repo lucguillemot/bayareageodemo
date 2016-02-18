@@ -1,16 +1,27 @@
+.top-buffer { margin-top:20px; }
+
 #map {
   width: 100%;
   height: 400px;
   cursor: crosshair;
 }
 
+#radarChart {
+  width: 100%;
+}
+
 #div-legend {
   height: 400px;
 }
 
-path {
+.var-label,.cl-label {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+path.tracts {
   fill:#cfcfcf;
-  fill-opacity: .6;
+  fill-opacity: .9;
   //stroke:#fff;
   //stroke-width: .2px;
   border-radius: 25px;
