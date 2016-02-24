@@ -3,10 +3,10 @@
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="sfbact_var_201420160208152346520" name="sfbact-var-2014">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="streets20160205160410894" name="streets">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="streets20160205160410894" name="streets">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="sfbact_var_201420160217150327741" name="sfbact-var-2014">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Checked" id="sfbact20160205102002495" name="sfbact">
@@ -17,10 +17,10 @@
   <mapcanvas>
     <units>feet</units>
     <extent>
-      <xmin>1452261.43289161589927971</xmin>
-      <ymin>470099.03852232976350933</ymin>
-      <xmax>1529412.19900210364721715</xmax>
-      <ymax>532704.18248714588116854</ymax>
+      <xmin>1086262.12971269059926271</xmin>
+      <ymin>334569.22136772773228586</ymin>
+      <xmax>1703468.25859659258276224</xmax>
+      <ymax>835410.37308625713922083</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -45,18 +45,18 @@
     <custom-order enabled="0">
       <item>sfbact20160205102002495</item>
       <item>streets20160205160410894</item>
-      <item>sfbact_var_201420160208152346520</item>
+      <item>sfbact_var_201420160217150327741</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="sfbact-var-2014" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="sfbact_var_201420160208152346520" visible="1"/>
-      </filegroup>
-    </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="streets" showFeatureCount="0">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="streets20160205160410894" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="sfbact-var-2014" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="sfbact_var_201420160217150327741" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="sfbact" showFeatureCount="0">
@@ -66,7 +66,7 @@
     </legendlayer>
   </legend>
   <projectlayers layercount="3">
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>sfbact20160205102002495</id>
       <datasource>./sfbact.shp</datasource>
       <title></title>
@@ -90,7 +90,7 @@
       <provider encoding="System">ogr</provider>
       <previewExpression>COALESCE( "GEOID", '&lt;NULL>' )</previewExpression>
       <vectorjoins>
-        <join joinFieldName="Geo_FIPS" targetFieldName="Geo_FIPS" memoryCache="1" joinLayerId="sfbact_var_201420160208152346520"/>
+        <join joinFieldName="Geo_FIPS" targetFieldName="Geo_FIPS" memoryCache="1" joinLayerId="sfbact_var_201420160217150327741"/>
       </vectorjoins>
       <expressionfields/>
       <map-layer-style-manager current="">
@@ -106,10 +106,10 @@
         <edittype widgetv2type="TextEdit" name="sfbact-var-2014_field_1">
           <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="sfbact-var-2014_density">
+        <edittype widgetv2type="TextEdit" name="sfbact-var-2014_totalPop">
           <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="sfbact-var-2014_medianYearBuilt">
+        <edittype widgetv2type="TextEdit" name="sfbact-var-2014_density">
           <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="sfbact-var-2014_PConeUnit">
@@ -163,7 +163,7 @@
         <edittype widgetv2type="TextEdit" name="sfbact-var-2014_PCwithInterests">
           <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="sfbact-var-2014_medianIncome">
+        <edittype widgetv2type="TextEdit" name="sfbact-var-2014_perCapitaIncome">
           <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="sfbact-var-2014_PCunemployed">
@@ -176,7 +176,14 @@
           <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol">
+      <renderer-v2 attr="sfbact-var-2014_totalPop" forceraster="0" symbollevels="0" type="graduatedSymbol" graduatedMethod="GraduatedColor">
+        <ranges>
+          <range render="true" symbol="0" lower="0.000000" upper="3179.200000" label=" 0 - 3179 "/>
+          <range render="true" symbol="1" lower="3179.200000" upper="4069.400000" label=" 3179 - 4069 "/>
+          <range render="true" symbol="2" lower="4069.400000" upper="4943.600000" label=" 4069 - 4944 "/>
+          <range render="true" symbol="3" lower="4943.600000" upper="6040.200000" label=" 4944 - 6040 "/>
+          <range render="true" symbol="4" lower="6040.200000" upper="13850.000000" label=" 6040 - 13850 "/>
+        </ranges>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
@@ -193,9 +200,95 @@
               <prop k="style" v="solid"/>
             </layer>
           </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="199,220,239,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="128,152,72,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="2">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="114,178,215,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="128,152,72,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="3">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="40,120,184,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="128,152,72,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="4">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="8,48,107,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="128,152,72,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
         </symbols>
+        <source-symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="247,251,255,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="128,152,72,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </source-symbol>
+        <colorramp type="gradient" name="[source]">
+          <prop k="color1" v="247,251,255,255"/>
+          <prop k="color2" v="8,48,107,255"/>
+          <prop k="discrete" v="0"/>
+          <prop k="stops" v="0.13;222,235,247,255:0.26;198,219,239,255:0.39;158,202,225,255:0.52;107,174,214,255:0.65;66,146,198,255:0.78;33,113,181,255:0.9;8,81,156,255"/>
+        </colorramp>
+        <invertedcolorramp value="0"/>
+        <mode name="quantile"/>
         <rotation/>
         <sizescale scalemethod="diameter"/>
+        <labelformat format=" %1 - %2 " trimtrailingzeroes="false" decimalplaces="0"/>
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
@@ -372,7 +465,7 @@
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
           <fontProperties description=".SF NS Text,13,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -400,10 +493,10 @@
         <edittype widgetv2type="TextEdit" name="sfbact-var-2014_field_1">
           <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="sfbact-var-2014_density">
+        <edittype widgetv2type="TextEdit" name="sfbact-var-2014_totalPop">
           <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="sfbact-var-2014_medianYearBuilt">
+        <edittype widgetv2type="TextEdit" name="sfbact-var-2014_density">
           <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="sfbact-var-2014_PConeUnit">
@@ -457,7 +550,7 @@
         <edittype widgetv2type="TextEdit" name="sfbact-var-2014_PCwithInterests">
           <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="sfbact-var-2014_medianIncome">
+        <edittype widgetv2type="TextEdit" name="sfbact-var-2014_perCapitaIncome">
           <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="sfbact-var-2014_PCunemployed">
@@ -472,7 +565,7 @@
       </edittypes>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
-      <id>sfbact_var_201420160208152346520</id>
+      <id>sfbact_var_201420160217150327741</id>
       <datasource>file:../data/var/sfbact-var-2014.csv?type=csv&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no</datasource>
       <title></title>
       <abstract></abstract>
@@ -507,10 +600,10 @@
         <edittype widgetv2type="TextEdit" name="Geo_FIPS">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="density">
+        <edittype widgetv2type="TextEdit" name="totalPop">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="medianYearBuilt">
+        <edittype widgetv2type="TextEdit" name="density">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="PConeUnit">
@@ -564,7 +657,7 @@
         <edittype widgetv2type="TextEdit" name="PCwithInterests">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="medianIncome">
+        <edittype widgetv2type="TextEdit" name="perCapitaIncome">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="PCunemployed">
@@ -596,10 +689,10 @@
         <edittype widgetv2type="TextEdit" name="Geo_FIPS">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="density">
+        <edittype widgetv2type="TextEdit" name="totalPop">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="medianYearBuilt">
+        <edittype widgetv2type="TextEdit" name="density">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="PConeUnit">
@@ -653,7 +746,7 @@
         <edittype widgetv2type="TextEdit" name="PCwithInterests">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="medianIncome">
+        <edittype widgetv2type="TextEdit" name="perCapitaIncome">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="PCunemployed">
@@ -669,7 +762,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>streets20160205160410894</id>
-      <datasource>../../../../SITES/maps/11_SFMapping/streets.geojson</datasource>
+      <datasource>../../../../sites/maps/11_SFMapping/streets.geojson</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>

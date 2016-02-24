@@ -10,10 +10,6 @@
   width: 100%;
 }
 
-#div-legend {
-  height: 400px;
-}
-
 .var-label,.cl-label {
   font-weight: bold;
   cursor: pointer;
@@ -44,26 +40,3 @@ path.tracts {
     stroke:#fff;
     stroke-width: 1.5px;
 }
-
-/*.div-legend {
-	padding: 10px;
-	height:150px;
-	width: 25%;
-	text-align: left;
-	position: fixed;
-  //left: 70%;
-  right: 20px;
-  top: 20px;
-  background-color: rgba(0, 0,0, .8);
-  font-family: 'cmu_typewriter_textregular';
-  fill: #fff;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-.legend {
-	font-family: 'cmu_typewriter_textregular';
-  fill: #fff;
-  font-size: 15px;
-  cursor: pointer;
-}*/

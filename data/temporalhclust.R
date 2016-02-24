@@ -31,11 +31,11 @@ temporalClustering <- function(st.2009, st.2010, st.2011, st.2012, st.2013, st.2
   st.years$year <- NULL
   
   # Perform (temporal) hierarchical clustering
-  years.thc <- st.years %>% dist(method = "euclidean") %>% hclust(method = "complete")
+  years.thc <- st.years %>% dist(method = "euclidean") %>% hclust(method = linkage)
   
   # Display and export the dendrogram
   ## The colors don't correspond to those on the map...
-  pdf("data/dendrogram/thclust-dendrogram.pdf")
+  pdf(paste("data/dendrogram/thclust-", linkage, "-", nclass, "-dendrogram.pdf", sep = ""))
   sfbact.dend <- years.thc %>% 
     as.dendrogram %>% 
     set("branches_k_color", k = nclass, value=colors) %>% 
@@ -53,7 +53,7 @@ temporalClustering <- function(st.2009, st.2010, st.2011, st.2012, st.2013, st.2
   for (i in 1:length(years)) {
     df <- filter(years.thc.clusters, year==years[i])
     write.csv(df, 
-              file=paste("data/temphclust/complete/sfbact-clusters-",
+              file=paste("data/thclust/", linkage, "/", nclass, "/sfbact-clusters-",
                          years[i], 
                          ".csv", 
                          sep=""))
@@ -61,22 +61,48 @@ temporalClustering <- function(st.2009, st.2010, st.2011, st.2012, st.2013, st.2
   years.thc.clusters
 }
 
-exportTempVarData <- function(var, clust, year) {
-  sfba.var.cl <- inner_join(var, clust, by = "Geo_FIPS")
+################################################################################
+## Export variable data ########################################################
+################################################################################
+exportTempVarData <- function(var, clust, cyear) {
+  #print(clust)
+  cl.year <- clust %>% filter(year==cyear)
+  
+  sfba.var.cl <- inner_join(var, cl.year, by = "Geo_FIPS")
+  
+  # Standardize Density, Median age and Income to have 0 to 1 value
+  # (The others variables are percentage)
+  # To facilitate their display on the map (with the same color scale for all var)
+  range01 <- function(x){(x-min(x))/(max(x)-min(x))}
+  sfba.var.cl.ranging <- as.data.frame(apply(sfba.var.cl[c(2, 12, 20)], MARGIN=2, FUN=range01))
+  sfba.var.cl$density <- NULL
+  sfba.var.cl$medianAge <- NULL
+  sfba.var.cl$perCapitaIncome <- NULL
+  sfba.var.cl <- cbind(sfba.var.cl, sfba.var.cl.ranging)
+  sfba.var.cl$year.y <- NULL
+  colnames(sfba.var.cl)[which(names(sfba.var.cl) == "year.x")] <- "year"
+  # Reorder columns
+  sfba.var.cl <- sfba.var.cl[, c(1, 23, 2:10, 24, 11:17, 25, 18:22)]
+  
+  # Export CSV files
   write.csv(sfba.var.cl, 
-            file=paste("data/var/thclust/sfbact-var-",
-                       year, 
+            file=paste("data/var/thclust/", linkage, "/", nclass, "/sfbact-var-",
+                       cyear, 
                        ".csv", 
                        sep = ""))
+  sfba.var.cl
 } # exportTempVarData
 
 ################################################################################
 ## Export data for the radar plot in D3 ########################################
 ################################################################################
-radarPlotTempData <- function(st, cl, year) {
+radarPlotTempData <- function(st, cl, cyear) {
+  
+  # get current year data
+  cl.year <- cl %>% filter(year==cyear)
   
   # join standardized data set with cluster dataset by geo ID
-  stcl <- inner_join(st,cl, by="Geo_FIPS")
+  stcl <- inner_join(st, cl.year, by="Geo_FIPS")
   stcl$year <- NULL
   
   # Calculate means of each variables for the whole bay area
@@ -139,10 +165,10 @@ radarPlotTempData <- function(st, cl, year) {
   }
   # Export all clusters in one json file
   write(toJSON(json.list, pretty = T), 
-        paste("data/radar/thclust/radar-", year, ".json", sep = ""))
+        paste("data/radar/thclust/", linkage, "/", nclass, "/radar-", cyear, ".json", sep = ""))
   # Export each cluster in a separate json file
   for (i in 1:nclass) {
-    write(paste("[", toJSON(json.list[[i]], pretty = T), "]", sep = ""), paste("data/radar/thclust/radar-", year, "-cl", i, ".json", sep = ""))
+    write(paste("[", toJSON(json.list[[i]], pretty = T), "]", sep = ""), paste("data/radar/thclust/", linkage, "/", nclass, "/radar-", cyear, "-cl", i, ".json", sep = ""))
   }
   stcl.means.dev
 } #RadarPlotTempData

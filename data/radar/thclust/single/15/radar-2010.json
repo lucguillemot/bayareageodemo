@@ -1,0 +1,1242 @@
+[
+  [
+    {
+      "axis": "Density",
+      "value": 0.4767
+    },
+    {
+      "axis": "One Unit",
+      "value": 0.554
+    },
+    {
+      "axis": "Public Transit",
+      "value": 0.4538
+    },
+    {
+      "axis": "Less than High School",
+      "value": 0.5049
+    },
+    {
+      "axis": "Some college",
+      "value": 0.4907
+    },
+    {
+      "axis": "PhD holder",
+      "value": 0.4925
+    },
+    {
+      "axis": "Married couple",
+      "value": 0.5295
+    },
+    {
+      "axis": "With kids",
+      "value": 0.5295
+    },
+    {
+      "axis": "Same-sex couples",
+      "value": 0.4808
+    },
+    {
+      "axis": "Males",
+      "value": 0.4966
+    },
+    {
+      "axis": "Median age",
+      "value": 0.5046
+    },
+    {
+      "axis": "Whites",
+      "value": 0.5039
+    },
+    {
+      "axis": "Blacks",
+      "value": 0.4826
+    },
+    {
+      "axis": "Asian",
+      "value": 0.4989
+    },
+    {
+      "axis": "Hispanic",
+      "value": 0.5144
+    },
+    {
+      "axis": "Foreign-born",
+      "value": 0.5033
+    },
+    {
+      "axis": "Owner-occupied",
+      "value": 0.5421
+    },
+    {
+      "axis": "With interests",
+      "value": 0.5105
+    },
+    {
+      "axis": "Per capita income",
+      "value": 0.4966
+    },
+    {
+      "axis": "Unemployment",
+      "value": 0.5013
+    },
+    {
+      "axis": "Poor and Struggling",
+      "value": 0.4841
+    },
+    {
+      "axis": "Very wealthy",
+      "value": 0.508
+    }
+  ],
+  [
+    {
+      "axis": "Density",
+      "value": 0.6839
+    },
+    {
+      "axis": "One Unit",
+      "value": 0.0875
+    },
+    {
+      "axis": "Public Transit",
+      "value": 0.8348
+    },
+    {
+      "axis": "Less than High School",
+      "value": 0.4312
+    },
+    {
+      "axis": "Some college",
+      "value": 0.6027
+    },
+    {
+      "axis": "PhD holder",
+      "value": 0.5837
+    },
+    {
+      "axis": "Married couple",
+      "value": 0.2889
+    },
+    {
+      "axis": "With kids",
+      "value": 0.2634
+    },
+    {
+      "axis": "Same-sex couples",
+      "value": 0.6526
+    },
+    {
+      "axis": "Males",
+      "value": 0.5383
+    },
+    {
+      "axis": "Median age",
+      "value": 0.4654
+    },
+    {
+      "axis": "Whites",
+      "value": 0.5357
+    },
+    {
+      "axis": "Blacks",
+      "value": 0.5462
+    },
+    {
+      "axis": "Asian",
+      "value": 0.5163
+    },
+    {
+      "axis": "Hispanic",
+      "value": 0.4157
+    },
+    {
+      "axis": "Foreign-born",
+      "value": 0.4944
+    },
+    {
+      "axis": "Owner-occupied",
+      "value": 0.2047
+    },
+    {
+      "axis": "With interests",
+      "value": 0.4711
+    },
+    {
+      "axis": "Per capita income",
+      "value": 0.5643
+    },
+    {
+      "axis": "Unemployment",
+      "value": 0.4628
+    },
+    {
+      "axis": "Poor and Struggling",
+      "value": 0.5803
+    },
+    {
+      "axis": "Very wealthy",
+      "value": 0.4849
+    }
+  ],
+  [
+    {
+      "axis": "Density",
+      "value": 0.5166
+    },
+    {
+      "axis": "One Unit",
+      "value": 0.4264
+    },
+    {
+      "axis": "Public Transit",
+      "value": 0.6438
+    },
+    {
+      "axis": "Less than High School",
+      "value": 0.5741
+    },
+    {
+      "axis": "Some college",
+      "value": 0.4498
+    },
+    {
+      "axis": "PhD holder",
+      "value": 0.4385
+    },
+    {
+      "axis": "Married couple",
+      "value": 0.3011
+    },
+    {
+      "axis": "With kids",
+      "value": 0.4767
+    },
+    {
+      "axis": "Same-sex couples",
+      "value": 0.5948
+    },
+    {
+      "axis": "Males",
+      "value": 0.4452
+    },
+    {
+      "axis": "Median age",
+      "value": 0.4552
+    },
+    {
+      "axis": "Whites",
+      "value": 0.2211
+    },
+    {
+      "axis": "Blacks",
+      "value": 1.0877
+    },
+    {
+      "axis": "Asian",
+      "value": 0.3494
+    },
+    {
+      "axis": "Hispanic",
+      "value": 0.3898
+    },
+    {
+      "axis": "Foreign-born",
+      "value": 0.3339
+    },
+    {
+      "axis": "Owner-occupied",
+      "value": 0.3968
+    },
+    {
+      "axis": "With interests",
+      "value": 0.3145
+    },
+    {
+      "axis": "Per capita income",
+      "value": 0.3841
+    },
+    {
+      "axis": "Unemployment",
+      "value": 0.6495
+    },
+    {
+      "axis": "Poor and Struggling",
+      "value": 0.6863
+    },
+    {
+      "axis": "Very wealthy",
+      "value": 0.2973
+    }
+  ],
+  [
+    {
+      "axis": "Density",
+      "value": 0.3564
+    },
+    {
+      "axis": "One Unit",
+      "value": 0.4228
+    },
+    {
+      "axis": "Public Transit",
+      "value": 0.7874
+    },
+    {
+      "axis": "Less than High School",
+      "value": 0.778
+    },
+    {
+      "axis": "Some college",
+      "value": 0.0027
+    },
+    {
+      "axis": "PhD holder",
+      "value": 0.2461
+    },
+    {
+      "axis": "Married couple",
+      "value": 0.4191
+    },
+    {
+      "axis": "With kids",
+      "value": 0.4674
+    },
+    {
+      "axis": "Same-sex couples",
+      "value": 0.3255
+    },
+    {
+      "axis": "Males",
+      "value": 0.4999
+    },
+    {
+      "axis": "Median age",
+      "value": 0.4908
+    },
+    {
+      "axis": "Whites",
+      "value": 0.3892
+    },
+    {
+      "axis": "Blacks",
+      "value": 0.5856
+    },
+    {
+      "axis": "Asian",
+      "value": 0.6726
+    },
+    {
+      "axis": "Hispanic",
+      "value": 0.7057
+    },
+    {
+      "axis": "Foreign-born",
+      "value": 0.6682
+    },
+    {
+      "axis": "Owner-occupied",
+      "value": 0.2983
+    },
+    {
+      "axis": "With interests",
+      "value": -0.1157
+    },
+    {
+      "axis": "Per capita income",
+      "value": 0.2617
+    },
+    {
+      "axis": "Unemployment",
+      "value": 0.033
+    },
+    {
+      "axis": "Poor and Struggling",
+      "value": 0.8945
+    },
+    {
+      "axis": "Very wealthy",
+      "value": 0.2247
+    }
+  ],
+  [
+    {
+      "axis": "Density",
+      "value": 0.9004
+    },
+    {
+      "axis": "One Unit",
+      "value": -0.097
+    },
+    {
+      "axis": "Public Transit",
+      "value": 1.006
+    },
+    {
+      "axis": "Less than High School",
+      "value": 0.9463
+    },
+    {
+      "axis": "Some college",
+      "value": 0.0772
+    },
+    {
+      "axis": "PhD holder",
+      "value": 0.3791
+    },
+    {
+      "axis": "Married couple",
+      "value": 0.417
+    },
+    {
+      "axis": "With kids",
+      "value": 0.2582
+    },
+    {
+      "axis": "Same-sex couples",
+      "value": 0.4142
+    },
+    {
+      "axis": "Males",
+      "value": 0.4357
+    },
+    {
+      "axis": "Median age",
+      "value": 0.7692
+    },
+    {
+      "axis": "Whites",
+      "value": -0.0172
+    },
+    {
+      "axis": "Blacks",
+      "value": 0.3957
+    },
+    {
+      "axis": "Asian",
+      "value": 0.9971
+    },
+    {
+      "axis": "Hispanic",
+      "value": 0.1941
+    },
+    {
+      "axis": "Foreign-born",
+      "value": 0.8708
+    },
+    {
+      "axis": "Owner-occupied",
+      "value": 0.0688
+    },
+    {
+      "axis": "With interests",
+      "value": 0.2989
+    },
+    {
+      "axis": "Per capita income",
+      "value": 0.3566
+    },
+    {
+      "axis": "Unemployment",
+      "value": 0.6469
+    },
+    {
+      "axis": "Poor and Struggling",
+      "value": 0.8566
+    },
+    {
+      "axis": "Very wealthy",
+      "value": 0.2948
+    }
+  ],
+  [
+    {
+      "axis": "Density",
+      "value": 0.4804
+    },
+    {
+      "axis": "One Unit",
+      "value": 0.0084
+    },
+    {
+      "axis": "Public Transit",
+      "value": 0.9242
+    },
+    {
+      "axis": "Less than High School",
+      "value": 0.3834
+    },
+    {
+      "axis": "Some college",
+      "value": 0.7513
+    },
+    {
+      "axis": "PhD holder",
+      "value": 1.1375
+    },
+    {
+      "axis": "Married couple",
+      "value": 0.6766
+    },
+    {
+      "axis": "With kids",
+      "value": 0.6956
+    },
+    {
+      "axis": "Same-sex couples",
+      "value": 0.6937
+    },
+    {
+      "axis": "Males",
+      "value": 0.4312
+    },
+    {
+      "axis": "Median age",
+      "value": 0.3442
+    },
+    {
+      "axis": "Whites",
+      "value": 0.2804
+    },
+    {
+      "axis": "Blacks",
+      "value": 0.4696
+    },
+    {
+      "axis": "Asian",
+      "value": 0.8486
+    },
+    {
+      "axis": "Hispanic",
+      "value": 0.4381
+    },
+    {
+      "axis": "Foreign-born",
+      "value": 0.7697
+    },
+    {
+      "axis": "Owner-occupied",
+      "value": -0.1409
+    },
+    {
+      "axis": "With interests",
+      "value": 0.2904
+    },
+    {
+      "axis": "Per capita income",
+      "value": 0.2986
+    },
+    {
+      "axis": "Unemployment",
+      "value": 0.4225
+    },
+    {
+      "axis": "Poor and Struggling",
+      "value": 0.7282
+    },
+    {
+      "axis": "Very wealthy",
+      "value": 0.3662
+    }
+  ],
+  [
+    {
+      "axis": "Density",
+      "value": 0.3461
+    },
+    {
+      "axis": "One Unit",
+      "value": 0.3546
+    },
+    {
+      "axis": "Public Transit",
+      "value": 1.15
+    },
+    {
+      "axis": "Less than High School",
+      "value": 0.8166
+    },
+    {
+      "axis": "Some college",
+      "value": 0.0787
+    },
+    {
+      "axis": "PhD holder",
+      "value": 0.2461
+    },
+    {
+      "axis": "Married couple",
+      "value": -0.1929
+    },
+    {
+      "axis": "With kids",
+      "value": -0.1123
+    },
+    {
+      "axis": "Same-sex couples",
+      "value": 0.3255
+    },
+    {
+      "axis": "Males",
+      "value": 0.9319
+    },
+    {
+      "axis": "Median age",
+      "value": 0.6516
+    },
+    {
+      "axis": "Whites",
+      "value": 0.5581
+    },
+    {
+      "axis": "Blacks",
+      "value": 0.8276
+    },
+    {
+      "axis": "Asian",
+      "value": 0.3255
+    },
+    {
+      "axis": "Hispanic",
+      "value": 0.3569
+    },
+    {
+      "axis": "Foreign-born",
+      "value": 0.1998
+    },
+    {
+      "axis": "Owner-occupied",
+      "value": -0.2458
+    },
+    {
+      "axis": "With interests",
+      "value": -0.1157
+    },
+    {
+      "axis": "Per capita income",
+      "value": 0.0083
+    },
+    {
+      "axis": "Unemployment",
+      "value": 0.033
+    },
+    {
+      "axis": "Poor and Struggling",
+      "value": 1.0412
+    },
+    {
+      "axis": "Very wealthy",
+      "value": 0.0934
+    }
+  ],
+  [
+    {
+      "axis": "Density",
+      "value": 0.2922
+    },
+    {
+      "axis": "One Unit",
+      "value": 0.2863
+    },
+    {
+      "axis": "Public Transit",
+      "value": 0.2931
+    },
+    {
+      "axis": "Less than High School",
+      "value": 0.0923
+    },
+    {
+      "axis": "Some college",
+      "value": 0.7321
+    },
+    {
+      "axis": "PhD holder",
+      "value": 0.2461
+    },
+    {
+      "axis": "Married couple",
+      "value": 0.7371
+    },
+    {
+      "axis": "With kids",
+      "value": 0.7482
+    },
+    {
+      "axis": "Same-sex couples",
+      "value": 0.3255
+    },
+    {
+      "axis": "Males",
+      "value": 0.3747
+    },
+    {
+      "axis": "Median age",
+      "value": 0.3377
+    },
+    {
+      "axis": "Whites",
+      "value": 0.7372
+    },
+    {
+      "axis": "Blacks",
+      "value": 0.2607
+    },
+    {
+      "axis": "Asian",
+      "value": 0.4464
+    },
+    {
+      "axis": "Hispanic",
+      "value": 0.0469
+    },
+    {
+      "axis": "Foreign-born",
+      "value": 0.155
+    },
+    {
+      "axis": "Owner-occupied",
+      "value": -0.2458
+    },
+    {
+      "axis": "With interests",
+      "value": -0.1157
+    },
+    {
+      "axis": "Per capita income",
+      "value": 0.4667
+    },
+    {
+      "axis": "Unemployment",
+      "value": 0.3683
+    },
+    {
+      "axis": "Poor and Struggling",
+      "value": 0.3171
+    },
+    {
+      "axis": "Very wealthy",
+      "value": 0.3142
+    }
+  ],
+  [
+    {
+      "axis": "Density",
+      "value": 0.4104
+    },
+    {
+      "axis": "One Unit",
+      "value": 0.6104
+    },
+    {
+      "axis": "Public Transit",
+      "value": 0.4245
+    },
+    {
+      "axis": "Less than High School",
+      "value": 0.2551
+    },
+    {
+      "axis": "Some college",
+      "value": 0.6183
+    },
+    {
+      "axis": "PhD holder",
+      "value": 0.2461
+    },
+    {
+      "axis": "Married couple",
+      "value": 0.7719
+    },
+    {
+      "axis": "With kids",
+      "value": 0.8515
+    },
+    {
+      "axis": "Same-sex couples",
+      "value": 0.3255
+    },
+    {
+      "axis": "Males",
+      "value": 0.4339
+    },
+    {
+      "axis": "Median age",
+      "value": 0.211
+    },
+    {
+      "axis": "Whites",
+      "value": 0.5944
+    },
+    {
+      "axis": "Blacks",
+      "value": 0.6717
+    },
+    {
+      "axis": "Asian",
+      "value": 0.2855
+    },
+    {
+      "axis": "Hispanic",
+      "value": 0.4649
+    },
+    {
+      "axis": "Foreign-born",
+      "value": 0.1655
+    },
+    {
+      "axis": "Owner-occupied",
+      "value": -0.0853
+    },
+    {
+      "axis": "With interests",
+      "value": 0.1506
+    },
+    {
+      "axis": "Per capita income",
+      "value": 0.3043
+    },
+    {
+      "axis": "Unemployment",
+      "value": 0.5515
+    },
+    {
+      "axis": "Poor and Struggling",
+      "value": 0.6873
+    },
+    {
+      "axis": "Very wealthy",
+      "value": 0.0934
+    }
+  ],
+  [
+    {
+      "axis": "Density",
+      "value": 0.3812
+    },
+    {
+      "axis": "One Unit",
+      "value": 0.5387
+    },
+    {
+      "axis": "Public Transit",
+      "value": 1.0759
+    },
+    {
+      "axis": "Less than High School",
+      "value": 0.7549
+    },
+    {
+      "axis": "Some college",
+      "value": 0.5415
+    },
+    {
+      "axis": "PhD holder",
+      "value": 0.2461
+    },
+    {
+      "axis": "Married couple",
+      "value": 0.6236
+    },
+    {
+      "axis": "With kids",
+      "value": 0.4691
+    },
+    {
+      "axis": "Same-sex couples",
+      "value": 0.3255
+    },
+    {
+      "axis": "Males",
+      "value": 0.8789
+    },
+    {
+      "axis": "Median age",
+      "value": 0.0994
+    },
+    {
+      "axis": "Whites",
+      "value": 0.2157
+    },
+    {
+      "axis": "Blacks",
+      "value": 0.2607
+    },
+    {
+      "axis": "Asian",
+      "value": 0.7617
+    },
+    {
+      "axis": "Hispanic",
+      "value": 0.4974
+    },
+    {
+      "axis": "Foreign-born",
+      "value": 0.4048
+    },
+    {
+      "axis": "Owner-occupied",
+      "value": 0.2999
+    },
+    {
+      "axis": "With interests",
+      "value": 0.5021
+    },
+    {
+      "axis": "Per capita income",
+      "value": 0.1217
+    },
+    {
+      "axis": "Unemployment",
+      "value": 0.7962
+    },
+    {
+      "axis": "Poor and Struggling",
+      "value": 0.7154
+    },
+    {
+      "axis": "Very wealthy",
+      "value": 0.7779
+    }
+  ],
+  [
+    {
+      "axis": "Density"
+    },
+    {
+      "axis": "One Unit"
+    },
+    {
+      "axis": "Public Transit"
+    },
+    {
+      "axis": "Less than High School"
+    },
+    {
+      "axis": "Some college"
+    },
+    {
+      "axis": "PhD holder"
+    },
+    {
+      "axis": "Married couple"
+    },
+    {
+      "axis": "With kids"
+    },
+    {
+      "axis": "Same-sex couples"
+    },
+    {
+      "axis": "Males"
+    },
+    {
+      "axis": "Median age"
+    },
+    {
+      "axis": "Whites"
+    },
+    {
+      "axis": "Blacks"
+    },
+    {
+      "axis": "Asian"
+    },
+    {
+      "axis": "Hispanic"
+    },
+    {
+      "axis": "Foreign-born"
+    },
+    {
+      "axis": "Owner-occupied"
+    },
+    {
+      "axis": "With interests"
+    },
+    {
+      "axis": "Per capita income"
+    },
+    {
+      "axis": "Unemployment"
+    },
+    {
+      "axis": "Poor and Struggling"
+    },
+    {
+      "axis": "Very wealthy"
+    }
+  ],
+  [
+    {
+      "axis": "Density"
+    },
+    {
+      "axis": "One Unit"
+    },
+    {
+      "axis": "Public Transit"
+    },
+    {
+      "axis": "Less than High School"
+    },
+    {
+      "axis": "Some college"
+    },
+    {
+      "axis": "PhD holder"
+    },
+    {
+      "axis": "Married couple"
+    },
+    {
+      "axis": "With kids"
+    },
+    {
+      "axis": "Same-sex couples"
+    },
+    {
+      "axis": "Males"
+    },
+    {
+      "axis": "Median age"
+    },
+    {
+      "axis": "Whites"
+    },
+    {
+      "axis": "Blacks"
+    },
+    {
+      "axis": "Asian"
+    },
+    {
+      "axis": "Hispanic"
+    },
+    {
+      "axis": "Foreign-born"
+    },
+    {
+      "axis": "Owner-occupied"
+    },
+    {
+      "axis": "With interests"
+    },
+    {
+      "axis": "Per capita income"
+    },
+    {
+      "axis": "Unemployment"
+    },
+    {
+      "axis": "Poor and Struggling"
+    },
+    {
+      "axis": "Very wealthy"
+    }
+  ],
+  [
+    {
+      "axis": "Density"
+    },
+    {
+      "axis": "One Unit"
+    },
+    {
+      "axis": "Public Transit"
+    },
+    {
+      "axis": "Less than High School"
+    },
+    {
+      "axis": "Some college"
+    },
+    {
+      "axis": "PhD holder"
+    },
+    {
+      "axis": "Married couple"
+    },
+    {
+      "axis": "With kids"
+    },
+    {
+      "axis": "Same-sex couples"
+    },
+    {
+      "axis": "Males"
+    },
+    {
+      "axis": "Median age"
+    },
+    {
+      "axis": "Whites"
+    },
+    {
+      "axis": "Blacks"
+    },
+    {
+      "axis": "Asian"
+    },
+    {
+      "axis": "Hispanic"
+    },
+    {
+      "axis": "Foreign-born"
+    },
+    {
+      "axis": "Owner-occupied"
+    },
+    {
+      "axis": "With interests"
+    },
+    {
+      "axis": "Per capita income"
+    },
+    {
+      "axis": "Unemployment"
+    },
+    {
+      "axis": "Poor and Struggling"
+    },
+    {
+      "axis": "Very wealthy"
+    }
+  ],
+  [
+    {
+      "axis": "Density"
+    },
+    {
+      "axis": "One Unit"
+    },
+    {
+      "axis": "Public Transit"
+    },
+    {
+      "axis": "Less than High School"
+    },
+    {
+      "axis": "Some college"
+    },
+    {
+      "axis": "PhD holder"
+    },
+    {
+      "axis": "Married couple"
+    },
+    {
+      "axis": "With kids"
+    },
+    {
+      "axis": "Same-sex couples"
+    },
+    {
+      "axis": "Males"
+    },
+    {
+      "axis": "Median age"
+    },
+    {
+      "axis": "Whites"
+    },
+    {
+      "axis": "Blacks"
+    },
+    {
+      "axis": "Asian"
+    },
+    {
+      "axis": "Hispanic"
+    },
+    {
+      "axis": "Foreign-born"
+    },
+    {
+      "axis": "Owner-occupied"
+    },
+    {
+      "axis": "With interests"
+    },
+    {
+      "axis": "Per capita income"
+    },
+    {
+      "axis": "Unemployment"
+    },
+    {
+      "axis": "Poor and Struggling"
+    },
+    {
+      "axis": "Very wealthy"
+    }
+  ],
+  [
+    {
+      "axis": "Density"
+    },
+    {
+      "axis": "One Unit"
+    },
+    {
+      "axis": "Public Transit"
+    },
+    {
+      "axis": "Less than High School"
+    },
+    {
+      "axis": "Some college"
+    },
+    {
+      "axis": "PhD holder"
+    },
+    {
+      "axis": "Married couple"
+    },
+    {
+      "axis": "With kids"
+    },
+    {
+      "axis": "Same-sex couples"
+    },
+    {
+      "axis": "Males"
+    },
+    {
+      "axis": "Median age"
+    },
+    {
+      "axis": "Whites"
+    },
+    {
+      "axis": "Blacks"
+    },
+    {
+      "axis": "Asian"
+    },
+    {
+      "axis": "Hispanic"
+    },
+    {
+      "axis": "Foreign-born"
+    },
+    {
+      "axis": "Owner-occupied"
+    },
+    {
+      "axis": "With interests"
+    },
+    {
+      "axis": "Per capita income"
+    },
+    {
+      "axis": "Unemployment"
+    },
+    {
+      "axis": "Poor and Struggling"
+    },
+    {
+      "axis": "Very wealthy"
+    }
+  ]
+]

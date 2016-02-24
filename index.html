@@ -51,38 +51,7 @@
         </div>
       </div>
     </div> -->
-    <!-- <div class="row top-buffer">
-      <div class="col-xs-2">
-        <div class="btn-toolbar" role="toolbar" aria-label="...">
-          <p>Standardization:</p>
-          <div class="btn-group btn-group-sm" role="group" aria-label="...">
-            <button type="button" class="btn btn-default">square root</button>
-            <button type="button" class="btn btn-default">log</button>
-            <button type="button" class="btn btn-default">IHS</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-2">
-        <p>Clustering algorithm:</p>
-        <div class="btn-toolbar" role="toolbar" aria-label="...">
-          <div class="btn-group btn-group-sm" role="group" aria-label="...">
-            <button type="button" class="btn btn-default">h. clustering</button>
-            <button type="button" class="btn btn-default">k-means</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-2">
-        <p>Number of clusters:</p>
-        <div class="btn-toolbar" role="toolbar" aria-label="...">
-          <div class="btn-group btn-group-sm" role="group" aria-label="...">
-            <button type="button" class="btn btn-default">8</button>
-            <button type="button" class="btn btn-default">9</button>
-            <button type="button" class="btn btn-default">10</button>
-            <button type="button" class="btn btn-default">11</button>
-          </div>
-        </div>
-      </div>      
-    </div> -->
+    <!--  -->
 
   <div class="container title">
     <h1>Bay Area Geodemographics<br><small>Tracking change in San Francisco Bay Area Neighborhoods</small></h1>
@@ -128,10 +97,60 @@
       </div>
     </div>
 
+   <!--  <div class="row top-buffer">
+      <div class="col-xs-2">
+          <p>Standardization:</p>
+          <div class="btn-toolbar" role="toolbar" aria-label="...">
+          <div class="btn-group btn-group-sm" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">square root</button>
+            <button type="button" class="btn btn-default">log</button>
+            <button type="button" class="btn btn-default">IHS</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-2">
+        <p>Clustering algorithm:</p>
+        <div class="btn-toolbar" role="toolbar" aria-label="...">
+          <div class="btn-group btn-group-sm" role="group" aria-label="...">
+            <button type="button" class="btn btn-default btn-algo active" value="hclust" aria-pressed="true">h. clustering</button>
+            <button type="button" class="btn btn-default btn-algo" value="kmeans">k-means</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row top-buffer">
+      <div class="col-xs-3">
+        <p>Number of clusters:</p>
+        <div class="btn-toolbar" role="toolbar" aria-label="...">
+          <div class="btn-group btn-group-sm" role="group" aria-label="...">
+            <button type="button" class="btn btn-default btn-nclass" value="8">8</button>
+            <button type="button" class="btn btn-default btn-nclass" value="9">9</button>
+            <button type="button" class="btn btn-default btn-nclass" value="10">10</button>
+            <button type="button" class="btn btn-default btn-nclass" value="11">11</button>
+            <button type="button" class="btn btn-default btn-nclass" value="12">12</button>
+            <button type="button" class="btn btn-default btn-nclass" value="13">13</button>
+            <button type="button" class="btn btn-default btn-nclass" value="14">14</button>
+            <button type="button" class="btn btn-default btn-nclass active" value="15" aria-pressed="true">15</button>
+          </div>
+        </div>
+      </div>  
+      <div class="col-xs-3">
+        <p>Linkage:</p>
+        <div class="btn-toolbar" role="toolbar" aria-label="...">
+          <div class="btn-group btn-group-sm" role="group" aria-label="...">
+            <button type="button" class="btn btn-default btn-linkage" value="single">single</button>
+            <button type="button" class="btn btn-default btn-linkage" value="average">average</button>
+            <button type="button" class="btn btn-default btn-linkage active" value="complete" aria-pressed="true">complete</button>
+          </div>
+        </div>
+      </div>    
+    </div> -->
+
     <div class="row top-buffer">
       <div class="col-xs-6">
+
         <h2>About</h2>
-        <p>Hierachical Clustering, complete linkage, 10 clusters, temporal.</p>
+        <p>Hierachical Clustering, complete linkage, 15 clusters, temporal.</p>
       </div>
     </div>
 
@@ -144,13 +163,15 @@
   var variablesById = {};
   var currentYear = "2014";
   var currentCluster = 1;
+  var currentLinkage = "complete";
+  var currentNClass = 15;
   var opacity = "off";
   var currentDisplay = "clusters";
   var currentVariable = "PCcommutingNotCar";
   var years = ["2009","2010","2011","2012","2013","2014"];
   // Clusters colors and labels
-  var colors = ["#18154C","#EC501C","#7F1B4F","#005C37","#1A86C3","#E71584","#4F3089","#FEF30C","#E6211C","#17ABA1"]; 
-  var clusters_labels = ["1. Wealthy Surbanites & long-time privileged city areas", "2. Uptrending urban neighborhoods", "3. Struggling urban neighborhoods", "4. Young & urban diversity", "5. Middle-class diversity", "6. Poor, dense, urban but secluded", "7. Mostly asian suburban areas", "8. Weird", "9. Weird", "10. Weird"];
+  var colors = ["#18154C","#EC501C","#7F1B4F","#005C37","#1A86C3","#E71584","#4F3089","#FEF30C","#E6211C","#17ABA1", "#b15928", "#f69c45", "#bb5fa1", "#000000", "#b0c1c9"]; 
+  var clusters_labels = ["1. Wealthy educated surburbs & sparsely pop. city areas", "2. Long-time and newly privileged city areas", "3. Struggling, less educated black urban areas", "4. Young & very urban diversity", "5. Very urban, racially diverse but strugging", "6. Less dense, lower middle-class", "7. Poor, dense, urban but secluded", "8. Less dense white middle-class", "9. Urban less educated black & latino", "10. OUTLIER: very black", "11. OUTLIER: very dense & very poor", "12. Mostly asian suburban areas", "13. OUTLIER: Seniors resort", "14. OUTLIER", "15. OUTLIER: Air force base"];
   // variables colors and labels
   var variables_names = ["density","PConeUnit","PCcommutingNotCar","PClessHighSchool","PCsomeCollegeOrMore","PCdoctorate","PCmarriedCouple","PCwithKids","PCunmarriedSSCouple","PCsexMale","medianAge","PCraceWhiteAlone","PCraceBlackAlone","PCraceAsianAlone","PCraceHispanic","PCforeignBorn","PCownerOccUnits","PCwithInterests","perCapitaIncome","PCunemployed","PCpoorStruggling","PCveryWealthyHHolds"];
   var variables_labels = ["Density", "One Unit","Public Transit", "Less than High School","Some college", "PhD holder","Married couple", "With kids","Same-sex couples", "Males","Median age", "Whites","Blacks", "Asian","Hispanic", "Foreign-born","Owner-occupied", "With interests","Per capita income", "Unemployment","Poor and Struggling", "Very wealthy"]
@@ -184,7 +205,7 @@
   queue()
       .defer(d3.json, "geo/sfbact.json")
       //.defer(d3.json, "../geo/SFhoods.json")
-      .defer(d3.csv, "data/temphclust/complete/sfbact-clusters-2014.csv")
+      .defer(d3.csv, "data/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-clusters-2014.csv")
       .await(ready);
 
   function ready(error, tracts, clusters) {
@@ -214,6 +235,11 @@
                 case 8: return colors[7]; break;
                 case 9: return colors[8]; break;
                 case 10: return colors[9]; break;
+                case 11: return colors[10]; break;
+                case 12: return colors[11]; break;
+                case 13: return colors[12]; break;
+                case 14: return colors[13]; break;
+                case 15: return colors[14]; break;
               }
       })
       .on("mouseover", function(d){
@@ -222,7 +248,7 @@
 
         d3.selectAll(".cl-label").style("opacity", .3);
         d3.select(".cl-label.cl"+clusterById[+d.properties.GEOID]).style("opacity", 1);
-        d3.json("data/radar/thclust/radar-"+currentYear+"-cl"+currentCluster+".json", function(data){
+        d3.json("data/radar/thclust/"+currentLinkage+"/"+currentNClass+"/radar-"+currentYear+"-cl"+currentCluster+".json", function(data){
               var radarChartOptions = {color:colors[(currentCluster-1)]};
               RadarChart("#radarChart", data, radarChartOptions);
             })
@@ -282,6 +308,12 @@
               case 8: return colors[7]; break;
               case 9: return colors[8]; break;
               case 10: return colors[9]; break;
+              case 11: return colors[10]; break;
+              case 12: return colors[11]; break;
+              case 13: return colors[12]; break;
+              case 14: return colors[13]; break;
+              case 15: return colors[14]; break;
+
             }
     })
     //.each("end", update_map_opacity) // to foolow a cluster over years based on opacity (VERY SLOW)
@@ -323,10 +355,38 @@
     d3.selectAll("path.tracts").style("fill-opacity", 0.9);
   }
 
+  //Taken from http://bl.ocks.org/mbostock/7555321
+  //Wraps SVG text  
+  function wrap(text, width) {
+    text.each(function() {
+    var text = d3.select(this),
+      words = text.text().split(/\s+/).reverse(),
+      word,
+      line = [],
+      lineNumber = 0,
+      lineHeight = 1.4, // ems
+      y = text.attr("y"),
+      x = text.attr("x"),
+      dy = parseFloat(text.attr("dy")),
+      tspan = text.text(null).append("tspan").attr("x", x).attr("y", y).attr("dy", dy + "em");
+      
+    while (word = words.pop()) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {
+      line.pop();
+      tspan.text(line.join(" "));
+      line = [word];
+      tspan = text.append("tspan").attr("x", x).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+      }
+    }
+    });
+  }//wrap 
+
   //////////////////////////////////////////////////
   // INTERACTION WITH MAIN MENU ////////////////////
 
-  d3.select(".btn-clusters")
+  d3.select(".btn-clusters") // CLUSTERS DISPLAY
     .on("click", function(){
       $(".btn-display[value="+currentDisplay+"]").button("toggle");
       currentDisplay = "clusters";
@@ -338,14 +398,15 @@
       $("#radarChart").show();
       queue()
           .defer(d3.json, "geo/sfbact.json")
-          .defer(d3.csv, "data/temphclust/complete/sfbact-clusters-"+currentYear+".csv")
+          .defer(d3.csv, "data/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-clusters-"+currentYear+".csv")
           .await(update_map_clusters);
     });
-  d3.select(".btn-variables")
+  d3.select(".btn-variables") // VARIABLES DISPLAY
     .on("click", function(){
       $(".btn-display[value="+currentDisplay+"]").button("toggle");
       currentDisplay = "variables";
       $(this).button("toggle");
+      resetMapOpacity();
       $("#cluster-legend-label").hide();
       $("#radarChart").hide();
       $("#variable-legend-label").show();
@@ -353,33 +414,87 @@
       $("#distributionPlot").show();
       queue()
           .defer(d3.json, "geo/sfbact.json")
-          .defer(d3.csv, "data/var/thclust/sfbact-var-"+currentYear+".csv")
+          .defer(d3.csv, "data/var/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv")
           .await(update_map_variables);
     });
-  d3.selectAll(".btn-years")
+  d3.selectAll(".btn-years") // YEAR CHOICE
     .on("click", function(d){
       $(".btn-years[value="+currentYear+"]").button("toggle");
       $(this).button("toggle");
       resetMapOpacity();
       currentYear = this.value;
       // Update Radar chart
-      d3.json("data/radar/thclust/radar-"+currentYear+"-cl"+currentCluster+".json", function(data){
+      d3.json("data/radar/thclust/"+currentLinkage+"/"+currentNClass+"/radar-"+currentYear+"-cl"+currentCluster+".json", function(data){
                 var radarChartOptions = {color:colors[(currentCluster-1)]};
                 RadarChart("#radarChart", data, radarChartOptions);
               });
       // Update variable view distribution plot
-      d3.csv("data/var/sfbact-var-"+currentYear+".csv", function(data) {
+      d3.csv("data/var/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv", function(data) {
         distributionPlot("#distributionPlot", data);
       })
       if (currentDisplay == "clusters") {
         queue()
           .defer(d3.json, "geo/sfbact.json")
-          .defer(d3.csv, "data/temphclust/complete/sfbact-clusters-"+currentYear+".csv")
+          .defer(d3.csv, "data/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-clusters-"+currentYear+".csv")
           .await(update_map_clusters);
       } else {
         queue()
           .defer(d3.json, "geo/sfbact.json")
-          .defer(d3.csv, "data/var/thclust/sfbact-var-"+currentYear+".csv")
+          .defer(d3.csv, "data/var/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv")
+          .await(update_map_variables);
+      }
+    });
+    d3.selectAll(".btn-nclass") // NUMBER OF CLUSTERS
+    .on("click", function(d){
+      $(".btn-nclass[value="+currentNClass+"]").button("toggle");
+      $(this).button("toggle");
+      resetMapOpacity();
+      currentNClass = this.value;
+      // Update Radar chart
+      d3.json("data/radar/thclust/"+currentLinkage+"/"+currentNClass+"/radar-"+currentYear+"-cl"+currentCluster+".json", function(data){
+                var radarChartOptions = {color:colors[(currentCluster-1)]};
+                RadarChart("#radarChart", data, radarChartOptions);
+              });
+      // Update variable view distribution plot
+      d3.csv("data/var/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv", function(data) {
+        distributionPlot("#distributionPlot", data);
+      })
+      if (currentDisplay == "clusters") {
+        queue()
+          .defer(d3.json, "geo/sfbact.json")
+          .defer(d3.csv, "data/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-clusters-"+currentYear+".csv")
+          .await(update_map_clusters);
+      } else {
+        queue()
+          .defer(d3.json, "geo/sfbact.json")
+          .defer(d3.csv, "data/var/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv")
+          .await(update_map_variables);
+      }
+    });
+    d3.selectAll(".btn-linkage") // HCLUST LINKAGE
+    .on("click", function(d){
+      $(".btn-linkage[value="+currentLinkage+"]").button("toggle");
+      $(this).button("toggle");
+      resetMapOpacity();
+      currentLinkage = this.value;
+      // Update Radar chart
+      d3.json("data/radar/thclust/"+currentLinkage+"/"+currentNClass+"/radar-"+currentYear+"-cl"+currentCluster+".json", function(data){
+                var radarChartOptions = {color:colors[(currentCluster-1)]};
+                RadarChart("#radarChart", data, radarChartOptions);
+              });
+      // Update variable view distribution plot
+      d3.csv("data/var/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv", function(data) {
+        distributionPlot("#distributionPlot", data);
+      })
+      if (currentDisplay == "clusters") {
+        queue()
+          .defer(d3.json, "geo/sfbact.json")
+          .defer(d3.csv, "data/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-clusters-"+currentYear+".csv")
+          .await(update_map_clusters);
+      } else {
+        queue()
+          .defer(d3.json, "geo/sfbact.json")
+          .defer(d3.csv, "data/var/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv")
           .await(update_map_variables);
       }
     });
@@ -394,7 +509,7 @@
         color:"#18154C"
     };
   //Call function to draw the Radar chart
-  d3.json("data/radar/thclust/radar-2014-cl1.json", function(data){
+  d3.json("data/radar/thclust/"+currentLinkage+"/"+currentNClass+"/radar-2014-cl1.json", function(data){
     RadarChart("#radarChart", data, radarChartOptions);
   })
 
@@ -405,9 +520,9 @@
   })*/
 
   // LEGEND ////////////////////////////////////////
-  var cluster_legend_color = d3.select("#cluster-legend-color").append("svg").attr("height", 200).append("g");
-  var cluster_legend_label = d3.select("#cluster-legend-label").append("svg").attr("height", 200).append("g").attr("class", "svg-cl-legend-label");
-  var variable_legend_label = d3.select("#variable-legend-label").append("svg").attr("height", 400).append("g");
+  var cluster_legend_color = d3.select("#cluster-legend-color").append("svg").attr("height", 400).append("g");
+  var cluster_legend_label = d3.select("#cluster-legend-label").append("svg").attr("height", 400).append("g").attr("class", "svg-cl-legend-label");
+  var variable_legend_label = d3.select("#variable-legend-label").append("svg").attr("height", 450).append("g");
   var variable_legend_color_scale = d3.select("#variable-legend-color-scale").append("svg").attr("height", 50).append("g");
   
   cluster_legend_label
@@ -418,19 +533,22 @@
           .attr("class", function(d,i) { return "cl-label cl"+(i+1);})
           .attr("x", 0)
           .attr("y", function(d,i){return (i+0.7)*18;})
+          .attr("dy", "0.35em")
           .style("fill", function(d, i) {return colors[i];})
           .text(function(d){return d;})
           .on("mouseover", function(d,i){
               opacity = "on";
               currentCluster = i+1;
               update_map_opacity();
-              d3.json("data/radar/thclust/radar-"+currentYear+"-cl"+(i+1)+".json", function(data){
+              d3.json("data/radar/thclust/"+currentLinkage+"/"+currentNClass+"/radar-"+currentYear+"-cl"+(i+1)+".json", function(data){
                 var radarChartOptions = {color:colors[i]};
                 RadarChart("#radarChart", data, radarChartOptions);
               })
               d3.selectAll(".cl-label").style("opacity", .3);
               d3.select(this).style("opacity", 1);
             })
+
+        //.call(wrap, 200)
           //.on("click", function(){update_map_opacity()})
           /*.on("mouseout", function() {
             d3.selectAll("path").style("fill-opacity", 0.7);
@@ -453,14 +571,15 @@
           currentVariable = variables_names[i];
           d3.selectAll(".var-label").style("opacity", .3);
           d3.select(this).style("opacity", 1);
-          d3.csv("data/var/thclust/sfbact-var-"+currentYear+".csv", function(data) {
+          d3.csv("data/var/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv", function(data) {
             distributionPlot("#distributionPlot", data);
           })
           queue()
             .defer(d3.json, "geo/sfbact.json")
-            .defer(d3.csv, "data/var/thclust/sfbact-var-"+currentYear+".csv")
+            .defer(d3.csv, "data/var/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv")
             .await(update_map_variables);
         });
+
   variable_legend_color_scale
     .selectAll("rect")
     .data(variable_color_scale)
@@ -486,8 +605,6 @@
   //////////////////////////////////////////////////////////////////////       
   // DISTRIBUTION CHART ////////////////////////////////////////////////
 
-  
-
   function distributionPlot(id, data) {
     var PCScale = d3.scale.linear()
           .domain([0,1])
@@ -497,7 +614,7 @@
 
     var svg = d3.select(id).append("svg")
       .attr("width",  300)
-      .attr("height", 200)
+      .attr("height", 250)
       .attr("class", "distributionPlot");
 
     svg.selectAll("circle")
@@ -509,20 +626,7 @@
             return PCScale(+d[currentVariable]);
           })
           .attr("cy", function(d) {
-            
             return +d.cluster*15;
-            /*switch(+d.cluster) {
-              case 1: return +d.cluster*spacer; break;
-              case 2: return +d.cluster*spacer; break;
-              case 3: return +d.cluster*spacer; break;
-              case 4: return +d.cluster*spacer; break;
-              case 5: return +d.cluster*spacer; break;
-              case 6: return +d.cluster*spacer; break;
-              case 7: return +d.cluster*spacer; break;
-              case 8: return colors[7]; break;
-              case 9: return colors[8]; break;
-              case 10: return colors[9]; break;
-            }*/
           })
           .attr("r", 3)
           .style("fill", function(d) {
@@ -537,6 +641,12 @@
               case 8: return colors[7]; break;
               case 9: return colors[8]; break;
               case 10: return colors[9]; break;
+              case 11: return colors[10]; break;
+              case 12: return colors[11]; break;
+              case 13: return colors[12]; break;
+              case 14: return colors[13]; break;
+              case 15: return colors[14]; break;
+
             }
           })
           .style("fill-opacity", 0.5)
@@ -552,6 +662,12 @@
               case 8: return colors[7]; break;
               case 9: return colors[8]; break;
               case 10: return colors[9]; break;
+              case 11: return colors[10]; break; 
+              case 12: return colors[11]; break;
+              case 13: return colors[12]; break;
+              case 14: return colors[13]; break;
+              case 15: return colors[14]; break;
+
             }
           })
           .on("mouseover", function(d) {
@@ -559,69 +675,9 @@
           });
   }
 
-  d3.csv("data/var/thclust/sfbact-var-"+currentYear+".csv", function(data) {
+  d3.csv("data/var/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv", function(data) {
     distributionPlot("#distributionPlot", data);
   })
-
-  // g_legendyears.selectAll("text")
-  //   .data(years)
-  //   .enter()
-  //   .append("text")
-  //   .attr("class", "years")
-  //   .attr("x", function(d,i){return i*51;})
-  //   .attr("y", 80)
-  //   .text(function(d){return d;})
-  //     .on("click", function(d){
-  //       currentYear = d;
-  //       d3.selectAll(".years").style("fill", "#fff");
-  //       d3.select(this).style("fill", "#777");
-  //       queue()
-  //         .defer(d3.json, "geo/sfbact.json")
-  //         .defer(d3.csv, "data/temphclust/complete/sfbact-clusters-"+d+".csv")
-  //         .await(update_map);
-  //     })
-  // cluster_legend_color
-  //   .selectAll("rect")
-  //     .data(colors)
-  //       .enter()
-  //       .append("svg:rect")
-  //       .attr("class", "class")
-  //       .attr("y", function(d,i){return i*18;})
-  //       .attr("x", 0)
-  //       .attr("width", 30)
-  //       .attr("height", 16)
-  //       .style("fill", function(d){return d;})
-  //       .style("opacity", .7)
-  //       .on("mouseover", function(d,i){
-  //         opacity = "on";
-  //         currentCluster = i+1;
-  //         update_map_opacity();
-  //         d3.json("data/radar/thclust/radar-2014-cl"+(i+1)+".json", function(data){
-  //            var radarChartOptions = {color:colors[i]};
-  //            RadarChart("#radarChart", data, radarChartOptions);
-  //           })
-  //         d3.selectAll(".cl-label").style("opacity", .3);
-  //         d3.select(".cl-label.cl"+(i+1)).style("opacity", 1);
-  //       }); 
-  // colorsrect.data(colors)
-  //   .enter()
-  //   .append("text")
-  //   .attr("x", function(d,i){return (i*30)+2;})
-  //     .attr("y", 45)
-  //     .text(function(d,i){return i+1;});
-
-  // g_legendhood.append("text").attr("class", "legend hood").attr("x",0).attr("y", 125).text("Cluster :");
-  // g_legendcluster.append("text").attr("class", "legend cluster").attr("x",0).attr("y", 145).text("cluster");
-  // g_legendreset.append("text").attr("x",0).attr("y", 13).text("reset opacity").on("click", function(){
-  //   d3.selectAll("path").style("fill-opacity", 0.7)
-  //   // .on("mouseover", function(){
-  //   //  d3.selectAll("path").style("fill-opacity", 0.7); 
-  //   //  d3.select(this).style("fill-opacity", 0.2);
-  //   // })
-  //   ;
-  //   opacity = "off";
-  // });
-
 
   // hide 'variables' display divs.
   $("#variable-legend-label").hide();
@@ -633,64 +689,7 @@
   d3.selectAll(".var-label.PCcommutingNotCar").style("opacity", 1);
 
   </script>
-
-
-    <!-- <ul class="list-group">
-              <li class="list-group-item">
-                <svg height="16px">
-                  <rect class = "cluster-legend-color" id = "cl-1" width="30" height="16"></rect>
-                  <text y="12" x="40">1. Wealthy Surbanites</text>
-                </svg>
-              </li>
-              <li class="list-group-item">
-                <svg height="16px">
-                  <rect class = "cluster-legend-color" id = "cl-2" width="30" height="16"></rect>
-                  <text y="12" x="40">2. Urban Diversity</text>
-                </svg>
-              </li><li class="list-group-item">
-                <svg height="16px">
-                  <rect class = "cluster-legend-color" id = "cl-3" width="30" height="16"></rect>
-                  <text y="12" x="40">3. Working Urbanites</text>
-                </svg>
-              </li><li class="list-group-item">
-                <svg height="16px">
-                  <rect class = "cluster-legend-color" id = "cl-4" width="30" height="16"></rect>
-                  <text y="12" x="40">4. Struggling Urbanites</text>
-                </svg>
-              </li><li class="list-group-item">
-                <svg height="16px">
-                  <rect class = "cluster-legend-color" id = "cl-5" width="30" height="16"></rect>
-                  <text y="12" x="40">5. Secluded Urbanites</text>
-                </svg>
-              </li><li class="list-group-item">
-                <svg height="16px">
-                  <rect class = "cluster-legend-color" id = "cl-6" width="30" height="16"></rect>
-                  <text y="12" x="40">6. Young and Lively Urbanites</text>
-                </svg>
-              </li><li class="list-group-item">
-                <svg height="16px">
-                  <rect class = "cluster-legend-color" id = "cl-7" width="30" height="16"></rect>
-                  <text y="12" x="40">7. Subarbanites</text>
-                </svg>
-              </li><li class="list-group-item">
-                <svg height="16px">
-                  <rect class = "cluster-legend-color" id = "cl-8" width="30" height="16"></rect>
-                  <text y="12" x="40">8. Remote Surbanites</text>
-                </svg>
-              </li><li class="list-group-item">
-                <svg height="16px">
-                  <rect class = "cluster-legend-color" id = "cl-9" width="30" height="16"></rect>
-                  <text y="12" x="40">9. Berkeley</text>
-                </svg>
-              </li><li class="list-group-item">
-                <svg height="16px">
-                  <rect class = "cluster-legend-color" id = "cl-10" width="30" height="16"></rect>
-                  <text y="12" x="40">10. Weird Cluster</text>
-                </svg>
-              </li>
-            </ul> -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="layout/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="layout/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+</body>
 </html>

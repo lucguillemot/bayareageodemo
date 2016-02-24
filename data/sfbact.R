@@ -1,7 +1,12 @@
+source("data/lib_var.R")
 source("data/util.R")
 source("data/temporalhclust.R")
+nclass <- 15
+linkage = "complete"
 
-# # # All years together   # # #
+# # # # # # # # # # # # # # # # # # 
+# # # All years together # # # # #
+# # # # # # # # # # # # # # # # # # 
 for (i in 1:length(years)) {
   
   # Create a data frame with variables for each year  
@@ -18,7 +23,6 @@ for (i in 1:length(years)) {
          env = .GlobalEnv)
 }
 
-nclass <- 10
 # Perform (temporal) hierarchical clustering
 years.thclust <- temporalClustering(sfbact.cc.st.2009, 
                      sfbact.cc.st.2010, 
@@ -27,45 +31,29 @@ years.thclust <- temporalClustering(sfbact.cc.st.2009,
                      sfbact.cc.st.2013, 
                      sfbact.cc.st.2014)
 
-# Export csv data file with raw data + cluster number
-# used in the d3 plot of raw variables
-tcl.2009 <- years.thclust %>% filter(year == 2009)
-tcl.2010 <- years.thclust %>% filter(year == 2010)
-tcl.2011 <- years.thclust %>% filter(year == 2011)
-tcl.2012 <- years.thclust %>% filter(year == 2012)
-tcl.2013 <- years.thclust %>% filter(year == 2013)
-tcl.2014 <- years.thclust %>% filter(year == 2014)
-exportTempVarData(sfbact.cc.2009, tcl.2009, 2009)
-exportTempVarData(sfbact.cc.2010, tcl.2010, 2010)
-exportTempVarData(sfbact.cc.2011, tcl.2011, 2011)
-exportTempVarData(sfbact.cc.2012, tcl.2012, 2012)
-exportTempVarData(sfbact.cc.2013, tcl.2013, 2013)
-exportTempVarData(sfbact.cc.2014, tcl.2014, 2014)  
+
+for (i in 1:length(years)) {
+  # Export csv data file with raw data + cluster number
+  # used in the d3 plot of raw variables
+  sfba.var.cl <- paste("sfba.var.cl.", years[i], sep = "")
+
+  var <- get(paste("sfbact.cc.", years[i], sep = ""))
+  assign(sfba.var.cl,
+         exportTempVarData(var, years.thclust, years[i]),
+         env = .GlobalEnv)
   
-# Calculate means, distances to the mean
-# and export data for the radar plot
+  # Calculate means, distances to the mean
+  # and export data for the radar plot
+  st <- get(paste("sfbact.cc.st.", years[i], sep = ""))
+  radarPlotTempData(st, years.thclust, years[i])
+}
 
-radarPlotTempData(sfbact.cc.st.2009, tcl.2009, 2009)
-radarPlotTempData(sfbact.cc.st.2010, tcl.2010, 2010)
-radarPlotTempData(sfbact.cc.st.2011, tcl.2011, 2011)
-radarPlotTempData(sfbact.cc.st.2012, tcl.2012, 2012)
-radarPlotTempData(sfbact.cc.st.2013, tcl.2013, 2013)
-radarPlotTempData(sfbact.cc.st.2014, tcl.2014, 2014)
+unique(sfba.var.cl.2014$cluster)
 
 
-
-
-
-
-
-
-
-
-
-
-
-# # # Each year separately # # #
-
+# # # # # # # # # # # # # # # # # # 
+# # # Each year separately # # # # #
+# # # # # # # # # # # # # # # # # # 
 for (i in 1:length(years)) {
 
   # Create a data frame with variables for each year  
@@ -101,7 +89,7 @@ for (i in 1:length(years)) {
   # Calculate means, distances to the mean
   # and export data for the radar plot
   cl <- get(paste("sfbact.hc.cl.", years[i], sep = ""))
-  cl.means <- paste("cl.means.", years[i], sep = "")
+  cl.means <- paste("cl.means.", years[i], sep = "") ## Unused
   assign(cl.means, 
          radarPlotData(st, cl, years[i]), 
          env = .GlobalEnv)
