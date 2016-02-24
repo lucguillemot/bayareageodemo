@@ -17,10 +17,16 @@
 
 path.tracts {
   fill:#cfcfcf;
-  fill-opacity: .9;
+  fill-opacity: .8;
   //stroke:#fff;
   //stroke-width: .2px;
   border-radius: 25px;
+}
+
+path.tracts:hover {
+    fill-opacity: 0.2 !important;
+    stroke:#fff !important;
+    stroke-width: 1.5px !important;
 }
 
 .cl-1  {fill: #18154C;}
@@ -35,8 +41,3 @@ path.tracts {
 .cl-10 {fill: #17ABA1;}
 
 
-.tracts:hover {
-    fill-opacity: 0.2;
-    stroke:#fff;
-    stroke-width: 1.5px;
-}

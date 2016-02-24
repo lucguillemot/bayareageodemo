@@ -346,13 +346,13 @@
     if (opacity=="on") {
       //console.log("update_map_opacity going on");
       d3.selectAll("path.tracts").style("fill-opacity", 0.2);
-      d3.selectAll("[cluster=cl"+(currentCluster)+"]").style("fill-opacity", 0.9);
+      d3.selectAll("[cluster=cl"+(currentCluster)+"]").style("fill-opacity", 0.8);
       //console.log(currentCluster);
     }
   } // update_map_opacity()
 
   function resetMapOpacity() {
-    d3.selectAll("path.tracts").style("fill-opacity", 0.9);
+    d3.selectAll("path.tracts").style("fill-opacity", 0.8);
   }
 
   //Taken from http://bl.ocks.org/mbostock/7555321
