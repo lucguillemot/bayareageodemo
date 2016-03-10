@@ -1,90 +1,98 @@
 [[
   {
     "axis": "Density",
-    "value": 0.6963
+    "value": 0.5074
+  },
+  {
+    "axis": "median year of construction",
+    "value": 0.5059
   },
   {
     "axis": "One Unit",
-    "value": 0.0557
-  },
-  {
-    "axis": "Public Transit",
-    "value": 0.8416
-  },
-  {
-    "axis": "Less than High School",
-    "value": 0.419
-  },
-  {
-    "axis": "Some college",
-    "value": 0.6275
-  },
-  {
-    "axis": "PhD holder",
-    "value": 0.5548
-  },
-  {
-    "axis": "Married couple",
-    "value": 0.3156
-  },
-  {
-    "axis": "With kids",
-    "value": 0.3008
-  },
-  {
-    "axis": "Same-sex couples",
-    "value": 0.563
-  },
-  {
-    "axis": "Males",
-    "value": 0.5281
-  },
-  {
-    "axis": "Median age",
-    "value": 0.4228
-  },
-  {
-    "axis": "Whites",
-    "value": 0.486
-  },
-  {
-    "axis": "Blacks",
-    "value": 0.5015
-  },
-  {
-    "axis": "Asian",
-    "value": 0.6148
-  },
-  {
-    "axis": "Hispanic",
-    "value": 0.3758
-  },
-  {
-    "axis": "Foreign-born",
-    "value": 0.5551
+    "value": 0.3974
   },
   {
     "axis": "Owner-occupied",
-    "value": 0.1924
+    "value": 0.3778
   },
   {
-    "axis": "With interests",
-    "value": 0.4963
+    "axis": "Public Transit",
+    "value": 0.5318
+  },
+  {
+    "axis": "Moved within county in the year",
+    "value": 0.6016
+  },
+  {
+    "axis": "Less than High School",
+    "value": 0.6089
+  },
+  {
+    "axis": "Some college",
+    "value": 0.4017
+  },
+  {
+    "axis": "PhD holder",
+    "value": 0.4148
+  },
+  {
+    "axis": "Married couple",
+    "value": 0.3974
+  },
+  {
+    "axis": "Same-sex couples",
+    "value": 0.5094
+  },
+  {
+    "axis": "With kids",
+    "value": 0.4881
+  },
+  {
+    "axis": "Males",
+    "value": 0.4952
+  },
+  {
+    "axis": "Median age",
+    "value": 0.4242
+  },
+  {
+    "axis": "Blacks",
+    "value": 0.698
+  },
+  {
+    "axis": "Asian",
+    "value": 0.4248
+  },
+  {
+    "axis": "Hispanic",
+    "value": 0.6072
+  },
+  {
+    "axis": "Whites",
+    "value": 0.4406
+  },
+  {
+    "axis": "Foreign-born",
+    "value": 0.4978
   },
   {
     "axis": "Per capita income",
-    "value": 0.5475
+    "value": 0.3785
   },
   {
     "axis": "Unemployment",
-    "value": 0.435
+    "value": 0.5872
   },
   {
     "axis": "Poor and Struggling",
-    "value": 0.5634
+    "value": 0.6842
+  },
+  {
+    "axis": "With interests",
+    "value": 0.3528
   },
   {
     "axis": "Very wealthy",
-    "value": 0.4787
+    "value": 0.2926
   }
 ]]

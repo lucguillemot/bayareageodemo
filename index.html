@@ -70,7 +70,7 @@
       </div>
       <div class="col-xs-4">
         <div class="btn-toolbar" role="toolbar" aria-label="...">
-          <div class="btn-group btn-group-sm" role="group" aria-label="...">
+          <div class="btn-group btn-group-sm btn-group-years" role="group" aria-label="...">
             <button type="button" class="btn btn-default btn-years" value="2009">2009</button>
             <button type="button" class="btn btn-default btn-years" value="2010">2010</button>
             <button type="button" class="btn btn-default btn-years" value="2011">2011</button>
@@ -145,12 +145,34 @@
         </div>
       </div>    
     </div> -->
-
+    <div class="row top-buffer">
+      <div class="col-xs-6">
+        <p>Hierachical Clustering, complete linkage, 15 clusters, temporal.</p>
+      </div>
+    </div>
     <div class="row top-buffer">
       <div class="col-xs-6">
 
         <h2>About</h2>
-        <p>Hierachical Clustering, complete linkage, 15 clusters, temporal.</p>
+        
+        <p>The social landscape of the Bay Area is changing very rapidly. The debate surrounding gentrification in the Bay Area is a cue to how contentious the issue of neighborhood change is. For a long time, the dichotomy between urban and suburban areas was relevant in describing US neighborhoods. City centers were decaying while suburban areas were getting wealthier and, often, whiter. The “white flight” is now over and, today, city centers are getting more and more attractive, when suburban areas are getting more diverse.</p>
+        <h4>Geodemographics</h4>
+        <p>Census data helps understand issue-related neighborhood change: race, income, on top of which lies the issue of gentrification. Geodemographics, on the contrary, consists in combining a set of variables to unravel similar types of neighborhoods and patterns of common processes. Geodemographics use statistical methods to holistically calculate clusters of similar neighborhoods. Detecting the variables that influence the most the clustering process allows to describe the types of neighborhood.</p>
+        <p>Geodemographics have been widely used as a geomarketing tool aiming at targeting neighborhood for commercial purposes (See Harris, Sleight and Weber). The efforts by Alex Singleton to create a set of Opengeodemographics have brought this methods to the scientific field. Applications in London and the United Kingdom are very well documented. Alex Singleton and Seth Spielman have also applied Geodemographics to the US and proved the viability of using uncertain ACS census data (American Community Survey, based on samples leading to sometimes important margins of errors) to produce a reliable neighborhood classification.</p>
+        <h4>Tracking Neighborhoods Change</h4>
+        <p>This project aims at expanding previous works using geodemographics data in order to track neighborhood change in the Bay Area and to present the results in an interactive way. The clustering method (described below) has been applied to the same set of variables over several years (from 2000 to 2014) to detect change at the Census tract level.</p>
+        <p>The names used to characterize the clusters are meant to be the most neutral possible but necessarily suffers from the “ecological fallacy” pointed at by Vickers et alii. The inherently geographical dilemma of choosing the right scale used to sum up the features of an areal space (not to big in order to detect a pattern, not too small to catch a neighborhood effect—and to have reliable data) necessarily leads to a reduction of the complexity of a neighborhood. Labels must be thought of as catchy snapshots that are irrelevant without their more detailed description and their respective visual ‘portraits’ (see graphs).</p>
+        <h4>Methods</h4>
+        <p>The set of selected variables is organized in 5 categories covering different aspect of social life: education, family types, population characteristics, type of housing, built environment, economic features. </p>
+        <p>Out of these raw variables, a bottom-up algorithm is used to create clusters of similar tracts. The used algorithm is called hierarchical clustering and uses the complete linkage feature on an euclidean distance matrix. The algorithm calculates the distance between every tract one with each other on a multifactorial space. Each tract is its own cluster in the beginning. The first cycle agglomerates the two closest tracts to a new cluster. The second cycle agglomerates the two closest clusters and so forth until there is only one cluster left. The dendrogram below graphically displays how each tract gradually agglomerate with its most similar counterpart. The dendrogram is a very convenient tool to decide the number of clusters that produces a meaningful “cut” in the clustering process. The dendrogram here is colored according to the 15 clusters depicted on the map above.</p>
+        <p>The decision to cut the clustering at 15 relies on the observation of the dendrogram (each cluster is by and large consistent in its size), and also to my empirical understanding of the Bay Area and that of my peers.</p>
+        <p>To help understanding how tracts that fall within the same clusters are similar, I plotted on a radar chart the distances to the Bay Area mean of each raw variable. The labels and portraits of each cluster have been made out of these visual displays of every categories’ features. Please note that the referential space for the clustering process is that of the Bay Area (therefore the Bay Area mean). Had the same analysis been run on the whole country (same Census tracts level, same variables), the output clusters would have been different (see Seth and Alex). + I allowed to use less data than the number recommended by Spielman and Singleton because the Bay Area is populated, used mostly cumulative variables that mitigate the margins of errors, no variable highly subject to huge margins of errors (like native americans or so).</p>
+        <h4>Labelling and Describing Neighborhoods</h4>
+        <p>In order to make sense out of the different clusters characteristics, the clusters are organized according to a multi-level classification: from the most urban to the least urban.</p>
+        <p></p>
+        <p></p>
+        <p></p>
+
       </div>
     </div>
 
@@ -161,6 +183,7 @@
   var Format = d3.format("%");
   var clusterById = {};
   var variablesById = {};
+  var changeById = {};
   var currentYear = "2014";
   var currentCluster = 1;
   var currentLinkage = "complete";
@@ -170,11 +193,12 @@
   var currentVariable = "PCcommutingNotCar";
   var years = ["2009","2010","2011","2012","2013","2014"];
   // Clusters colors and labels
-  var colors = ["#18154C","#EC501C","#7F1B4F","#005C37","#1A86C3","#E71584","#4F3089","#FEF30C","#E6211C","#17ABA1", "#b15928", "#f69c45", "#bb5fa1", "#000000", "#b0c1c9"]; 
+  /*var colors = ["#18154C","#EC501C","#7F1B4F","#005C37","#1A86C3","#E71584","#4F3089","#FEF30C","#E6211C","#17ABA1", "#b15928", "#f69c45", "#bb5fa1", "#000000", "#b0c1c9"]; */
+  var colors = ["#003c30","#bf812d","#543005","#f6e8c3","#f4a582","#b35806","#b2182b","#fdb863","#E6211C","#f46d43", "#b15928", "#f69c45", "#c7eae5", "#35978f", "#b0c1c9"];
   var clusters_labels = ["1. Wealthy educated surburbs & sparsely pop. city areas", "2. Long-time and newly privileged city areas", "3. Struggling, less educated black urban areas", "4. Young & urban diversity", "5. Urban, racially diverse but strugging", "6. Less dense, lower middle-class", "7. Poor, dense, urban but secluded", "8. Less dense white middle-class", "9. Urban less educated black & latino", "10. Black ghettoed areas", "11. Very dense & very poor", "12. Mostly asian suburban areas", "13. OUTLIER: Seniors resort", "14. OUTLIER", "15. OUTLIER: Air force base"];
   // variables colors and labels
-  var variables_names = ["density","PConeUnit","PCcommutingNotCar","PClessHighSchool","PCsomeCollegeOrMore","PCdoctorate","PCmarriedCouple","PCwithKids","PCunmarriedSSCouple","PCsexMale","medianAge","PCraceWhiteAlone","PCraceBlackAlone","PCraceAsianAlone","PCraceHispanic","PCforeignBorn","PCownerOccUnits","PCwithInterests","perCapitaIncome","PCunemployed","PCpoorStruggling","PCveryWealthyHHolds"];
-  var variables_labels = ["Density", "One Unit","Public Transit", "Less than High School","Some college", "PhD holder","Married couple", "With kids","Same-sex couples", "Males","Median age", "Whites","Blacks", "Asian","Hispanic", "Foreign-born","Owner-occupied", "With interests","Per capita income", "Unemployment","Poor and Struggling", "Very wealthy"]
+  var variables_names = ["density","medianYearBuilt","PConeUnit","PCownerOccUnits","PCcommutingNotCar","PCmovedWithinCounty","PClessHighSchool","PCsomeCollegeOrMore","PCdoctorate","PCmarriedCouple","PCunmarriedSSCouple","PCwithKids","PCsexMale","medianAge","PCraceBlackAlone","PCraceAsianAlone","PCraceHispanic","PCraceWhiteAlone","PCforeignBorn","perCapitaIncome","PCunemployed","PCpoorStruggling","PCwithInterests", "PCveryWealthyHHolds"];
+  var variables_labels = ["Density", "Median year of construction", "One Unit", "Owner-occupied", "Public Transit", "Moved within county in the year", "Less than High School", "Some college", "PhD holder", "Married couple", "Same-sex couples", "With kids", "Males", "Median age", "Blacks", "Asian", "Hispanic", "Whites", "Foreign-born", "Per capita income", "Unemployment", "Poor and Struggling", "With interests", "Very wealthy"]
   var variable_color_scale = ["#f7fbff","#deebf7","#c6dbef","#9ecae1","#6baed6","#4292c6","#2171b5","#08519c","#08306b", "#052043"]
   var variable_domain = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9];
 
@@ -320,6 +344,28 @@
     ;
   } // update_map_clusters()
 
+  function update_map_change(error, tracts, change) {
+    change.forEach(function(d) {
+          changeById[d.Geo_FIPS] = +d.change;
+      });
+    g.selectAll("path")
+        .data(tracts.features)
+    .transition()
+    .duration(0)
+    /*.attr("cluster", function(d){
+          return "cl"+clusterById[+d.properties.GEOID];
+      })*/
+    .style("fill", function(d){
+        switch(changeById[+d.properties.GEOID]) {
+              case 0: return "#fef0d9"; break;
+              case 1: return "#fdcc8a"; break;
+              case 2: return "#fc8d59"; break;
+              case 3: return "#e34a33"; break;
+              case 4: return "#b30000"; break;
+            }
+    });
+  } // update_map_change()
+
   function update_map_variables(error, tracts, variables) {
     // currentVariable !!!!!!!
     var colorScale = d3.scale.threshold()
@@ -340,7 +386,7 @@
       return colorScale(variablesById[+d.properties.GEOID]); 
     })
     .style("opacity", 1);
-  } // update_map_variables
+  } // update_map_variables()
 
   function update_map_opacity(){ // opacity of tracts on the map
     if (opacity=="on") {
@@ -396,10 +442,27 @@
       $("#distributionPlot").hide();
       $("#cluster-legend-label").show();
       $("#radarChart").show();
+      $(".btn-group-years").show();
       queue()
           .defer(d3.json, "geo/sfbact.json")
           .defer(d3.csv, "data/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-clusters-"+currentYear+".csv")
           .await(update_map_clusters);
+    });
+  d3.select(".btn-change") // CLUSTERS DISPLAY
+    .on("click", function(){
+      $(".btn-display[value="+currentDisplay+"]").button("toggle");
+      currentDisplay = "change";
+      $(this).button("toggle");
+      $("#variable-legend-label").hide();
+      $("#variable-legend-color-scale").hide();
+      $("#distributionPlot").hide();
+      $("#cluster-legend-label").hide();
+      $("#radarChart").hide();
+      $(".btn-group-years").hide();
+      queue()
+          .defer(d3.json, "geo/sfbact.json")
+          .defer(d3.csv, "data/change/thclust/"+currentLinkage+"/"+currentNClass+"/change.csv")
+          .await(update_map_change);
     });
   d3.select(".btn-variables") // VARIABLES DISPLAY
     .on("click", function(){
@@ -412,6 +475,7 @@
       $("#variable-legend-label").show();
       $("#variable-legend-color-scale").show();
       $("#distributionPlot").show();
+      $(".btn-group-years").show();
       queue()
           .defer(d3.json, "geo/sfbact.json")
           .defer(d3.csv, "data/var/thclust/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv")
@@ -565,7 +629,7 @@
         .append("text")
         .attr("class", function(d) {return "var-label "+d;})
         .attr("x", 0)
-        .attr("y", function(d, i) {return (i+0.7)*18})
+        .attr("y", function(d, i) {return (i+0.7)*16})
         .text(function(d, i){return variables_labels[i];})
         .on("click",  function(d, i){
           currentVariable = variables_names[i];

@@ -3,10 +3,19 @@
     "axis": "Density"
   },
   {
+    "axis": "median year of construction"
+  },
+  {
     "axis": "One Unit"
   },
   {
+    "axis": "Owner-occupied"
+  },
+  {
     "axis": "Public Transit"
+  },
+  {
+    "axis": "Moved within county in the year"
   },
   {
     "axis": "Less than High School"
@@ -21,19 +30,16 @@
     "axis": "Married couple"
   },
   {
-    "axis": "With kids"
+    "axis": "Same-sex couples"
   },
   {
-    "axis": "Same-sex couples"
+    "axis": "With kids"
   },
   {
     "axis": "Males"
   },
   {
     "axis": "Median age"
-  },
-  {
-    "axis": "Whites"
   },
   {
     "axis": "Blacks"
@@ -45,13 +51,10 @@
     "axis": "Hispanic"
   },
   {
+    "axis": "Whites"
+  },
+  {
     "axis": "Foreign-born"
-  },
-  {
-    "axis": "Owner-occupied"
-  },
-  {
-    "axis": "With interests"
   },
   {
     "axis": "Per capita income"
@@ -61,6 +64,9 @@
   },
   {
     "axis": "Poor and Struggling"
+  },
+  {
+    "axis": "With interests"
   },
   {
     "axis": "Very wealthy"

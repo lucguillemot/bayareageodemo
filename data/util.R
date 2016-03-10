@@ -66,6 +66,12 @@ readAndParse <- function(year, file) {
            #housesMedianValue=SE_T101_001, ##
            ## urban environement
            oneUnit=SE_T097_002, # of housing units (housingUnits)
+           threeFourUnits=SE_T097_006,  # of housing units (housingUnits)
+           fiveNineUnits=SE_T097_007,  # of housing units (housingUnits)
+           tenNineteenUnits=SE_T097_008,  # of housing units (housingUnits)
+           twentyFortynineUnits=SE_T097_009,  # of housing units (housingUnits)
+           moreFiftyUnits=SE_T097_010,  # of housing units (housingUnits)
+           
            density=SE_T002_002, ##
            workersM16=SE_T128_001, ##
            commutingPT=SE_T128_003, # workers 16 years and over (workersM16)
@@ -82,6 +88,7 @@ readAndParse <- function(year, file) {
            ## stability
            popOneYearInUS=SE_T130_001, ##
            SameHouseOneYearAgo=SE_T130_002, # of pop since at least a year in the US (popOneYearInUS)
+           movedWithinCounty=SE_T130_003, # of pop since at least a year in the US (popOneYearInUS)
            # ECONOMY
            ## occupation
            laborForceM16=SE_T037_001, ##
@@ -144,6 +151,8 @@ readAndParse <- function(year, file) {
           PCforRentVacantUnits=forRentVacantUnits/vacantHousingUnits,
           ## urban environement
           PConeUnit=oneUnit/housingUnits,
+          PCmoreThreeUnits=(threeFourUnits+fiveNineUnits+tenNineteenUnits+twentyFortynineUnits+moreFiftyUnits)/housingUnits,
+          
           PCcommutingNotCar=(commutingPT+commutingBicycle+commutingWalked)/workersM16,
           #PCcommutingL45min=commutingL45min/workersM16NotHome,
           #PCcommuteM45=commuteM45/workersM16NotHome,
@@ -152,6 +161,7 @@ readAndParse <- function(year, file) {
           
           ## stability
           PCsameHouseOneYearAgo=SameHouseOneYearAgo/popOneYearInUS,
+          PCmovedWithinCounty=movedWithinCounty/popOneYearInUS,
           # ECONOMY
           ## occupation
           PCunemployed=unemployed/laborForceM16,
@@ -219,6 +229,7 @@ readAndParse <- function(year, file) {
 #                    averageCommute, ##
 #                    ## stability
 #                    PCsameHouseOneYearAgo,
+#                    PCmovedWithinCounty,
 #                    # ECONOMY
 #                    ## occupation
 #                    PCunemployed,    
@@ -243,7 +254,7 @@ readAndParse <- function(year, file) {
       select(Geo_FIPS,
              totalPop,
              density,
-             #medianYearBuilt, ## Berkeley mising...
+             
              PConeUnit,
              PCcommutingNotCar,
              #averageCommute,
@@ -261,31 +272,51 @@ readAndParse <- function(year, file) {
              PCraceHispanic,
              PCforeignBorn,
              #medianOccupiedHouseValue,
+             
              PCownerOccUnits,
              PCwithInterests,
              perCapitaIncome,
              #medianIncome, ## Berkeley missing...
              PCunemployed,
              PCpoorStruggling,
-             PCveryWealthyHHolds)
-      
+             PCveryWealthyHHolds,
+             PCmovedWithinCounty,
+             #PCmoreThreeUnits,
+             medianYearBuilt ## Berkeley mising...
+             )
+
   # Scatterplots to test collinearity
   #plot(sfbact$PCraceWhite, sfbact$PCraceBlack)
   #pairs(sfbact[,c(9,10,11,12,13)])
   
   #remove empty columns (there shouldn't be any)
   sfbact.ne <- Filter(function(x)!all(is.na(x)), sfbact)
+####sfbact.ne <- sfbact
+
+# Add two missing values for Median Year Built in Berkeley for 2013 and 2014
+  if (year==2014) {
+    #sfbact.ne$medianYearBuilt[sfbact.ne$Geo_FIPS="6001422600"] <- 1939
+    sfbact.ne <- within(sfbact.ne, medianYearBuilt[Geo_FIPS == "6001422600"] <- 1939)
+    print("year 2014")
+    #within(df, Name[Name == 'John Smith' & State == 'WI'] <- 'John Smith1')
+  }
+
   # extract complete cases
   sfbact.cc.pop <- sfbact.ne[complete.cases(sfbact.ne),]
+###sfbact.cc.pop <- sfbact.ne
   # Remove census tracts with less than 100 inhabitants
   # and remove the column with total population
-  sfbact.cc <- sfbact.cc.pop[!(sfbact.cc.pop$totalPop < 100),]
+  sfbact.cc <- sfbact.cc.pop[!(sfbact.cc.pop$totalPop < 1000),]
+
   sfbact.cc$totalPop <- NULL
 
   # Remove one tract in NAPA that is an outlier
   # (very poor and old population), always
   # clusters in its one cluster...
   sfbact.cc <- sfbact.cc[!(sfbact.cc$Geo_FIPS == "6055200900"),]
+  
+  
+  
 
   sfbact.cc <- mutate(sfbact.cc,year=year)
 
@@ -331,6 +362,17 @@ standardizeData <- function(df) {
   names(df) <- names
   df <- as.data.frame(df)
 }
+
+
+
+
+###################################################
+
+
+
+
+
+
 
 ###################################################
 ### HIERARCHICAL CLUSTERING #######################

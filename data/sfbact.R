@@ -50,6 +50,45 @@ for (i in 1:length(years)) {
 
 unique(sfba.var.cl.2014$cluster)
 
+# Measure change
+#cl.2009 <- years.thclust %>% filter(year==2009) %>% select(Geo_FIPS, cluster)
+cl.2010 <- years.thclust %>% filter(year==2010) %>% select(Geo_FIPS, cluster)
+cl.2011 <- years.thclust %>% filter(year==2011) %>% select(Geo_FIPS, cluster)
+cl.2012 <- years.thclust %>% filter(year==2012) %>% select(Geo_FIPS, cluster)
+cl.2013 <- years.thclust %>% filter(year==2013) %>% select(Geo_FIPS, cluster)
+cl.2014 <- years.thclust %>% filter(year==2014) %>% select(Geo_FIPS, cluster)
+
+
+cl.1011 <- merge(cl.2010, cl.2011, by = "Geo_FIPS")
+cl.101112 <- merge(cl.1011, cl.2012, by = "Geo_FIPS")
+cl.10111213 <- merge(cl.101112, cl.2013, by = "Geo_FIPS")
+cl.merged <- merge(cl.10111213, cl.2014, by = "Geo_FIPS")
+
+names(cl.merged) <- c("Geo_FIPS","cl.2010", "cl.2011", "cl.2012", "cl.2013", "cl.2014")
+cl.merged$change <- 0
+
+# if (cl.merged[5,2] != cl.merged[5,3]) {cl.merged[5,8] <- 1}
+# if (cl.merged[5,3] != cl.merged[5,4]) {cl.merged[5,8] <- cl.merged[5,8]+1}
+# if (cl.merged[5,4] != cl.merged[5,5]) {cl.merged[5,8] <- cl.merged[5,8]+1}
+# if (cl.merged[5,5] != cl.merged[5,6]) {cl.merged[5,8] <- cl.merged[5,8]+1}
+# if (cl.merged[5,6] != cl.merged[5,7]) {cl.merged[5,8] <- cl.merged[5,8]+1}
+
+for (i in 1:length(cl.merged$Geo_FIPS)) {
+  if (cl.merged[i,2] != cl.merged[i,3]) {cl.merged[i,7] <- 1}
+  if (cl.merged[i,3] != cl.merged[i,4]) {cl.merged[i,7] <- cl.merged[i,7]+1}
+  if (cl.merged[i,4] != cl.merged[i,5]) {cl.merged[i,7] <- cl.merged[i,7]+1}
+  if (cl.merged[i,5] != cl.merged[i,6]) {cl.merged[i,7] <- cl.merged[i,7]+1}
+}
+unique(cl.merged$change)
+
+write.csv(cl.merged, 
+paste("data/change/thclust/", linkage, "/", nclass, "/change.csv", sep = ""))
+###################################################
+
+
+
+
+
 
 # # # # # # # # # # # # # # # # # # 
 # # # Each year separately # # # # #

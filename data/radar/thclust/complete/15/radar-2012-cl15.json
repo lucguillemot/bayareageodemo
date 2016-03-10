@@ -1,68 +1,98 @@
 [[
   {
-    "axis": "Density"
+    "axis": "Density",
+    "value": 0.4113
   },
   {
-    "axis": "One Unit"
+    "axis": "median year of construction",
+    "value": 0.6962
   },
   {
-    "axis": "Public Transit"
+    "axis": "One Unit",
+    "value": 0.5119
   },
   {
-    "axis": "Less than High School"
+    "axis": "Owner-occupied",
+    "value": -0.1827
   },
   {
-    "axis": "Some college"
+    "axis": "Public Transit",
+    "value": 0.8989
   },
   {
-    "axis": "PhD holder"
+    "axis": "Moved within county in the year",
+    "value": 0.6877
   },
   {
-    "axis": "Married couple"
+    "axis": "Less than High School",
+    "value": 0.2465
   },
   {
-    "axis": "With kids"
+    "axis": "Some college",
+    "value": 0.6107
   },
   {
-    "axis": "Same-sex couples"
+    "axis": "PhD holder",
+    "value": 0.5419
   },
   {
-    "axis": "Males"
+    "axis": "Married couple",
+    "value": 0.5956
   },
   {
-    "axis": "Median age"
+    "axis": "Same-sex couples",
+    "value": 0.3453
   },
   {
-    "axis": "Whites"
+    "axis": "With kids",
+    "value": 0.6687
   },
   {
-    "axis": "Blacks"
+    "axis": "Males",
+    "value": 0.8279
   },
   {
-    "axis": "Asian"
+    "axis": "Median age",
+    "value": 0.1439
   },
   {
-    "axis": "Hispanic"
+    "axis": "Blacks",
+    "value": 0.6664
   },
   {
-    "axis": "Foreign-born"
+    "axis": "Asian",
+    "value": 0.3878
   },
   {
-    "axis": "Owner-occupied"
+    "axis": "Hispanic",
+    "value": 0.4566
   },
   {
-    "axis": "With interests"
+    "axis": "Whites",
+    "value": 0.5827
   },
   {
-    "axis": "Per capita income"
+    "axis": "Foreign-born",
+    "value": 0.1818
   },
   {
-    "axis": "Unemployment"
+    "axis": "Per capita income",
+    "value": 0.2624
   },
   {
-    "axis": "Poor and Struggling"
+    "axis": "Unemployment",
+    "value": 0.5495
   },
   {
-    "axis": "Very wealthy"
+    "axis": "Poor and Struggling",
+    "value": 0.5135
+  },
+  {
+    "axis": "With interests",
+    "value": 0.2629
+  },
+  {
+    "axis": "Very wealthy",
+    "value": 0.1397
   }
 ]]
