@@ -1,74 +1,42 @@
-Geo_FIPS,
-           #POPULATION
-           totalPop=SE_T001_001,
-           ## age
-
-           medianAge=SE_T012_001, ##
-           ## sex
-           sexMale=SE_T004_002,  # of total pop (totalPop)
-           ## race
-           raceWhiteAlone=SE_T013_002, # of total pop (totalPop)
-           raceBlackAlone=SE_T013_003, # of total pop
-           raceAsianAlone=SE_T013_005, # of total pop
-           raceHispanic=SE_T014_010, # of total pop
-           ## education
-           popM25=SE_T150_001, ## # highest attainment
-           lessHighSchool=SE_T150_002, # of pop more than 25
-           someCollegeOrMore=SE_T150_004, # of pop more than 25
-           doctorate=SE_T150_008, # of pop more than 25
-           civilPop1619=SE_T030_001, ##
-           
-           ## family structure
-           households=SE_T017_001, ##
-           marriedCouple=SE_T017_003, # of households
-           withKids=SE_T018_002, # of households
-           unmarriedSSCouple=SE_T023_003, # of households
-           
-           ## origin
-           foreignBorn=SE_T133_003, # of total population (totalPop)
-           # ENVIRONMENT
-           ## housing
-           housingUnits=SE_T093_001, ##
-           ownerOccUnits=SE_T094_002, # of occupied units (occupiedHousingUnits)
-           medianYearBuilt=SE_T098_001, ##
-           ## urban environement
-           oneUnit=SE_T097_002, # of housing units (housingUnits)           
-           density=SE_T002_002, ##
-           workersM16=SE_T128_001, ##
-           commutingPT=SE_T128_003, # workers 16 years and over (workersM16)
-           commutingBicycle=SE_T128_005, # workers 16 years and over (workersM16)
-           commutingWalked=SE_T128_006, # workers 16 years and over (workersM16)
-           ## These two only in 2010-2014:
-           #workersM16NotHome=SE_T158A001, ##
-           #commutingL45min=SE_T158A005, # of workers 16+ not working at home (workersM16NotHome)
-           
-           averageCommute=SE_T147_001, ##
-           #commuteM45=SE_T158B005, # of workers 16+ not working at home (workersM16NotHome)
-           #commuteM60=SE_T158B006, # of workers 16+ not working at home (workersM16NotHome)
-           #commuteM90=SE_T158B007, # of workers 16+ not working at home (workersM16NotHome)
-           ## stability
-           popOneYearInUS=SE_T130_001, ##
-           SameHouseOneYearAgo=SE_T130_002, # of pop since at least a year in the US (popOneYearInUS)
-           movedWithinCounty=SE_T130_003, # of pop since at least a year in the US (popOneYearInUS)
-           # ECONOMY
-           ## occupation
-           laborForceM16=SE_T037_001, ##
-           unemployed=SE_T037_003, # of population in labor force 16+ (laborForceM16)
-           employedPopM16=SE_T053_001, ##      
-           privateSector=SE_T053_002, # of employed pop 16+ (employedPopM16)
-           ## wealth
-           medianIncome=SE_T057_001, ##
-           veryWealthyHHolds=SE_T056_017, # of households (households)
-           medianOccupiedHouseValue=SE_T101_001, ##
-           withEarnings=SE_T074_002, # of households (households)
-           withInterests=SE_T077_002, # of households (households)
-           #withSSIncome=T078_002, # of households (households)
-           ## inequality
-           #ONLY available 2011:2014 gini=SE_T157_001, ##
-           perCapitaIncome=SE_T083_001, ##
-           publicAssIncome=SE_T080_002, # of households (households)
-           PopWithPovStatus=SE_T118_001, ##
-           poorStruggling=SE_T118_004 # of pop with poverty status (PopWithPovStatus)
-           #ONLY AVAILABLE 2011:2014 civilNonInstitPop=SE_T145_001 ##
-           #ONLY AVAILABLE 2011:2014 noHealthInsurrance=SE_T145_002 # of civil non institutionalized pop (civilNonInstitPop)
-    
+Name,ACS,Census2000,
+Geo_FIPS,Geo_FIPS,FIPS,
+totalPop,SE_T001_001,SE_T001_001,
+density,SE_T002_002,SE_T003_001,
+housingUnits,SE_T093_001,SE_T159_001,
+PConeUnit,SE_T097_002,SE_T159_002,
+workersM16,SE_T128_001,SE_T195_001,
+commutingPT,SE_T128_003,SE_T195_003,
+commutingBicycle,SE_T128_005,SE_T195_005,
+commutingWalked,SE_T128_006,SE_T195_006,
+#PCcommutingNotCar,
+#averageCommute,##,SE_T218_001,
+popM25,SE_T150_001,SE_T040_001,
+PClessHighSchool,SE_T150_002,SE_T040_002,
+PCsomeCollegeOrMore,SE_T150_004,SE_T040_004,
+PCdoctorate,SE_T150_008,SE_T040_008,
+households,SE_T017_001,SE_T020_001,
+PCmarriedCouple,SE_T017_003,SE_T020_003,
+PCwithKids,SE_T018_002,SE_T021_002,
+PCunmarriedSSCouple,SE_T023_003,SE_T028_003,
+PCsexMale,SE_T004_002,SE_T005_002,
+medianAge,SE_T012_001,SE_T013_001,
+PCraceWhiteAlone,SE_T013_002,SE_T014_002,
+PCraceBlackAlone,SE_T013_003,SE_T014_003,
+PCraceAsianAlone,SE_T013_005,SE_T014_005,
+PCraceHispanic,SE_T013_010,SE_T015_010,
+PCforeignBorn,SE_T133_003,SE_T201_003,
+#medianOccupiedHouseValue,
+occupiedHousingUnits,SE_T094_001,
+PCownerOccUnits,SE_T094_002,SE_T156_002,
+PCwithInterests,SE_T077_002,SE_T139_002,
+perCapitaIncome,SE_T083_001,SE_T145_001,
+#medianIncome, ## Berkeley missing...
+laborForceM16,SE_T037_001,SE_T069_004,
+PCunemployed,SE_T037_003,SE_T069_006,
+PopWithPovStatus,SE_T118_001,SE_T185_001,
+PCpoorStruggling,SE_T118_004,SE_T185_004,
+PCveryWealthyHHolds,SE_T056_017,SE_T092_017,
+popOneYearInUS,SE_T130_001,SE_T197_004,
+PCmovedWithinCounty,SE_T130_003,SE_T197_005,
+#PCmoreThreeUnits,
+medianYearBuilt,SE_T098_001,SE_T160_001,

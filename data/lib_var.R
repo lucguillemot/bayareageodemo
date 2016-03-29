@@ -8,8 +8,10 @@ library(jsonlite)
 library(reshape2)
 
 # Colors for the dendrogram built later with 'dendextend'
-colors <- c("#18154C","#EC501C","#7F1B4F","#25318C",
-            "#1A86C3","#E71584","#4F3089","#FEF30C","#E6211C","#17ABA1")
+# colors <- c("#18154C","#EC501C","#7F1B4F","#25318C",
+#             "#1A86C3","#E71584","#4F3089","#FEF30C","#E6211C","#17ABA1")
+#colors <- c("#18154C","#EC501C","#7F1B4F","#005C37","#1A86C3","#E71584","#4F3089","#FEF30C","#E6211C","#17ABA1", "#b15928", "#f69c45", "#bb5fa1", "#000000", "#b0c1c9")
+colors <- c('#8dd3c7','#ffffb3','#bebada','#fb8072','#80b1d3','#fdb462','#b3de69','#fccde5','#d9d9d9','#bc80bd','#ccebc5', '#dedede', '#ffed6f', '#e0f3f8', '#ffa696')
 years <- c(
   "2009",
   "2010","2011","2012","2013","2014")

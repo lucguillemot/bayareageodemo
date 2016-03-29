@@ -293,11 +293,11 @@ d3.sankey = function() {
   return sankey;
 };
 
-function sankeyDiagram(id, clusters){
-
+function sankeyDiagram(id, clusters) {
   var margin = {top: 1, right: 1, bottom: 6, left: 1},
-      width = 960 - margin.left - margin.right,
-      height = 200 - margin.top - margin.bottom;
+      width = 550 - margin.left - margin.right,
+      height = 250 - margin.top - margin.bottom;
+  var trajColors = ["#18154C","#EC501C","#7F1B4F","#005C37","#1A86C3","#E71584","#4F3089","#FEF30C","#E6211C","#17ABA1", "#b15928", "#f69c45", "#bb5fa1", "#000000", "#b0c1c9"]; 
 
   var svg = d3.select(id).append("svg")
       .attr("width", width + margin.left + margin.right)
@@ -308,11 +308,9 @@ function sankeyDiagram(id, clusters){
   var sankey = d3.sankey()
       .nodeWidth(15)
       .nodePadding(10)
-      .size([400, 150]);
+      .size([width, height]);
 
   var path = sankey.link();
-
-  //d3.json("data/sankey/sankey.json", function(clusters) {
 
   sankey
       .nodes(clusters.nodes)
@@ -324,6 +322,18 @@ function sankeyDiagram(id, clusters){
     .enter().append("path")
       .attr("class", "link")
       .attr("d", path)
+      .style("stroke", "#999")
+/*      .style("stroke", function(d) {
+        //if (d.source.node != 6  & d.target.node == 21 | d.source.node == 21  & d.target.node == 36 ) { //
+        if (d.source.node != 6  & d.target.node == 21 | d.target.node == 36) { //
+          //console.log(d.source);
+          return trajColors[1]; 
+        }
+        else { 
+          //console.log(d.target);
+          return "#ccc"; 
+        }
+      })*/
       .style("stroke-width", function(d) { return Math.max(1, d.dy); })
       .sort(function(a, b) { return b.dy - a.dy; });
 
@@ -347,8 +357,10 @@ function sankeyDiagram(id, clusters){
       .attr("height", function(d) { return d.dy; })
       .attr("width", sankey.nodeWidth())
       //.style("fill", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
-      .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
+      .style("stroke", function(d) { return d3.rgb(d.color).darker(3); })
+      .style("opacity", 1)
     .append("title")
+      //.attr("x", -6)
       .text(function(d) { return d.name; });
 
   node.append("text")
@@ -357,7 +369,7 @@ function sankeyDiagram(id, clusters){
       .attr("dy", ".35em")
       .attr("text-anchor", "end")
       .attr("transform", null)
-      .text(function(d) { return d.name; })
+      .text(function(d) { return d.name.slice(2); })
     .filter(function(d) { return d.x < width / 2; })
       .attr("x", 6 + sankey.nodeWidth())
       .attr("text-anchor", "start");
@@ -367,5 +379,4 @@ function sankeyDiagram(id, clusters){
     sankey.relayout();
     link.attr("d", path);
   }
-  //});
 }

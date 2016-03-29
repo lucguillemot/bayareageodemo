@@ -16,9 +16,12 @@
 }
 
 path.tracts {
-  fill:#cfcfcf;
-  fill-opacity: .8;
+  fill:#dbdbdb;
+  fill-opacity: .9;
   border-radius: 25px;
+  //stroke: #fff !important;
+  stroke: #111138; !important;
+  stroke-width: .1px;// !important;
 }
 
 path.tracts:hover {
@@ -27,7 +30,41 @@ path.tracts:hover {
     stroke-width: 1.5px !important;
 }
 
-.cl-1  {fill: #18154C;}
+/*
+** Sankey diagram parameters */
+.cl1 {fill: #8dd3c7;}
+.cl2 {fill: #fb8072;}
+.cl3 {fill: #bebada;}
+.cl4 {fill: #ffffb3;}
+.cl5 {fill: #80b1d3;}
+.cl6 {fill: #fdb462;}
+.cl7 {fill: #b3de69;}
+.cl8 {fill: #fccde5;}
+.cl9 {fill: #d9d9d9;}
+.cl10 {fill: #bc80bd;}
+.cl11 {fill: #ccebc5;}
+.cl12 {fill: #dedede;}
+.cl13 {fill: #ffed6f;}
+.cl14 {fill: #e0f3f8;}
+.cl15 {fill: #ffa696;}
+
+/*.cl1 {fill: #18154C;}
+.cl2 {fill: #EC501C;}
+.cl3 {fill: #7F1B4F;}
+.cl4 {fill: #005C37;}
+.cl5 {fill: #1A86C3;}
+.cl6 {fill: #E71584;}
+.cl7 {fill: #4F3089;}
+.cl8 {fill: #FEF30C;}
+.cl9 {fill: #E6211C;}
+.cl10 {fill: #17ABA1;}
+.cl11 {fill: #b15928;}
+.cl12 {fill: #f69c45;}
+.cl13 {fill: #bb5fa1;}
+.cl14 {fill: #000000;}
+.cl15 {fill: #b0c1c9;}*/
+
+/*.cl-1  {fill: #18154C;}
 .cl-2  {fill: #EC501C;}
 .cl-3  {fill: #7F1B4F;}
 .cl-4  {fill: #005C37;}
@@ -36,6 +73,6 @@ path.tracts:hover {
 .cl-7  {fill: #4F3089;}
 .cl-8  {fill: #FEF30C;}
 .cl-9  {fill: #E6211C;}
-.cl-10 {fill: #17ABA1;}
+.cl-10 {fill: #17ABA1;}*/
 
 

@@ -17,7 +17,7 @@
 
 .node rect {
   cursor: move;
-  fill-opacity: .9;
+  //fill-opacity: .3;
   shape-rendering: crispEdges;
 }
 
@@ -28,20 +28,9 @@
 
 .link {
   fill: none;
-  stroke: #000;
-  stroke-opacity: .2;
-}
-
-.link:hover {
   stroke-opacity: .5;
 }
 
-.Cluster.One {fill: #18154C;}
-.Cluster.Two {fill: #EC501C;}
-.Cluster.Three {fill: #7F1B4F;}
-.Cluster.Four {fill: #005C37;}
-.Cluster.Five {fill: #1A86C3;}
-.Cluster.Six {fill: #E71584;}
-.Cluster.Seven {fill: #4F3089;}
-.Cluster.Eight {fill: #FEF30C;}
-
+.link:hover {
+  stroke-opacity: .9;
+}
