@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>COLORS</title>
+    <!-- JQuery -->
+    <script src="layout/jquery-2.2.0.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="layout/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="layout/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <!-- leaflet -->
+    <link rel="stylesheet" href="layout/leaflet-0.7.3/leaflet.css" />
+    <script src="layout/leaflet-0.7.3/leaflet.js"></script>
+    <!-- d3 and plugins -->
+    <script src="layout/d3.v4.js"></script>
+    <script src="layout/queue.js"></script>
+    <script src="layout/topojson.js"></script>
+    <script src="layout/radarPlot.js"></script>
+    <script src="layout/sankey.js"></script>
+    <script src="layout/chroma.min.js"></script>
+    
+    <!-- custom css -->
+    <link rel="stylesheet" href="layout/css/main.css" /> 
+    <link rel="stylesheet" href="layout/css/sankey.css" />   
+
+    <style type="text/css">
+        
+        /*canvas {
+          width: 400px;
+          height: 400px;
+        }*/
+
+        svg.force {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+    </style>
+  </head>
+  
+  <body>
+     <div class="container title">
+    <h1>Bay Area Geodemographics<br><small>Tracking change in San Francisco Bay Area Neighborhoods</small></h1>
+      </div>
+
+      <div class="container">
+        <div class="row top-buffer">
+          <div class="col-xs-12">
+            <div id="color-space"></div>
+          </div>
+      </div>
+      <div class="row top-buffer">
+          <div class="col-xs-12">
+            <div id="color-name">blababal</div>
+          </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+        
+        var canvas =  d3.select("#color-space")
+                        .append("canvas")
+                        .attr("width", 400)
+                        .attr("height", 400)
+                        .node(),
+
+            width = canvas.width,
+            height = canvas.height,
+            /*width = 400,
+            height = 400,*/
+            context = canvas.getContext("2d"),
+            image = context.createImageData(width, height),
+            hue,
+            y = -1,
+            i = -1;
+
+        while (++y < height) {
+            console.log(height);
+          for (var x = 0, c; x < width; ++x) {
+            c = d3.hcl(360 * y / (height - 1), 50, 100 * (1 - x / (width - 1))).rgb();
+            image.data[++i] = c.r;
+            image.data[++i] = c.g;
+            image.data[++i] = c.b;
+            image.data[++i] = 255;
+          }
+        }
+
+        context.putImageData(image, 0, 0);
+
+
+        //////////////////////////
+        var svg = d3.select("#color-space").append("svg").attr("class", "force"),
+           /* width = +svg.attr("width"),
+            height = +svg.attr("height");*/
+            width = 400,
+            height = 400;
+
+        var simulation = d3.forceSimulation()
+                .force("link", d3.forceLink().id(function(d) { return d.id; }))
+                .force("center", d3.forceCenter(width / 2, height / 2)); // does not modify relative positions
+
+        d3.json("data/censushclust/force/force.json", function(error, graph) {
+          if (error) throw error;
+
+          var node = svg.append("g")
+              .attr("class", "nodes")
+            .selectAll("circle")
+            .data(graph.nodes)
+            .enter().append("circle")
+              .attr("r", 2.5)
+                .call(d3.drag()
+                  .on("start", dragstarted)
+                  .on("drag", dragged)
+                  .on("end", dragended));
+
+          node.append("title")
+              .text(function(d) { return d.id; });
+
+          simulation
+              .nodes(graph.nodes)
+              .on("tick", ticked);
+
+          simulation.force("link")
+              .links(graph.links);
+          
+          function ticked() {
+            node.attr("cx", function(d) { return d.x; })
+                .attr("cy", function(d) { return d.y; });
+          }
+        })
+
+        function dragstarted(d) {
+          if (!d3.event.active) simulation.alphaTarget(0.3).restart()
+          simulation.fix(d);
+        }
+
+        function dragged(d) {
+            simulation.fix(d, d3.event.x, d3.event.y);
+
+            var x = d3.mouse(this)[0];
+            var y = d3.mouse(this)[1];
+
+            var p = context.getImageData(x, y, 1, 1).data; 
+            console.log("red = " + p[0] + " - green = " + p[1] + " - blue = " + p[2]);
+        }
+
+        function dragended(d) {
+          if (!d3.event.active) simulation.alphaTarget(0);
+          simulation.unfix(d);
+        }
+
+    </script>
+
+    </body>
+</html>

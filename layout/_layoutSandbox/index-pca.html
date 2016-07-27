@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="layout/leaflet-0.7.3/leaflet.css" />
     <script src="layout/leaflet-0.7.3/leaflet.js"></script>
     <!-- d3 and plugins -->
-    <script src="layout/d3-master/d3.min.js"></script> <!-- v3! -->
+    <script src="layout/d3-master/d3.min.js"></script>
     <script src="layout/queue.js"></script>
     <script src="layout/topojson.js"></script>
     <script src="layout/radarPlot.js"></script>
@@ -51,6 +51,7 @@
             <button type="button" class="btn btn-default btn-clusters btn-display active" value="clusters" aria-pressed="true">Clusters</button>
             <button type="button" class="btn btn-default btn-change btn-display" value="change">Change</button>
             <button type="button" class="btn btn-default btn-variables btn-display" value="variables">Raw variables</button>
+            <button type="button" class="btn btn-default btn-pca btn-display" value="pca">PCA</button>
           </div>
         </div>
       </div>
@@ -127,6 +128,10 @@
   var cl2000ById = {};
   var cl2010ById = {};
   var cl2014ById = {};
+  var pc1ById = {};
+  var pc2ById = {};
+  var pc3ById = {};
+  var clById = {}; // for pca function
   var currentYear = "2014";
   var currentCluster = 1;
   var currentLinkage = "complete";
@@ -177,10 +182,67 @@
   var svg = d3.select(map.getPanes().overlayPane).append("svg"),
       g = svg.append("g").attr("class", "leaflet-zoom-hide");
 
+  // DEFINE PATTERN FOR 'CHANGE' LAYOUT
+  /*var pat = [1, 2, 3, 4, 5, 6];
+  svg.selectAll("defs.default")
+    .data(pat).enter()
+    .append("defs")
+    .attr("class", "default")
+    .append("pattern")
+    .attr("id", function(d) {return "circles-"+d;})
+    .attr({ width:"6", height:"6", patternUnits:"userSpaceOnUse", patternTransform:"rotate(-45)"})
+  .append("circle")
+    .attr("r", function(d) {return d/3;})
+    .attr({ cx:"3", cy:"3", fill:"#444"});
+
+  svg.selectAll("defs.traj1")
+    .data(pat).enter()
+    .append("defs")
+    .attr("class", "traj1")
+    .append("pattern")
+    .attr("id", function(d) {return "circlesT1-"+d;})
+    .attr({ width:"6", height:"6", patternUnits:"userSpaceOnUse", patternTransform:"rotate(-45)"})
+  .append("circle")
+    .attr("r", function(d) {return d/3;})
+    .attr({ cx:"3", cy:"3", fill:"#17ABA1" });
+
+  svg.selectAll("defs.traj2")
+    .data(pat).enter()
+    .append("defs")
+    .attr("class", "traj2")
+    .append("pattern")
+    .attr("id", function(d) {return "circlesT2-"+d;})
+    .attr({ width:"6", height:"6", patternUnits:"userSpaceOnUse", patternTransform:"rotate(-45)"})
+  .append("circle")
+    .attr("r", function(d) {return d/3;})
+    .attr({ cx:"3", cy:"3", fill:"#EC501C" });
+
+  svg.selectAll("defs.traj3")
+    .data(pat).enter()
+    .append("defs")
+    .attr("class", "traj3")
+    .append("pattern")
+    .attr("id", function(d) {return "circlesT3-"+d;})
+    .attr({ width:"6", height:"6", patternUnits:"userSpaceOnUse", patternTransform:"rotate(-45)"})
+  .append("circle")
+    .attr("r", function(d) {return d/3;})
+    .attr({ cx:"3", cy:"3", fill:"#18154C" });
+
+  svg.selectAll("defs.traj4")
+    .data(pat).enter()
+    .append("defs")
+    .attr("class", "traj4")
+    .append("pattern")
+    .attr("id", function(d) {return "circlesT4-"+d;})
+    .attr({ width:"6", height:"6", patternUnits:"userSpaceOnUse", patternTransform:"rotate(-45)"})
+  .append("circle")
+    .attr("r", function(d) {return d/3;})
+    .attr({ cx:"3", cy:"3", fill:"#005C37" });*/
+
   queue()
       .defer(d3.json, "geo/sfbact_"+currentYear+".json")
       //.defer(d3.json, "../geo/SFhoods.json")
-      .defer(d3.csv, "data/clusters/sfbact-clusters-"+currentLinkage+"-"+currentNClass+"-2014.csv")
+      .defer(d3.csv, "data/censushclust/clusters/"+currentLinkage+"/"+currentNClass+"/sfbact-clusters-2014.csv")
       .await(ready);
 
   function ready(error, tracts, clusters) {
@@ -223,7 +285,7 @@
         console.log(d.properties.GEOID);
         d3.selectAll(".cl-label").style("opacity", .3);
         d3.select(".cl-label.cl"+clusterById[+d.properties.GEOID]).style("opacity", 1);
-        d3.json("data/radar/radar-"+currentLinkage+"-"+currentNClass+"-"+currentYear+"-cl"+currentCluster+".json", function(data){
+        d3.json("data/censushclust/radar/"+currentLinkage+"/"+currentNClass+"/radar-"+currentYear+"-cl"+currentCluster+".json", function(data){
               var radarChartOptions = {color:colors[(currentCluster-1)]};
               RadarChart("#radarChart", data, radarChartOptions);
             })
@@ -264,6 +326,7 @@
     clusters.forEach(function(d) {
           clusterById[d.Geo_FIPS] = +d.cluster;
       });
+    console.log(clusterById);
     g.selectAll("path")
         .data(tracts.features)
     .transition()
@@ -299,7 +362,13 @@
     var changeScale = d3.scale.linear()
       .range([0, 1])
       .domain([0, 6]);
+    /*var chThresholdColors = ['#edf8e9','#c7e9c0','#a1d99b','#74c476','#31a354','#006d2c'];
+    var chThresholdDomain = [1,2,3,4,5,6];
 
+    var changeThresholdScale = d3.scale.threshold()
+                .range(chThresholdColors)
+                .domain(chThresholdDomain);
+*/
     change.forEach(function(d) {
           changeById[d.Geo_FIPS] = +d.change;
           trajById[d.Geo_FIPS] = d.traj;
@@ -315,6 +384,9 @@
 
     tr.transition()
     .duration(0)
+    /*.style("fill", function(d) {
+      return (changeThresholdScale(changeById[+d.properties.GEOID]));
+    })*/
     .style("fill", function(d) {
       var c = changeById[+d.properties.GEOID];
       var t = trajById[+d.properties.GEOID];
@@ -364,6 +436,65 @@
     })
     .style("opacity", 1);
   } // update_map_variables()
+
+  function update_map_pca(error, tracts, pc) {
+    console.log(pc);
+    var pcaScale = d3.scale.linear()
+          .range([0, 1])
+          .domain([-8.1, 8.1]);
+
+    var pcaScale = d3.scale.linear()
+          .domain([-8.1, 8.1])
+          .range(["#ffffe5", "#0073a5"])
+          .interpolate(d3.interpolateHcl);
+
+    pc.forEach(function(d) {
+          clusterById[d.Geo_FIPS] = +d.cluster;
+          pc1ById[d.Geo_FIPS] = +d.PC1;
+          pc2ById[d.Geo_FIPS] = +d.PC2;
+          pc3ById[d.Geo_FIPS] = +d.PC3;
+      });
+    
+    //console.log(pc1ById);
+    
+    g.selectAll("path")
+        .data(tracts.features)
+    .transition()
+    .duration(0)
+    .attr("cluster", function(d){
+          return "cl"+clusterById[+d.properties.GEOID];
+      })
+    .style("fill", function(d){
+      return pcaScale(pc1ById[+d.properties.GEOID]);
+    })
+    .on("mouseover", function(d){
+      console.log(pc1ById[+d.properties.GEOID]);
+    })
+    /*.style("fill", function(d){
+        switch(clusterById[+d.properties.GEOID]) {
+              case 1: return colors[0]; break;
+              case 2: return colors[1]; break;
+              case 3: return colors[2]; break;
+              case 4: return colors[3]; break;
+              case 5: return colors[4]; break;
+              case 6: return colors[5]; break;
+              case 7: return colors[6]; break;
+              case 8: return colors[7]; break;
+              case 9: return colors[8]; break;
+              case 10: return colors[9]; break;
+              case 11: return colors[10]; break;
+              case 12: return colors[11]; break;
+              case 13: return colors[12]; break;
+              case 14: return colors[13]; break;
+              case 15: return colors[14]; break;
+
+            }
+    })*/
+    /*.style("opacity", function(d) {
+      return pcaScale(pc1ById[+d.properties.GEOID]);
+    })*/
+    ;
+  } // update_map_pca()
 
   function update_map_opacity(){ // opacity of tracts on the map
     if (opacity=="on") {
@@ -430,10 +561,10 @@
       resetClusterLabelOpacity();
       queue()
           .defer(d3.json, "geo/sfbact_"+currentYear+".json")
-          .defer(d3.csv, "data/clusters/sfbact-clusters-"+currentLinkage+"-"+currentNClass+"-"+currentYear+".csv")
+          .defer(d3.csv, "data/censushclust/clusters/"+currentLinkage+"/"+currentNClass+"/sfbact-clusters-"+currentYear+".csv")
           .await(update_map_clusters);
     });
-  d3.select(".btn-change") // CHANGE DISPLAY
+  d3.select(".btn-change") // CLUSTERS DISPLAY
     .on("click", function(){
       $(".btn-display[value="+currentDisplay+"]").button("toggle");
       currentDisplay = "change";
@@ -448,7 +579,7 @@
       $("#change-legend-sankey").show();
       queue()
           .defer(d3.json, "geo/sfbact_2014.json")
-          .defer(d3.csv, "data/change/change.csv")
+          .defer(d3.csv, "data/censushclust/change/"+currentLinkage+"/"+currentNClass+"/change.csv")
           .await(update_map_change);
     });
   d3.select(".btn-variables") // VARIABLES DISPLAY
@@ -468,8 +599,28 @@
       $(".btn-group-years").show();
       queue()
           .defer(d3.json, "geo/sfbact_"+currentYear+".json")
-          .defer(d3.csv, "data/var/sfbact-var-"+currentLinkage+"-"+currentNClass+"-"+currentYear+".csv")
+          .defer(d3.csv, "data/censushclust/var/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv")
           .await(update_map_variables);
+    });
+   d3.select(".btn-pca") // VARIABLES DISPLAY
+    .on("click", function(){
+      $(".btn-display[value="+currentDisplay+"]").button("toggle");
+      currentDisplay = "pca";
+      $(this).button("toggle");
+      resetMapOpacity();
+      resetClusterLabelOpacity();
+      $("#cluster-legend-label").hide();
+      $("#radarChart").hide();
+      $("#change-legend-scale").hide();
+      $("#change-legend-sankey").hide();
+      $("#variable-legend-label").hide();
+      $("#variable-legend-color-scale").hide();
+      $("#distributionPlot").hide();
+      $(".btn-group-years").hide();
+      queue()
+          .defer(d3.json, "geo/sfbact_"+currentYear+".json")
+          .defer(d3.csv, "data/censushclust/pca/pca2014.csv")
+          .await(update_map_pca);
     });
   d3.selectAll(".btn-years") // YEAR CHOICE
     .on("click", function(d){
@@ -479,23 +630,23 @@
       resetClusterLabelOpacity();
       currentYear = this.value;
       // Update Radar chart
-      d3.json("data/radar/radar-"+currentLinkage+"-"+currentNClass+"-"+currentYear+"-cl"+currentCluster+".json", function(data){
+      d3.json("data/censushclust/radar/"+currentLinkage+"/"+currentNClass+"/radar-"+currentYear+"-cl"+currentCluster+".json", function(data){
                 var radarChartOptions = {color:colors[(currentCluster-1)]};
                 RadarChart("#radarChart", data, radarChartOptions);
               });
       // Update variable view distribution plot
-      d3.csv("data/var/sfbact-var-"+currentLinkage+"-"+currentNClass+"-"+currentYear+".csv", function(data) {
+      d3.csv("data/censushclust/var/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv", function(data) {
         distributionPlot("#distributionPlot", data);
       })
       if (currentDisplay == "clusters") {
         queue()
           .defer(d3.json, "geo/sfbact_"+currentYear+".json")
-          .defer(d3.csv, "data/clusters/sfbact-clusters-"+currentLinkage+"-"+currentNClass+"-"+currentYear+".csv")
+          .defer(d3.csv, "data/censushclust/clusters/"+currentLinkage+"/"+currentNClass+"/sfbact-clusters-"+currentYear+".csv")
           .await(update_map_clusters);
       } else {
         queue()
           .defer(d3.json, "geo/sfbact_"+currentYear+".json")
-          .defer(d3.csv, "data/var/sfbact-var-"+currentLinkage+"-"+currentNClass+"-"+currentYear+".csv")
+          .defer(d3.csv, "data/censushclust/var/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv")
           .await(update_map_variables);
       }
     });
@@ -507,23 +658,23 @@
       resetClusterLabelOpacity();
       currentNClass = this.value;
       // Update Radar chart
-      d3.json("data/radar/radar-"+currentLinkage+"-"+currentNClass+"-"+currentYear+"-cl"+currentCluster+".json", function(data){
+      d3.json("data/censushclust/radar/"+currentLinkage+"/"+currentNClass+"/radar-"+currentYear+"-cl"+currentCluster+".json", function(data){
                 var radarChartOptions = {color:colors[(currentCluster-1)]};
                 RadarChart("#radarChart", data, radarChartOptions);
               });
       // Update variable view distribution plot
-      d3.csv("data/var/sfbact-var-"+currentLinkage+"-"+currentNClass+"-"+currentYear+".csv", function(data) {
+      d3.csv("data/censushclust/var/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv", function(data) {
         distributionPlot("#distributionPlot", data);
       })
       if (currentDisplay == "clusters") {
         queue()
           .defer(d3.json, "geo/sfbact_"+currentYear+".json")
-          .defer(d3.csv, "data/clusters/sfbact-clusters-"+currentLinkage+"-"+currentNClass+"-"+currentYear+".csv")
+          .defer(d3.csv, "data/censushclust/clusters/"+currentLinkage+"/"+currentNClass+"/sfbact-clusters-"+currentYear+".csv")
           .await(update_map_clusters);
       } else {
         queue()
           .defer(d3.json, "geo/sfbact_"+currentYear+".json")
-          .defer(d3.csv, "data/var/sfbact-var-"+currentLinkage+"-"+currentNClass+"-"+currentYear+".csv")
+          .defer(d3.csv, "data/censushclust/var/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv")
           .await(update_map_variables);
       }
     });
@@ -535,23 +686,23 @@
       resetClusterLabelOpacity()
       currentLinkage = this.value;
       // Update Radar chart
-      d3.json("data/radar/radar-"+currentLinkage+"-"+currentNClass+"-"+currentYear+"-cl"+currentCluster+".json", function(data){
+      d3.json("data/censushclust/radar/"+currentLinkage+"/"+currentNClass+"/radar-"+currentYear+"-cl"+currentCluster+".json", function(data){
                 var radarChartOptions = {color:colors[(currentCluster-1)]};
                 RadarChart("#radarChart", data, radarChartOptions);
               });
       // Update variable view distribution plot
-      d3.csv("data/var/sfbact-var-"+currentLinkage+"-"+currentNClass+"-"+currentYear+".csv", function(data) {
+      d3.csv("data/censushclust/var/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv", function(data) {
         distributionPlot("#distributionPlot", data);
       })
       if (currentDisplay == "clusters") {
         queue()
           .defer(d3.json, "geo/sfbact_"+currentYear+".json")
-          .defer(d3.csv, "data/clusters/sfbact-clusters-"+currentLinkage+"-"+currentNClass+"-"+currentYear+".csv")
+          .defer(d3.csv, "data/censushclust/clusters/"+currentLinkage+"/"+currentNClass+"/sfbact-clusters-"+currentYear+".csv")
           .await(update_map_clusters);
       } else {
         queue()
           .defer(d3.json, "geo/sfbact_"+currentYear+".json")
-          .defer(d3.csv, "data/var/sfbact-var-"+currentLinkage+"-"+currentNClass+"-"+currentYear+".csv")
+          .defer(d3.csv, "data/censushclust/var/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv")
           .await(update_map_variables);
       }
     });
@@ -566,9 +717,15 @@
         color:"#8dd3c7"
     };
   //Call function to draw the Radar chart
-  d3.json("data/radar/radar-"+currentLinkage+"-"+currentNClass+"-2014-cl1.json", function(data){
+  d3.json("data/censushclust/radar/"+currentLinkage+"/"+currentNClass+"/radar-2014-cl1.json", function(data){
     RadarChart("#radarChart", data, radarChartOptions);
   })
+
+  //////////////////////////////////////////////////
+  // SANKEY DIAGRAM ////////////////////////////////
+  /*d3.json("data/censushclust/sankey/sankey.json", function(data){
+    sankeyDiagram("#sankey", data)
+  })*/
 
   // LEGEND ////////////////////////////////////////
   var cluster_legend_color = d3.select("#cluster-legend-color").append("svg").attr("height", 400).append("g");
@@ -592,13 +749,23 @@
               opacity = "on";
               currentCluster = i+1;
               update_map_opacity();
-              d3.json("data/radar/radar-"+currentLinkage+"-"+currentNClass+"-"+currentYear+"-cl"+(i+1)+".json", function(data){
+              d3.json("data/censushclust/radar/"+currentLinkage+"/"+currentNClass+"/radar-"+currentYear+"-cl"+(i+1)+".json", function(data){
                 var radarChartOptions = {color:colors[i]};
                 RadarChart("#radarChart", data, radarChartOptions);
               })
               d3.selectAll(".cl-label").style("opacity", .3);
               d3.select(this).style("opacity", 1);
             })
+
+        //.call(wrap, 200)
+          //.on("click", function(){update_map_opacity()})
+          /*.on("mouseout", function() {
+            d3.selectAll("path").style("fill-opacity", 0.7);
+          })*/; 
+    /*d3.select(".svg-cl-legend-label")
+      .on("mouseout", function() {
+            d3.selectAll("path").style("fill-opacity", 0.7);
+          });*/
 
   variable_legend_label
     .selectAll("text")
@@ -613,12 +780,12 @@
           currentVariable = variables_names[i];
           d3.selectAll(".var-label").style("opacity", .3);
           d3.select(this).style("opacity", 1);
-          d3.csv("data/var/sfbact-var-"+currentLinkage+"-"+currentNClass+"-"+currentYear+".csv", function(data) {
+          d3.csv("data/censushclust/var/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv", function(data) {
             distributionPlot("#distributionPlot", data);
           })
           queue()
             .defer(d3.json, "geo/sfbact_"+currentYear+".json")
-            .defer(d3.csv, "data/var/sfbact-var-"+currentLinkage+"-"+currentNClass+"-"+currentYear+".csv")
+            .defer(d3.csv, "data/censushclust/var/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv")
             .await(update_map_variables);
         });
 
@@ -647,9 +814,12 @@
   //////////////////////////////////////////////////////////////////////       
   // SANKEY DIAGRAM ////////////////////////////////////////////////////
 
-  d3.json("data/sankey/sankey.json", function(data) {
+  d3.json("data/censushclust/sankey/sankey.json", function(data) {
     sankeyDiagram("#change-legend-sankey", data);
   })
+
+
+
 
    //////////////////////////////////////////////////////////////////////       
   // DISTRIBUTION CHART /////////////////////////////////////////////////
@@ -725,7 +895,7 @@
           });
   }
 
-  d3.csv("data/var/sfbact-var-"+currentLinkage+"-"+currentNClass+"-"+currentYear+".csv", function(data) {
+  d3.csv("data/censushclust/var/"+currentLinkage+"/"+currentNClass+"/sfbact-var-"+currentYear+".csv", function(data) {
     distributionPlot("#distributionPlot", data);
   })
 

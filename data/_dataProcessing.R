@@ -1,0 +1,51 @@
+  source("data/variables.R")
+  source("data/readCensus.R")
+  source("data/standardizeData.R")
+  source("data/clustering.R")
+  source("data/exportVizData.R")
+
+  # Create data frames with selected variables for every year
+  # from raw Census data (decennial data for 2000, ACS data for 2010 and 2014)
+  sfbact.cc.2000 <- readAndParseCensusData(2000, "R11097593_SL140-2000-Census.csv")
+  sfbact.cc.2010 <- readAndParse(2010, "R11097565_SL140-2010")
+  sfbact.cc.2014 <- readAndParse(2014, "R11088321_SL140-2014")
+
+  # Standardize data (square root + range standardization)
+  sfbact.cc.2000.st <- standardizeData(sfbact.cc.2000)
+  sfbact.cc.2010.st <- standardizeData(sfbact.cc.2010)
+  sfbact.cc.2014.st <- standardizeData(sfbact.cc.2014)
+  
+  # Perform hierarchical clustering on all years together
+  sfbact.hc.cl <- clusteringAllYears(sfbact.cc.2000.st, sfbact.cc.2010.st, sfbact.cc.2014.st, years = c("2000", "2010", "2014"))
+  sfbact.2000.hc.cl <- sfbact.hc.cl %>% filter(year=="2000")
+  sfbact.2010.hc.cl <- sfbact.hc.cl %>% filter(year=="2010")
+  sfbact.2014.hc.cl <- sfbact.hc.cl %>% filter(year=="2014")
+  # Perform hierarchical clustering on each year separately
+  #   sfbact.2000.hc.cl <- clusteringByYear(sfbact.cc.2000.st, 2000)
+  #   sfbact.2010.hc.cl <- clusteringByYear(sfbact.cc.2010.st, 2010)
+  #   sfbact.2014.hc.cl <- clusteringByYear(sfbact.cc.2014.st, 2014)
+  # Remove the 'year' column
+  sfbact.2000.hc.cl$year <- NULL
+  sfbact.2010.hc.cl$year <- NULL
+  sfbact.2014.hc.cl$year <- NULL
+
+  # Export csv data file with raw data + cluster number
+  # used in the d3 plot of raw variables
+  sfbact.2000.var.cl <- exportVarData(sfbact.cc.2000, sfbact.2000.hc.cl, 2000)
+  sfbact.2010.var.cl <- exportVarData(sfbact.cc.2010, sfbact.2010.hc.cl, 2010)
+  sfbact.2014.var.cl <- exportVarData(sfbact.cc.2014, sfbact.2014.hc.cl, 2014)
+  
+  # Calculate means, distances to the mean
+  # and export data for the radar plot
+  sfbact.2000.mdev <- radarPlotData(sfbact.cc.2000.st, sfbact.2000.hc.cl, 2000)
+  sfbact.2010.mdev <- radarPlotData(sfbact.cc.2010.st, sfbact.2010.hc.cl, 2010)
+  sfbact.2014.mdev <- radarPlotData(sfbact.cc.2014.st, sfbact.2014.hc.cl, 2014)
+
+  unique(sfbact.2000.hc.cl$cluster)
+  unique(sfbact.2010.hc.cl$cluster)
+  unique(sfbact.2014.hc.cl$cluster)
+
+ 
+ # get number of tracts in each cluster
+ table(sfbact.2014.hc.cl$cluster)
+  write.csv(sfbact.2014.mdev, "sfbact.2014.mdev.csv")

@@ -26,7 +26,7 @@ path.tracts {
 
 path.tracts:hover {
     fill-opacity: 0.2 !important;
-    stroke:#fff !important;
+    stroke: #fff !important;
     stroke-width: 1.5px !important;
 }
 
@@ -47,6 +47,36 @@ path.tracts:hover {
 .cl13 {fill: #ffed6f;}
 .cl14 {fill: #e0f3f8;}
 .cl15 {fill: #ffa696;}
+
+
+svg.force {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.force-labels {
+  font-size: 10px;
+  //font-weight: bold;
+  fill: #fff;
+  cursor: pointer;
+  dominant-baseline: central;
+  text-anchor: middle;
+}
+.force-circle {
+  fill: #000;
+  stroke: #fff;
+  stroke-width: .7px;
+  cursor: move;
+}
+
+.links line {
+  stroke: #fff;
+  stroke-width: .1px;
+}
+
 
 /*.cl1 {fill: #18154C;}
 .cl2 {fill: #EC501C;}
